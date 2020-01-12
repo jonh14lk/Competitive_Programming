@@ -1,2 +1,2 @@
 # Algorithms
-Some algorithms implemented in c ++
+Some algorithms implemented in c++
