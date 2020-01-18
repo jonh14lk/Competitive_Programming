@@ -27,7 +27,6 @@ lli fib (lli x)
 
     return dp[x] ;
 }
-
 int main ()
 {
     memset (dp , -1 , sizeof(dp)) ; 
