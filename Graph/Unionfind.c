@@ -79,7 +79,7 @@ bool is_cycle (graph * g) // verificar se um grafo possui algum ciclo ou nao
             return true ; // achei um ciclo no grafo
         }
 
-        join (x , y) ; // junto os subconjuntos de x e de y em um so
+        join (x , y) ; // agora x e y fazem parte do mesmo subconjunto
     } 
 
     return false ; // nao foi achado um ciclo no grafo
