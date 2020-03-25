@@ -14,7 +14,7 @@
 
 // em suma: ordeno as arestas em ordem decrescente com prioridade no custo, depois para cada aresta,
 // se o find(x) != find(y) sendo x e y os vertices das arestas, eu adiciono eles a mst e dou um join
-// nos dois, como as arestas tao ordenadas em ordem decrescente pelo custo, o primeiro que eu pego
+// nos dois, como as arestas tao ordenadas em ordem decrescente, o primeiro que eu pego
 // eh necessariamente a melhor opçao e assim a mst eh formada.
 
 #include <bits/stdc++.h>
