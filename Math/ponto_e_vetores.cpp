@@ -5,8 +5,7 @@ using namespace std;
 #define pb push_back
 #define in insert
 #define pi pair<int, int>
-#define point pair<double, double> // ponto
-#define line pair<point,point> // linha
+#define pd <double, double> 
 #define pii pair<int, pi>
 #define mp make_pair
 #define fir first
@@ -14,50 +13,38 @@ using namespace std;
 #define MAXN 100001
 #define mod 1000000007
 
-double prod_escalar(point a, point b) // calculo do produto escalar (dot product)
+struct pt
 {
-  return a.fir * b.fir + a.sec * b.sec;
+  double x , y;
+  pt operator + (pt p) {return {x + p.x , y + p.y};} // soma de pontos
+  pt operator - (pt p) {return {x - p.x , y - p.y};} // subtração de pontos
+  pt operator * (double d) {return {x * d , y * d};} // multiplicação por um double
+  pt operator / (double d) {return {x / d , y / d};} // divisão por um double
+};
+double dot(pt v, pt w) // produto escalar (dot product)
+{
+  return v.x * w.x + v.y * w.y;
 }
-double prod_vetorial(point a, point b) // calculo do produto vetorial(cross product)
+bool isPerp(pt v, pt w) // retorna se dois vetores sao perpendiculares (angulo 90 graus)
 {
-  return a.fir * b.sec - a.sec * b.fir;
+  return dot(v , w) == 0;
 }
-point sum(point a, point b) // ponto a + ponto b
+double cross(pt v, pt w) // produto vetorial (cross product)
 {
-  point ret;
-  ret.fir = a.fir + b.fir;
-  ret.sec = a.sec + b.sec;
-  return ret;
+  return v.x * w.y - v.y * w.x;
 }
-point sub(point a, point b) // ponto a - ponto b
+double orient(pt a, pt b, pt c) // se for = 0 os vetores são colineares
 {
-  point ret;
-  ret.fir = a.fir - b.fir;
-  ret.sec = a.sec - b.sec;
-  return ret;
+  return cross(b - a , c - a);
 }
-point neg(point a) // inverter o sinal das cordenadas de um ponto
+double dist(pt a, pt b) // distancia entre 2 pontos
 {
-  point ret;
-  ret.fir = -a.fir;
-  ret.sec = -a.sec;
-  return ret;
+  pt c = a - b;
+  return sqrt(c.x * c.x + c.y * c.y);
 }
-double dist(point a, point b) // distancia entre 2 pontos
+double ccw(pt a, pt b, pt c) // retorna se forma um angulo convexo ou concavo
 {
-  point c = sub(a , b);
-  return sqrt(c.fir * c.fir + c.sec * c.sec);
-}
-double area(vector <point> p) // area de um poligono definido por um vector ordenado de pontos
-{
-  double ret = 0;
-  for(int i = 2; i < p.size(); i++)
-    ret += prod_vetorial(sub(p[i] , p[0]), sub(p[i - 1] , p[0])) / 2;
-  return abs(ret);
-}
-double ccw(point a, point b, point c) // retorna se forma um angulo convexo ou concavo
-{
-  double ret = prod_vetorial(sub(b , a), sub(c , b));
+  double ret = cross(b - a, c - b);
   return ret < 0;
 }
 signed main()
