@@ -3,7 +3,8 @@
 // condição de existencia:
 // todos os vértices possuem grau par (ciclo euleriano) começa e acaba no mesmo vértice
 // ou
-// apenas 2 vértices possuem grau impar, todos os outros possuem grau par ou == 0. começa num vertice
+// apenas 2 vértices possuem grau impar, todos os outros possuem grau par ou == 0. 
+// começa num vertice de grau impar e termina num vértice de grau impar nesse caso.
 // solução:
 // rodar um dfs com map de visited para as arestas
 // no final por o source no vector path
