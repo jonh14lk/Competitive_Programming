@@ -1,2 +1,3 @@
 # Algorithms
-Some algorithms implemented in c++
+Some algorithms and data structures implemented in c++
+Useful for competitive programming
