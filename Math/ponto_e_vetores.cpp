@@ -47,7 +47,24 @@ double ccw(pt a, pt b, pt c) // retorna se forma um angulo convexo ou concavo
   double ret = cross(b - a, c - b);
   return ret < 0;
 }
+double modulo(pt v) // |v| = sqrt(x² + y²)
+{
+  return sqrt(v.x * v.x + v.y * v.y);
+}
+double angle(pt a, pt b, pt c) // dot(ab , ac) / |ab| * |ac|
+{
+  pt ab = b - a; // vetor ab
+  pt ac = c - a; // vetor ac
+  double m1 = modulo(ab);
+  double m2 = modulo(ac);
+  double m3 = m1 * m2;
+  return (dot(ab, ac) / m3); // retorna o cos do angulo em graus
+}
 signed main()
 {
+  //sabendo o cos p/ achar o angulo 
+  //double PI = acos(-1);
+  //coss = acos(coss);
+  //cout << (coss * 180) / PI << endl;
   return 0;
 }
