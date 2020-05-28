@@ -54,3 +54,13 @@ lli bb()
   }
   return i;
 }
+// 4 - ts pra int (valor maximo da funcao f(x)), sendo x um inteiro
+int l = 1, r = INT_MAX;
+while (r - l > 15)
+{
+  int l1 = (l * 2 + r) / 3;
+  int l2 = (l + 2 * r) / 3;
+  (calc(l1) < calc(l2)) ? r = l2 : l = l1;
+}
+for (int i = l; i <= r; i++)
+  // vejo qual a melhor opcao de l ate r em o(n)
