@@ -58,7 +58,7 @@ int dfs(int s)
   }
   return size;
 }
-int decompose(int s, int h)
+void decompose(int s, int h)
 {
   head[s] = h;
   pos[s] = cur_pos++;
