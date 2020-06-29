@@ -94,7 +94,7 @@ vector<int> get_lcp(string s)
     lcp[idx] = k;
     k = max(k - 1, 0ll);
   }
-  for (int i = 1; i < n; i++) // lcp between 2 adjacent suffix of suffix array
+  for (int i = 1; i < n; i++) // lcp between 2 adjacent suffixes of suffix array
     cout << lcp[i] << " ";
   cout << endl;
   return lcp;
