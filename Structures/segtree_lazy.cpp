@@ -40,7 +40,7 @@ void update(int i, int l, int r, int ql, int qr, int diff)
   int mid = (l + r) >> 1;
   update(i << 1, l, mid, ql, qr, diff);
   update((i << 1) | 1, mid + 1, r, ql, qr, diff);
-  seg[i] = (seg[i << 1] + seg[(i << 1) | 1]) % mod;
+  seg[i] = seg[i << 1] + seg[(i << 1) | 1] ;
 }
 int query(int l, int r, int ql, int qr, int i)
 {
@@ -51,7 +51,7 @@ int query(int l, int r, int ql, int qr, int i)
     return 0;
   if (l >= ql && r <= qr)
     return seg[i];
-  return (query(l, mid, ql, qr, i << 1) + query(mid + 1, r, ql, qr, (i << 1) | 1)) % mod;
+  return query(l, mid, ql, qr, i << 1) + query(mid + 1, r, ql, qr, (i << 1) | 1) ;
 }
 void build(int l, int r, int i)
 {
@@ -63,7 +63,7 @@ void build(int l, int r, int i)
   int mid = (l + r) >> 1;
   build(l, mid, i << 1);
   build(mid + 1, r, (i << 1) | 1);
-  seg[i] = (seg[i << 1] + seg[(i << 1) | 1]) % mod;
+  seg[i] = seg[i << 1] + seg[(i << 1) | 1] ;
 }
 signed main()
 {
