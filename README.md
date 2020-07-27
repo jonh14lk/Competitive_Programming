@@ -1,4 +1,4 @@
-# Algorithms and Data Structures
+# Competitive Programming
 Some algorithms and data structures implemented in c++
 
 
