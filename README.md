@@ -1,5 +1,2 @@
 # Competitive Programming
-Some algorithms and data structures implemented in c++
-
-
-Useful for competitive programming
+My competitive programming repo, with codes and applications that I found interesting.
