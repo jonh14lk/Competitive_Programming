@@ -1,184 +1,94 @@
-// segtree para contar quantidade de numeros pares/impar numa query alem do update
-
 #include <bits/stdc++.h>
-using namespace std ;
- 
-#define lli long long int
+using namespace std;
+
+#define PI acos(-1)
 #define pb push_back
+#define int long long int
+#define mp make_pair
+#define pi pair<int, int>
+#define pii pair<pi, int>
+#define fir first
+#define sec second
+#define MAXN 100001
+#define MAXL 100
+#define mod 1000000007
 
-lli v [100001] ;
-lli vimpar [100001] ;
-lli vpar [100001] ;
-lli seg_tree [500005] ;
-lli seg_tree2 [500005] ;
+vector<pi> seg;
+vector<int> v;
 
-lli query (lli i , lli l , lli r , lli ql , lli qr) // query par
+pi single(int x)
 {
-    if(l >= ql && r <= qr) 
-    {
-        return seg_tree [i] ;
-    }
-
-    if(l > qr || r < ql) 
-    {
-        return 0 ; 
-    }
-
-    lli mid = (l + r) / 2 ;
-
-    return query (2 * i , l , mid , ql , qr) + query ((2 * i) + 1 , mid + 1 , r , ql , qr) ;
+  return {x, 1};
 }
-lli query2 (lli i , lli l , lli r , lli ql , lli qr) // query impar
+pi neutral()
 {
-    if(l >= ql && r <= qr) 
-    {
-        return seg_tree2 [i] ;
-    }
-
-    if(l > qr || r < ql) 
-    {
-        return 0 ; 
-    }
-
-    lli mid = (l + r) / 2 ;
-
-    return query2 (2 * i , l , mid , ql , qr) + query2 ((2 * i) + 1 , mid + 1 , r , ql , qr) ;
+  return {INT_MAX, 0};
 }
-void build (lli l , lli r , lli i) // bulid par
+pi merge(pi a, pi b)
 {
-    if(l == r) 
-    { 
-        seg_tree[i] = vpar[l] ;
-        return;
-    }
-
-    lli mid = (l + r) / 2 ;
-
-    build (l , mid , 2 * i) ; 
-    build (mid + 1 , r , (2 * i) + 1) ; 
-
-    seg_tree[i] = seg_tree[2 * i] + seg_tree[(2 * i ) + 1] ; 
+  if (a.fir < b.fir)
+    return a;
+  if (a.fir > b.fir)
+    return b;
+  return {a.fir, a.sec + b.sec};
 }
-void build2 (lli l , lli r , lli i) // bulid impar
+void update(int i, int l, int r, int q, int x)
 {
-    if(l == r) 
-    { 
-        seg_tree2[i] = vimpar[l] ;
-        return;
-    }
-
-    lli mid = (l + r) / 2 ;
-
-    build2 (l , mid , 2 * i) ; 
-    build2 (mid + 1 , r , (2 * i) + 1) ; 
-
-    seg_tree2[i] = seg_tree2[2 * i] + seg_tree2[(2 * i ) + 1] ; 
+  if (l == r)
+  {
+    seg[i] = single(x);
+    return;
+  }
+  int mid = (l + r) >> 1;
+  if (q <= mid)
+    update(i << 1, l, mid, q, x);
+  else
+    update((i << 1) | 1, mid + 1, r, q, x);
+  seg[i] = merge(seg[i << 1], seg[(i << 1) | 1]);
 }
-void update (lli i , lli l , lli r , lli pos , lli x) // update par
+pi query(int l, int r, int ql, int qr, int i)
 {
-    if(l == r) 
-    {
-        seg_tree[i] = x ;
-    }
-    else 
-    {
-        lli mid = (l + r) / 2 ;
-
-	    if(pos <= mid) 
-        {
-            update (2 * i , l , mid , pos , x) ;
-        }
-	    else 
-        {
-            update ((2 * i) + 1 , mid + 1 , r , pos , x) ;
-        }
-
-	    seg_tree[i] = seg_tree[2 * i] + seg_tree[(2 * i) + 1] ;
-    }
+  int mid = (l + r) >> 1;
+  if (l > r || l > qr || r < ql)
+    return neutral();
+  if (l >= ql && r <= qr)
+    return seg[i];
+  return merge(query(l, mid, ql, qr, i << 1), query(mid + 1, r, ql, qr, (i << 1) | 1));
 }
-void update2 (lli i , lli l , lli r , lli pos , lli x) // update impar
+void build(int l, int r, int i)
 {
-    if(l == r) 
-    {
-        seg_tree2[i] = x ;
-    }
-    else 
-    {
-        lli mid = (l + r) / 2 ;
-
-	    if(pos <= mid) 
-        {
-            update2 (2 * i , l , mid , pos , x) ;
-        }
-	    else 
-        {
-            update2 ((2 * i) + 1 , mid + 1 , r , pos , x) ;
-        }
-
-	    seg_tree2[i] = seg_tree2[2 * i] + seg_tree2[(2 * i) + 1] ;
-    }
+  if (l == r)
+  {
+    seg[i] = single(v[l]);
+    return;
+  }
+  int mid = (l + r) >> 1;
+  build(l, mid, i << 1);
+  build(mid + 1, r, (i << 1) | 1);
+  seg[i] = merge(seg[i << 1], seg[(i << 1) | 1]);
 }
-int main() 
+signed main()
 {
-    lli n , ql , qr , aux , m , ans , type ;
-
-    cin >> n ;
-
-    for (lli i = 0 ; i < n ; i++) 
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  int n, q;
+  cin >> n >> q;
+  v.resize(n);
+  seg.resize(4 * n);
+  for (int i = 0; i < n; i++)
+    cin >> v[i];
+  build(0, n - 1, 1);
+  while (q--)
+  {
+    int l, r;
+    int t;
+    cin >> t >> l >> r;
+    if (t == 2)
     {
-        cin >> v[i];
-
-        if (v[i] % 2 == 0) 
-        {
-            vpar[i] = 1 ;
-            vimpar[i] = 0 ; 
-        }
-        else
-        {
-            vpar[i] = 0 ;
-            vimpar[i] = 1 ; 
-        }     
+      pi ans = query(0, n - 1, l, r - 1, 1);
+      cout << ans.fir << " " << ans.sec << endl;
     }
-
-    build (0 , n - 1 , 1) ;
-    build2 (0 , n - 1 , 1) ;
-    
-    cin >> m ;
-
-    for (lli i = 0 ; i < m ; i++)
-    {
-        cin >> type >> ql >> qr ;
-
-        if (type == 0) // update 
-        {
-            ql--;
-            
-            if (qr % 2 == 0)
-            {
-                update(1 , 0 , n - 1 , ql , 1) ;
-                update2(1 , 0 , n - 1 , ql , 0) ;
-            }
-            else
-            {
-                update(1 , 0 , n - 1 , ql , 0) ;
-                update2(1 , 0 , n - 1 , ql , 1) ;
-            }
-        }
-        if (type == 1) // par
-        {
-            ql--;
-            qr-- ;
-
-            cout << query (1 , 0 , n - 1 , ql , qr) << endl ;
-        }
-        else if (type == 2) // impar
-        {
-            ql--;
-            qr-- ;
-
-            cout << query2 (1 , 0 , n - 1 , ql , qr) << endl ;
-        }
-    }
-
-    return 0;
+    else
+      update(1, 0, n - 1, l, r);
+  }
 }
