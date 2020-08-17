@@ -126,7 +126,7 @@ signed main()
 // algoritimo para o problema:
 // 1- imagine uma reta na vertical com x = - INF (x mais a esquerda)
 // 2- começar a mover esta reta para a direita, durante o movimento essa reta irá se encontrar com os segmentos.
-// 3- estamos interessados na ordem relativa dos segmentos ao longo da vertical, para isso vamos criar um set que
+// 3- estamos interessados na ordem relativa dos segmentos ao longo da vertical, para isso vamos criar um vector que
 // guarda a coordenada x do inicio do segmento e a coordenada x do final do segmento
 // 4- para encontrar um par de segmentos que se intersectam nesse processo, basta apenas considerar os segmentos
 // adjacentes entre si.
