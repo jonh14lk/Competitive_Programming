@@ -4,30 +4,28 @@ using namespace std;
 #define PI acos(-1)
 #define int long long int
 #define pb push_back
-#define mp make_pair
 #define pi pair<int, int>
 #define fir first
 #define sec second
-#define MAXN 100001
-#define MAXL 101
-#define mod 998244353
-#define INF 1000000001
+#define MAXN 502
+#define mod 1000000007
+#define INF 1e9
 
 struct edge
 {
-  int to, from, flow, capacity;
+  int to, from, flow, capacity, id;
 };
 
-int n, m, source, destiny;
+int n, m, a, b, source, destiny;
 vector<edge> adj[MAXN];
 queue<int> q;
 int level[MAXN];
 int ptr[MAXN];
 
-void add_edge(int a, int b, int c)
+void add_edge(int a, int b, int c, int id)
 {
-  adj[a].pb({b, adj[b].size(), c, c});     //forward edge : c flow and c capacity
-  adj[b].pb({a, adj[a].size() - 1, 0, 0}); //back edge : 0 flow and 0 capacity
+  adj[a].pb({b, (int)adj[b].size(), c, c, id});
+  adj[b].pb({a, (int)adj[a].size() - 1, 0, 0, id});
 }
 bool bfs()
 {
@@ -53,9 +51,9 @@ int dfs(int u, int flow)
 {
   if (u == destiny || flow == 0)
     return flow;
-  for (int p = ptr[u]; p < adj[u].size(); p++)
+  for (int &p = ptr[u]; p < adj[u].size(); p++)
   {
-    edge at = adj[u][p];
+    edge &at = adj[u][p];
     if (at.flow && level[u] == level[at.to] - 1)
     {
       int kappa = dfs(at.to, min(flow, at.flow));
@@ -69,7 +67,7 @@ int dfs(int u, int flow)
 }
 int dinic()
 {
-  int maxFlow = 0;
+  int max_flow = 0;
   while (bfs())
   {
     memset(ptr, 0, sizeof(ptr));
@@ -78,21 +76,31 @@ int dinic()
       int flow = dfs(source, INF);
       if (flow == 0)
         break;
-      maxFlow += flow;
+      max_flow += flow;
     }
   }
-  return maxFlow;
+  return max_flow;
 }
 signed main()
 {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
   cin >> n >> m;
-  for (int i = 0; i < n; i++)
+  for (int i = 0; i < m; i++)
   {
     int a, b, c;
     cin >> a >> b >> c;
-    add_edge(a, b, c);
+    a--, b--;
+    add_edge(a, b, c, i);
   }
   source = 0, destiny = n - 1;
   cout << dinic() << endl;
+  vector<int> ans(m);
+  for (int i = 0; i < n; i++) // fluxo em cada aresta, na ordem da entrada
+    for (auto const &j : adj[i])
+      if (!j.capacity)
+        ans[j.id] = j.flow;
+  for (auto const &i : ans)
+    cout << i << endl;
   return 0;
 }
