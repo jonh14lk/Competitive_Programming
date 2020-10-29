@@ -15,7 +15,6 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define sec second
 #define DEBUG 0
 #define MAXN 5001
-#define mod 1000000007
 
 struct treap // struct
 {
@@ -104,7 +103,7 @@ treap *add(treap *t, int l, int r, int k) // add pro lazy propagation
 }
 treap *create_node(int data, int priority) // criar um novo no
 {
-  treap *ret = (treap *)malloc(sizeof(treap));
+  treap *ret = new treap;
   ret->data = data;
   ret->priority = priority;
   ret->kids = {NULL, NULL};
@@ -117,14 +116,16 @@ void print_treap(treap *t) // dfs in treap tree
 {
   if (t == NULL)
     return;
-  cout << t->data << " ";
+  lazy_propagation(t);
   print_treap(t->kids[0]);
+  cout << t->data << " ";
   print_treap(t->kids[1]);
 }
 signed main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
+  srand(time(NULL)); // para as prioridades
   treap *t = NULL;
   int n;
   cin >> n;
@@ -132,7 +133,7 @@ signed main()
   {
     int k;
     cin >> k;
-    t = merge(t, create_node(k, i));
+    t = merge(t, create_node(k, rand()));
   }
   print_treap(t);
   cout << endl;
@@ -146,4 +147,5 @@ signed main()
     print_treap(t);
     cout << endl;
   }
+  return 0;
 }
