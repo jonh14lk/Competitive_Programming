@@ -15,32 +15,81 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define sec second
 #define DEBUG 0
 #define MAXN 5001
-#define mod 1000000009 // modulo
-#define d 31           // uma boa escolha para a base da potencia
+#define mod 1000000007
+#define d 31
 
+int n;
 vector<int> v;
 vector<int> pot;
-vector<int> hashing;
+vector<int> pref;
+vector<int> suf;
 
-void calc(int n)
+int modpow(int x, int y)
 {
-  int curr = 1;
-  pot.pb(curr);
-  for (int i = 1; i <= n; i++)
+  int z = 1;
+  while (y)
   {
-    curr = (curr * d) % mod;
-    pot.pb(curr);
+    if (y & 1)
+      z = (z * x) % mod;
+    x = (x * x) % mod;
+    y >>= 1;
+  }
+  return z;
+}
+int inverse(int x)
+{
+  return modpow(x, mod - 2);
+}
+int divide(int x, int y)
+{
+  return (x * inverse(y)) % mod;
+}
+int subtract(int x, int y)
+{
+  return ((x + mod) - y) % mod;
+}
+int multiplicate(int x, int y)
+{
+  return (x * y) % mod;
+}
+int sum(int x, int y)
+{
+  return (x + y) % mod;
+}
+void calc()
+{
+  pot.resize(n + 1);
+  pot[0] = 1;
+  for (int i = 1; i <= n; i++)
+    pot[i] = multiplicate(pot[i - 1], d);
+}
+void suffix_hash()
+{
+  suf.resize(n + 1);
+  suf[0] = 0;
+  for (int i = 0; i < n; i++)
+  {
+    int val = multiplicate(v[n - i - 1], pot[i]);
+    suf[i + 1] = sum(suf[i], val);
   }
 }
 void prefix_hash()
 {
-  int curr = 0;
-  for (int i = 0; i < v.size(); i++)
+  pref.resize(n + 1);
+  pref[0] = 0;
+  for (int i = 0; i < n; i++)
   {
-    int val = (v[i] * pot[i]) % mod;
-    curr = (curr + val) % mod;
-    hashing.pb(curr);
+    int val = multiplicate(v[i], pot[i]);
+    pref[i + 1] = sum(pref[i], val);
   }
+}
+int prefix(int l, int r)
+{
+  return divide(subtract(pref[r + 1], pref[l]), pot[l]);
+}
+int suffix(int l, int r)
+{
+  return divide(subtract(suf[n - l], suf[n - r - 1]), pot[n - r - 1]);
 }
 signed main()
 {
@@ -48,11 +97,12 @@ signed main()
   cin.tie(NULL);
   string s;
   cin >> s;
+  n = s.size();
   for (auto const &i : s)
-    v.pb((i - 'a') + 1);                 // indexar a partir do 1
-  calc(v.size());                        // potencias de d
-  prefix_hash();                         // hashing dos prefixos de s
-  cout << hashing[v.size() - 1] << endl; // resposta final
+    v.pb((i - 'a') + 1);            // indexar a partir do 1
+  calc();                           // potencias de d
+  prefix_hash();                    // hashing dos prefixos de s
+  cout << prefix(0, n - 1) << endl; // resposta final
   return 0;
 }
 // string hashing
