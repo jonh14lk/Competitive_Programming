@@ -1,88 +1,66 @@
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
+using namespace __gnu_pbds;
 
-#define MAXN 500000
-typedef pair <int , int> pii ;  
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-int n , m ;
-int dist [MAXN] ;
-bool visited [MAXN] ;
-vector <pii> adj_list [MAXN] ;
+#define int long long int
+#define pb push_back
+#define pi pair<int, int>
+#define pii pair<int, pi>
+#define fir first
+#define sec second
+#define DEBUG 1
+#define MAXN 1001
+#define mod 1000000007
 
-void dijkstra (int s)
+int n, m;
+vector<pi> adj[MAXN];
+bool visited[MAXN];
+int dist[MAXN];
+
+void dijkstra(int s)
 {
-    dist[s] = 0 ;     
-
-    priority_queue <pii , vector<pii> , greater<pii>> q ; 
-
-    q.push(pii(dist[s], s)) ;                  
-
-    while(1)
-    { 
-        int davez = -1 ;
-        int menor = INT_MAX ;
-
-        while(!q.empty())
-        {
-            int atual = q.top().second ;
-            q.pop() ;
-
-            if(!visited[atual])
-            { 
-                davez = atual;
-                break;
-            }
-
-        }
-
-        if(davez == -1)
-        {
-            break ;
-        } 
-
-        visited[davez] = true ; 
-
-        for(int i = 0 ; i < adj_list[davez].size() ; i++)
-        {
-            int distt  = adj_list[davez][i].first ;
-            int atual = adj_list[davez][i].second ;
-
-            if(dist[atual] > dist[davez] + distt)
-            {  
-                dist[atual] = dist[davez] + distt ;    
-                q.push(pii(dist[atual] , atual)) ;     
-            }
-        }
-    }
-
-}
-void initialize ()
-{
-    for (int i = 1 ; i <= n ; i++) 
+  for (int i = 0; i < n; i++)
+  {
+    dist[i] = INT_MAX;
+    visited[i] = false;
+  }
+  priority_queue<pi, vector<pi>, greater<pi>> q;
+  dist[s] = 0;
+  q.push({dist[s], s});
+  while (!q.empty())
+  {
+    int v = q.top().second;
+    q.pop();
+    if (visited[v])
+      continue;
+    visited[v] = true;
+    for (auto const &u : adj[v])
     {
-        visited[i] = false ;
-        dist[i] = INT_MAX ; 
+      if (dist[u.sec] > dist[v] + u.fir)
+      {
+        dist[u.sec] = dist[v] + u.fir;
+        q.push({dist[u.sec], u.sec});
+      }
     }
+  }
 }
-int main()
+signed main()
 {
-    int a , b , c ;
-
-    cin >> n >> m ;
-
-    initialize ();
-
-    for (int i = 1 ; i <= m ; i++)
-    {
-        cin >> a >> b >> c ;
-
-        adj_list[a].push_back(pii(c , b)) ;
-        adj_list[b].push_back(pii(c , a)) ;
-    }
-
-    dijkstra(1) ;
-
-    cout << dist[n] << endl ;
-
-    return 0;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cin >> n >> m;
+  for (int i = 0; i < m; i++)
+  {
+    int a, b, c;
+    cin >> a >> b >> c;
+    a--, b--;
+    adj[a].pb({c, b});
+    adj[b].pb({c, a});
+  }
+  dijkstra(0);
 }
