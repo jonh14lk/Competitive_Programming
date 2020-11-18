@@ -1,88 +1,69 @@
+// union u v - une dois sets que contem u e v
+// find v - acha o set que v pertence, e ve qual o maior e o menor elemento desse set
 #include <bits/stdc++.h>
 using namespace std;
 
-#define lli long long int
+#define PI acos(-1)
+#define int long long int
 #define pb push_back
-#define MAXN 1000
+#define pi pair<int, int>
+#define fir first
+#define sec second
+#define MAXN 300001
+#define mod 1000000007
 
-int n , m ;
-int parent [MAXN] ;
-vector <int> adj_list [MAXN] ;
+int parent[MAXN];
+int sz[MAXN];
+int maxx[MAXN];
+int minn[MAXN];
 
-int find (int i)
-{ 
-    if (parent[i] == -1) 
-    {
-        return i ; 
-    }
-    else 
-    {
-        return find (parent[i]) ; 
-    }
-} 
-void join (int x , int y)
-{ 
-    int x_father = find (x) ; 
-    int y_father = find (y) ; 
- 
-    if (x_father != y_father)
-    { 
-       parent[x_father] = y_father ; 
-    } 
-}  
-bool is_cycle () 
-{ 
-    for (int i = 0 ; i < n ; i++) 
-    { 
-        for (int j = 0 ; j < adj_list[i].size() ; j++)
-        {
-            int x = find (i) ; 
-            int y = find (adj_list[i][j]) ; 
-    
-            if (x == y) 
-            {
-                return true ; 
-            }
-
-            join (x , y) ;
-        } 
-    } 
-
-    return false ; 
-} 
-void initialize ()
+int Find(int i)
 {
-    for (int i = 0 ; i < MAXN ; i++) 
-    {
-        adj_list[i].clear();
-    }
+  return parent[i] = (parent[i] == i) ? i : Find(parent[i]);
 }
-int main ()
+void Union(int x, int y)
 {
-    int a , b , j = 1 ;
-    
-    while (scanf("%d%d", &n , &m) != EOF) 
+  int xx = Find(x), yy = Find(y);
+  if (xx != yy)
+  {
+    if (sz[xx] > sz[yy])
+      swap(xx, yy);
+    parent[xx] = yy;
+    sz[yy] += sz[xx];
+    minn[yy] = min(minn[xx], minn[yy]);
+    maxx[yy] = max(maxx[xx], maxx[yy]);
+  }
+}
+signed main()
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  int n, q;
+  cin >> n >> q;
+  for (int i = 0; i < n; i++)
+  {
+    parent[i] = i;
+    sz[i] = 1;
+    maxx[i] = i;
+    minn[i] = i;
+  }
+  while (q--)
+  {
+    string t;
+    cin >> t;
+    if (t == "union")
     {
-        initialize ();
-        memset (parent , -1 , sizeof(parent)) ; 
-    
-        for (int i = 0 ; i < m ; i++) 
-        {
-            cin >> a >> b ;
-            adj_list[a].push_back(b) ;
-        }
-    
-        if (is_cycle()) 
-        {
-            cout << j << " 1" << endl ;
-        }
-        else 
-        {
-            cout << j << " 0" << endl ;
-        }
-        
-        j++ ;
+      int a, b;
+      cin >> a >> b;
+      a--, b--;
+      Union(a, b);
     }
-
-    return 0 ;
+    else
+    {
+      int a;
+      cin >> a;
+      a--;
+      cout << minn[Find(a)] + 1 << " " << maxx[Find(a)] + 1 << " " << sz[Find(a)] << endl;
+    }
+  }
 }
