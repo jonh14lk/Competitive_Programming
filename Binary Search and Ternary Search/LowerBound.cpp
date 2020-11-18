@@ -1,43 +1,29 @@
 #include <bits/stdc++.h>
-using namespace std ;
- 
-#define lli long long int
-#define pb push_back
- 
-vector <int> v;
-int lowerbound (int n , int x) 
-{
-    int i = 0 ;
-    int f = n ;
-    int m ;
- 
-    while (i < f) 
-    {
-        m = (i + f) / 2 ;
- 
-        if (x <= v[m]) f = m  ;
-        else i = m + 1 ;
- 
-    }
- 
-    return i ;
-}
-int main ()
-{
-    int n , aux , m ;
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace std;
+using namespace __gnu_pbds;
 
-    cin >> n ;
- 
-    for (int i = 0 ; i < n ; i++)
-    {
-        cin >> aux ;
-        v.pb(aux);
-    }
- 
-    sort(v.begin() , v.end());
- 
-    cin >> m ;
-    cout << lowerbound(n , m) << endl ;
- 
-    return 0 ;
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
+#define int long long int
+#define pb push_back
+#define pi pair<int, int>
+#define pii pair<pi, int>
+#define fir first
+#define sec second
+#define DEBUG 0
+#define MAXN 1000001
+#define mod 1000000007
+// first element >= x
+vector<int> k(MAXN);
+int lower(int l, int r, int x) // first element >= x
+{
+  while (l < r)
+  {
+    int mid = (l + r) >> 1;
+    (x <= k[mid]) ? r = mid : l = mid + 1;
+  }
+  return k[l];
 }
