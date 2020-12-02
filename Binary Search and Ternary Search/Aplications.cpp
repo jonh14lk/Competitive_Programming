@@ -64,3 +64,13 @@ while (r - l > 15)
 }
 for (int i = l; i <= r; i++)
 // vejo qual a melhor opcao de l ate r em o(n)
+  
+  
+// busca ternaria para int, usando busca binaria:
+int l = 0, r = 1e9;
+while (l < r)
+{
+  int mid = (l + r) >> 1;
+  (calc(mid) < calc(mid + 1)) ? r = mid : l = mid + 1;
+}
+return calc(l);
