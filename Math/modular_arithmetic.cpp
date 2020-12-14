@@ -33,17 +33,17 @@ int divide(int x, int y)
 {
   return (x * inverse(y)) % mod;
 }
-int subtract(int x, int y)
-{
-  return ((x + mod) - y) % mod;
-}
 int multiplicate(int x, int y)
 {
   return (x * y) % mod;
 }
-int sum(int x, int y)
+int subtract(int a, int b)
 {
-  return (x + y) % mod;
+  return (a - b < 0) ? a - b + mod : a - b;
+}
+int sum(int a, int b)
+{
+  return (a + b >= mod) ? a + b - mod : a + b;
 }
 signed main()
 {
