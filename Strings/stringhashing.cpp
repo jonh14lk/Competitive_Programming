@@ -16,13 +16,9 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define DEBUG 0
 #define MAXN 5001
 #define mod 1000000007
-#define d 31
 
 int n;
 vector<int> v;
-vector<int> pot;
-vector<int> pref;
-vector<int> suf;
 
 int modpow(int x, int y)
 {
@@ -56,41 +52,50 @@ int sum(int x, int y)
 {
   return (x + y) % mod;
 }
-void calc()
+
+namespace sh
 {
-  pot.resize(n + 1);
-  pot[0] = 1;
-  for (int i = 1; i <= n; i++)
-    pot[i] = multiplicate(pot[i - 1], d);
-}
-void suffix_hash()
-{
-  suf.resize(n + 1);
-  suf[0] = 0;
-  for (int i = 0; i < n; i++)
+  const int d = 31;
+  vector<int> pot;
+  vector<int> pref;
+  vector<int> suf;
+
+  void calc()
   {
-    int val = multiplicate(v[n - i - 1], pot[i]);
-    suf[i + 1] = sum(suf[i], val);
+    pot.resize(n + 1);
+    pot[0] = 1;
+    for (int i = 1; i <= n; i++)
+      pot[i] = multiplicate(pot[i - 1], d);
   }
-}
-void prefix_hash()
-{
-  pref.resize(n + 1);
-  pref[0] = 0;
-  for (int i = 0; i < n; i++)
+  void suffix_hash()
   {
-    int val = multiplicate(v[i], pot[i]);
-    pref[i + 1] = sum(pref[i], val);
+    suf.resize(n + 1);
+    suf[0] = 0;
+    for (int i = 0; i < n; i++)
+    {
+      int val = multiplicate(v[n - i - 1], pot[i]);
+      suf[i + 1] = sum(suf[i], val);
+    }
   }
-}
-int prefix(int l, int r)
-{
-  return divide(subtract(pref[r + 1], pref[l]), pot[l]);
-}
-int suffix(int l, int r)
-{
-  return divide(subtract(suf[n - l], suf[n - r - 1]), pot[n - r - 1]);
-}
+  void prefix_hash()
+  {
+    pref.resize(n + 1);
+    pref[0] = 0;
+    for (int i = 0; i < n; i++)
+    {
+      int val = multiplicate(v[i], pot[i]);
+      pref[i + 1] = sum(pref[i], val);
+    }
+  }
+  int prefix(int l, int r)
+  {
+    return divide(subtract(pref[r + 1], pref[l]), pot[l]);
+  }
+  int suffix(int l, int r)
+  {
+    return divide(subtract(suf[n - l], suf[n - r - 1]), pot[n - r - 1]);
+  }
+} // namespace sh
 signed main()
 {
   ios_base::sync_with_stdio(false);
@@ -99,10 +104,10 @@ signed main()
   cin >> s;
   n = s.size();
   for (auto const &i : s)
-    v.pb((i - 'a') + 1);            // indexar a partir do 1
-  calc();                           // potencias de d
-  prefix_hash();                    // hashing dos prefixos de s
-  cout << prefix(0, n - 1) << endl; // resposta final
+    v.pb((i - 'a') + 1);                // indexar a partir do 1
+  sh::calc();                           // potencias de d
+  sh::prefix_hash();                    // hashing dos prefixos de s
+  cout << sh::prefix(0, n - 1) << endl; // resposta final
   return 0;
 }
 // string hashing
