@@ -28,13 +28,13 @@ vector<int> rabin_karp(string s, string t)
   vector<int> pref(n + 1, 0);
   for (int i = 0; i < n; i++)
     pref[i + 1] = (pref[i] + (s[i] - 'a' + 1) * pot[i]) % mod;
-  long long hs = 0;
+  int hs = 0;
   for (int i = 0; i < m; i++)
     hs = (hs + (t[i] - 'a' + 1) * pot[i]) % mod;
   vector<int> ans;
   for (int i = 0; i + m - 1 < n; i++)
   {
-    long long cur_h = (pref[i + m] + mod - pref[i]) % mod;
+    int cur_h = (pref[i + m] + mod - pref[i]) % mod;
     if (cur_h == (hs * pot[i]) % mod)
       ans.pb(i);
   }
