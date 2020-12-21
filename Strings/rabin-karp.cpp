@@ -16,26 +16,45 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define DEBUG 0
 #define MAXN 100001
 
+const int p = 31;
+const int mod = 1e9 + 9;
+
+int multiplicate(int x, int y)
+{
+  return (x * y) % mod;
+}
+int subtract(int a, int b)
+{
+  return (a - b < 0) ? a - b + mod : a - b;
+}
+int sum(int a, int b)
+{
+  return (a + b >= mod) ? a + b - mod : a + b;
+}
 vector<int> rabin_karp(string s, string t)
 {
-  const int p = 31;
-  const int mod = 1e9 + 9;
   int n = s.size(), m = t.size();
   vector<int> pot(n);
   pot[0] = 1;
   for (int i = 1; i < n; i++)
-    pot[i] = (pot[i - 1] * p) % mod;
+    pot[i] = multiplicate(pot[i - 1], p);
   vector<int> pref(n + 1, 0);
   for (int i = 0; i < n; i++)
-    pref[i + 1] = (pref[i] + (s[i] - 'a' + 1) * pot[i]) % mod;
+  {
+    int val = multiplicate(pref[i], p);
+    pref[i + 1] = sum(s[i], val);
+  }
   int hs = 0;
   for (int i = 0; i < m; i++)
-    hs = (hs + (t[i] - 'a' + 1) * pot[i]) % mod;
+  {
+    int val = multiplicate(hs, p);
+    hs = sum(t[i], val);
+  }
   vector<int> ans;
   for (int i = 0; i + m - 1 < n; i++)
   {
-    int cur_h = (pref[i + m] + mod - pref[i]) % mod;
-    if (cur_h == (hs * pot[i]) % mod)
+    int cur_h = subtract(pref[i + m], multiplicate(pref[i], pot[m]));
+    if (cur_h == hs)
       ans.pb(i);
   }
   return ans;
