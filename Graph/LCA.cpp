@@ -1,68 +1,91 @@
-// LCA sem dp
-// ache o nó que é ancestral comum de x e de y e está o mais longe possível da raiz.
-// 1 - definir para cade vértice, seu nível de profundidade (igual a sua distância até a raiz) - DFS
-// 2 - definir o pai de um vértice, que é o vértice adjacente a ele que possui um nível menor. - DFS
-// 3 - Tendo apenas essas informações, já é possível descobrir o LCA de dois vértices (forma lenta)
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
+using namespace __gnu_pbds;
 
-#define lli long long int
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
+#define PI acos(-1)
 #define pb push_back
-#define in insert
+#define int long long int
 #define pi pair<int, int>
 #define pii pair<int, pi>
-#define mp make_pair
 #define fir first
 #define sec second
-#define MAXN 200001
+#define DEBUG 0
+#define MAXN 100001
+#define mod 1000000007
 
-int n, m;
-int father[MAXN];
-int level[MAXN];
+int n;
 vector<int> adj[MAXN];
 
-int lca(int a, int b)
+namespace lca
 {
-  while (a != b)
+  int l, timer;
+  vector<int> tin, tout, depth;
+  vector<vector<int>> up;
+
+  void dfs(int v, int p)
   {
-    if (level[a] > level[b])
-      a = father[a];
-    else
-      b = father[b];
-  }
-  return a;
-}
-void dfs(int u)
-{
-  for (int i = 0; i < adj[u].size(); i++)
-  {
-    int v = adj[u][i];
-    if (level[v] == -1)
+    tin[v] = ++timer;
+    up[v][0] = p;
+    for (int i = 1; i <= l; i++)
+      up[v][i] = up[up[v][i - 1]][i - 1];
+    for (auto const &u : adj[v])
     {
-      father[v] = u;
-      level[v] = level[u] + 1;
-      dfs(v);
+      if (p == u)
+        continue;
+      depth[u] = depth[v] + 1;
+      dfs(u, v);
     }
+    tout[v] = ++timer;
+  }
+  bool is_ancestor(int u, int v)
+  {
+    return tin[u] <= tin[v] && tout[u] >= tout[v];
+  }
+  int binary_lifting(int u, int v)
+  {
+    if (is_ancestor(u, v))
+      return u;
+    if (is_ancestor(v, u))
+      return v;
+    for (int i = l; i >= 0; --i)
+      if (!is_ancestor(up[u][i], v))
+        u = up[u][i];
+    return up[u][0];
+  }
+  void init()
+  {
+    tin.resize(n);
+    tout.resize(n);
+    depth.resize(n);
+    timer = 0;
+    l = ceil(log2(n));
+    up.assign(n, vector<int>(l + 1));
+    dfs(0, 0);
+  }
+  int dist(int s, int v)
+  {
+    int at = binary_lifting(s, v);
+    return (depth[s] + depth[v] - 2 * depth[at]);
   }
 }
 signed main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  cin >> n >> m;
-  for (int i = 0; i < m; i++)
+  cin >> n;
+  for (int i = 0; i < n - 1; i++)
   {
     int a, b;
     cin >> a >> b;
+    a--, b--;
     adj[a].pb(b);
     adj[b].pb(a);
   }
-  int vv, uu;
-  cin >> vv >> uu;
-  memset(father, -1, sizeof(father));
-  memset(level, -1, sizeof(level));
-  level[1] = 0;
-  dfs(1);
-  cout << lca(vv, uu) << endl;
+  lca::init();
   return 0;
 }
