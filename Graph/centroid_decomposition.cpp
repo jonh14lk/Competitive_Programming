@@ -16,81 +16,96 @@
 // 5) ao final teremos a centroid tree
 
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
+using namespace __gnu_pbds;
+
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
 #define PI acos(-1)
 #define pb push_back
 #define int long long int
-#define mp make_pair
 #define pi pair<int, int>
 #define pii pair<int, pi>
 #define fir first
 #define sec second
+#define DEBUG 0
 #define MAXN 100001
-#define MAXL 20
 #define mod 1000000007
 
 int n;
 vector<int> adj[MAXN];
-vector<int> adj_centroid[MAXN];
-bool visited[MAXN];
-bool centroid_mark[MAXN];
-int subtree_size[MAXN];
 
-void dfs(int s)
+namespace cd
 {
-  visited[s] = true, n++, subtree_size[s] = 1;
-  for (auto const &v : adj[s])
-    if (!visited[v] && !centroid_mark[v])
-      dfs(v), subtree_size[s] += subtree_size[v];
-}
-int getCentroid(int s)
-{
-  bool is_centroid = true;
-  visited[s] = true;
-  int heaviest_child = -1;
-  for (auto const &v : adj[s])
+  int sz;
+  vector<int> adjl[MAXN];
+  vector<int> father, subtree_size;
+  vector<bool> visited;
+
+  void dfs(int s, int f)
   {
-    if (!visited[v] && !centroid_mark[v])
+    sz++;
+    subtree_size[s] = 1;
+    for (auto const &v : adj[s])
     {
-      if (subtree_size[v] > n / 2)
-        is_centroid = false;
-      if (heaviest_child == -1 || subtree_size[v] > subtree_size[heaviest_child])
-        heaviest_child = v;
+      if (v != f && !visited[v])
+      {
+        dfs(v, s);
+        subtree_size[s] += subtree_size[v];
+      }
     }
   }
-  return (is_centroid && n - subtree_size[s] <= n / 2) ? s : getCentroid(heaviest_child);
-}
-int get_centroid(int s)
-{
-  memset(visited, false, sizeof(visited));
-  memset(subtree_size, 0, sizeof(subtree_size));
-  n = 0, dfs(s);
-  memset(visited, false, sizeof(visited));
-  int centroid = getCentroid(s);
-  centroid_mark[centroid] = true;
-  return centroid;
-}
-int decompose_tree(int s)
-{
-  int cend_tree = get_centroid(s);
-  //cout << cend_tree << " ";
-  for (auto const &v : adj[cend_tree])
+  int getCentroid(int s, int f)
   {
-    if (!centroid_mark[v])
+    bool is_centroid = true;
+    int heaviest_child = -1;
+    for (auto const &v : adj[s])
     {
-      int cend_subtree = decompose_tree(v);
-      adj_centroid[cend_tree].pb(cend_subtree);
-      adj_centroid[cend_subtree].pb(cend_tree);
+      if (v != f && !visited[v])
+      {
+        if (subtree_size[v] > sz / 2)
+          is_centroid = false;
+        if (heaviest_child == -1 || subtree_size[v] > subtree_size[heaviest_child])
+          heaviest_child = v;
+      }
     }
+    return (is_centroid && sz - subtree_size[s] <= sz / 2) ? s : getCentroid(heaviest_child, s);
   }
-  return cend_tree;
+  int decompose_tree(int s)
+  {
+    sz = 0;
+    dfs(s, s);
+    int cend_tree = getCentroid(s, s);
+    visited[cend_tree] = true;
+    for (auto const &v : adj[cend_tree])
+    {
+      if (!visited[v])
+      {
+        int cend_subtree = decompose_tree(v);
+        adjl[cend_tree].pb(cend_subtree);
+        adjl[cend_subtree].pb(cend_tree);
+        father[cend_subtree] = cend_tree;
+      }
+    }
+    return cend_tree;
+  }
+  void init()
+  {
+    subtree_size.resize(n);
+    visited.resize(n);
+    father.assign(n, -1);
+    decompose_tree(0);
+  }
 }
 signed main()
 {
-  int m;
-  cin >> m;
-  for (int i = 0; i < m - 1; i++)
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cin >> n;
+  for (int i = 0; i < n - 1; i++)
   {
     int a, b;
     cin >> a >> b;
@@ -98,24 +113,6 @@ signed main()
     adj[a].pb(b);
     adj[b].pb(a);
   }
-  decompose_tree(0);
+  cd::init();
   return 0;
 }
-/*
-16
-1 4 
-2 4
-3 4 
-4 5
-5 6 
-6 7 
-7 8 
-7 9
-6 10 
-10 11 
-11 12
-11 13 
-12 14
-13 15
-13 16
-*/
