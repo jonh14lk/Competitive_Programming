@@ -53,6 +53,5 @@ signed main()
   segmentedsieve(l, r);
   for (auto const &i : prime)
     cout << i << " ";
-  cout << endl;
   return 0;
 }
