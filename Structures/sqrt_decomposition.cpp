@@ -1,73 +1,88 @@
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
+using namespace __gnu_pbds;
+
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
 #define PI acos(-1)
-#define int long long int
 #define pb push_back
-#define mp make_pair
+#define int long long int
 #define pi pair<int, int>
+#define pii pair<int, pi>
 #define fir first
 #define sec second
-#define MAXN 1001
-#define MAXL 20
-#define mod 998244353
+#define MAXN 100001
+#define mod 1000000007
 
-int n, q, block;
+int n, q;
 vector<int> v;
-vector<pi> queries;
 
-bool cmp(pi x, pi y)
+namespace mo
 {
-  if (x.fir / block != y.fir / block)
-    return x.fir / block < y.fir / block;
-  return x.sec < y.sec;
-}
-void sqrt_decomposition()
-{
-  block = (int)sqrt(n);
-  sort(queries.begin(), queries.end(), cmp);
-  int curr_left = 0, curr_right = 0, curr_sum = 0;
-  for (int i = 0; i < queries.size(); i++)
+  int block;
+  vector<pii> queries;
+  vector<int> ans;
+
+  bool cmp(pii x, pii y)
   {
-    int l = queries[i].fir;
-    int r = queries[i].sec;
-    while (curr_left < l)
+    if (x.sec.fir / block != y.sec.fir / block)
+      return x.sec.fir / block < y.sec.fir / block;
+    return x.sec.sec < y.sec.sec;
+  }
+  void sqrt_decomposition()
+  {
+    block = (int)sqrt(n);
+    sort(queries.begin(), queries.end(), cmp);
+    ans.resize(queries.size());
+    int curr_left = 0, curr_right = 0, curr_sum = 0;
+    for (int i = 0; i < queries.size(); i++)
     {
-      curr_sum -= v[curr_left];
-      curr_left++;
+      int idx = queries[i].fir;
+      int l = queries[i].sec.fir;
+      int r = queries[i].sec.sec;
+      while (curr_left < l)
+      {
+        curr_sum -= v[curr_left];
+        curr_left++;
+      }
+      while (curr_left > l)
+      {
+        curr_sum += v[curr_left - 1];
+        curr_left--;
+      }
+      while (curr_right <= r)
+      {
+        curr_sum += v[curr_right];
+        curr_right++;
+      }
+      while (curr_right > r + 1)
+      {
+        curr_sum -= v[curr_right - 1];
+        curr_right--;
+      }
+      ans[idx] = curr_sum;
     }
-    while (curr_left > l)
-    {
-      curr_sum += v[curr_left - 1];
-      curr_left--;
-    }
-    while (curr_right <= r)
-    {
-      curr_sum += v[curr_right];
-      curr_right++;
-    }
-    while (curr_right > r + 1)
-    {
-      curr_sum -= v[curr_right - 1];
-      curr_right--;
-    }
-    cout << l << " " << r << " " << curr_sum << endl;
   }
 }
 signed main()
 {
-  cin >> n;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cin >> n >> q;
   v.resize(n);
   for (int i = 0; i < n; i++)
     cin >> v[i];
-  int q;
-  cin >> q;
-  while (q--)
+  mo::queries.resize(q);
+  for (int i = 0; i < q; i++)
   {
-    int l, r;
-    cin >> l >> r;
-    queries.pb(mp(l, r));
+    mo::queries[i].fir = i;
+    cin >> mo::queries[i].sec.fir >> mo::queries[i].sec.sec;
   }
-  sqrt_decomposition();
-  return 0;
+  mo::sqrt_decomposition();
+  for (auto const &i : mo::ans)
+    cout << i << endl;
 }
+// to test: https://judge.yosupo.jp/problem/static_range_sum
