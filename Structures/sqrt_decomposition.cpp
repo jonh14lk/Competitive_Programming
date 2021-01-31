@@ -56,8 +56,8 @@ namespace mo
       }
       while (curr_left > l)
       {
-        curr_sum += v[curr_left - 1];
         curr_left--;
+        curr_sum += v[curr_left];
       }
       while (curr_right <= r)
       {
@@ -66,8 +66,8 @@ namespace mo
       }
       while (curr_right > r + 1)
       {
-        curr_sum -= v[curr_right - 1];
         curr_right--;
+        curr_sum -= v[curr_right];
       }
       ans[idx] = curr_sum;
     }
@@ -85,6 +85,7 @@ signed main()
   {
     mo::query curr;
     cin >> curr.l >> curr.r;
+    curr.r--;
     curr.idx = i;
     mo::queries.pb(curr);
   }
