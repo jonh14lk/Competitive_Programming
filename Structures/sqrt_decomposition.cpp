@@ -22,15 +22,21 @@ vector<int> v;
 
 namespace mo
 {
+  struct query
+  {
+    int idx, l, r;
+  };
+
   int block;
-  vector<pii> queries;
+  vector<query> queries;
   vector<int> ans;
 
-  bool cmp(pii x, pii y)
+  bool cmp(query x, query y)
   {
-    if (x.sec.fir / block != y.sec.fir / block)
-      return x.sec.fir / block < y.sec.fir / block;
-    return x.sec.sec < y.sec.sec;
+    if (x.l / block != y.l / block)
+      return x.l / block < y.l / block;
+    if (x.r != y.r)
+      return x.r < y.r;
   }
   void sqrt_decomposition()
   {
@@ -40,9 +46,9 @@ namespace mo
     int curr_left = 0, curr_right = 0, curr_sum = 0;
     for (int i = 0; i < queries.size(); i++)
     {
-      int idx = queries[i].fir;
-      int l = queries[i].sec.fir;
-      int r = queries[i].sec.sec;
+      int idx = queries[i].idx;
+      int l = queries[i].l;
+      int r = queries[i].r;
       while (curr_left < l)
       {
         curr_sum -= v[curr_left];
@@ -75,11 +81,12 @@ signed main()
   v.resize(n);
   for (int i = 0; i < n; i++)
     cin >> v[i];
-  mo::queries.resize(q);
   for (int i = 0; i < q; i++)
   {
-    mo::queries[i].fir = i;
-    cin >> mo::queries[i].sec.fir >> mo::queries[i].sec.sec;
+    mo::query curr;
+    cin >> curr.l >> curr.r;
+    curr.idx = i;
+    mo::queries.pb(curr);
   }
   mo::sqrt_decomposition();
   for (auto const &i : mo::ans)
