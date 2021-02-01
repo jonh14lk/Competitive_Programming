@@ -46,7 +46,7 @@ namespace mo
   }
   void sqrt_decomposition()
   {
-    block = 2800; // (2 * n) * 0.666
+    block = 2800; // (2 * n) ^ 0.666
     sort(queries.begin(), queries.end(), cmp);
     ans.resize(queries.size());
     int curr_left = 0, curr_right = 0, curr_sum = 0, curr_t = 0;
