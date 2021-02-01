@@ -46,7 +46,7 @@ namespace mo
   }
   void sqrt_decomposition()
   {
-    block = (int)sqrt(n);
+    block = 2800; // (2 * n) * 0.666
     sort(queries.begin(), queries.end(), cmp);
     ans.resize(queries.size());
     int curr_left = 0, curr_right = 0, curr_sum = 0, curr_t = 0;
@@ -56,25 +56,25 @@ namespace mo
       int l = queries[i].l;
       int r = queries[i].r;
       int t = queries[i].t;
-      while (curr_left < l)
+      while (curr_right <= r)
       {
-        curr_sum -= v[curr_left];
-        curr_left++;
+        curr_sum += v[curr_right];
+        curr_right++;
       }
       while (curr_left > l)
       {
         curr_left--;
         curr_sum += v[curr_left];
       }
-      while (curr_right <= r)
-      {
-        curr_sum += v[curr_right];
-        curr_right++;
-      }
       while (curr_right > r + 1)
       {
         curr_right--;
         curr_sum -= v[curr_right];
+      }
+      while (curr_left < l)
+      {
+        curr_sum -= v[curr_left];
+        curr_left++;
       }
       while (curr_t > t)
       {
