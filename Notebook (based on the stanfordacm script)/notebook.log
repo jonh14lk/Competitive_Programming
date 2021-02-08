@@ -1,0 +1,1112 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.2.8)  8 FEB 2021 16:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**notebook.tex
+(./notebook.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen111
+\Hy@linkcounter=\count90
+\Hy@pagecounter=\count91
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count92
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count93
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen112
+\Fld@menulength=\count94
+\Field@Width=\dimen113
+\Fld@charsize=\dimen114
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count95
+\c@Item=\count96
+\c@Hfootnote=\count97
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count98
+\c@bookmark@seq@number=\count99
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip44
+\f@nch@O@elh=\skip45
+\f@nch@O@erh=\skip46
+\f@nch@O@olh=\skip47
+\f@nch@O@orh=\skip48
+\f@nch@O@elf=\skip49
+\f@nch@O@erf=\skip50
+\f@nch@O@olf=\skip51
+\f@nch@O@orf=\skip52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count100
+\lst@gtempboxa=\box26
+\lst@token=\toks16
+\lst@length=\count101
+\lst@currlwidth=\dimen115
+\lst@column=\count102
+\lst@pos=\count103
+\lst@lostspace=\dimen116
+\lst@width=\dimen117
+\lst@newlines=\count104
+\lst@lineno=\count105
+\lst@maxwidth=\dimen118
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count106
+\lst@skipnumbers=\count107
+\lst@framebox=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip53
+\cftbeforetoctitleskip=\skip54
+\cftaftertoctitleskip=\skip55
+\cftbeforepartskip=\skip56
+\cftpartnumwidth=\skip57
+\cftpartindent=\skip58
+\cftbeforesecskip=\skip59
+\cftsecindent=\skip60
+\cftsecnumwidth=\skip61
+\cftbeforesubsecskip=\skip62
+\cftsubsecindent=\skip63
+\cftsubsecnumwidth=\skip64
+\cftbeforesubsubsecskip=\skip65
+\cftsubsubsecindent=\skip66
+\cftsubsubsecnumwidth=\skip67
+\cftbeforeparaskip=\skip68
+\cftparaindent=\skip69
+\cftparanumwidth=\skip70
+\cftbeforesubparaskip=\skip71
+\cftsubparaindent=\skip72
+\cftsubparanumwidth=\skip73
+\cftbeforeloftitleskip=\skip74
+\cftafterloftitleskip=\skip75
+\cftbeforefigskip=\skip76
+\cftfigindent=\skip77
+\cftfignumwidth=\skip78
+\c@lofdepth=\count108
+\c@lotdepth=\count109
+\cftbeforelottitleskip=\skip79
+\cftafterlottitleskip=\skip80
+\cftbeforetabskip=\skip81
+\cfttabindent=\skip82
+\cfttabnumwidth=\skip83
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+))
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count110
+\mult@box=\box28
+\multicol@leftmargin=\dimen119
+\c@unbalance=\count111
+\c@collectmore=\count112
+\doublecol@number=\count113
+\multicoltolerance=\count114
+\multicolpretolerance=\count115
+\full@width=\dimen120
+\page@free=\dimen121
+\premulticols=\dimen122
+\postmulticols=\dimen123
+\multicolsep=\skip84
+\multicolbaselineskip=\skip85
+\partial@page=\box29
+\last@line=\box30
+\maxbalancingoverflow=\dimen124
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count116
+\c@finalcolumnbadness=\count117
+\last@try=\dimen125
+\multicolovershoot=\dimen126
+\multicolundershoot=\dimen127
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\mc@col@check@num=\count118
+) (./notebook.aux)
+\openout1 = `notebook.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.90755pt, 556.4799pt, 28.90755pt)
+* v-part:(T,H,B)=(50.58878pt, 715.47366pt, 28.90755pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=556.4799pt
+* \textheight=715.47366pt
+* \oddsidemargin=-43.36244pt
+* \evensidemargin=-43.36244pt
+* \topmargin=-58.68121pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box54
+Package hyperref Info: Link coloring OFF on input line 71.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count119
+)
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
+
+(./notebook.out) (./notebook.out)
+\@outlinefile=\write3
+\openout3 = `notebook.out'.
+
+\c@lstlisting=\count120
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count121
+\scratchdimen=\dimen128
+\scratchbox=\box55
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen129
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 76.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 76.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 76.
+
+(./notebook.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+Missing character: There is no Â in font cmr5!
+Missing character: There is no ´ in font cmr5!
+Missing character: There is no Â in font cmr5!
+Missing character: There is no ´ in font cmr5!
+)
+\tf@toc=\write4
+\openout4 = `notebook.toc'.
+
+ (./contents.tex
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 3.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) (./code/STL_DS.cpp
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <5.5> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <5.5> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 3.
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 49.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Missing character: There is no Ã in font pcrr7t!
+Missing character: There is no £ in font pcrr7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no   in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+) (./code/ordered_set.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+) (./code/BS.cpp) (./code/UpperBound.cpp) [2] (./code/LowerBound.cpp)
+(./code/STL.cpp) (./code/TS.cpp
+Missing character: There is no â in font pcrro7t!
+Missing character: There is no € in font pcrro7t!
+Missing character: There is no “ in font pcrro7t!
+) (./code/Aplications.cpp [3])
+(./code/Knapsack.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¢ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no â in font pcrro7t!
+Missing character: There is no € in font pcrro7t!
+Missing character: There is no ‹ in font pcrro7t!
+Missing character: There is no â in font pcrro7t!
+Missing character: There is no € in font pcrro7t!
+Missing character: There is no ‹ in font pcrro7t!
+Missing character: There is no â in font pcrro7t!
+Missing character: There is no € in font pcrro7t!
+Missing character: There is no ‹ in font pcrro7t!
+Missing character: There is no â in font pcrro7t!
+Missing character: There is no € in font pcrro7t!
+Missing character: There is no ‹ in font pcrro7t!
+Missing character: There is no â in font pcrro7t!
+Missing character: There is no € in font pcrro7t!
+Missing character: There is no ‹ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no µ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+) (./code/tip.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ³ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no µ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+) (./code/lcs.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no   in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+ [4]
+Missing character: There is no Ã in font pcrro7t!
+) (./code/lis.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no µ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ­ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no   in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+)
+(./code/largest-sum-contiguous-subarray.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no µ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ­ in font pcrro7t!
+) (./code/max_matrix_path.cpp
+[5]) (./code/largest_square.cpp) (./code/subsequences_string.cpp)
+(./code/Digitdp.cpp) (./code/expected_value.cpp [6]) (./code/broken_profile.cpp
+[7]) (./code/stack_trick.cpp) (./code/two_pointers.cpp)
+(./code/inversion_count.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Â in font pcrro7t!
+Missing character: There is no ² in font pcrro7t!
+Missing character: There is no Â in font pcrro7t!
+Missing character: There is no ² in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no µ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no µ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+ [8]) (./code/meetinthemiddle.cpp) (./code/BFS.cpp
+[9]) (./code/DFS.cpp) (./code/Grafo_Bipartido.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+) (./code/Dijkstra.cpp
+[10]) (./code/Floyd_Warshall.cpp) (./code/Kruskal.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ­ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+ [11]) (./code/Prim.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¢ in font pcrro7t!
+)
+(./code/Union_Find.cpp [12]) (./code/caminhoeuleriano.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+)
+(./code/Topological_Sort.cpp [13]) (./code/cycle_detection.cpp)
+(./code/Ford_Fulkerson.cpp [14]) (./code/dinic.cpp) (./code/mincostflow.cpp
+[15]) (./code/eulertour.cpp) (./code/LCA.cpp [16]) (./code/reroot.cpp)
+(./code/TreeDiameter.cpp [17]) (./code/centroid_decomposition.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ³ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ³ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ³ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ³ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ­ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+) [18]
+(./code/hld.cpp [19]) (./code/hld_edge.cpp [20]) (./code/divisors.cpp)
+(./code/crivo.cpp) (./code/primefactors.cpp [21]) (./code/primefactors2.cpp)
+(./code/segmentedsieve.cpp) (./code/modular_arithmetic.cpp [22])
+(./code/matrix_exponentiation.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+) (./code/matrix_exponentiation2.cpp [23])
+(./code/gaussian_elimination.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no µ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+) (./code/fft.cpp [24]
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ³ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+) (./code/fenwick.cpp)
+(./code/fenwick2.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+ [25]) (./code/fenwick2d.cpp) (./code/SegTree.cpp [26])
+(./code/Segtree2.cpp) (./code/segtree_lazy.cpp [27]) (./code/sparsetable.cpp)
+Missing character: There is no Â in font cmbx12!
+Missing character: There is no ´ in font cmbx12!
+
+(./code/sqrt_decomposition.cpp [28])
+Missing character: There is no Â in font cmbx12!
+Missing character: There is no ´ in font cmbx12!
+ (./code/sqrt_decomposition2.cpp)
+(./code/treap.cpp [29]) (./code/treap2.cpp [30]) (./code/stringhashing.cpp
+[31]) (./code/stringhashing2.cpp) [32] (./code/rabin-karp.cpp)
+(./code/manacher.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ­ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+) (./code/aho_corasick.cpp [33]) (./code/suffix_array.cpp
+[34]) (./code/suffix_array2.cpp) (./code/lcp_in_suffix_array.cpp [35])
+(./code/points_and_vectors.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Â in font pcrro7t!
+Missing character: There is no ² in font pcrro7t!
+Missing character: There is no Â in font pcrro7t!
+Missing character: There is no ² in font pcrro7t!
+) (./code/LineSweep.cpp
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+ [36]
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no § in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+)
+(./code/ConvexHull.cpp [37]
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ­ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no © in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¢ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no º in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¢ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no £ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+Missing character: There is no Ã in font pcrro7t!
+Missing character: There is no ¡ in font pcrro7t!
+)) [38]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+ (./notebook.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package rerunfilecheck Info: File `notebook.out' has not changed.
+(rerunfilecheck)             Checksum: 3916ABA290AB4AE0AF1F9341C2BD069A;5473.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+ ) 
+Here is how much of TeX's memory you used:
+ 15330 strings out of 492982
+ 227984 string characters out of 6134897
+ 977262 words of memory out of 5000000
+ 12305 multiletter control sequences out of 15000+600000
+ 9851 words of font info for 35 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,12n,68p,304b,2023s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on notebook.pdf (38 pages, 405565 bytes).
+PDF statistics:
+ 8132 PDF objects out of 8907 (max. 8388607)
+ 8002 compressed objects within 81 object streams
+ 6285 named destinations out of 7423 (max. 500000)
+ 681 words of extra memory for PDF output out of 10000 (max. 10000000)
+

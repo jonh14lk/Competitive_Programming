@@ -1,0 +1,98 @@
+# Any line followed by a '#' character is ignored
+# Section headings must be in square brackets
+# Subsections within a section should follow the format:
+#   [filename within code directory][tab character \t][subsection title]
+
+[STL]
+STL_DS.cpp	Some Data Structures of STL
+ordered_set.cpp	Ordered Set from GNU PBDS
+
+[Binary Search and Ternary Search]
+BS.cpp	Binary Search
+UpperBound.cpp	Upper Bound
+LowerBound.cpp	Lower Bound
+STL.cpp	STL Lower Bound and Upper Bound
+TS.cpp	Ternary Search
+Aplications.cpp	Some Aplications
+
+[Dynamic Programming]
+Knapsack.cpp	Knapsack
+tip.cpp	Coin Change DP
+lcs.cpp	Longest Common Subsequence
+lis.cpp	Longest Increasing Subsequence
+largest-sum-contiguous-subarray.cpp	Kadane
+max_matrix_path.cpp	Max Matrix Path
+largest_square.cpp	Largest Sub-Matrix Square
+subsequences_string.cpp	Subsequences Matching 
+Digitdp.cpp	Digit DP
+expected_value.cpp	Expected Value
+broken_profile.cpp	Broken Profile DP 
+
+[Common Problems]
+stack_trick.cpp	Stack Trick
+two_pointers.cpp	Two Pointers Method
+inversion_count.cpp	Inversion Count
+meetinthemiddle.cpp	Meet In The Middle
+
+[Graph and Trees]
+BFS.cpp	BFS
+DFS.cpp	DFS
+Grafo_Bipartido.cpp	Bipartite Graph
+Dijkstra.cpp	Dijkstra
+Floyd_Warshall.cpp	Floyd Warshall
+Kruskal.cpp	Kruskal
+Prim.cpp	Prim
+Union_Find.cpp	DSU
+caminhoeuleriano.cpp	Euler Path
+Topological_Sort.cpp	Topological Sort
+cycle_detection.cpp	Cycle Detection
+Ford_Fulkerson.cpp	Ford Fulkerson
+dinic.cpp	Dinic
+mincostflow.cpp	Min Cost Flow
+eulertour.cpp	Euler Tour
+LCA.cpp	LCA
+reroot.cpp	Rerooting Technique
+TreeDiameter.cpp	Diameter Of A Tree
+centroid_decomposition.cpp	Centroid Decomposition
+hld.cpp	HLD Vertex
+hld_edge.cpp	HLD Edge
+
+[Math]
+divisors.cpp	Divisors Of a Number
+crivo.cpp	Sieve
+primefactors.cpp	Prime Factors of a Number
+primefactors2.cpp	Prime Factors of a Number Using Sieve
+segmentedsieve.cpp	Segmented Sieve
+modular_arithmetic.cpp	Modular Arithmetic
+matrix_exponentiation.cpp	Matrix Exponentiation
+matrix_exponentiation2.cpp	Matrix Exponentiation Trick
+gaussian_elimination.cpp	Gaussian Elimination
+fft.cpp	FFT
+
+[Data Structures]
+fenwick.cpp	Fenwick Tree
+fenwick2.cpp	Fenwick Tree With Range Update
+fenwick2d.cpp	Fenwick Tree 2D
+SegTree.cpp	Segment Tree
+Segtree2.cpp	Minimum and Frequency With Segment Tree 
+segtree_lazy.cpp	Segment Tree With Lazy Propagation
+sparsetable.cpp	Sparse Table
+sqrt_decomposition.cpp	Mo´s Algorithm
+sqrt_decomposition2.cpp	Mo´s Algorithm With Element Update
+treap.cpp	Treap
+treap2.cpp	Treap with Cyclic Shift and Reverse Operation
+
+[Strings]
+stringhashing.cpp	String Hashing
+stringhashing2.cpp	String Hashing Without Division
+rabin-karp.cpp	Rabin Karp
+manacher.cpp	Manacher
+aho_corasick.cpp	Aho Corasick
+suffix_array.cpp	Suffix Array
+suffix_array2.cpp	Suffix Array With Radix Sort
+lcp_in_suffix_array.cpp	LCP in Suffix Array
+
+[Geometry]
+points_and_vectors.cpp	Template
+LineSweep.cpp	line Sweep
+ConvexHull.cpp	Convex Hull

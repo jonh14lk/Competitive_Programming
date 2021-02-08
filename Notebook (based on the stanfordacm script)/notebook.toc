@@ -1,0 +1,85 @@
+\contentsline {section}{\numberline {1}STL}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Some Data Structures of STL}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Ordered Set from GNU PBDS}{2}{subsection.1.2}
+\contentsline {section}{\numberline {2}Binary Search and Ternary Search}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Binary Search}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Upper Bound}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Lower Bound}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}STL Lower Bound and Upper Bound}{3}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Ternary Search}{3}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Some Aplications}{3}{subsection.2.6}
+\contentsline {section}{\numberline {3}Dynamic Programming}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Knapsack}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Coin Change DP}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Longest Common Subsequence}{4}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Longest Increasing Subsequence}{5}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Kadane}{5}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Max Matrix Path}{5}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Largest Sub-Matrix Square}{6}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Subsequences Matching}{6}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Digit DP}{6}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Expected Value}{6}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}Broken Profile DP}{7}{subsection.3.11}
+\contentsline {section}{\numberline {4}Common Problems}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Stack Trick}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Two Pointers Method}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Inversion Count}{8}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Meet In The Middle}{9}{subsection.4.4}
+\contentsline {section}{\numberline {5}Graph and Trees}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}BFS}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}DFS}{10}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Bipartite Graph}{10}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Dijkstra}{10}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Floyd Warshall}{11}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Kruskal}{11}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Prim}{12}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}DSU}{12}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}Euler Path}{13}{subsection.5.9}
+\contentsline {subsection}{\numberline {5.10}Topological Sort}{13}{subsection.5.10}
+\contentsline {subsection}{\numberline {5.11}Cycle Detection}{14}{subsection.5.11}
+\contentsline {subsection}{\numberline {5.12}Ford Fulkerson}{14}{subsection.5.12}
+\contentsline {subsection}{\numberline {5.13}Dinic}{15}{subsection.5.13}
+\contentsline {subsection}{\numberline {5.14}Min Cost Flow}{15}{subsection.5.14}
+\contentsline {subsection}{\numberline {5.15}Euler Tour}{16}{subsection.5.15}
+\contentsline {subsection}{\numberline {5.16}LCA}{16}{subsection.5.16}
+\contentsline {subsection}{\numberline {5.17}Rerooting Technique}{17}{subsection.5.17}
+\contentsline {subsection}{\numberline {5.18}Diameter Of A Tree}{17}{subsection.5.18}
+\contentsline {subsection}{\numberline {5.19}Centroid Decomposition}{18}{subsection.5.19}
+\contentsline {subsection}{\numberline {5.20}HLD Vertex}{19}{subsection.5.20}
+\contentsline {subsection}{\numberline {5.21}HLD Edge}{20}{subsection.5.21}
+\contentsline {section}{\numberline {6}Math}{21}{section.6}
+\contentsline {subsection}{\numberline {6.1}Divisors Of a Number}{21}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Sieve}{21}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Prime Factors of a Number}{21}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Prime Factors of a Number Using Sieve}{22}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Segmented Sieve}{22}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Modular Arithmetic}{22}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Matrix Exponentiation}{23}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Matrix Exponentiation Trick}{23}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}Gaussian Elimination}{24}{subsection.6.9}
+\contentsline {subsection}{\numberline {6.10}FFT}{24}{subsection.6.10}
+\contentsline {section}{\numberline {7}Data Structures}{25}{section.7}
+\contentsline {subsection}{\numberline {7.1}Fenwick Tree}{25}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Fenwick Tree With Range Update}{25}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Fenwick Tree 2D}{26}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Segment Tree}{26}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Minimum and Frequency With Segment Tree}{27}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Segment Tree With Lazy Propagation}{27}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Sparse Table}{28}{subsection.7.7}
+\contentsline {subsection}{\numberline {7.8}Mo´s Algorithm}{28}{subsection.7.8}
+\contentsline {subsection}{\numberline {7.9}Mo´s Algorithm With Element Update}{29}{subsection.7.9}
+\contentsline {subsection}{\numberline {7.10}Treap}{30}{subsection.7.10}
+\contentsline {subsection}{\numberline {7.11}Treap with Cyclic Shift and Reverse Operation}{30}{subsection.7.11}
+\contentsline {section}{\numberline {8}Strings}{31}{section.8}
+\contentsline {subsection}{\numberline {8.1}String Hashing}{31}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}String Hashing Without Division}{32}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Rabin Karp}{33}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Manacher}{33}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Aho Corasick}{34}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}Suffix Array}{34}{subsection.8.6}
+\contentsline {subsection}{\numberline {8.7}Suffix Array With Radix Sort}{35}{subsection.8.7}
+\contentsline {subsection}{\numberline {8.8}LCP in Suffix Array}{35}{subsection.8.8}
+\contentsline {section}{\numberline {9}Geometry}{36}{section.9}
+\contentsline {subsection}{\numberline {9.1}Template}{36}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}line Sweep}{36}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Convex Hull}{37}{subsection.9.3}

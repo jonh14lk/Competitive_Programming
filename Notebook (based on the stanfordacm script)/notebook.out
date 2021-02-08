@@ -1,0 +1,85 @@
+\BOOKMARK [1][-]{section.1}{STL}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Some Data Structures of STL}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Ordered Set from GNU PBDS}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Binary Search and Ternary Search}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Binary Search}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Upper Bound}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Lower Bound}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{STL Lower Bound and Upper Bound}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.5}{Ternary Search}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.6}{Some Aplications}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Dynamic Programming}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Knapsack}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Coin Change DP}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Longest Common Subsequence}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Longest Increasing Subsequence}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Kadane}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.6}{Max Matrix Path}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.7}{Largest Sub-Matrix Square}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.8}{Subsequences Matching}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.9}{Digit DP}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.10}{Expected Value}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.11}{Broken Profile DP}{section.3}% 22
+\BOOKMARK [1][-]{section.4}{Common Problems}{}% 23
+\BOOKMARK [2][-]{subsection.4.1}{Stack Trick}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.2}{Two Pointers Method}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.3}{Inversion Count}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.4}{Meet In The Middle}{section.4}% 27
+\BOOKMARK [1][-]{section.5}{Graph and Trees}{}% 28
+\BOOKMARK [2][-]{subsection.5.1}{BFS}{section.5}% 29
+\BOOKMARK [2][-]{subsection.5.2}{DFS}{section.5}% 30
+\BOOKMARK [2][-]{subsection.5.3}{Bipartite Graph}{section.5}% 31
+\BOOKMARK [2][-]{subsection.5.4}{Dijkstra}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.5}{Floyd Warshall}{section.5}% 33
+\BOOKMARK [2][-]{subsection.5.6}{Kruskal}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.7}{Prim}{section.5}% 35
+\BOOKMARK [2][-]{subsection.5.8}{DSU}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.9}{Euler Path}{section.5}% 37
+\BOOKMARK [2][-]{subsection.5.10}{Topological Sort}{section.5}% 38
+\BOOKMARK [2][-]{subsection.5.11}{Cycle Detection}{section.5}% 39
+\BOOKMARK [2][-]{subsection.5.12}{Ford Fulkerson}{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.13}{Dinic}{section.5}% 41
+\BOOKMARK [2][-]{subsection.5.14}{Min Cost Flow}{section.5}% 42
+\BOOKMARK [2][-]{subsection.5.15}{Euler Tour}{section.5}% 43
+\BOOKMARK [2][-]{subsection.5.16}{LCA}{section.5}% 44
+\BOOKMARK [2][-]{subsection.5.17}{Rerooting Technique}{section.5}% 45
+\BOOKMARK [2][-]{subsection.5.18}{Diameter Of A Tree}{section.5}% 46
+\BOOKMARK [2][-]{subsection.5.19}{Centroid Decomposition}{section.5}% 47
+\BOOKMARK [2][-]{subsection.5.20}{HLD Vertex}{section.5}% 48
+\BOOKMARK [2][-]{subsection.5.21}{HLD Edge}{section.5}% 49
+\BOOKMARK [1][-]{section.6}{Math}{}% 50
+\BOOKMARK [2][-]{subsection.6.1}{Divisors Of a Number}{section.6}% 51
+\BOOKMARK [2][-]{subsection.6.2}{Sieve}{section.6}% 52
+\BOOKMARK [2][-]{subsection.6.3}{Prime Factors of a Number}{section.6}% 53
+\BOOKMARK [2][-]{subsection.6.4}{Prime Factors of a Number Using Sieve}{section.6}% 54
+\BOOKMARK [2][-]{subsection.6.5}{Segmented Sieve}{section.6}% 55
+\BOOKMARK [2][-]{subsection.6.6}{Modular Arithmetic}{section.6}% 56
+\BOOKMARK [2][-]{subsection.6.7}{Matrix Exponentiation}{section.6}% 57
+\BOOKMARK [2][-]{subsection.6.8}{Matrix Exponentiation Trick}{section.6}% 58
+\BOOKMARK [2][-]{subsection.6.9}{Gaussian Elimination}{section.6}% 59
+\BOOKMARK [2][-]{subsection.6.10}{FFT}{section.6}% 60
+\BOOKMARK [1][-]{section.7}{Data Structures}{}% 61
+\BOOKMARK [2][-]{subsection.7.1}{Fenwick Tree}{section.7}% 62
+\BOOKMARK [2][-]{subsection.7.2}{Fenwick Tree With Range Update}{section.7}% 63
+\BOOKMARK [2][-]{subsection.7.3}{Fenwick Tree 2D}{section.7}% 64
+\BOOKMARK [2][-]{subsection.7.4}{Segment Tree}{section.7}% 65
+\BOOKMARK [2][-]{subsection.7.5}{Minimum and Frequency With Segment Tree}{section.7}% 66
+\BOOKMARK [2][-]{subsection.7.6}{Segment Tree With Lazy Propagation}{section.7}% 67
+\BOOKMARK [2][-]{subsection.7.7}{Sparse Table}{section.7}% 68
+\BOOKMARK [2][-]{subsection.7.8}{Mo´s Algorithm}{section.7}% 69
+\BOOKMARK [2][-]{subsection.7.9}{Mo´s Algorithm With Element Update}{section.7}% 70
+\BOOKMARK [2][-]{subsection.7.10}{Treap}{section.7}% 71
+\BOOKMARK [2][-]{subsection.7.11}{Treap with Cyclic Shift and Reverse Operation}{section.7}% 72
+\BOOKMARK [1][-]{section.8}{Strings}{}% 73
+\BOOKMARK [2][-]{subsection.8.1}{String Hashing}{section.8}% 74
+\BOOKMARK [2][-]{subsection.8.2}{String Hashing Without Division}{section.8}% 75
+\BOOKMARK [2][-]{subsection.8.3}{Rabin Karp}{section.8}% 76
+\BOOKMARK [2][-]{subsection.8.4}{Manacher}{section.8}% 77
+\BOOKMARK [2][-]{subsection.8.5}{Aho Corasick}{section.8}% 78
+\BOOKMARK [2][-]{subsection.8.6}{Suffix Array}{section.8}% 79
+\BOOKMARK [2][-]{subsection.8.7}{Suffix Array With Radix Sort}{section.8}% 80
+\BOOKMARK [2][-]{subsection.8.8}{LCP in Suffix Array}{section.8}% 81
+\BOOKMARK [1][-]{section.9}{Geometry}{}% 82
+\BOOKMARK [2][-]{subsection.9.1}{Template}{section.9}% 83
+\BOOKMARK [2][-]{subsection.9.2}{line Sweep}{section.9}% 84
+\BOOKMARK [2][-]{subsection.9.3}{Convex Hull}{section.9}% 85

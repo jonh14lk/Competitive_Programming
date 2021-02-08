@@ -1,0 +1,84 @@
+1)Vector
+
+vector <int> v; //Criação o vector
+ 
+v.push_back(10); //Adiciono o elemento 10 no final do vector v
+v.size() // retorna o tamanho do vector
+v.resize(10); //Muda o tamanho do vector v para 10.
+v.pop_back(); //Apaga o ultimo elemento do vector V.
+v.clear(); // apaga todos os elementos do vector v .
+sort(v.begin(), v.end()); //Ordena todo o vector v
+
+
+2)Pair
+
+pair <string, int> p; // criando a pair relacionando um first com um second
+ 
+p.first = "Joao"; // adicionando elementos
+p.second = 8 ; //adicionando elementos
+
+// utilidade: vector de pair
+vector< pair <int, string> > v; // criando o vector v de pair
+v.push_back(make_pair(a,b)); // dando push back em uma pair no vector usando make_pair
+sort(v.begin(), v.end()); // tambem é possivel ordenar o vector de pair
+
+3)Queue / FIla
+
+queue <int> f; // criando a queque
+ 
+f.push(10); // adiciona alguem na fila
+f.pop(); // remove o elemento que esta na frente da fila
+f.front(); // olha qual o elemento esta na frete da fila
+f.empty() // retorna true se a fila estiver vazia e false se nao estiver vazia
+ 
+
+4)Stack / Pilha
+
+stack <int> p ; // criando a stack
+ 
+pilha.push(x); //Adiciona o elemento x no topo da pilha
+pilha.pop(); //Remove elemento do topo da pilha
+pilha.top(); // retorna o elemento do topo da pilha
+pilha.empty(); // verifica se a pilha esta vazia ou nao
+
+5) Set
+
+set <int> s ; // criando a set
+// obs: a set nao adiciona elementos repetidos
+ 
+s.insert(10); //Adiciona o elemento 10 no set
+s.find(10) // Para realizar uma busca no set utilizamos o comando find,
+o find retorna um ponteiro que aponta para o elemento procurado caso o elemento esteja no set ou para o final do set, caso o elemento procurado não esteja no set , em complexidade O(log n)
+ 
+if(s.find(10) != s.end()) // procurando pelo 10, se ele estiver no set
+s.erase(10); //Apaga o elemento 10 do set em O(log n)
+s.clear(); // Apaga todos os elementos
+s.size(); //  Retorna a quantidade de elementos
+s.begin(); // Retorna um ponteiro para o inicio do set
+s.end(); // Retorna um ponteiro para o final do set
+
+
+6)Map
+map <string, int> m; //Cria uma variável do tipo map que mapeia strings em int
+// Em um map cada elemento está diretamente ligado a um valor, ou seja, cada elemento armazenado no map possui um valor correspondente
+// Se tivermos um map de strings em inteiros e inserimos os pair ("Joao", 1), ("Alana", 10), ("Rodrigo", 9)
+// Caso façamos uma busca pela chave "Alana" receberemos o número 10 como retorno.
+ 
+m.insert(make_pair("Alana", 10)); //Inserimos uma variável do tipo pair diretamente no map, O(log n)
+M["Alana"] = 10; //Relacionando o valor 10 à chave "Alana"
+if(m.find("Alana") != m.end()){ //Se a chave "Alana" foi inserida no map
+cout << m["Alana"] << endl; //Imprime o valor correspondente a chave "Alana", no caso, o valor 10.
+m.erase("Alana"); //Apaga o elemento que possui a chave "Alana" do map
+m.clear(); // Apaga todos os elementos
+m.size(); //  Retorna a quantidade de elementos
+m.begin(); // Retorna um ponteiro para o inicio do map
+m.end(); // Retorna um ponteiro para o final do map
+
+
+7)Priority Queue
+priority_queue <int> q; // declarando a priority queue
+// Para utilizar a priority_queue do C++ é importante apenas saber que o maior elemento sempre estará na primeiro posição.
+// Com exeção disso, todos os outros métodos são semelhantes ao uso de uma queue comum, porém para manter a estrutura organizada, a complexidade da operação de inserção é O(logn).
+p.push(i) // adiciono o elemento i na priority_queue
+p.pop(); // apago o primeiro da fila
+p.top(); // vejo quem esta no topo
