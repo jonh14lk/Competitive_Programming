@@ -10,18 +10,16 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define int long long int
 #define pb push_back
 #define pi pair<int, int>
-#define pii pair<int, pi>
+#define pii pair<pi, int>
 #define fir first
 #define sec second
-#define MAXN 10001
-#define mod 998244353
-
-int n;
-vector<int> x;
-vector<int> p;
+#define MAXN 2000006
+//#define mod 1000000007
 
 namespace crt
 {
+  vector<pi> eq;
+
   int gcd(int a, int b, int &x, int &y)
   {
     if (b == 0)
@@ -33,44 +31,45 @@ namespace crt
     x = y1, y = x1 - y1 * (a / b);
     return d;
   }
-  int inv(int a, int m)
+  pi crt()
   {
-    int x, y;
-    gcd(a, m, x, y);
-    x = (x % m + m) % m;
-    return x;
-  }
-  bool check()
-  {
-    for (int i = 0; i < n; i++)
-      for (int j = i + 1; j < n; j++)
-        if (__gcd(p[i], p[j]) != 1)
-          return false;
-    return true;
-  }
-  int crt()
-  {
-    int prod = 1, ans = 0;
-    for (int i = 0; i < n; i++)
-      prod *= p[i];
-    for (int i = 0; i < n; i++)
+    int a1 = eq[0].fir, m1 = eq[0].sec;
+    a1 %= m1;
+    for (int i = 1; i < eq.size(); i++)
     {
-      int pp = prod / p[i];
-      ans += x[i] * inv(pp, p[i]) * pp;
+      int a2 = eq[i].fir, m2 = eq[i].sec;
+      int g = __gcd(m1, m2);
+      if (a1 % g != a2 % g)
+        return {-1, -1};
+      int p, q;
+      gcd(m1 / g, m2 / g, p, q);
+      int mod = m1 / g * m2;
+      int x = (a1 * (m2 / g) % mod * q % mod + a2 * (m1 / g) % mod * p % mod) % mod;
+      a1 = x;
+      if (a1 < 0)
+        a1 += mod;
+      m1 = mod;
     }
-    return ans % prod;
+    return {a1, m1};
   }
 }
 signed main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
+  int n;
   cin >> n;
-  x.resize(n);
-  p.resize(n);
   for (int i = 0; i < n; i++)
-    cin >> x[i] >> p[i];
-  (!crt::check()) ? cout << -1 << endl : cout << crt::crt() << endl;
+  {
+    int a, b;
+    cin >> a >> b;
+    crt::eq.pb({a, b});
+  }
+  pi ans = crt::crt();
+  if (ans.fir == -1)
+    cout << "No solution\n";
+  else
+    cout << ans.fir << " " << ans.sec << endl;
   return 0;
 }
 // teorema chines do resto(crt)
@@ -80,18 +79,8 @@ signed main()
 // a mod p2 = x2
 // ...
 // a mod pn = xn
-// 1 - existe solução caso não exista um par p[i] p[j] com i != j e gcd(p[i], p[j]) > 1
-// a = ∑ (x[i] * pp[i] * inv[i]) % prod
-// x[i] -> resposta de cada congruencia
-// prod -> produto de todos os p[i]
-// pp[i] -> prod / p[i]
-// inv[i] -> inverso modular de pp[i] em relação a p[i]
-// note que, para achar o inverso, como o mod nao eh primo
-// o metodo que usa exponenciação binaria nao funciona
-// nesse caso, para achar o inverso, podemos pensar em uma equação diofantina
-// ax + my = 1
-// pondo mod m
-// ax mod m = 1 mod m
-// no final a complexidade fica
-// O(n^2) para checar se a resposta existe (tem como fazer isso melhor)
-// O(n * log(n)) para achar a resposta
+// a funcao crt retorna um pair {a, mod}
+// dai a solucao pode ser descrita como
+// x = a % mod
+// entao os valores possiveis sao:
+// a, (a + mod), a + (2 * mod), a + (3 * mod), ...
