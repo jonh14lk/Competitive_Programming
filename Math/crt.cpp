@@ -72,6 +72,11 @@ signed main()
     cout << ans.fir << " " << ans.sec << endl;
   return 0;
 }
+// references:
+// https://forthright48.com/chinese-remainder-theorem-part-2-non-coprime-moduli/
+// https://cp-algorithms.com/algebra/chinese-remainder-theorem.html
+// https://www.geeksforgeeks.org/chinese-remainder-theorem-set-1-introduction/
+
 // teorema chines do resto(crt)
 // para resolver sistemas de congruencias modulares
 // o menor inteiro a que satisfaz:
