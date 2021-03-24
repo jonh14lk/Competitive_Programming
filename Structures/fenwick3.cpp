@@ -47,7 +47,7 @@ signed main()
   return 0;
 }
 // ideia da merge sort tree na bit (fica mais rapido)
-// so fazer uma bit de merge sort tree ou vector(se nao tiver update)
+// so fazer uma bit de ordered set ou vector(se nao tiver update)
 // add -> adiciona o numero delta na posição idx
 // rem -> remove o numero delta na posição idx
 // query -> retorna o numero de elementos tal que posição <= r && (a <= num <= b)
