@@ -9,7 +9,7 @@ My competitive programming repo, with codes and some problems that I like it :he
 
 - **Topics**
 
-  - Binary Search and Ternary Search
+  - Binary Search and Ternary Search :smile:
 
     - [Aplications and examples](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/Aplications.cpp)
     - [Meet in the middle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/meetinthemiddle.cpp)
@@ -29,7 +29,7 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Count substring ocurrences](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/subsequences_string.cpp)
     - [Tip DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/tip.cpp)
 
-  - Geometry
+  - Geometry :angry:
 
     - [Basic Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/points_and_vectors.cpp)
     - [Line Sweep](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/LineSweep.cpp)
@@ -66,7 +66,7 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Dinic](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dinic.cpp)
     - [MinCostFlow](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/mincostflow.cpp)
 
-  - Math
+  - Math :angry:
 
     - [Modular Operations Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/modular_arithmetic.cpp)
     - [Prime Factorization](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/primefactors.cpp)
@@ -80,7 +80,7 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Matrix Exponentiation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/matrix_exponentiation.cpp)
     - [Pollard Rho](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/pollard_rho.cpp)
 
-  - Strings
+  - Strings :smile:
 
     - [Aho Corasick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/aho_corasick.cpp)
     - [Suffix Array](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_array.cpp)
@@ -107,7 +107,7 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Mo's algorithm with Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sqrt_decomposition2.cpp)
     - [Treap](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/treap2.cpp)
 
-  - Miscellaneous
+  - Miscellaneous :smile:
     - [Inversion Count](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/inversion_count.cpp)
     - [Stack Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/stack_trick.cpp)
     - [Two Pointers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/two_pointers.cpp)
