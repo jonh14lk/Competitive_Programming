@@ -21,7 +21,7 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Broken Profile DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/broken_profile.cpp)
     - [Divide and conquer DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/divideandconquer.cpp)
     - [Expected Value](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/expected_value.cpp)
-    - [Kadane](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/largest-sum-contiguous-subarray.cpp)
+    - [Kadane and Circular Kadane](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/largest-sum-contiguous-subarray.cpp)
     - [Largest square of 1’s](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/largest_square.cpp)
     - [Longest common subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/lcs.cpp)
     - [Longest increasing subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/lis.cpp)
@@ -111,6 +111,21 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Inversion Count](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/inversion_count.cpp)
     - [Stack Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/stack_trick.cpp)
     - [Two Pointers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/two_pointers.cpp)
+
+- **Competitions**
+
+  - [2020-2021 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102861)
+    - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202020)
+  - [2019-2020 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102346)
+    - [All problems solved, except problems C, E and F](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202019)
+  - [2018-2019 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101908)
+    - [Solved D, E, F, G, I and L](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202018)
+  - [2017-2018 ACM-ICPC Brazil Subregional Programming Contest](https://neps.academy/br/source/4)
+    - [Solved A, C, D, E, F, G, I, J and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202017)
+  - [UFPE Starters Final Try-Outs 2020](https://codeforces.com/gym/102448)
+    - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/UFPE%20try-outs%202020)
+  - [UFPE Starters Final Try-Outs 2021](https://codeforces.com/gym/103076)
+    - [Solved B, C, D, E, F](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/UFPE%20try-outs%202020)
 
 - **Some of my accounts on websites**
 
