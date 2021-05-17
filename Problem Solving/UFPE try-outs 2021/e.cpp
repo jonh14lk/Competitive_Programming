@@ -1,123 +1,83 @@
 #include <bits/stdc++.h>
-#define DEBUG if (0)
-#define lli long long int
-#define ldouble long double
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
+using namespace __gnu_pbds;
 
-const double eps = 1e-9;
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-lli kadane(vector<lli> &a)
+#define int long long int
+#define pb push_back
+#define pi pair<int, int>
+#define pii pair<int, pi>
+#define fir first
+#define sec second
+#define MAXN 200001
+#define mod 1000000007
+
+struct point
 {
-  int n = a.size();
-  lli max_so_far = 0, max_ending_here = 0;
-  lli i;
-  for (i = 0; i < n; i++)
-  {
-    max_ending_here = max_ending_here + a[i];
-
-    if (max_so_far < max_ending_here)
-      max_so_far = max_ending_here;
-    if (max_ending_here < 0)
-      max_ending_here = 0;
-  }
-  return max_so_far;
-}
-
-lli maxCircularSum(vector<lli> &a)
-{
-  int n = a.size();
-  // Case 1: get the maximum sum using standard kadane'
-  // s algorithm
-  lli max_kadane = kadane(a);
-  // if maximum sum using standard kadane' is less than 0
-  if (max_kadane < 0)
-    return max_kadane;
-
-  // Case 2: Now find the maximum sum that includes
-  // corner elements.
-  lli max_wrap = 0, i;
-  for (i = 0; i < n; i++)
-  {
-    max_wrap += a[i]; // Calculate array-sum
-    a[i] = -a[i];     // invert the array (change sign)
-  }
-
-  // max sum with corner elements will be:
-  // array-sum - (-max subarray sum of inverted array)
-  max_wrap = max_wrap + kadane(a);
-
-  // The maximum circular sum will be maximum of two sums
-  return (max_wrap > max_kadane) ? max_wrap : max_kadane;
-}
-
-const int maxN = 1e5;
-int n;
-struct Point
-{
-  lli x, y, a, s, value, lolvalue;
-  ldouble angle;
-  int idx;
-  void read()
-  {
-    scanf("%lld %lld %lld %lld", &x, &y, &a, &s);
-    value = a - s;
-    lolvalue = s - a;
-    angle = atan2l(y, x);
-  }
-  bool operator<(const Point &other) const
-  {
-    return angle < other.angle;
-  }
-  bool sameLine(const Point &other)
-  {
-    // return abs(angle - other.angle) <= eps;
-    // if (x == other.x) return true;
-    // if (y == other.y) return true;
-    return y * other.x == other.y * x;
-  }
+  int x, y, cof;
+  long double ang;
 };
-vector<Point> points;
 
-int main()
+int kadane(vector<int> v)
 {
-  while (~scanf("%d", &n))
+  int n = v.size(), ans = 0, max_here = 0;
+  for (int i = 0; i < n; i++)
   {
-    points.clear();
-    points.resize(n);
-    for (int i = 0; i < n; i++)
-    {
-      points[i].read();
-      points[i].idx = i;
-    }
-    sort(points.begin(), points.end());
-
-    // assert(!points[0].sameLine(points[n - 1]));
-
-    int start = n - 1;
-    while (start - 1 >= 0 && points[start].sameLine(points[start - 1]))
-      start--;
-
-    vector<Point> aux = points;
-    for (int i = 0; i < n; i++)
-      points[i] = aux[(start + i) % n];
-
-    vector<lli> values;
-    for (int i = 0; i < n; i++)
-    {
-      int j = i;
-      lli total = points[i].value;
-      while (j + 1 < n && points[i].sameLine(points[j + 1]))
-      {
-        j++;
-        total += points[j].value;
-      }
-
-      values.push_back(total);
-      i = j;
-    }
-    lli ans = maxCircularSum(values);
-
-    printf("%lld\n", ans);
+    max_here += v[i];
+    if (ans < max_here)
+      ans = max_here;
+    if (max_here < 0)
+      max_here = 0;
   }
+  return ans;
+}
+int kadane_circular(vector<int> v)
+{
+  int n = v.size(), max_kadane = kadane(v);
+  int max_wrap = 0, i;
+  for (i = 0; i < n; i++)
+  {
+    max_wrap += v[i];
+    v[i] = -v[i];
+  }
+  max_wrap += kadane(v);
+  return max(max_wrap, max_kadane);
+}
+bool cmp(point a, point b)
+{
+  return a.ang < b.ang;
+}
+signed main()
+{
+  int n;
+  cin >> n;
+  vector<point> v(n);
+  for (int i = 0; i < n; i++)
+  {
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    v[i].x = a, v[i].y = b;
+    v[i].cof = c - d;
+    v[i].ang = atan2l(v[i].y, v[i].x);
+  }
+  sort(v.begin(), v.end(), cmp);
+  vector<int> lines;
+  int l = 0;
+  while (l < n)
+  {
+    int r = l, curr = 0;
+    while (r < n && v[l].ang == v[r].ang)
+    {
+      curr += v[r].cof;
+      r++;
+    }
+    lines.pb(curr);
+    l = r;
+  }
+  cout << kadane_circular(lines) << endl;
   return 0;
 }
