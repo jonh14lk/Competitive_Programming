@@ -125,7 +125,7 @@ My competitive programming repo, with codes and some problems that I like it :he
   - [UFPE Starters Final Try-Outs 2020](https://codeforces.com/gym/102448)
     - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/UFPE%20try-outs%202020)
   - [UFPE Starters Final Try-Outs 2021](https://codeforces.com/gym/103076)
-    - [Solved B, C, D, E, F](https://github.com/jonh14lk/Competitive_Programming/blob/master/Problem%20Solving/UFPE%20try-outs%202021/e.cpp)
+    - [Solved B, C, D, E, F](https://github.com/jonh14lk/Competitive_Programming/blob/master/Problem%20Solving/UFPE%20try-outs%202021)
 
 - **Some of my accounts on websites**
 
