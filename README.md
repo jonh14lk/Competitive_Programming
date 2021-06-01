@@ -111,6 +111,7 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Inversion Count](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/inversion_count.cpp)
     - [Stack Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/stack_trick.cpp)
     - [Two Pointers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/two_pointers.cpp)
+    - [Examples of bitmasks problems](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/bitmasks.cpp)
 
 - **Competitions**
 
