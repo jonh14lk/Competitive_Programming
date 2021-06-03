@@ -83,6 +83,7 @@ My competitive programming repo, with codes and some problems that I like it :he
   - Strings :smile:
 
     - [Aho Corasick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/aho_corasick.cpp)
+    - [Suffix Automaton](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_automaton.cpp)
     - [Suffix Array](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_array.cpp)
     - [Suffix Array with Radix Sort](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_array2.cpp)
     - [LCP in Suffix Array](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/lcp_in_suffix_array.cpp)
@@ -120,7 +121,7 @@ My competitive programming repo, with codes and some problems that I like it :he
   - [2019-2020 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102346)
     - [All problems solved, except problems C, E and F](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202019)
   - [2019-2020 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/102428)
-    - [Solved E, F, G, I, K, L, M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202019)
+    - [Solved C, D, E, F, G, I, K, L, M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202019)
   - [2018-2019 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101908)
     - [All problems solved, except problems A, H, K and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202018)
   - [2017-2018 ACM-ICPC Brazil Subregional Programming Contest](https://neps.academy/br/source/4)
