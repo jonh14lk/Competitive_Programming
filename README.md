@@ -118,6 +118,8 @@ My competitive programming repo, with codes and some problems that I like it :he
 
   - [2020-2021 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102861)
     - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202020)
+  - [2020-2021 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103185)
+    - [Solved C, D, E, H, K, L, N](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202020)
   - [2019-2020 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102346)
     - [All problems solved, except problems C, E and F](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202019)
   - [2019-2020 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/102428)
