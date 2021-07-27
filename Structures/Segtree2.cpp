@@ -1,94 +1,68 @@
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
+using namespace __gnu_pbds;
 
-#define PI acos(-1)
-#define pb push_back
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
 #define int long long int
-#define mp make_pair
+#define pb push_back
 #define pi pair<int, int>
-#define pii pair<pi, int>
+#define pii pair<int, pi>
 #define fir first
 #define sec second
-#define MAXN 100001
-#define MAXL 100
+#define MAXN 500001
 #define mod 1000000007
 
-vector<pi> seg;
-vector<int> v;
+struct segtree
+{
+  int n;
+  vector<int> seg;
 
-pi single(int x)
-{
-  return {x, 1};
-}
-pi neutral()
-{
-  return {INT_MAX, 0};
-}
-pi merge(pi a, pi b)
-{
-  if (a.fir < b.fir)
-    return a;
-  if (a.fir > b.fir)
-    return b;
-  return {a.fir, a.sec + b.sec};
-}
-void update(int i, int l, int r, int q, int x)
-{
-  if (l == r)
+  int neutral()
   {
-    seg[i] = single(x);
-    return;
+    return 0;
   }
-  int mid = (l + r) >> 1;
-  if (q <= mid)
-    update(i << 1, l, mid, q, x);
-  else
-    update((i << 1) | 1, mid + 1, r, q, x);
-  seg[i] = merge(seg[i << 1], seg[(i << 1) | 1]);
-}
-pi query(int l, int r, int ql, int qr, int i)
-{
-  int mid = (l + r) >> 1;
-  if (l > r || l > qr || r < ql)
-    return neutral();
-  if (l >= ql && r <= qr)
-    return seg[i];
-  return merge(query(l, mid, ql, qr, i << 1), query(mid + 1, r, ql, qr, (i << 1) | 1));
-}
-void build(int l, int r, int i)
-{
-  if (l == r)
+  int merge(int a, int b)
   {
-    seg[i] = single(v[l]);
-    return;
+    return a + b;
   }
-  int mid = (l + r) >> 1;
-  build(l, mid, i << 1);
-  build(mid + 1, r, (i << 1) | 1);
-  seg[i] = merge(seg[i << 1], seg[(i << 1) | 1]);
-}
+  void build(vector<int> &v)
+  {
+    n = 1;
+    while (n < v.size())
+      n <<= 1;
+    seg.assign(n << 1, neutral());
+    for (int i = 0; i < v.size(); i++)
+      seg[i + n] = v[i];
+    for (int i = n - 1; i; i--)
+      seg[i] = merge(seg[i << 1], seg[(i << 1) | 1]);
+  }
+  void upd(int i, int value)
+  {
+    seg[i += n] += value;
+    for (i >>= 1; i; i >>= 1)
+      seg[i] = merge(seg[i << 1], seg[(i << 1) | 1]);
+  }
+  int qry(int l, int r)
+  {
+    int ansl = neutral(), ansr = neutral();
+    for (l += n, r += n + 1; l < r; l >>= 1, r >>= 1)
+    {
+      if (l & 1)
+        ansl = merge(ansl, seg[l++]);
+      if (r & 1)
+        ansr = merge(seg[--r], ansr);
+    }
+    return merge(ansl, ansr);
+  }
+};
 signed main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  int n, q;
-  cin >> n >> q;
-  v.resize(n);
-  seg.resize(4 * n);
-  for (int i = 0; i < n; i++)
-    cin >> v[i];
-  build(0, n - 1, 1);
-  while (q--)
-  {
-    int l, r;
-    int t;
-    cin >> t >> l >> r;
-    if (t == 2)
-    {
-      pi ans = query(0, n - 1, l, r - 1, 1);
-      cout << ans.fir << " " << ans.sec << endl;
-    }
-    else
-      update(1, 0, n - 1, l, r);
-  }
+  return 0;
 }
+// iterative segtree without lazy propagation
