@@ -1,51 +1,71 @@
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
+using namespace __gnu_pbds;
 
-#define lli long long int
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
+#define int long long int
 #define pb push_back
-#define in insert
 #define pi pair<int, int>
-#define pd <double, double>
 #define pii pair<int, pi>
-#define mp make_pair
 #define fir first
 #define sec second
-#define MAXN 100001
+#define MAXN 500001
 #define mod 1000000007
 
-int modpow(int x, int y)
+struct modint
 {
-  int z = 1;
-  while (y)
+  int val;
+  modint(int v = 0) { val = v % mod; }
+  int pow(int y)
   {
-    if (y & 1)
-      z = (z * x) % mod;
-    x = (x * x) % mod;
-    y >>= 1;
+    y = (y + mod) % mod;
+    modint x = val;
+    modint z = 1;
+    while (y)
+    {
+      if (y & 1)
+        z *= x;
+      x *= x;
+      y >>= 1;
+    }
+    return z.val;
   }
-  return z;
-}
-int inverse(int x)
+  int inv() { return pow(mod - 2); }
+  void operator=(int o) { val = o % mod; }
+  void operator=(modint o) { val = o.val % mod; }
+  void operator+=(modint o) { *this = *this + o; }
+  void operator-=(modint o) { *this = *this - o; }
+  void operator*=(modint o) { *this = *this * o; }
+  void operator/=(modint o) { *this = *this / o; }
+  bool operator==(modint o) { return val == o.val; }
+  bool operator!=(modint o) { return val != o.val; }
+  int operator*(modint o) { return ((val * o.val) % mod); }
+  int operator/(modint o) { return (val * o.inv()) % mod; }
+  int operator+(modint o) { return (val + o.val) % mod; }
+  int operator-(modint o) { return (val - o.val + mod) % mod; }
+};
+
+modint f[MAXN];
+
+void fat()
 {
-  return modpow(x, mod - 2);
+  f[0] = 1;
+  for (int i = 1; i < MAXN; i++)
+    f[i] = f[i - 1] * i;
 }
-int divide(int x, int y)
+modint ncr(int n, int k)
 {
-  return (x * inverse(y)) % mod;
-}
-int multiplicate(int x, int y)
-{
-  return (x * y) % mod;
-}
-int subtract(int a, int b)
-{
-  return (a - b < 0) ? a - b + mod : a - b;
-}
-int sum(int a, int b)
-{
-  return (a + b >= mod) ? a + b - mod : a + b;
+  modint d = f[k] * f[n - k];
+  modint ans = f[n] / d;
+  return ans;
 }
 signed main()
 {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
   return 0;
 }
