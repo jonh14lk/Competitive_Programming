@@ -92,7 +92,7 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [String Hashing (other template)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/stringhashing2.cpp)
     - [Rabin Karp](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/rabin-karp.cpp)
     - [Manacher](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/manacher.cpp)
-    - [Substring Matching (FFT)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/substring_fft.cpp)
+    - [String Matching (FFT)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/substring_fft.cpp)
 
   - Data Structures :heart:
 
