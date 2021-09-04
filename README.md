@@ -130,6 +130,8 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [All problems solved, except problems A, H, K and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202018)
   - [2017-2018 ACM-ICPC Brazil Subregional Programming Contest](https://neps.academy/br/source/4)
     - [Solved A, C, D, E, F, G, I, J and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202017)
+  - [2013-2014 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101473)
+    - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202013)
   - [UFPE Starters Final Try-Outs 2020](https://codeforces.com/gym/102448)
     - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/UFPE%20try-outs%202020)
   - [UFPE Starters Final Try-Outs 2021](https://codeforces.com/gym/103076)
