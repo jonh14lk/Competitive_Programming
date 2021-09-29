@@ -49,6 +49,10 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [DSU with rollback](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dsu_rollback.cpp)
     - [Eulerian Path](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/caminhoeuleriano.cpp)
     - [Cycle Detection](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/cycle_detection.cpp)
+    - [Find Bridges](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/bridges.cpp)
+    - [Find Articulation Points](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/articulation_points.cpp)
+    - [SCCs & Condensation Graph](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/scc.cpp)
+    - [Strong Orientation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/strong_orientation.cpp)
 
   - Trees :heart:
 
