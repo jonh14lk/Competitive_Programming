@@ -12,7 +12,6 @@ My competitive programming repo, with codes and some problems that I like it :he
   - Binary Search and Ternary Search :smile:
 
     - [Aplications and examples](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/Aplications.cpp)
-    - [Meet in the middle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/meetinthemiddle.cpp)
 
   - Dynamic Programming :heart:
 
@@ -119,6 +118,7 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Stack Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/stack_trick.cpp)
     - [Two Pointers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/two_pointers.cpp)
     - [Examples of bitmasks problems](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/bitmasks.cpp)
+    - [Meet in the middle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/meetinthemiddle.cpp)
 
 - **Competitions**
 
