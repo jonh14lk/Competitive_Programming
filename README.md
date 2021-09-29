@@ -1,8 +1,8 @@
 # Competitive Programming
 
-My competitive programming repo, with resources that I studied at some point :heart:.
+My competitive programming repo, with resources that I like it :heart:.
 
-## **What is competitive programming? :thinking**
+## **What is competitive programming? :thinking:**
 
 I like these videos to introduce competitive programming to a new person:
 
