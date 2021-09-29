@@ -61,8 +61,8 @@ My competitive programming repo, with codes and some problems that I like it :he
     - [Euler Tour](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/eulertour.cpp)
     - [Reroot](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/reroot.cpp)
     - [Centroid Decomposition](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/centroid_decomposition.cpp)
-    - [HLD (Vertex cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/hld.cpp)
-    - [HLD (Edge cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/hld_edge.cpp)
+    - [HLD (Vertex cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld.cpp)
+    - [HLD (Edge cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld_edge.cpp)
 
   - Flows and Matchings :heart:
 
