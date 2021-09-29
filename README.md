@@ -1,6 +1,6 @@
 # Competitive Programming
 
-My competitive programming repo, with resources that I like it :heart:.
+My competitive programming repo, with resources that I like it :heart:
 
 ## **What is competitive programming? :thinking:**
 
