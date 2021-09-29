@@ -17,8 +17,9 @@ I like these videos to introduce competitive programming to a new person:
 - [Uri Online Judge](https://www.urionlinejudge.com.br/judge/en/login)
 - [E-Maxx Algorithms in English](https://cp-algorithms.com/)
 - [The Ultimate Topic List (Codeforces)](https://codeforces.com/blog/entry/95106)
-  <br>
-  And many others...
+
+<br>
+And many others...
 
 ## **Utils :notebook:**
 
