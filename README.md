@@ -1,147 +1,172 @@
 # Competitive Programming
 
-My competitive programming repo, with codes and some problems that I like it :heart:.
+My competitive programming repo, with resources that I studied at some point :heart:.
 
-- **Utils**
+## **What is competitive programming? :thinking**
 
-  - [Trello Board](https://trello.com/b/o82WwA0k/competitive-programming)
-  - [Stanford ACM repo (To create library PDF)](https://github.com/jaehyunp/stanfordacm)
+I like these videos to introduce competitive programming to a new person:
 
-- **Topics**
+- [What is Competitive Programming? (Willian Lin)](https://www.youtube.com/watch?v=ueNT-w7Oluw)
+- [How to start Competitive Programming? For beginners! (Errichto)](https://www.youtube.com/watch?v=xAeiXy8-9Y8)
 
-  - Binary Search and Ternary Search :smile:
+## **Sites to study/train :rocket:**
 
-    - [Aplications and examples](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/Aplications.cpp)
+- [Codeforces](https://codeforces.com/)
+- [Atcoder](https://atcoder.jp/)
+- [SPOJ](https://www.spoj.com/)
+- [Uri Online Judge](https://www.urionlinejudge.com.br/judge/en/login)
+- [E-Maxx Algorithms in English](https://cp-algorithms.com/)
+- [The Ultimate Topic List (Codeforces)](https://codeforces.com/blog/entry/95106)
+  <br>
+  And many others...
 
-  - Dynamic Programming :heart:
+## **Utils :notebook:**
 
-    - [Digit DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/Digitdp.cpp)
-    - [Knapsack](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/Knapsack.cpp)
-    - [Broken Profile DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/broken_profile.cpp)
-    - [Divide and conquer DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/divideandconquer.cpp)
-    - [Expected Value](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/expected_value.cpp)
-    - [Kadane and Circular Kadane](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/largest-sum-contiguous-subarray.cpp)
-    - [Largest square of 1’s](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/largest_square.cpp)
-    - [Longest common subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/lcs.cpp)
-    - [Longest increasing subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/lis.cpp)
-    - [Matrix path with maximum sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/max_matrix_path.cpp)
-    - [Count substring ocurrences](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/subsequences_string.cpp)
-    - [Tip DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/tip.cpp)
+- [Trello Board](https://trello.com/b/o82WwA0k/competitive-programming)
+- [Stanford ACM repo (To create library PDF for competitions)](https://github.com/jaehyunp/stanfordacm)
 
-  - Geometry :angry:
+## **Topics :books:**
 
-    - [Basic Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/points_and_vectors.cpp)
-    - [Line Sweep](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/LineSweep.cpp)
-    - [Convex Hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/ConvexHull.cpp)
+- Binary Search and Ternary Search :smile:
 
-  - Graphs :heart:
+  - [Aplications and examples](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/Aplications.cpp)
 
-    - [BFS](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/BFS.cpp)
-    - [DFS](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/DFS.cpp)
-    - [Dijkstra](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Dijkstra.cpp)
-    - [Floyd Warshall](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Floyd_Warshall.cpp)
-    - [Bipartite Check](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Grafo_Bipartido.cpp)
-    - [Kruskal](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Kruskal.cpp)
-    - [Prim](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Prim.cpp)
-    - [Topological Sort](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Topological_Sort.cpp)
-    - [DSU](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Union_Find.cpp)
-    - [DSU with rollback](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dsu_rollback.cpp)
-    - [Eulerian Path](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/caminhoeuleriano.cpp)
-    - [Cycle Detection](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/cycle_detection.cpp)
-    - [Find Bridges](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/bridges.cpp)
-    - [Find Articulation Points](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/articulation_points.cpp)
-    - [SCCs & Condensation Graph](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/scc.cpp)
-    - [Strong Orientation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/strong_orientation.cpp)
+- Dynamic Programming :heart:
 
-  - Trees :heart:
+  - [Digit DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/Digitdp.cpp)
+  - [Knapsack](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/Knapsack.cpp)
+  - [Broken Profile DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/broken_profile.cpp)
+  - [Divide and conquer DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/divideandconquer.cpp)
+  - [Expected Value](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/expected_value.cpp)
+  - [Kadane and Circular Kadane](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/largest-sum-contiguous-subarray.cpp)
+  - [Largest square of 1’s](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/largest_square.cpp)
+  - [Longest common subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/lcs.cpp)
+  - [Longest increasing subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/lis.cpp)
+  - [Matrix path with maximum sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/max_matrix_path.cpp)
+  - [Count substring ocurrences](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/subsequences_string.cpp)
+  - [Tip DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/tip.cpp)
 
-    - [Lowest Common Ancestor](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/LCA.cpp)
-    - [Diameter of a tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/TreeDiameter.cpp)
-    - [Euler Tour](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/eulertour.cpp)
-    - [Reroot](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/reroot.cpp)
-    - [Centroid Decomposition](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/centroid_decomposition.cpp)
-    - [HLD (Vertex cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld.cpp)
-    - [HLD (Edge cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld_edge.cpp)
+- Geometry :angry:
 
-  - Flows and Matchings :heart:
+  - [Basic Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/points_and_vectors.cpp)
+  - [Line Sweep](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/LineSweep.cpp)
+  - [Convex Hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/ConvexHull.cpp)
 
-    - [Ford Fulkerson](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Ford_Fulkerson.cpp)
-    - [Dinic](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dinic.cpp)
-    - [MinCostFlow](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/mincostflow.cpp)
-    - [Hopcroft-Karp-Karzanov](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hopcroft_karp.cpp)
+- Graphs :heart:
 
-  - Math :angry:
+  - [BFS](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/BFS.cpp)
+  - [DFS](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/DFS.cpp)
+  - [Dijkstra](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Dijkstra.cpp)
+  - [Floyd Warshall](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Floyd_Warshall.cpp)
+  - [Bipartite Check](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Grafo_Bipartido.cpp)
+  - [Kruskal](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Kruskal.cpp)
+  - [Prim](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Prim.cpp)
+  - [Topological Sort](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Topological_Sort.cpp)
+  - [DSU](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Union_Find.cpp)
+  - [DSU with rollback](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dsu_rollback.cpp)
+  - [Eulerian Path](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/caminhoeuleriano.cpp)
+  - [Cycle Detection](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/cycle_detection.cpp)
+  - [Find Bridges](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/bridges.cpp)
+  - [Find Articulation Points](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/articulation_points.cpp)
+  - [SCCs & Condensation Graph](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/scc.cpp)
+  - [Strong Orientation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/strong_orientation.cpp)
 
-    - [Modular Operations Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/modular_arithmetic.cpp)
-    - [Prime Factorization](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/primefactors.cpp)
-    - [Sieve](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/crivo.cpp)
-    - [Segmented Sieve](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/segmentedsieve.cpp)
-    - [Chinese Remainder Theorem](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/crt.cpp)
-    - [Diophantine Equations](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/diophantine.cpp)
-    - [FFT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/fft.cpp)
-    - [Iterative FFT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/iterative_fft.cpp)
-    - [Gaussian Elimination](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/gaussian_elimination.cpp)
-    - [Matrix Exponentiation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/matrix_exponentiation.cpp)
-    - [Pollard Rho](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/pollard_rho.cpp)
+- Trees :heart:
 
-  - Strings :smile:
+  - [Lowest Common Ancestor](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/LCA.cpp)
+  - [Diameter of a tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/TreeDiameter.cpp)
+  - [Euler Tour](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/eulertour.cpp)
+  - [Reroot](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/reroot.cpp)
+  - [Centroid Decomposition](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/centroid_decomposition.cpp)
+  - [HLD (Vertex cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld.cpp)
+  - [HLD (Edge cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld_edge.cpp)
 
-    - [Aho Corasick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/aho_corasick.cpp)
-    - [Suffix Automaton](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_automaton.cpp)
-    - [Suffix Array](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_array.cpp)
-    - [Suffix Array with Radix Sort](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_array2.cpp)
-    - [LCP in Suffix Array](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/lcp_in_suffix_array.cpp)
-    - [String Hashing](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/stringhashing.cpp)
-    - [String Hashing (other template)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/stringhashing2.cpp)
-    - [Rabin Karp](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/rabin-karp.cpp)
-    - [Manacher](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/manacher.cpp)
-    - [String Matching (FFT)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/substring_fft.cpp)
+- Flows and Matchings :heart:
 
-  - Data Structures :heart:
+  - [Ford Fulkerson](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Ford_Fulkerson.cpp)
+  - [Dinic](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dinic.cpp)
+  - [MinCostFlow](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/mincostflow.cpp)
+  - [Hopcroft-Karp-Karzanov](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hopcroft_karp.cpp)
 
-    - [Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/SegTree.cpp)
-    - [Iterative Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/Segtree2.cpp)
-    - [Segtree with Lazy Propagation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/segtree_lazy.cpp)
-    - [Fenwick Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick.cpp)
-    - [Fenwick Tree with Range Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick2.cpp)
-    - [Merge Sort Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/mergesorttree.cpp)
-    - [Merge Sort Tree (BIT)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick3.cpp)
-    - [Min Queue](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/min_queue.cpp)
-    - [Persistent Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/persistent_seg.cpp)
-    - [Sparse Table](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sparsetable.cpp)
-    - [Mo's algorithm](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sqrt_decomposition.cpp)
-    - [Mo's algorithm with Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sqrt_decomposition2.cpp)
-    - [Treap](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/treap2.cpp)
+- Math :angry:
 
-  - Miscellaneous :smile:
-    - [Inversion Count](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/inversion_count.cpp)
-    - [Stack Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/stack_trick.cpp)
-    - [Two Pointers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/two_pointers.cpp)
-    - [Examples of bitmasks problems](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/bitmasks.cpp)
-    - [Meet in the middle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/meetinthemiddle.cpp)
+  - [Modular Operations Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/modular_arithmetic.cpp)
+  - [Prime Factorization](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/primefactors.cpp)
+  - [Sieve](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/crivo.cpp)
+  - [Segmented Sieve](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/segmentedsieve.cpp)
+  - [Chinese Remainder Theorem](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/crt.cpp)
+  - [Diophantine Equations](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/diophantine.cpp)
+  - [FFT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/fft.cpp)
+  - [Iterative FFT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/iterative_fft.cpp)
+  - [Gaussian Elimination](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/gaussian_elimination.cpp)
+  - [Matrix Exponentiation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/matrix_exponentiation.cpp)
+  - [Pollard Rho](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/pollard_rho.cpp)
 
-- **Competitions**
+- Strings :smile:
 
-  - [2020-2021 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102861)
-    - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202020)
-  - [2020-2021 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103185)
-    - [All problems solved, except problem I and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202020)
-  - [2019-2020 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102346)
-    - [All problems solved, except problems C, E and F](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202019)
-  - [2019-2020 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/102428)
-    - [Solved C, D, E, F, G, I, J, K, L, M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202019)
-  - [2018-2019 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101908)
-    - [All problems solved, except problems A, H, K and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202018)
-  - [2017-2018 ACM-ICPC Brazil Subregional Programming Contest](https://neps.academy/br/source/4)
-    - [Solved A, C, D, E, F, G, I, J and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202017)
-  - [2013-2014 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101473)
-    - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202013)
-  - [UFPE Starters Final Try-Outs 2020](https://codeforces.com/gym/102448)
-    - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/UFPE%20try-outs%202020)
-  - [UFPE Starters Final Try-Outs 2021](https://codeforces.com/gym/103076)
-    - [Solved B, C, D, E, F](https://github.com/jonh14lk/Competitive_Programming/blob/master/Problem%20Solving/UFPE%20try-outs%202021)
+  - [Aho Corasick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/aho_corasick.cpp)
+  - [Suffix Automaton](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_automaton.cpp)
+  - [Suffix Array](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_array.cpp)
+  - [Suffix Array with Radix Sort](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/suffix_array2.cpp)
+  - [LCP in Suffix Array](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/lcp_in_suffix_array.cpp)
+  - [String Hashing](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/stringhashing.cpp)
+  - [String Hashing (other template)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/stringhashing2.cpp)
+  - [Rabin Karp](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/rabin-karp.cpp)
+  - [Manacher](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/manacher.cpp)
+  - [String Matching (FFT)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/substring_fft.cpp)
 
-- **Some of my accounts on websites**
+- Data Structures :heart:
 
-  - [Codeforces](https://codeforces.com/profile/Ayalla)
-  - [Atcoder](https://atcoder.jp/users/Ayallaa)
+  - [Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/SegTree.cpp)
+  - [Iterative Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/Segtree2.cpp)
+  - [Segtree with Lazy Propagation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/segtree_lazy.cpp)
+  - [Fenwick Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick.cpp)
+  - [Fenwick Tree with Range Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick2.cpp)
+  - [Merge Sort Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/mergesorttree.cpp)
+  - [Merge Sort Tree (BIT)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick3.cpp)
+  - [Min Queue](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/min_queue.cpp)
+  - [Persistent Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/persistent_seg.cpp)
+  - [Sparse Table](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sparsetable.cpp)
+  - [Mo's algorithm](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sqrt_decomposition.cpp)
+  - [Mo's algorithm with Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sqrt_decomposition2.cpp)
+  - [Treap](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/treap2.cpp)
+
+- Miscellaneous :smile:
+
+  - [Inversion Count](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/inversion_count.cpp)
+  - [Stack Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/stack_trick.cpp)
+  - [Two Pointers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/two_pointers.cpp)
+  - [Examples of bitmasks problems](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/bitmasks.cpp)
+  - [Meet in the middle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/meetinthemiddle.cpp)
+
+## **Competitions solutions :white_check_mark:**
+
+- [2020-2021 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102861)
+  - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202020)
+- [2020-2021 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103185)
+  - [All problems solved, except problem I and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202020)
+- [2019-2020 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102346)
+  - [All problems solved, except problems C, E and F](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202019)
+- [2019-2020 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/102428)
+  - [Solved C, D, E, F, G, I, J, K, L, M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202019)
+- [2018-2019 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101908)
+  - [All problems solved, except problems A, H, K and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202018)
+- [2017-2018 ACM-ICPC Brazil Subregional Programming Contest](https://neps.academy/br/source/4)
+  - [Solved A, C, D, E, F, G, I, J and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202017)
+- [2013-2014 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101473)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202013)
+- [UFPE Starters Final Try-Outs 2020](https://codeforces.com/gym/102448)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/UFPE%20try-outs%202020)
+- [UFPE Starters Final Try-Outs 2021](https://codeforces.com/gym/103076)
+  - [Solved B, C, D, E, F](https://github.com/jonh14lk/Competitive_Programming/blob/master/Problem%20Solving/UFPE%20try-outs%202021)
+
+## **Some of my accounts on websites :computer:**
+
+- [Codeforces (Ayalla)](https://codeforces.com/profile/Ayalla)
+- [Atcoder (Ayallaa)](https://atcoder.jp/users/Ayallaa)
+
+<div align="center">
+
+Made with :heart:
+
+</div>
