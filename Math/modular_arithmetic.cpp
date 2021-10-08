@@ -22,7 +22,6 @@ struct modint
   modint(int v = 0) { val = v % mod; }
   int pow(int y)
   {
-    y = (y + mod) % mod;
     modint x = val;
     modint z = 1;
     while (y)
