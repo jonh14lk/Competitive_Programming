@@ -19,9 +19,9 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 
 struct color_upd
 {
-  #define left fir
-  #define right sec.fir
-  #define color sec.sec
+#define left fir
+#define right sec.fir
+#define color sec.sec
   set<pii> ranges;
   vector<pii> erased;
 
@@ -31,7 +31,7 @@ struct color_upd
   }
   int get(int i) // qual a cor do elemento na posição i
   {
-    auto it = ranges.upper_bound({i, {0, 0}});
+    auto it = ranges.upper_bound({i, {1e18, 1e18}});
     if (it == ranges.begin())
       return -1;
     it--;
