@@ -18,9 +18,7 @@ I like these videos to introduce competitive programming to a new person:
 - [E-Maxx Algorithms in English](https://cp-algorithms.com/)
 - [The Ultimate Topic List (Codeforces)](https://codeforces.com/blog/entry/95106)
 
-And many others...
-
-Sky is the limit :)
+And many others, sky is the limit :)
 
 ## **Utils :notebook:**
 

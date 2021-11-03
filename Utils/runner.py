@@ -1,13 +1,18 @@
+# This script does the following:
+# 1 - Generate a random testcase
+# 2 - Run some "naive" code with this input
+# 3 - Run your code with this input
+# 4 - Compare the outputs
 import os
 
-naive = "brute.cpp"
-code = "d.cpp"
-generator = "g.cpp"
+naive = "brute.cpp" # path to naive code
+code = "d.cpp" # path to your code
+generator = "g.cpp" # path to test generator
 
 def compile_codes():
-    os.system('g++ ' + generator + ' -o generator')
-    os.system('g++ ' + naive + ' -o naive')
-    os.system('g++ ' + code + ' -o code')
+    os.system('g++ ' + generator + ' -o generator -O2')
+    os.system('g++ ' + naive + ' -o naive -O2')
+    os.system('g++ ' + code + ' -o code -O2')
 
 def generate_case():
     os.system('./generator > in');
