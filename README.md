@@ -130,6 +130,7 @@ And many others...
   - [Mo's algorithm](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sqrt_decomposition.cpp)
   - [Mo's algorithm with Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/sqrt_decomposition2.cpp)
   - [Treap](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/treap2.cpp)
+  - [Color Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/color_update.cpp)
 
 - Miscellaneous :smile:
 
