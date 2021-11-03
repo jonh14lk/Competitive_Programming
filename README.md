@@ -1,6 +1,6 @@
 # Competitive Programming
 
-My competitive programming repo, with resources that I like it :heart:
+My competitive programming repo, with resources and codes that I like it :heart:
 
 ## **What is competitive programming? :thinking:**
 
@@ -19,6 +19,8 @@ I like these videos to introduce competitive programming to a new person:
 - [The Ultimate Topic List (Codeforces)](https://codeforces.com/blog/entry/95106)
 
 And many others...
+
+Sky is the limit :)
 
 ## **Utils :notebook:**
 
@@ -45,6 +47,7 @@ And many others...
   - [Matrix path with maximum sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/max_matrix_path.cpp)
   - [Count substring ocurrences](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/subsequences_string.cpp)
   - [Tip DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/tip.cpp)
+  - [SOS DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/sos_dp.cpp)
 
 - Geometry :angry:
 
@@ -142,6 +145,8 @@ And many others...
 
 ## **Competitions solutions :white_check_mark:**
 
+- [2021-2022 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103388)
+  - [Solved B, C, D, E, G, H, K, L, M, N](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202021)
 - [2020-2021 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102861)
   - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202020)
 - [2020-2021 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103185)
