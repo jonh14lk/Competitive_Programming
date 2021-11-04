@@ -102,6 +102,7 @@ And many others, sky is the limit :)
   - [Gaussian Elimination](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/gaussian_elimination.cpp)
   - [Matrix Exponentiation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/matrix_exponentiation.cpp)
   - [Pollard Rho](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/pollard_rho.cpp)
+  - [Lagrange Interpolation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/lagrange.cpp)
 
 - Strings :smile:
 
@@ -144,7 +145,7 @@ And many others, sky is the limit :)
 ## **Competitions solutions :white_check_mark:**
 
 - [2021-2022 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103388)
-  - [Solved B, C, D, E, G, H, K, L, M, N](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202021)
+  - [All problems solved, except problems F, I, J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202021)
 - [2020-2021 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102861)
   - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202020)
 - [2020-2021 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103185)
