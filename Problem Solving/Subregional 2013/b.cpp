@@ -7,30 +7,34 @@ using namespace __gnu_pbds;
 template <class T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-#define int long long int
+//#define int long long int
+#define endl '\n'
 #define pb push_back
 #define pi pair<int, int>
 #define pii pair<int, pi>
 #define fir first
 #define sec second
-#define MAXN 2000
-#define mod 1000000
+#define MAXN 200005
+#define mod 1000000007
+#define PI acos(-1)
 
-struct line
+const double EPS = 1e-9;
+
+struct pt
 {
-  int a, b, c, d;
+  int x, y;
 };
-struct event
+struct seg
 {
-  int type, idx, x, y;
-  bool operator<(const event ot)
+  pt p, q;
+  int id;
+  double get_y(int x) const
   {
-    if (x != ot.x)
-      return x < ot.x;
-    return type < ot.type;
+    if (p.x == q.x)
+      return p.y;
+    return p.y + (q.y - p.y) * 1.0 * (x - p.x) / (q.x - p.x);
   }
 };
-
 map<pi, pi> nxt;
 map<pi, pi> dp;
 map<pi, bool> vis;
@@ -46,74 +50,90 @@ pi solve(pi i)
   vis[i] = true;
   return dp[i] = solve(nxt[i]);
 }
-pi get_nxt(line l)
+pi get_nxt(seg l)
 {
-  if (l.b == l.d)
-    return {-1, l.d};
-  if (l.b > l.d)
-    return {l.a, l.b};
-  return {l.c, l.d};
+  if (l.p.y == l.q.y)
+    return {-1, l.q.y};
+  if (l.p.y > l.q.y)
+    return {l.p.x, l.p.y};
+  return {l.q.x, l.q.y};
 }
-signed main()
+bool operator<(const seg &a, const seg &b)
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  int n, q;
-  cin >> n >> q;
-  vector<line> v;
-  vector<bool> can_finish;
-  vector<event> e;
-  for (int i = 0; i < n; i++)
+  int x = max(min(a.p.x, a.q.x), min(b.p.x, b.q.x));
+  return a.get_y(x) < b.get_y(x) - EPS;
+}
+struct event
+{
+  int x;
+  int tp, id;
+  event() {}
+  event(int x, int tp, int id) : x(x), tp(tp), id(id) {}
+  bool operator<(const event &e) const
   {
-    int a, b, c, d;
-    cin >> a >> b >> c >> d;
-    if (a > c)
-    {
-      swap(a, c);
-      swap(b, d);
-    }
-    v.pb({a, b, c, d});
-    e.pb({0, i, a, max(d, b)});
-    e.pb({1, i, c + 1, max(d, b)});
-    if (b > d)
-      e.pb({2, i, a, b});
-    else if (d > b)
-      e.pb({2, i, c, d});
+    if (abs(x - e.x) > EPS)
+      return x < e.x;
+    return tp < e.tp;
   }
-  vector<int> queries(q);
-  for (int i = 0; i < q; i++)
+};
+
+set<seg> s;
+vector<set<seg>::iterator> where;
+
+set<seg>::iterator prev(set<seg>::iterator it)
+{
+  return it == s.begin() ? s.end() : --it;
+}
+set<seg>::iterator next(set<seg>::iterator it)
+{
+  return ++it;
+}
+void line_sweep(vector<seg> &v, vector<int> &queries)
+{
+  vector<event> e;
+  for (int i = 0; i < v.size(); i++)
   {
-    cin >> queries[i];
-    e.pb({2, -1, queries[i], 0});
+    if (v[i].p.y > v[i].q.y)
+      swap(v[i].p, v[i].q);
+    e.pb({min(v[i].p.x, v[i].q.x), 0, i});
+    e.pb({max(v[i].p.x, v[i].q.x), 2, i});
+    e.pb({v[i].q.x, 1, i});
+  }
+  for (auto const &i : queries)
+  {
+    e.pb({i, 1, -1});
   }
   sort(e.begin(), e.end());
-  set<pi> lines;
-  for (auto const &i : e)
+  where.resize(v.size());
+  for (int i = 0; i < e.size(); i++)
   {
-    int type = i.type, idx = i.idx, x = i.x, y = i.y;
-    if (type == 0)
+    int id = e[i].id;
+    if (e[i].tp == 0)
     {
-      lines.insert({y, idx});
+      auto nxt = s.lower_bound(v[id]);
+      where[id] = s.insert(nxt, v[id]);
     }
-    else if (type == 1)
+    else if (e[i].tp == 2)
     {
-      lines.erase({y, idx});
+      s.erase(where[id]);
     }
     else
     {
-      auto it = lines.lower_bound({y, -1});
-      while (it != lines.end())
+      int x = e[i].x;
+      int y = (id == -1) ? 0 : v[id].get_y(x);
+      auto it = (id == -1) ? s.begin() : where[id];
+      while (it != s.end())
       {
-        pi curr = *it;
-        if (curr.sec == idx)
+        seg curr = *it;
+        if (curr.id == id)
           it++;
         else
           break;
       }
-      if (it != lines.end())
+      if (it != s.end())
       {
-        pi curr = *it;
-        nxt[{x, y}] = get_nxt(v[curr.sec]);
+        int nxt_id = (*it).id;
+        nxt[{x, y}] = get_nxt(v[nxt_id]);
       }
       else
       {
@@ -121,6 +141,23 @@ signed main()
       }
     }
   }
+}
+signed main()
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  int n, q;
+  cin >> n >> q;
+  vector<seg> v(n);
+  for (int i = 0; i < n; i++)
+  {
+    cin >> v[i].p.x >> v[i].p.y >> v[i].q.x >> v[i].q.y;
+    v[i].id = i;
+  }
+  vector<int> queries(q);
+  for (int i = 0; i < q; i++)
+    cin >> queries[i];
+  line_sweep(v, queries);
   for (auto const &i : queries)
   {
     pi ans = solve({i, 0});
