@@ -99,34 +99,16 @@ signed main()
     p1[lim + i] = 1; // numero positivo
     p2[lim - i] = 1; // numero negativo
   }
-  vector<int> merge = fft::mul(p1, p2); // todas as somas de p1[i] + p2[j]
+  vector<int> merge = fft::mul(p1, p2); // todas os possiveis valores de subtrações
   int ans = 0;
-  for (int i = lim + 1; i < merge.size(); i++)
+  // percorrer os possiveis resultados de subtrações sendo >= 1
+  for (int i = (2 * lim) + 1; i < merge.size(); i++)
   {
+    // val eh o verdadeiro valor da subtração:
+    // int val = i - (2 * lim);
     if (merge[i] > 0)
       ans++;
   }
-  cout << ans / 2 << endl;
+  cout << ans << endl;
   return 0;
 }
-// sum = pref[r] - pref[l]
-// se souber calcular todas as subtrações ao inves
-// de todas as somas, eh gg
-
-// mapear os expoentes do polinomio
-// 0 -> -n
-// 1 -> -n + 1
-// 2 -> -n + 2
-// ...
-// n - 1 -> -1
-// n  -> 0
-// n + 1 -> 1
-// n + 2 -> 2
-// ...
-// n + n -> n
-
-// dai da pra fazer o all possible sums nisso
-// um polinomio contem todos os prefixos
-// o outro contem todos os prefixos * -1
-// com uma unica multiplicação posso pegar os
-// positivos que tem coeficiente > 0 e contar
