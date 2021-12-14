@@ -122,6 +122,7 @@ And many others, sky is the limit :)
 
   - [Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/SegTree.cpp)
   - [Iterative Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/Segtree2.cpp)
+  - [Implicit Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/implicit_seg.cpp)
   - [Segtree with Lazy Propagation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/segtree_lazy.cpp)
   - [Fenwick Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick.cpp)
   - [Fenwick Tree with Range Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick2.cpp)
