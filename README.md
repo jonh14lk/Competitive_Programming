@@ -92,6 +92,7 @@ And many others, sky is the limit :)
 - Math :angry:
 
   - [Modular Operations Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/modular_arithmetic.cpp)
+  - [Fractions Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/fraction.cpp)
   - [Prime Factorization](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/primefactors.cpp)
   - [Sieve](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/crivo.cpp)
   - [Segmented Sieve](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/segmentedsieve.cpp)

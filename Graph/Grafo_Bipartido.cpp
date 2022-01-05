@@ -1,85 +1,82 @@
-// Grafo Bipartido 
-// 1 - nao possui ciclo de tamanho impar
-// 2 - podemos colorir todos os vertices usando apenas duas cores de maneira que uma aresta nunca ligue dois vértices da mesma cor
-// 3 - Se quisermos checar se um grafo eh bipartido ou nao, simplesmente checamos se ele pode ser colorido usando duas cores.
-
 #include <bits/stdc++.h>
-using namespace std ;
- 
-#define lli long long int
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace std;
+using namespace __gnu_pbds;
+
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
+#define int long long int
+#define endl '\n'
 #define pb push_back
-#define MAXN 10000
+#define pi pair<int, int>
+#define pii pair<int, pi>
+#define fir first
+#define sec second
+#define MAXN 200006
+#define mod 1000000007
 
-int n , m , a , b ;                      
-vector <int> adj [MAXN] ;  
-int color [MAXN] ;
-
-void colore (int x)
-{ 
-    color[x] = 0 ; 
-
-    vector <int> f ; 
-    f.pb(x) ; 
-
-    int pos = 0 ;
-
-    while (pos < f.size())
-    {
-        int at = f[pos] ; 
-        pos++ ;
-
-        for (int i = 0 ; i < adj[at].size() ; i++)
-        {
-            int v = adj[at][i] ;
-
-            if (color[v] == -1)
-            { 
-                color[v] = 1 - color[at] ;             
-                f.pb(v) ; 
-            }
-        }
-    }
-}
-bool is_bipartido ()
+struct dsu
 {
-    for (int i = 0 ; i < n ; i++)
-    {
-        if (color[i] == -1)
-        {       
-            colore(i) ;          
-        }
-    }
+  vector<pi> parent;
+  vector<int> rank;
+  vector<int> bipartite;
 
-    for (int i = 0 ; i < n ; i++)
+  dsu(int n)
+  {
+    parent.resize(n);
+    rank.resize(n);
+    bipartite.resize(n);
+    for (int v = 0; v < n; v++)
     {
-        for (int j = 0 ; j < adj[i].size() ; j++)
-        {
-            if (color[i] == color[adj[i][j]]) 
-            {
-                return false ; 
-            }
-        }
+      parent[v] = {v, 0};
+      rank[v] = 0;
+      bipartite[v] = 1;
     }
-
-    return true ;
-}
-int main ()
+  }
+  dsu() {}
+  pi find_set(int v)
+  {
+    if (v != parent[v].fir)
+    {
+      int parity = parent[v].sec;
+      parent[v] = find_set(parent[v].fir);
+      parent[v].sec ^= parity;
+    }
+    return parent[v];
+  }
+  void add_edge(int a, int b)
+  {
+    pi pa = find_set(a);
+    a = pa.fir;
+    int x = pa.sec;
+    pi pb = find_set(b);
+    b = pb.fir;
+    int y = pb.sec;
+    if (a == b)
+    {
+      if (x == y)
+        bipartite[a] = 0;
+    }
+    else
+    {
+      if (rank[a] < rank[b])
+        swap(a, b);
+      parent[b] = {a, x ^ y ^ 1};
+      bipartite[a] &= bipartite[b];
+      if (rank[a] == rank[b])
+        rank[a]++;
+    }
+  }
+  bool is_bipartite(int v)
+  {
+    return bipartite[find_set(v).fir];
+  }
+};
+signed main()
 {
-    ios_base::sync_with_stdio(false) ; 
-    cin.tie(NULL) ;
-
-    cin >> n >> m ;
-
-    memset(color , -1 , sizeof(color)) ;
-
-    for (int i = 0 ; i < m ; i++)
-    {
-        cin >> a >> b ;
-        adj[a].pb(b) ;
-        adj[b].pb(a) ;
-    }
-
-    (is_bipartido()) ? cout << "YES\n" : cout << "NO\n" ;
-
-    return 0 ;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  return 0;
 }
