@@ -46,6 +46,7 @@ And many others, sky is the limit :)
   - [Count substring ocurrences](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/subsequences_string.cpp)
   - [Tip DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/tip.cpp)
   - [SOS DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/sos_dp.cpp)
+  - [Aliens Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/aliens_trick.cpp)
 
 - Geometry :angry:
 
@@ -105,6 +106,7 @@ And many others, sky is the limit :)
   - [Matrix Exponentiation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/matrix_exponentiation.cpp)
   - [Pollard Rho](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/pollard_rho.cpp)
   - [Lagrange Interpolation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/lagrange.cpp)
+  - [Xor Trie](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/xor_trie.cpp)
 
 - Strings :smile:
 
