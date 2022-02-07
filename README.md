@@ -147,6 +147,7 @@ And many others, sky is the limit :)
   - [Two Pointers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/two_pointers.cpp)
   - [Examples of bitmasks problems](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/bitmasks.cpp)
   - [Meet in the middle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/meetinthemiddle.cpp)
+  - [Sprague-Grundy](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/sprague_grundy.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 
