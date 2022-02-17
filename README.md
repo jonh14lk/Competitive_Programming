@@ -47,6 +47,8 @@ And many others, sky is the limit :)
   - [Tip DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/tip.cpp)
   - [SOS DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/sos_dp.cpp)
   - [Aliens Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/aliens_trick.cpp)
+  - [Convex Hull Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/cht.cpp)
+  - [Dynamic Convex Hull Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/dynamic_cht.cpp)
 
 - Geometry :angry:
 
