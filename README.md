@@ -54,6 +54,7 @@ And many others, sky is the limit :)
 
   - [Basic Template](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/points_and_vectors.cpp)
   - [Line Sweep](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/LineSweep.cpp)
+  - [Minkowski sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/minkowski.cpp)
   - [Convex Hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/ConvexHull.cpp)
 
 - Graphs :heart:
