@@ -1,7 +1,7 @@
 // busca ternaria
 // divide em 3 partes, 2 mids
 // mid1 = l + (r-l)/3
-// mid2 = r – (r-l)/3
+// mid2 = r - (r-l)/3
 #include <bits/stdc++.h>
 using namespace std;
 

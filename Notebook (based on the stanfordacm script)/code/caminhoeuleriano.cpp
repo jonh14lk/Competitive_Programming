@@ -1,15 +1,15 @@
 // caminho euleriano em um grafo
 // passa por todas as arestas apenas uma unica vez e percorre todas elas
-// condição de existencia:
-// todos os vértices possuem grau par (ciclo euleriano) começa e acaba no mesmo vértice
+// condicao de existencia:
+// todos os vertices possuem grau par (ciclo euleriano) comeca e acaba no mesmo vertice
 // ou
-// apenas 2 vértices possuem grau impar, todos os outros possuem grau par ou == 0. 
-// começa num vertice de grau impar e termina num vértice de grau impar nesse caso.
-// solução:
+// apenas 2 vertices possuem grau impar, todos os outros possuem grau par ou == 0. 
+// comeca num vertice de grau impar e termina num vertice de grau impar nesse caso.
+// solucao:
 // rodar um dfs com map de visited para as arestas
 // no final por o source no vector path
 // ao final teremos o caminho inverso no vector path
-// note que o caminho inverso também é um caminho válido
+// note que o caminho inverso tambem e um caminho valido
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,8 +1,8 @@
-// dados os valores de moedas v1, v2, ... vn é possivel formar um valor m como combinação de moedas
+// dados os valores de moedas v1, v2, ... vn e possivel formar um valor m como combinacao de moedas
 // para isso basta montar uma dp inicializada com -1
-// nesse caso a dp só precisa de um parametro q é = valor restante ate o limite
-// mas podem existir variações do problema q precise de mais coisas
-// se em achar alguma combinação válida retorna 1, se não retorna 0
+// nesse caso a dp so precisa de um parametro q e = valor restante ate o limite
+// mas podem existir variacoes do problema q precise de mais coisas
+// se em achar alguma combinacao valida retorna 1, se nao retorna 0
 #include <bits/stdc++.h>
 using namespace std;
 

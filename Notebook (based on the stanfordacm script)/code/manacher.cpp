@@ -52,32 +52,32 @@ signed main()
 
 // algoritimo de manacher
 
-// motivação: dada uma string s, encontre todos os pares (l, r) tal que, a substring s[l,r]
-// é palindroma.
+// motivacao: dada uma string s, encontre todos os pares (l, r) tal que, a substring s[l,r]
+// e palindroma.
 
-// para cada posição (0 <= i < s.size()), vamos encontrar os valores de d1[i] e d2[i],
+// para cada posicao (0 <= i < s.size()), vamos encontrar os valores de d1[i] e d2[i],
 // sendo estes o numero de palindromos com comprimentos impares e com comprimentos pares
-// e com i sendo a posição central desses palindromos
+// e com i sendo a posicao central desses palindromos
 
 // algoritimo mais facil:
-// para cada posição (0 <= i < s.size()), ele tenta aumentar a resposta em 1
-// até q não seja mais possível
+// para cada posicao (0 <= i < s.size()), ele tenta aumentar a resposta em 1
+// ate q nao seja mais possivel
 // while(s[i - curr] == s[i + curr])
 // complexidade O(N^2)
 
 // algoritimo de manacher:
-// para cada posição (0 <= i < s.size()):
-// seja o par (l, r) os extremos da substring palindroma que possui o maior r entre todas as encontradas até então
-// se i > r, o fim do ultimo palindromo foi antes de i: iremos rodar o algoritimo mais facil mais facil e ir até o limite.
-// caso contrario, so precisamos rodar o algoritimo a partir de onde não foi percorrido previamente.
-// ao final se o r atual é maior do que o nosso antigo r, atualizamos o par (l, r)
-// por incrivel que pareça, a complexidade é O(N)
+// para cada posicao (0 <= i < s.size()):
+// seja o par (l, r) os extremos da substring palindroma que possui o maior r entre todas as encontradas ate entao
+// se i > r, o fim do ultimo palindromo foi antes de i: iremos rodar o algoritimo mais facil mais facil e ir ate o limite.
+// caso contrario, so precisamos rodar o algoritimo a partir de onde nao foi percorrido previamente.
+// ao final se o r atual e maior do que o nosso antigo r, atualizamos o par (l, r)
+// por incrivel que pareca, a complexidade e O(N)
 
-// voltando para a motivação:
+// voltando para a motivacao:
 // se temos os valores de d1[i] e d2[i]:
-// a substring s[i - k, i + k] é palindroma, para todo (0 <= k < d1[i])
-// a substring s[i - k - 1, i + k] é palindroma, para todo (0 <= k < d2[i])
+// a substring s[i - k, i + k] e palindroma, para todo (0 <= k < d1[i])
+// a substring s[i - k - 1, i + k] e palindroma, para todo (0 <= k < d2[i])
 // dai temos todos os intervalos
-// note que a complexidade do algoritimo de manacher é O(N),
-// mas como a quantidade máxima de palindromos em uma string é n^2,
+// note que a complexidade do algoritimo de manacher e O(N),
+// mas como a quantidade maxima de palindromos em uma string e n^2,
 // imprimir todos os intervalos consequentemente teria complexidade O(N^2) no pior caso

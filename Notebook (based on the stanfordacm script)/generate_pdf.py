@@ -1,19 +1,23 @@
 #!/usr/bin/python
-#based on the stanfordacm script:
-#https://github.com/jaehyunp/stanfordacm
+# based on the stanfordacm script:
+# https://github.com/jaehyunp/stanfordacm
 
 import subprocess
+import unidecode
 code_dir = "code"
 title = "UFAL Notebook"
+
 
 def get_sections():
     sections = []
     section_name = None
     with open('contents.txt', 'r') as f:
         for line in f:
-            if '#' in line: line = line[:line.find('#')]
+            if '#' in line:
+                line = line[:line.find('#')]
             line = line.strip()
-            if len(line) == 0: continue
+            if len(line) == 0:
+                continue
             if line[0] == '[':
                 section_name = line[1:-1]
                 subsections = []
@@ -30,6 +34,7 @@ def get_sections():
                 subsections.append((filename, subsection_name))
     return sections
 
+
 def get_style(filename):
     ext = filename.lower().split('.')[-1]
     if ext in ['c', 'cc', 'cpp']:
@@ -42,10 +47,13 @@ def get_style(filename):
         return 'txt'
 
 # TODO: check if this is everything we need
+
+
 def texify(s):
     #s = s.replace('\'', '\\\'')
     #s = s.replace('\"', '\\\"')
     return s
+
 
 def get_tex(sections):
     tex = ''
@@ -53,10 +61,12 @@ def get_tex(sections):
         tex += '\\section{%s}\n' % texify(section_name)
         for (filename, subsection_name) in subsections:
             tex += '\\subsection{%s}\n' % texify(subsection_name)
-            tex += '\\raggedbottom\\lstinputlisting[style=%s]{%s/%s}\n' % (get_style(filename), code_dir, filename)
+            tex += '\\raggedbottom\\lstinputlisting[style=%s]{%s/%s}\n' % (
+                get_style(filename), code_dir, filename)
             tex += '\\hrulefill\n'
         tex += '\n'
     return tex
+
 
 if __name__ == "__main__":
     sections = get_sections()

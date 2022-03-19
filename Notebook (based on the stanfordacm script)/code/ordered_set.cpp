@@ -31,8 +31,8 @@ signed main()
   cout << endl;
   cout << *(s.find_by_order(0)) << endl; // iterator do elemento 0
   cout << *(s.find_by_order(1)) << endl; // iterator do elemento 1
-  cout << s.order_of_key(4) << endl;     // quantidade de elementos que são menores do que 4
-  cout << s.order_of_key(6) << endl;     // quantidade de elementos que são menores do que 4
+  cout << s.order_of_key(4) << endl;     // quantidade de elementos que sao menores do que 4
+  cout << s.order_of_key(6) << endl;     // quantidade de elementos que sao menores do que 4
 }
-// find_by_order : O(log n), retorna (um iterator) qual o k-ésimo elemento do set
+// find_by_order : O(log n), retorna (um iterator) qual o k-esimo elemento do set
 // order_of_key: O(log n), retorna qual a quantidade de elementos menores do que x no set

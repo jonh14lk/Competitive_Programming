@@ -1,7 +1,7 @@
-//Dadas duas sequências s1 e s2, uma de tamanho n e outra de tamanho m, qual a maior subsequência comum às duas?
+//Dadas duas sequencias s1 e s2, uma de tamanho n e outra de tamanho m, qual a maior subsequencia comum as duas?
 
-// uma subsequência de s é um subconjunto dos elementos de s na mesma ordem em que apareciam antes.
-// isto significa que {1, 3, 5} é uma subsequência de {1, 2, 3, 4, 5}, mesmo 1 não estando do lado do 3.
+// uma subsequencia de s e um subconjunto dos elementos de s na mesma ordem em que apareciam antes.
+// isto significa que {1, 3, 5} e uma subsequencia de {1, 2, 3, 4, 5}, mesmo 1 nao estando do lado do 3.
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,7 +26,7 @@ void lcs(int m, int n)
   {
     for (int j = 0; j <= n; j++)
     {
-      if (i == 0 || j == 0) //se uma das sequências for vazia
+      if (i == 0 || j == 0) //se uma das sequencias for vazia
         dp[i][j] = 0;
       else if (v1[i - 1] == v2[j - 1]) // se eh igual, adiciono a lcs e subtraio dos dois
         dp[i][j] = dp[i - 1][j - 1] + 1;

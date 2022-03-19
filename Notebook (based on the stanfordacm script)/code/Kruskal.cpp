@@ -2,12 +2,12 @@
 
 // 1 - listar todas as arestas em ordem crescente.
 
-// 2 - Cada aresta liga dois vértices x e y, checar se eles já estão na mesma componente conexa
-// (aqui, consideramos apenas as arestas já colocadas na árvore).
+// 2 - Cada aresta liga dois vertices x e y, checar se eles ja estao na mesma componente conexa
+// (aqui, consideramos apenas as arestas ja colocadas na arvore).
 
-// 3 - Se x e y estão na mesma componente, ignoramos a aresta e continuamos o procedimento
-// (se a usássemos, formaríamos um ciclo). Se estiverem em componentes distintas, colocamos a aresta
-//na árvore e continuamos o procedimento.
+// 3 - Se x e y estao na mesma componente, ignoramos a aresta e continuamos o procedimento
+// (se a usassemos, formariamos um ciclo). Se estiverem em componentes distintas, colocamos a aresta
+//na arvore e continuamos o procedimento.
 
 // OBS: como a prioridade eh ordenar pelas menores distancias, basta botar o custo da aresta como
 // first no vector das arestas para poder ordenar
@@ -15,7 +15,7 @@
 // em suma: ordeno as arestas em ordem crescente com prioridade no custo, depois para cada aresta,
 // se o find(x) != find(y) sendo x e y os vertices das arestas, eu adiciono eles a mst e dou um join
 // nos dois, como as arestas tao ordenadas em ordem crescente, o primeiro que eu pego
-// eh necessariamente a melhor opçao e assim a mst eh formada.
+// eh necessariamente a melhor opcao e assim a mst eh formada.
 
 #include <bits/stdc++.h>
 using namespace std;

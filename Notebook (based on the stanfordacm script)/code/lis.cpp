@@ -1,10 +1,10 @@
-// dada uma sequência s qualquer, descobrir o tamanho da maior subsequência crescente de s
-// uma subsequência de s é qualquer subconjunto de elementos de s.
-// Para cada novo número, você tem duas operações possíveis:
-// 1 - Colocar o novo número no topo de uma pilha se ele não superar o que já está em seu topo;
+// dada uma sequencia s qualquer, descobrir o tamanho da maior subsequencia crescente de s
+// uma subsequencia de s e qualquer subconjunto de elementos de s.
+// Para cada novo numero, voce tem duas operacoes possiveis:
+// 1 - Colocar o novo numero no topo de uma pilha se ele nao superar o que ja esta em seu topo;
 // ou
-// 2 - Criar uma nova pilha à direita de todas as outras e colocar o novo número lá.
-// ao final do processo a nossa pilha terá os elementos da lis.
+// 2 - Criar uma nova pilha a direita de todas as outras e colocar o novo numero la.
+// ao final do processo a nossa pilha tera os elementos da lis.
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,13 +1,13 @@
 // https://codeforces.com/gym/102644/problem/C
-// achar o n-ésimo termo da sequencia de fibonacci mod (10^9 + 7) em O(log(n))
+// achar o n-esimo termo da sequencia de fibonacci mod (10^9 + 7) em O(log(n))
 // n <= 10^18
-// podemos escrever a recorrencia de fibonnaci como uma exponenciação de matriz
+// podemos escrever a recorrencia de fibonnaci como uma exponenciacao de matriz
 /*
   (  fib(n)  )      (1 1) ^ (n - 1)      (fib(1) = 1)
   (fib(n - 1))   =  (1 0)             *  (fib(0) = 1)
 */
-// é possivel fazer essa exponenciação em O(log(n)) com um algoritimo muito similar ao de exponenciação rapida
-// dai calculamos o n-ésimo termo da sequencia de fibonacci mod (10^9 + 7) em O(log(n))
+// e possivel fazer essa exponenciacao em O(log(n)) com um algoritimo muito similar ao de exponenciacao rapida
+// dai calculamos o n-esimo termo da sequencia de fibonacci mod (10^9 + 7) em O(log(n))
 
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>

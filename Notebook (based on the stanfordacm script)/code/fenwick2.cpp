@@ -1,5 +1,5 @@
 // fenwick com update pro range [l, r]
-// complexidade O(q * log(n)) com a criação de duas bits ao inves de uma
+// complexidade O(q * log(n)) com a criacao de duas bits ao inves de uma
 #include <bits/stdc++.h>
 using namespace std;
  

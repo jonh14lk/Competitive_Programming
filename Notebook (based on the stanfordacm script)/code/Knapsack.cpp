@@ -1,7 +1,7 @@
-//O problema mais clássico de Programação Dinâmica talvez seja o Knapsack.
-//De maneira geral, um ladrão irá roubar uma casa com uma mochila
-//que suporta um peso s. Ele vê n objetos na casa e sabe estimar o peso pi​ ​​e o valor vi ​​
-//de cada objeto i. Com essas informações, qual o maior valor que o ladrão pode roubar sem rasgar sua mochila?
+//O problema mais classico de Programacao Dinamica talvez seja o Knapsack.
+//De maneira geral, um ladrao ira roubar uma casa com uma mochila
+//que suporta um peso s. Ele ve n objetos na casa e sabe estimar o peso pi    e o valor vi   
+//de cada objeto i. Com essas informacoes, qual o maior valor que o ladrao pode roubar sem rasgar sua mochila?
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,98 +1,143 @@
 # Any line followed by a '#' character is ignored
 # Section headings must be in square brackets
 # Subsections within a section should follow the format:
-#   [filename within code directory][tab character \t][subsection title]
-
-[STL]
-STL_DS.cpp	Some Data Structures of STL
-ordered_set.cpp	Ordered Set from GNU PBDS
+# [filename within code directory][tab character \t][subsection title]
 
 [Binary Search and Ternary Search]
-BS.cpp	Binary Search
-UpperBound.cpp	Upper Bound
-LowerBound.cpp	Lower Bound
-STL.cpp	STL Lower Bound and Upper Bound
-TS.cpp	Ternary Search
-Aplications.cpp	Some Aplications
+LowerBound.cpp	LowerBound
+Aplications.cpp	Aplications
+TS.cpp	TS
+UpperBound.cpp	UpperBound
+STL.cpp	STL
+BS.cpp	BS
 
-[Dynamic Programming]
-Knapsack.cpp	Knapsack
-tip.cpp	Coin Change DP
-lcs.cpp	Longest Common Subsequence
-lis.cpp	Longest Increasing Subsequence
-largest-sum-contiguous-subarray.cpp	Kadane
-max_matrix_path.cpp	Max Matrix Path
-largest_square.cpp	Largest Sub-Matrix Square
-subsequences_string.cpp	Subsequences Matching 
-Digitdp.cpp	Digit DP
-expected_value.cpp	Expected Value
-broken_profile.cpp	Broken Profile DP 
+[Miscellaneous]
+meetinthemiddle.cpp	meetinthemiddle
+bitmasks.cpp	bitmasks
+two_pointers.cpp	two pointers
+inversion_count.cpp	inversion count
+sprague_grundy.cpp	sprague grundy
+stack_trick.cpp	stack trick
 
-[Common Problems]
-stack_trick.cpp	Stack Trick
-two_pointers.cpp	Two Pointers Method
-inversion_count.cpp	Inversion Count
-meetinthemiddle.cpp	Meet In The Middle
+[STL]
+ordered_set.cpp	ordered set
+STL.txt	STL
 
-[Graph and Trees]
-BFS.cpp	BFS
-DFS.cpp	DFS
-Grafo_Bipartido.cpp	Bipartite Graph
-Dijkstra.cpp	Dijkstra
-Floyd_Warshall.cpp	Floyd Warshall
-Kruskal.cpp	Kruskal
-Prim.cpp	Prim
-Union_Find.cpp	DSU
-caminhoeuleriano.cpp	Euler Path
-Topological_Sort.cpp	Topological Sort
-cycle_detection.cpp	Cycle Detection
-Ford_Fulkerson.cpp	Ford Fulkerson
-dinic.cpp	Dinic
-mincostflow.cpp	Min Cost Flow
-eulertour.cpp	Euler Tour
-LCA.cpp	LCA
-reroot.cpp	Rerooting Technique
-TreeDiameter.cpp	Diameter Of A Tree
-centroid_decomposition.cpp	Centroid Decomposition
-hld.cpp	HLD Vertex
-hld_edge.cpp	HLD Edge
+[Utils]
+runner2.py	runner2
+__int128.cpp	  int128
+execution_time.cpp	execution time
+runner.py	runner
 
 [Math]
-divisors.cpp	Divisors Of a Number
-crivo.cpp	Sieve
-primefactors.cpp	Prime Factors of a Number
-primefactors2.cpp	Prime Factors of a Number Using Sieve
-segmentedsieve.cpp	Segmented Sieve
-modular_arithmetic.cpp	Modular Arithmetic
-matrix_exponentiation.cpp	Matrix Exponentiation
-matrix_exponentiation2.cpp	Matrix Exponentiation Trick
-gaussian_elimination.cpp	Gaussian Elimination
-fft.cpp	FFT
+totient.cpp	totient
+iterative_fft.cpp	iterative fft
+fraction.cpp	fraction
+gaussian_elimination2.cpp	gaussian elimination2
+modular_arithmetic.cpp	modular arithmetic
+crivo.cpp	crivo
+divisors.cpp	divisors
+gaussian_elimination.cpp	gaussian elimination
+primefactors2.cpp	primefactors2
+matrix_exponentiation2.cpp	matrix exponentiation2
+segmentedsieve.cpp	segmentedsieve
+pollard_rho.cpp	pollard rho
+xor_trie.cpp	xor trie
+mobius.cpp	mobius
+fft.cpp	fft
+lagrange.cpp	lagrange
+primefactors.cpp	primefactors
+operadores_binarios.cpp	operadores binarios
+matrix_exponentiation.cpp	matrix exponentiation
+diophantine.cpp	diophantine
+crt.cpp	crt
+ntt.cpp	ntt
 
-[Data Structures]
-fenwick.cpp	Fenwick Tree
-fenwick2.cpp	Fenwick Tree With Range Update
-fenwick2d.cpp	Fenwick Tree 2D
-SegTree.cpp	Segment Tree
-Segtree2.cpp	Minimum and Frequency With Segment Tree 
-segtree_lazy.cpp	Segment Tree With Lazy Propagation
-sparsetable.cpp	Sparse Table
-sqrt_decomposition.cpp	Mo´s Algorithm
-sqrt_decomposition2.cpp	Mo´s Algorithm With Element Update
-treap.cpp	Treap
-treap2.cpp	Treap with Cyclic Shift and Reverse Operation
+[Dynamic programming and common problems]
+cht.cpp	cht
+subsequences_string.cpp	subsequences string
+sos_dp.cpp	sos dp
+aliens_trick.cpp	aliens trick
+largest_square.cpp	largest square
+broken_profile.cpp	broken profile
+max_matrix_path.cpp	max matrix path
+dynamic_cht.cpp	dynamic cht
+lis.cpp	lis
+Knapsack.cpp	Knapsack
+tip.cpp	tip
+largest-sum-contiguous-subarray.cpp	largest-sum-contiguous-subarray
+lcs.cpp	lcs
+divideandconquer.cpp	divideandconquer
+expected_value.cpp	expected value
+Digitdp.cpp	Digitdp
+
+[Graph]
+centroid_decomposition2.cpp	centroid decomposition2
+Floyd_Warshall.cpp	Floyd Warshall
+strong_orientation.cpp	strong orientation
+scc.cpp	scc
+hld.cpp	hld
+Prim.cpp	Prim
+articulation_points.cpp	articulation points
+mincostflow.cpp	mincostflow
+eulertour.cpp	eulertour
+TreeDiameter.cpp	TreeDiameter
+Grafo_Bipartido.cpp	Grafo Bipartido
+dsu.cpp	dsu
+reroot.cpp	reroot
+hld_edge.cpp	hld edge
+dinic.cpp	dinic
+hopcroft_karp.cpp	hopcroft karp
+dsu_rollback.cpp	dsu rollback
+MatrixDijkstra.cpp	MatrixDijkstra
+bridges.cpp	bridges
+Ford_Fulkerson.cpp	Ford Fulkerson
+caminhoeuleriano.cpp	caminhoeuleriano
+LCA.cpp	LCA
+Topological_Sort.cpp	Topological Sort
+Dijkstra.cpp	Dijkstra
+centroid_decomposition.cpp	centroid decomposition
+DFS.cpp	DFS
+cycle_detection.cpp	cycle detection
+Kruskal.cpp	Kruskal
+BFS.cpp	BFS
 
 [Strings]
-stringhashing.cpp	String Hashing
-stringhashing2.cpp	String Hashing Without Division
-rabin-karp.cpp	Rabin Karp
-manacher.cpp	Manacher
-aho_corasick.cpp	Aho Corasick
-suffix_array.cpp	Suffix Array
-suffix_array2.cpp	Suffix Array With Radix Sort
-lcp_in_suffix_array.cpp	LCP in Suffix Array
+suffix_automaton.cpp	suffix automaton
+suffix_array.cpp	suffix array
+kmp.cpp	kmp
+aho_corasick.cpp	aho corasick
+stringhashing2.cpp	stringhashing2
+lcp_in_suffix_array.cpp	lcp in suffix array
+substring_fft.cpp	substring fft
+suffix_array2.cpp	suffix array2
+z-function.cpp	z-function
+rabin-karp.cpp	rabin-karp
+manacher.cpp	manacher
+stringhashing.cpp	stringhashing
 
 [Geometry]
-points_and_vectors.cpp	Template
-LineSweep.cpp	line Sweep
-ConvexHull.cpp	Convex Hull
+ConvexHull.cpp	ConvexHull
+minkowski.cpp	minkowski
+LineSweep.cpp	LineSweep
+points_and_vectors.cpp	points and vectors
+
+[Structures]
+persistent_seg.cpp	persistent seg
+treap.cpp	treap
+mergesorttree.cpp	mergesorttree
+sparsetable.cpp	sparsetable
+sqrt_decomposition2.cpp	sqrt decomposition2
+implicit_seg.cpp	implicit seg
+min_queue.cpp	min queue
+segtree_lazy.cpp	segtree lazy
+fenwick3.cpp	fenwick3
+treap2.cpp	treap2
+SegTree.cpp	SegTree
+Segtree2.cpp	Segtree2
+sqrt_decomposition.cpp	sqrt decomposition
+color_update.cpp	color update
+bit2d.cpp	bit2d
+fenwick2.cpp	fenwick2
+fenwick.cpp	fenwick
+

@@ -2,7 +2,7 @@
 
 // 1 - definir a distancia de cada vertice como infinito (similar ao dijkstra).
 // 2 - definir a distancia de 0 para o source(0).
-// 3 - Em cada passo, encontrar o vértice u, que ainda não foi processado, que possua a menor das distâncias.
+// 3 - Em cada passo, encontrar o vertice u, que ainda nao foi processado, que possua a menor das distancias.
 // 4 - ao termino fazer a soma de todas as distancias e encontrar qual a soma das distancias na MST.
 
 #include <bits/stdc++.h>

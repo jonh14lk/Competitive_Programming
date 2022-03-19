@@ -1,16 +1,16 @@
-// centroid de uma árvore -> é um nó que ao ser removido da árvore, separaria as
-// árvores resultantes de modo com que a maior árvore desse conjunto teria no máximo
-// (n / 2) nós, sendo n o número de nós da árvore. Para qualquer árvore com n nós,
+// centroid de uma arvore -> e um no que ao ser removido da arvore, separaria as
+// arvores resultantes de modo com que a maior arvore desse conjunto teria no maximo
+// (n / 2) nos, sendo n o numero de nos da arvore. Para qualquer arvore com n nos,
 // o centroid sempre existe.
 
 ///////////////////////////////////////////////////////////////////////////////////////
 
-// centroid decomposition -> muito útil para tentar diminuir a complexidade em certos
-// tipos de consultas a serem feitas, uma maneira melhor de organizar a árvore.
+// centroid decomposition -> muito util para tentar diminuir a complexidade em certos
+// tipos de consultas a serem feitas, uma maneira melhor de organizar a arvore.
 
-// algorítimo:
-// 1) o centroid é a raiz dessa nova árvore
-// 2) achar o centroid das árvores menores que surgiram com a remoção do centroid "pai"
+// algoritimo:
+// 1) o centroid e a raiz dessa nova arvore
+// 2) achar o centroid das arvores menores que surgiram com a remocao do centroid "pai"
 // 3) por uma aresta entre o centroid "filho" e o centroid "pai"
 // 4) repetir isso ate todos os nos serem removidos
 // 5) ao final teremos a centroid tree

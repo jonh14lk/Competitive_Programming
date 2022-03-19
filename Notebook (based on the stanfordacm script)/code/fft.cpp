@@ -110,21 +110,21 @@ signed main()
 // fft
 // multiplicar dois polinomios A e B
 // basic approach:
-// aplicar a propiedade distributiva e fazer essa multiplicação em O(N^2)
-// porém podemos melhorar
+// aplicar a propiedade distributiva e fazer essa multiplicacao em O(N^2)
+// porem podemos melhorar
 // vamos la
-// 1  - todo polinomio de grau d que é representado na forma de coeficientes
-//      de coeficientes possui uma representação em forma de d - 1 pontos
-// 2  - para esse conjunto de pontos, só existe um único polinomio equivalente
-// 3  - DFT -> transformação da representação de coeficientes para represntação
+// 1  - todo polinomio de grau d que e representado na forma de coeficientes
+//      de coeficientes possui uma representacao em forma de d - 1 pontos
+// 2  - para esse conjunto de pontos, so existe um unico polinomio equivalente
+// 3  - DFT -> transformacao da representacao de coeficientes para represntacao
 //             de pontos
 // 4  - com isso, para multiplicar os dois polinomios agora basta multiplicar
-//      os conjuntos de pontos e com isso obtemos a representação usando pontos
+//      os conjuntos de pontos e com isso obtemos a representacao usando pontos
 //      do polinomio resultante
 // 5  - DFT(A * B) = DFT(A) * DFT(B);
-// 6  - porém agora precisamos transformar a resposta obtida na multiplicação dos pontos
-//      para a representação em que usa os coeficientes
-// 7  - inverseDFT -> transformação da representação de pontos para represntação
+// 6  - porem agora precisamos transformar a resposta obtida na multiplicacao dos pontos
+//      para a representacao em que usa os coeficientes
+// 7  - inverseDFT -> transformacao da representacao de pontos para represntacao
 //                    de coeficientes
 // 8  - A * B = inverseDFT(DFT(A) * DFT(B))
 // 9  - FFT -> metodo para computar a DFT em O(N * low(N))
@@ -132,10 +132,10 @@ signed main()
 //      atual em 2 polinomos de grau ((n / 2) - 1) , tal que, a soma deles
 //      resulte no polinomio que tinhamos antes
 // 11 - agora para achar a inverseDFT de uma DFT, iremos escrever a DFT
-//      em forma de matriz, essa matriz é chamada de matriz de vandermonde
-//      e em geral, podemos escrever a resposta como uma multiplicação de
+//      em forma de matriz, essa matriz e chamada de matriz de vandermonde
+//      e em geral, podemos escrever a resposta como uma multiplicacao de
 //      matrizes
-// 12 - essa multplicação de matrizes pode ser descrita como:
+// 12 - essa multplicacao de matrizes pode ser descrita como:
 //      a^-1 * b = c
 //      no qual:
 //      a^-1 -> inversa da matriz a(DFT)

@@ -1,17 +1,17 @@
 // seja S = a1, a2 , ... , an
-// uma inversão S é um par (i,j) com i < j e ai > aj
+// uma inversao S e um par (i,j) com i < j e ai > aj
 
-// Solução O(n²) nao ideal:
+// Solucao O(n2) nao ideal:
 //for(int i=0;i<n;i++)
 //	for(int j=i+1;j<n;j++)
 //		if(v[i]>v[j]) ans++;
 
-// Em vez de trabalharmos com o vetor inteiro(n²), vamos dividir o vetor ao meio e trabalhar com suas metades,
+// Em vez de trabalharmos com o vetor inteiro(n2), vamos dividir o vetor ao meio e trabalhar com suas metades,
 // que chamaremos de u1 e u2.
 
-// Queremos saber o valor de inv, o número de inversões em v. Há três tipos de inversões (i,j)(i,j) em v:
-// aquelas em que i e j estão ambos em u1, aquelas em que i e j estão ambos em u2 e aquelas
-// em que i está em u1 e j está em u2.
+// Queremos saber o valor de inv, o numero de inversoes em v. Ha tres tipos de inversoes (i,j)(i,j) em v:
+// aquelas em que i e j estao ambos em u1, aquelas em que i e j estao ambos em u2 e aquelas
+// em que i esta em u1 e j esta em u2.
 #include <bits/stdc++.h>
 using namespace std;
 

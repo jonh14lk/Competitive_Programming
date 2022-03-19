@@ -75,26 +75,26 @@ signed main()
     cout << i << " ";
   cout << endl;
 }
-// eliminação gaussiana
-// para resolver sistemas com n equações e m incognitas
+// eliminacao gaussiana
+// para resolver sistemas com n equacoes e m incognitas
 
-// para isso iremos utilizar uma representação usando
-// matrizes, no qual uma coluna extra é adicionada,
-// representando os resultados de cada equação.
+// para isso iremos utilizar uma representacao usando
+// matrizes, no qual uma coluna extra e adicionada,
+// representando os resultados de cada equacao.
 
 // algoritimo:
-// ideia: qualquer equação pode ser reescrita como uma combinação linear dela mesma
-// 1- dividir a primeira linha(primeira equação) por a[0][0]
+// ideia: qualquer equacao pode ser reescrita como uma combinacao linear dela mesma
+// 1- dividir a primeira linha(primeira equacao) por a[0][0]
 // 2- adicionar a primeira linha as linhas restantes, de modo que, os
 //    coeficientes da primeira coluna se tornem todos zeros, para que
 //    isso aconteca, na i-esima linha devemos adicionar a primeira linha
 //    multiplicada por (a[i][0] * -1)
 // 3- com isso, o elemento a[0][0] = 1 e os demais elementos da primeira coluna
-//    serão iguais a zero
+//    serao iguais a zero
 // 4- continuamos o algoritimo a partir da etapa 1 novamente, dessa vez
 //    com a segunda coluna e a segunda linha, dividindo a linha por a[1][1]
 //    e assim sucessivamente
 // 5- ao final, teremos a resposta
 
 // complexidade O(min(n, m) * n * m);
-// se n == m, logo a complexidade será O(n^3)
+// se n == m, logo a complexidade sera O(n^3)
