@@ -23,12 +23,17 @@ namespace seg
   struct node
   {
     int item, lazy, lazy_status, l, r;
+    node() {}
+    node(int l, int r, int lazy, int lazy_status, int item) : l(l), r(r), lazy(lazy), lazy_status(lazy_status), item(item) {}
   };
 
-  int cnt;
-  node seg[500 * MAXN];
+  vector<node> seg;
   vector<int> roots;
 
+  void init()
+  {
+    seg.resize(1);
+  }
   int neutral()
   {
     return 0;
@@ -39,32 +44,20 @@ namespace seg
   }
   int newleaf(int vv)
   {
-    int p = ++cnt;
-    seg[p].l = 0;
-    seg[p].r = 0;
-    seg[p].lazy = 0;
-    seg[p].lazy_status = 0;
-    seg[p].item = vv;
+    int p = seg.size();
+    seg.pb(node(0, 0, 0, 0, vv));
     return p;
   }
   int newparent(int l, int r)
   {
-    int p = ++cnt;
-    seg[p].l = l;
-    seg[p].r = r;
-    seg[p].lazy = 0;
-    seg[p].lazy_status = 0;
-    seg[p].item = merge(seg[seg[p].l].item, seg[seg[p].r].item);
+    int p = seg.size();
+    seg.pb(node(l, r, 0, 0, merge(seg[l].item, seg[r].item)));
     return p;
   }
   int newkid(int i, int diff, int l, int r)
   {
-    int p = ++cnt;
-    seg[p].l = seg[i].l;
-    seg[p].r = seg[i].r;
-    seg[p].lazy = seg[i].lazy + diff;
-    seg[p].lazy_status = 1;
-    seg[p].item = seg[i].item + ((r - l + 1) * diff);
+    int p = seg.size();
+    seg.pb(node(seg[i].l, seg[i].r, seg[i].lazy + diff, 1, seg[i].item + ((r - l + 1) * diff)));
     return p;
   }
   void add(int i, int l, int r)
@@ -116,6 +109,7 @@ signed main()
   cin >> n >> q;
   for (int i = 0; i < n; i++)
     cin >> v[i];
+  seg::init();
   int root = seg::build(0, n - 1);
   seg::roots.pb(root);
   while (q--)

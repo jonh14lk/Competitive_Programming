@@ -7,149 +7,170 @@ using namespace __gnu_pbds;
 template <class T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-#define PI acos(-1)
-#define int long long int
+//#define int long long int
+#define endl '\n'
 #define pb push_back
 #define pi pair<int, int>
 #define pii pair<int, pi>
 #define fir first
 #define sec second
-#define DEBUG 0
-#define MAXN 101
+#define MAXN 1000005
+#define mod 1000000007
 
-namespace treap
+struct treap
 {
-  struct treap // struct
+  int data, priority;
+  int sz, lazy2;
+  bool lazy;
+  treap *l, *r;
+};
+int size(treap *node)
+{
+  return (!node) ? 0 : node->sz;
+}
+void recalc(treap *node)
+{
+  if (!node)
+    return;
+  node->sz = 1;
+  if (node->l)
+    node->sz += node->l->sz;
+  if (node->r)
+    node->sz += node->r->sz;
+}
+void lazy_propagation(treap *node)
+{
+  if (node == NULL)
+    return;
+  if (node->lazy2)
   {
-    int data, priority;
-    vector<treap *> kids;
-    int subtree_size, sum, lazy;
-  };
-  int size(treap *node) // retorna o tamanho da subtree do no
-  {
-    return (node == NULL) ? 0 : node->subtree_size;
+    if (node->l)
+      node->l->lazy2 += node->lazy2;
+    if (node->r)
+      node->r->lazy2 += node->lazy2;
+    node->data += node->lazy2;
+    node->lazy2 = 0;
   }
-  void recalc(treap *node) // recalculo das informacoes do no
+  if (node->lazy)
   {
-    if (node == NULL)
-      return;
-    node->subtree_size = 1;
-    node->sum = (node->data) + (node->lazy * size(node)); // lazy propagation
-    for (auto const &i : node->kids)
-    {
-      if (i == NULL)
-        continue;
-      node->subtree_size += i->subtree_size;
-      node->sum += ((i->sum) + (i->lazy * size(i)));
-    }
-  }
-  void lazy_propagation(treap *node) // para aplicar o lazy
-  {
-    if (node == NULL || !(node->lazy))
-      return;
-    for (auto const &i : node->kids)
-    {
-      if (i == NULL)
-        continue;
-      i->lazy += node->lazy;
-    }
-    node->data += node->lazy;
+    swap(node->l, node->r);
+    if (node->l)
+      node->l->lazy = !node->l->lazy;
+    if (node->r)
+      node->r->lazy = !node->r->lazy;
     node->lazy = 0;
   }
-  vector<treap *> split(treap *node, int n) // n = quantidade de elementos na subarvore da esquerda
-  {
-    if (node == NULL)
-      return {NULL, NULL};
-    lazy_propagation(node);
-    if (size(node->kids[0]) >= n)
-    {
-      vector<treap *> left = split(node->kids[0], n);
-      node->kids[0] = left[1];
-      recalc(node);
-      return {left[0], node};
-    }
-    else
-    {
-      vector<treap *> right = split(node->kids[1], n - size(node->kids[0]) - 1);
-      node->kids[1] = right[0];
-      recalc(node);
-      return {node, right[1]};
-    }
-  }
-  treap *merge(treap *l, treap *r) // merge entre duas treaps
-  {
-    if (l == NULL)
-      return r;
-    if (r == NULL)
-      return l;
-    lazy_propagation(l);
-    lazy_propagation(r);
-    if (l->priority < r->priority)
-    {
-      l->kids[1] = merge(l->kids[1], r);
-      recalc(l);
-      return l;
-    }
-    else
-    {
-      r->kids[0] = merge(l, r->kids[0]);
-      recalc(r);
-      return r;
-    }
-  }
-  treap *add(treap *t, int l, int r, int k) // add pro lazy propagation
-  {
-    vector<treap *> a = split(t, l);
-    vector<treap *> b = split(a[1], r - l + 1);
-    b[0]->lazy += k;
-    return merge(a[0], merge(b[0], b[1]));
-  }
-  treap *create_node(int data, int priority) // criar um novo no
-  {
-    treap *ret = new treap;
-    ret->data = data;
-    ret->priority = priority;
-    ret->kids = {NULL, NULL};
-    ret->subtree_size = 1;
-    ret->sum = ret->data;
-    ret->lazy = 0;
-    return ret;
-  }
-  void print_treap(treap *t) // dfs in treap tree
-  {
-    if (t == NULL)
-      return;
-    lazy_propagation(t);
-    print_treap(t->kids[0]);
-    cout << t->data << " ";
-    print_treap(t->kids[1]);
-  }
+}
+void split(treap *t, treap *&l, treap *&r, int n)
+{
+  if (!t)
+    return void(l = r = 0);
+  lazy_propagation(t);
+  if (size(t->l) >= n)
+    split(t->l, l, t->l, n), r = t;
+  else
+    split(t->r, t->r, r, n - size(t->l) - 1), l = t;
+  recalc(t);
+}
+void merge(treap *&t, treap *l, treap *r)
+{
+  lazy_propagation(l);
+  lazy_propagation(r);
+  if (!l)
+    t = r;
+  else if (!r)
+    t = l;
+  else if (l->priority > r->priority)
+    merge(l->r, l->r, r), t = l;
+  else
+    merge(r->l, l, r->l), t = r;
+  recalc(t);
+}
+void troca(treap *&t, int l, int r, int ll, int rr)
+{
+  treap *a0, *a1, *b0, *b1, *c0, *c1, *d0, *d1;
+  split(t, a0, a1, l);
+  split(a1, b0, b1, r - l + 1);
+  ll -= (r + 1);
+  rr -= (r + 1);
+  split(b1, c0, c1, ll);
+  split(c1, d0, d1, rr - ll + 1);
+  merge(t, a0, d0);
+  merge(t, t, c0);
+  merge(t, t, b0);
+  merge(t, t, d1);
+}
+void add(treap *&t, int l, int r)
+{
+  treap *a0, *a1, *b0, *b1;
+  split(t, a0, a1, l);
+  split(a1, b0, b1, r - l + 1);
+  b0->lazy ^= 1;
+  b0->lazy2 += 1;
+  merge(t, a0, b0);
+  merge(t, t, b1);
+}
+void solve(int x)
+{
+  x = x % 26;
+  char c = x + 'a';
+  cout << c;
+}
+void dfs(treap *t)
+{
+  if (!t)
+    return;
+  lazy_propagation(t);
+  dfs(t->l);
+  solve(t->data);
+  dfs(t->r);
+}
+treap *create_node(int data, int priority)
+{
+  treap *ret = new treap;
+  ret->data = data;
+  ret->priority = priority;
+  ret->l = 0;
+  ret->r = 0;
+  ret->sz = 1;
+  ret->lazy = 0;
+  ret->lazy2 = 0;
+  return ret;
 }
 signed main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  srand(time(NULL)); // para as prioridades
-  treap::treap *t = NULL;
-  int n;
-  cin >> n;
-  for (int i = 0; i < n; i++)
-  {
-    int k;
-    cin >> k;
-    t = treap::merge(t, treap::create_node(k, rand()));
-  }
-  treap::print_treap(t);
-  cout << endl;
+  srand(time(NULL));
   int q;
   cin >> q;
   while (q--)
   {
-    int l, r, k; // test lazy propagation
-    cin >> l >> r >> k;
-    t = treap::add(t, l, r, k);
-    treap::print_treap(t);
+    int n, m;
+    string s;
+    cin >> s >> m;
+    n = s.size();
+    treap *t = 0;
+    for (auto const &i : s)
+    {
+      int x = i - 'a';
+      merge(t, t, create_node(x, rand()));
+    }
+    while (m--)
+    {
+      int a, b, c, d;
+      cin >> a >> b >> c >> d;
+      a--, b--, c--, d--;
+      add(t, a, b);
+      add(t, c, d);
+      troca(t, a, b, c, d);
+    }
+    dfs(t);
     cout << endl;
   }
   return 0;
 }
+// https://vjudge.net/contest/478186#problem/E
+// - lazy propagation
+// - reverse range with lazy propagation
+// - swap ranges with equal lenght

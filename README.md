@@ -85,6 +85,7 @@ And many others, sky is the limit :)
   - [Centroid Decomposition](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/centroid_decomposition.cpp)
   - [HLD (Vertex cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld.cpp)
   - [HLD (Edge cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld_edge.cpp)
+  - [Mo's Algorithm on Trees](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/mo_trees.cpp)
 
 - Flows and Matchings :heart:
 
@@ -123,6 +124,7 @@ And many others, sky is the limit :)
   - [LCP in Suffix Array](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/lcp_in_suffix_array.cpp)
   - [String Hashing](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/stringhashing.cpp)
   - [String Hashing (recent template)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/stringhashing2.cpp)
+  - [KMP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/kmp.cpp)
   - [Z-function](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/z-function.cpp)
   - [Rabin Karp](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/rabin-karp.cpp)
   - [Manacher](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/manacher.cpp)
@@ -155,6 +157,7 @@ And many others, sky is the limit :)
   - [Examples of bitmasks problems](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/bitmasks.cpp)
   - [Meet in the middle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/meetinthemiddle.cpp)
   - [Sprague-Grundy](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/sprague_grundy.cpp)
+  - [Coordinate Compression](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/coordinate_compression.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 
