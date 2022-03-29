@@ -14,6 +14,7 @@ BS.cpp	BS
 [Miscellaneous]
 meetinthemiddle.cpp	meetinthemiddle
 bitmasks.cpp	bitmasks
+coordinate_compression.cpp	coordinate compression
 two_pointers.cpp	two pointers
 inversion_count.cpp	inversion count
 sprague_grundy.cpp	sprague grundy
@@ -48,6 +49,7 @@ fft.cpp	fft
 lagrange.cpp	lagrange
 primefactors.cpp	primefactors
 operadores_binarios.cpp	operadores binarios
+baby_step_gigant_step.cpp	baby step gigant step
 matrix_exponentiation.cpp	matrix exponentiation
 diophantine.cpp	diophantine
 crt.cpp	crt
@@ -93,6 +95,7 @@ MatrixDijkstra.cpp	MatrixDijkstra
 bridges.cpp	bridges
 Ford_Fulkerson.cpp	Ford Fulkerson
 caminhoeuleriano.cpp	caminhoeuleriano
+mo_trees.cpp	mo trees
 LCA.cpp	LCA
 Topological_Sort.cpp	Topological Sort
 Dijkstra.cpp	Dijkstra
@@ -110,6 +113,7 @@ aho_corasick.cpp	aho corasick
 stringhashing2.cpp	stringhashing2
 lcp_in_suffix_array.cpp	lcp in suffix array
 substring_fft.cpp	substring fft
+min_suffix.cpp	min suffix
 suffix_array2.cpp	suffix array2
 z-function.cpp	z-function
 rabin-karp.cpp	rabin-karp
@@ -133,6 +137,7 @@ min_queue.cpp	min queue
 segtree_lazy.cpp	segtree lazy
 fenwick3.cpp	fenwick3
 treap2.cpp	treap2
+persistent_seg2.cpp	persistent seg2
 SegTree.cpp	SegTree
 Segtree2.cpp	Segtree2
 sqrt_decomposition.cpp	sqrt decomposition
