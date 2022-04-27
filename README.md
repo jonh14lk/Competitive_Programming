@@ -93,6 +93,7 @@ And many others, sky is the limit :)
   - [Dinic](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dinic.cpp)
   - [MinCostFlow](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/mincostflow.cpp)
   - [Hopcroft-Karp-Karzanov](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hopcroft_karp.cpp)
+  - [Hungarian](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hungarian.cpp)
 
 - Math :angry:
 
