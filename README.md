@@ -87,6 +87,7 @@ And many others, sky is the limit :)
   - [HLD (Edge cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hld_edge.cpp)
   - [Mo's Algorithm on Trees](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/mo_trees.cpp)
   - [Tree Isomorfism](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/tree_isomorfism.cpp)
+  - [Sack (dsu on tree)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/sack.cpp)
 
 - Flows and Matchings :heart:
 
@@ -116,6 +117,7 @@ And many others, sky is the limit :)
   - [Xor Trie](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/xor_trie.cpp)
   - [Mobius Inversion](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/mobius.cpp)
   - [Euler Totient Function](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/totient.cpp)
+  - [Stars and Bars](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/stars_and_bars.cpp)
 
 - Strings :smile:
 
