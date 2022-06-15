@@ -74,6 +74,7 @@ And many others, sky is the limit :)
   - [Find Bridges](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/bridges.cpp)
   - [Find Articulation Points](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/articulation_points.cpp)
   - [SCCs & Condensation Graph](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/scc.cpp)
+  - [2-SAT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/two_sat.cpp)
   - [Strong Orientation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/strong_orientation.cpp)
 
 - Trees :heart:
