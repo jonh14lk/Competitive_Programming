@@ -24,8 +24,8 @@ struct line
   bool operator<(const line &o) const
   {
     if (m != o.m)
-      return m > o.m;
-    return b > o.b;
+      return m < o.m;
+    return b < o.b;
   }
   bool operator<(const int x) const { return p < x; }
   int eval(int x) const { return m * x + b; }
@@ -37,40 +37,39 @@ struct line
 };
 struct cht
 {
-  deque<line> a;
-  cht() {}
-  int eval(int i, int x)
-  {
-    return a[i].m * x + a[i].b;
-  }
+  int ptr;
+  vector<line> a;
+  cht() { ptr = 0; }
   void add(line l)
   {
     while (1)
     {
-      if (a.size() >= 1 && a[0].m == l.m && l.b > a[0].b)
+      if (a.size() >= 1 && a.back().m == l.m && l.b > a.back().b)
       {
-        a.pop_front();
+        a.pop_back();
       }
-      else if (a.size() >= 1 && a[0].m == l.m && l.b <= a[0].b)
+      else if (a.size() >= 1 && a.back().m == l.m && l.b <= a.back().b)
       {
         break;
       }
-      else if (a.size() >= 2 && a[0].inter(l) >= a[1].inter(a[0]))
+      else if (a.size() >= 2 && a.back().inter(l) >= a[a.size() - 2].inter(a.back()))
       {
-        a.pop_front();
+        a.pop_back();
       }
       else
       {
-        a.push_front(l);
+        a.pb(l);
         break;
       }
     }
   }
   int get(int x)
   {
-    while (a.size() >= 2 && eval(a.size() - 1, x) <= eval(a.size() - 2, x))
-      a.pop_back();
-    return eval(a.size() - 1, x);
+    if (!a.size())
+      return -inf;
+    while (ptr + 1 < a.size() && a[ptr].eval(x) <= a[ptr + 1].eval(x))
+      ptr++;
+    return a[ptr].eval(x);
   }
 };
 signed main()
