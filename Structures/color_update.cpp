@@ -17,6 +17,8 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define MAXN 500001
 #define mod 1000000007
 
+const int inf = 1e15;
+
 struct color_upd
 {
 #define left fir
@@ -25,9 +27,10 @@ struct color_upd
   set<pii> ranges;
   vector<pii> erased;
 
-  color_upd(int n) // inicialmente, todo mundo pintado com a cor -1
+  color_upd(int n) // inicialmente, todo mundo pintado com a cor inf
   {
-    ranges.insert({0, {n - 1, -1}});
+    // nao usar cores negativas!!!!!!!!!
+    ranges.insert({0, {n - 1, inf}});
   }
   int get(int i) // qual a cor do elemento na posição i
   {
