@@ -119,6 +119,7 @@ And many others, sky is the limit :)
   - [Mobius Inversion](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/mobius.cpp)
   - [Euler Totient Function](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/totient.cpp)
   - [Stars and Bars](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/stars_and_bars.cpp)
+  - [Maximum Xor Subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/max_xor_subsequence.cpp)
 
 - Strings :smile:
 
