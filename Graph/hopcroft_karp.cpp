@@ -106,5 +106,5 @@ signed main()
 }
 // hopcroft-karp
 // maximum bipartite matching
-// O(sqrt(V) + E)
+// O(sqrt(V) * E)
 // 0-indexed
