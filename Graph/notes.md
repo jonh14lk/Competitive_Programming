@@ -88,7 +88,7 @@ each X, the condition |X| ≤ |f(X)| holds.
 ## References
 
 - [Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf)
-- [Graph Theory) - Wikipedia](https://en.wikipedia.org/wiki/Graph_theory)
+- [(Graph Theory) - Wikipedia](https://en.wikipedia.org/wiki/Graph_theory)
 - [(Medium Article) - Solving Minimum Path Cover on a DAG](https://towardsdatascience.com/solving-minimum-path-cover-on-a-dag-21b16ca11ac0)
 
 ## Extra (Getting Confidence Trick)
