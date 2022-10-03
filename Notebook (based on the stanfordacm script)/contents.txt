@@ -33,6 +33,7 @@ runner.py	runner
 [Math]
 totient.cpp	totient
 iterative_fft.cpp	iterative fft
+max_xor_subsequence.cpp	max xor subsequence
 fraction.cpp	fraction
 gaussian_elimination2.cpp	gaussian elimination2
 modular_arithmetic.cpp	modular arithmetic
@@ -48,8 +49,10 @@ mobius.cpp	mobius
 fft.cpp	fft
 lagrange.cpp	lagrange
 primefactors.cpp	primefactors
+fwht.cpp	fwht
 operadores_binarios.cpp	operadores binarios
 baby_step_gigant_step.cpp	baby step gigant step
+stars_and_bars.cpp	stars and bars
 matrix_exponentiation.cpp	matrix exponentiation
 diophantine.cpp	diophantine
 crt.cpp	crt
@@ -62,6 +65,7 @@ sos_dp.cpp	sos dp
 aliens_trick.cpp	aliens trick
 largest_square.cpp	largest square
 broken_profile.cpp	broken profile
+exchange_arguments.cpp	exchange arguments
 max_matrix_path.cpp	max matrix path
 dynamic_cht.cpp	dynamic cht
 lis.cpp	lis
@@ -81,6 +85,7 @@ scc.cpp	scc
 hld.cpp	hld
 Prim.cpp	Prim
 articulation_points.cpp	articulation points
+tree_isomorfism.cpp	tree isomorfism
 mincostflow.cpp	mincostflow
 eulertour.cpp	eulertour
 TreeDiameter.cpp	TreeDiameter
@@ -88,12 +93,16 @@ Grafo_Bipartido.cpp	Grafo Bipartido
 dsu.cpp	dsu
 reroot.cpp	reroot
 hld_edge.cpp	hld edge
+two_sat.cpp	two sat
+hungarian.cpp	hungarian
 dinic.cpp	dinic
 hopcroft_karp.cpp	hopcroft karp
 dsu_rollback.cpp	dsu rollback
 MatrixDijkstra.cpp	MatrixDijkstra
+sack.cpp	sack
 bridges.cpp	bridges
 Ford_Fulkerson.cpp	Ford Fulkerson
+notes.md	notes
 caminhoeuleriano.cpp	caminhoeuleriano
 mo_trees.cpp	mo trees
 LCA.cpp	LCA
@@ -111,16 +120,15 @@ suffix_array.cpp	suffix array
 kmp.cpp	kmp
 aho_corasick.cpp	aho corasick
 stringhashing2.cpp	stringhashing2
-lcp_in_suffix_array.cpp	lcp in suffix array
 substring_fft.cpp	substring fft
 min_suffix.cpp	min suffix
-suffix_array2.cpp	suffix array2
 z-function.cpp	z-function
 rabin-karp.cpp	rabin-karp
 manacher.cpp	manacher
 stringhashing.cpp	stringhashing
 
 [Geometry]
+smallest_enclosing_circle.cpp	smallest enclosing circle
 ConvexHull.cpp	ConvexHull
 minkowski.cpp	minkowski
 LineSweep.cpp	LineSweep
@@ -129,20 +137,24 @@ points_and_vectors.cpp	points and vectors
 [Structures]
 persistent_seg.cpp	persistent seg
 treap.cpp	treap
+segtree2d.cpp	segtree2d
 mergesorttree.cpp	mergesorttree
 sparsetable.cpp	sparsetable
 sqrt_decomposition2.cpp	sqrt decomposition2
 implicit_seg.cpp	implicit seg
 min_queue.cpp	min queue
+SegTree_pa.cpp	SegTree pa
 segtree_lazy.cpp	segtree lazy
 fenwick3.cpp	fenwick3
 treap2.cpp	treap2
 persistent_seg2.cpp	persistent seg2
 SegTree.cpp	SegTree
+binary_lifting.cpp	binary lifting
 Segtree2.cpp	Segtree2
 sqrt_decomposition.cpp	sqrt decomposition
 color_update.cpp	color update
 bit2d.cpp	bit2d
 fenwick2.cpp	fenwick2
+bit2D.cpp	bit2D
 fenwick.cpp	fenwick
 
