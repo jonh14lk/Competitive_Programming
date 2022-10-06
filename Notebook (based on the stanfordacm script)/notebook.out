@@ -80,66 +80,68 @@
 \BOOKMARK [2][-]{subsection.7.11}{TreeDiameter}{section.7}% 80
 \BOOKMARK [2][-]{subsection.7.12}{Grafo Bipartido}{section.7}% 81
 \BOOKMARK [2][-]{subsection.7.13}{dsu}{section.7}% 82
-\BOOKMARK [2][-]{subsection.7.14}{reroot}{section.7}% 83
-\BOOKMARK [2][-]{subsection.7.15}{hld edge}{section.7}% 84
-\BOOKMARK [2][-]{subsection.7.16}{two sat}{section.7}% 85
-\BOOKMARK [2][-]{subsection.7.17}{hungarian}{section.7}% 86
-\BOOKMARK [2][-]{subsection.7.18}{dinic}{section.7}% 87
-\BOOKMARK [2][-]{subsection.7.19}{hopcroft karp}{section.7}% 88
-\BOOKMARK [2][-]{subsection.7.20}{dsu rollback}{section.7}% 89
-\BOOKMARK [2][-]{subsection.7.21}{MatrixDijkstra}{section.7}% 90
-\BOOKMARK [2][-]{subsection.7.22}{sack}{section.7}% 91
-\BOOKMARK [2][-]{subsection.7.23}{bridges}{section.7}% 92
-\BOOKMARK [2][-]{subsection.7.24}{Ford Fulkerson}{section.7}% 93
-\BOOKMARK [2][-]{subsection.7.25}{notes}{section.7}% 94
-\BOOKMARK [2][-]{subsection.7.26}{caminhoeuleriano}{section.7}% 95
-\BOOKMARK [2][-]{subsection.7.27}{mo trees}{section.7}% 96
-\BOOKMARK [2][-]{subsection.7.28}{LCA}{section.7}% 97
-\BOOKMARK [2][-]{subsection.7.29}{Topological Sort}{section.7}% 98
-\BOOKMARK [2][-]{subsection.7.30}{Dijkstra}{section.7}% 99
-\BOOKMARK [2][-]{subsection.7.31}{centroid decomposition}{section.7}% 100
-\BOOKMARK [2][-]{subsection.7.32}{DFS}{section.7}% 101
-\BOOKMARK [2][-]{subsection.7.33}{cycle detection}{section.7}% 102
-\BOOKMARK [2][-]{subsection.7.34}{Kruskal}{section.7}% 103
-\BOOKMARK [2][-]{subsection.7.35}{BFS}{section.7}% 104
-\BOOKMARK [1][-]{section.8}{Strings}{}% 105
-\BOOKMARK [2][-]{subsection.8.1}{suffix automaton}{section.8}% 106
-\BOOKMARK [2][-]{subsection.8.2}{suffix array}{section.8}% 107
-\BOOKMARK [2][-]{subsection.8.3}{kmp}{section.8}% 108
-\BOOKMARK [2][-]{subsection.8.4}{aho corasick}{section.8}% 109
-\BOOKMARK [2][-]{subsection.8.5}{stringhashing2}{section.8}% 110
-\BOOKMARK [2][-]{subsection.8.6}{substring fft}{section.8}% 111
-\BOOKMARK [2][-]{subsection.8.7}{min suffix}{section.8}% 112
-\BOOKMARK [2][-]{subsection.8.8}{z-function}{section.8}% 113
-\BOOKMARK [2][-]{subsection.8.9}{rabin-karp}{section.8}% 114
-\BOOKMARK [2][-]{subsection.8.10}{manacher}{section.8}% 115
-\BOOKMARK [2][-]{subsection.8.11}{stringhashing}{section.8}% 116
-\BOOKMARK [1][-]{section.9}{Geometry}{}% 117
-\BOOKMARK [2][-]{subsection.9.1}{smallest enclosing circle}{section.9}% 118
-\BOOKMARK [2][-]{subsection.9.2}{ConvexHull}{section.9}% 119
-\BOOKMARK [2][-]{subsection.9.3}{minkowski}{section.9}% 120
-\BOOKMARK [2][-]{subsection.9.4}{LineSweep}{section.9}% 121
-\BOOKMARK [2][-]{subsection.9.5}{points and vectors}{section.9}% 122
-\BOOKMARK [1][-]{section.10}{Structures}{}% 123
-\BOOKMARK [2][-]{subsection.10.1}{persistent seg}{section.10}% 124
-\BOOKMARK [2][-]{subsection.10.2}{treap}{section.10}% 125
-\BOOKMARK [2][-]{subsection.10.3}{segtree2d}{section.10}% 126
-\BOOKMARK [2][-]{subsection.10.4}{mergesorttree}{section.10}% 127
-\BOOKMARK [2][-]{subsection.10.5}{sparsetable}{section.10}% 128
-\BOOKMARK [2][-]{subsection.10.6}{sqrt decomposition2}{section.10}% 129
-\BOOKMARK [2][-]{subsection.10.7}{implicit seg}{section.10}% 130
-\BOOKMARK [2][-]{subsection.10.8}{min queue}{section.10}% 131
-\BOOKMARK [2][-]{subsection.10.9}{SegTree pa}{section.10}% 132
-\BOOKMARK [2][-]{subsection.10.10}{segtree lazy}{section.10}% 133
-\BOOKMARK [2][-]{subsection.10.11}{fenwick3}{section.10}% 134
-\BOOKMARK [2][-]{subsection.10.12}{treap2}{section.10}% 135
-\BOOKMARK [2][-]{subsection.10.13}{persistent seg2}{section.10}% 136
-\BOOKMARK [2][-]{subsection.10.14}{SegTree}{section.10}% 137
-\BOOKMARK [2][-]{subsection.10.15}{binary lifting}{section.10}% 138
-\BOOKMARK [2][-]{subsection.10.16}{Segtree2}{section.10}% 139
-\BOOKMARK [2][-]{subsection.10.17}{sqrt decomposition}{section.10}% 140
-\BOOKMARK [2][-]{subsection.10.18}{color update}{section.10}% 141
-\BOOKMARK [2][-]{subsection.10.19}{bit2d}{section.10}% 142
-\BOOKMARK [2][-]{subsection.10.20}{fenwick2}{section.10}% 143
-\BOOKMARK [2][-]{subsection.10.21}{bit2D}{section.10}% 144
-\BOOKMARK [2][-]{subsection.10.22}{fenwick}{section.10}% 145
+\BOOKMARK [2][-]{subsection.7.14}{block-cut-tree}{section.7}% 83
+\BOOKMARK [2][-]{subsection.7.15}{reroot}{section.7}% 84
+\BOOKMARK [2][-]{subsection.7.16}{hld edge}{section.7}% 85
+\BOOKMARK [2][-]{subsection.7.17}{two sat}{section.7}% 86
+\BOOKMARK [2][-]{subsection.7.18}{hungarian}{section.7}% 87
+\BOOKMARK [2][-]{subsection.7.19}{dinic}{section.7}% 88
+\BOOKMARK [2][-]{subsection.7.20}{hopcroft karp}{section.7}% 89
+\BOOKMARK [2][-]{subsection.7.21}{dsu rollback}{section.7}% 90
+\BOOKMARK [2][-]{subsection.7.22}{MatrixDijkstra}{section.7}% 91
+\BOOKMARK [2][-]{subsection.7.23}{sack}{section.7}% 92
+\BOOKMARK [2][-]{subsection.7.24}{bridges}{section.7}% 93
+\BOOKMARK [2][-]{subsection.7.25}{Ford Fulkerson}{section.7}% 94
+\BOOKMARK [2][-]{subsection.7.26}{bipartite}{section.7}% 95
+\BOOKMARK [2][-]{subsection.7.27}{notes}{section.7}% 96
+\BOOKMARK [2][-]{subsection.7.28}{caminhoeuleriano}{section.7}% 97
+\BOOKMARK [2][-]{subsection.7.29}{mo trees}{section.7}% 98
+\BOOKMARK [2][-]{subsection.7.30}{LCA}{section.7}% 99
+\BOOKMARK [2][-]{subsection.7.31}{Topological Sort}{section.7}% 100
+\BOOKMARK [2][-]{subsection.7.32}{Dijkstra}{section.7}% 101
+\BOOKMARK [2][-]{subsection.7.33}{centroid decomposition}{section.7}% 102
+\BOOKMARK [2][-]{subsection.7.34}{DFS}{section.7}% 103
+\BOOKMARK [2][-]{subsection.7.35}{cycle detection}{section.7}% 104
+\BOOKMARK [2][-]{subsection.7.36}{Kruskal}{section.7}% 105
+\BOOKMARK [2][-]{subsection.7.37}{BFS}{section.7}% 106
+\BOOKMARK [1][-]{section.8}{Strings}{}% 107
+\BOOKMARK [2][-]{subsection.8.1}{suffix automaton}{section.8}% 108
+\BOOKMARK [2][-]{subsection.8.2}{suffix array}{section.8}% 109
+\BOOKMARK [2][-]{subsection.8.3}{kmp}{section.8}% 110
+\BOOKMARK [2][-]{subsection.8.4}{aho corasick}{section.8}% 111
+\BOOKMARK [2][-]{subsection.8.5}{stringhashing2}{section.8}% 112
+\BOOKMARK [2][-]{subsection.8.6}{substring fft}{section.8}% 113
+\BOOKMARK [2][-]{subsection.8.7}{min suffix}{section.8}% 114
+\BOOKMARK [2][-]{subsection.8.8}{z-function}{section.8}% 115
+\BOOKMARK [2][-]{subsection.8.9}{rabin-karp}{section.8}% 116
+\BOOKMARK [2][-]{subsection.8.10}{manacher}{section.8}% 117
+\BOOKMARK [2][-]{subsection.8.11}{stringhashing}{section.8}% 118
+\BOOKMARK [1][-]{section.9}{Geometry}{}% 119
+\BOOKMARK [2][-]{subsection.9.1}{smallest enclosing circle}{section.9}% 120
+\BOOKMARK [2][-]{subsection.9.2}{ConvexHull}{section.9}% 121
+\BOOKMARK [2][-]{subsection.9.3}{minkowski}{section.9}% 122
+\BOOKMARK [2][-]{subsection.9.4}{LineSweep}{section.9}% 123
+\BOOKMARK [2][-]{subsection.9.5}{points and vectors}{section.9}% 124
+\BOOKMARK [1][-]{section.10}{Structures}{}% 125
+\BOOKMARK [2][-]{subsection.10.1}{persistent seg}{section.10}% 126
+\BOOKMARK [2][-]{subsection.10.2}{treap}{section.10}% 127
+\BOOKMARK [2][-]{subsection.10.3}{segtree2d}{section.10}% 128
+\BOOKMARK [2][-]{subsection.10.4}{mergesorttree}{section.10}% 129
+\BOOKMARK [2][-]{subsection.10.5}{sparsetable}{section.10}% 130
+\BOOKMARK [2][-]{subsection.10.6}{sqrt decomposition2}{section.10}% 131
+\BOOKMARK [2][-]{subsection.10.7}{implicit seg}{section.10}% 132
+\BOOKMARK [2][-]{subsection.10.8}{min queue}{section.10}% 133
+\BOOKMARK [2][-]{subsection.10.9}{SegTree pa}{section.10}% 134
+\BOOKMARK [2][-]{subsection.10.10}{segtree lazy}{section.10}% 135
+\BOOKMARK [2][-]{subsection.10.11}{fenwick3}{section.10}% 136
+\BOOKMARK [2][-]{subsection.10.12}{treap2}{section.10}% 137
+\BOOKMARK [2][-]{subsection.10.13}{persistent seg2}{section.10}% 138
+\BOOKMARK [2][-]{subsection.10.14}{SegTree}{section.10}% 139
+\BOOKMARK [2][-]{subsection.10.15}{binary lifting}{section.10}% 140
+\BOOKMARK [2][-]{subsection.10.16}{Segtree2}{section.10}% 141
+\BOOKMARK [2][-]{subsection.10.17}{sqrt decomposition}{section.10}% 142
+\BOOKMARK [2][-]{subsection.10.18}{color update}{section.10}% 143
+\BOOKMARK [2][-]{subsection.10.19}{bit2d}{section.10}% 144
+\BOOKMARK [2][-]{subsection.10.20}{fenwick2}{section.10}% 145
+\BOOKMARK [2][-]{subsection.10.21}{bit2D}{section.10}% 146
+\BOOKMARK [2][-]{subsection.10.22}{fenwick}{section.10}% 147

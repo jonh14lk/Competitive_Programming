@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.3.18)  3 OCT 2022 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.3.18)  6 OCT 2022 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,7 +500,7 @@ LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 19.
 ) (./code/Aplications.cpp [2]) (./code/TS.cpp)
 (./code/UpperBound.cpp [3]) (./code/STL.cpp) (./code/BS.cpp [4])
-(./code/meetinthemiddle.cpp) (./code/bitmasks.cpp [5])
+(./code/meetinthemiddle.cpp) [5] (./code/bitmasks.cpp)
 (./code/coordinate_compression.cpp [6]) (./code/two_pointers.cpp [7])
 (./code/inversion_count.cpp [8]) (./code/sprague_grundy.cpp [9])
 (./code/stack_trick.cpp) (./code/ordered_set.cpp [10]) (./code/STL.txt [11])
@@ -533,58 +533,59 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 (./code/articulation_points.cpp) (./code/tree_isomorfism.cpp [59] [60])
 (./code/mincostflow.cpp [61]) (./code/eulertour.cpp [62])
 (./code/TreeDiameter.cpp [63]) (./code/Grafo_Bipartido.cpp) (./code/dsu.cpp
-[64]) (./code/reroot.cpp [65]) (./code/hld_edge.cpp [66] [67])
-(./code/two_sat.cpp [68] [69]) (./code/hungarian.cpp [70]) (./code/dinic.cpp
-[71]) (./code/hopcroft_karp.cpp [72]) (./code/dsu_rollback.cpp [73] [74])
-(./code/MatrixDijkstra.cpp [75]) [76] (./code/sack.cpp [77])
-(./code/bridges.cpp) (./code/Ford_Fulkerson.cpp [78] [79]) (./code/notes.md
-[80]) [81] (./code/caminhoeuleriano.cpp) (./code/mo_trees.cpp [82] [83])
-(./code/LCA.cpp [84]) (./code/Topological_Sort.cpp [85]) (./code/Dijkstra.cpp
-[86]) (./code/centroid_decomposition.cpp
+[64]) (./code/block-cut-tree.cpp [65] [66] [67]) (./code/reroot.cpp [68])
+(./code/hld_edge.cpp [69] [70] [71]) (./code/two_sat.cpp [72])
+(./code/hungarian.cpp [73]) (./code/dinic.cpp [74]) (./code/hopcroft_karp.cpp
+[75] [76]) (./code/dsu_rollback.cpp [77]) (./code/MatrixDijkstra.cpp [78]
+[79]) (./code/sack.cpp [80]) (./code/bridges.cpp [81])
+(./code/Ford_Fulkerson.cpp [82]) (./code/bipartite.cpp [83]) (./code/notes.md
+[84]) [85] (./code/caminhoeuleriano.cpp) (./code/mo_trees.cpp [86] [87])
+(./code/LCA.cpp [88]) (./code/Topological_Sort.cpp [89]) (./code/Dijkstra.cpp
+[90]) (./code/centroid_decomposition.cpp
 Overfull \hbox (192.26836pt too wide) in paragraph at lines 6--8
 [][][][] 
  []
 
-[87]) (./code/DFS.cpp [88]) (./code/cycle_detection.cpp) [89]
-(./code/Kruskal.cpp [90]) (./code/BFS.cpp) (./code/suffix_automaton.cpp
-[91] [92] [93]) (./code/suffix_array.cpp [94]
+[91]) (./code/DFS.cpp [92]) (./code/cycle_detection.cpp) [93]
+(./code/Kruskal.cpp [94]) (./code/BFS.cpp) (./code/suffix_automaton.cpp
+[95] [96] [97]) (./code/suffix_array.cpp [98]
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 7
 0.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )) (./code/kmp.cpp
-[95]) (./code/aho_corasick.cpp [96] [97]) (./code/stringhashing2.cpp [98])
-(./code/substring_fft.cpp [99]) (./code/min_suffix.cpp [100])
-(./code/z-function.cpp) (./code/rabin-karp.cpp [101]) (./code/manacher.cpp
-[102]) (./code/stringhashing.cpp [103]) (./code/smallest_enclosing_circle.cpp
-[104] [105]) (./code/ConvexHull.cpp [106] [107]) (./code/minkowski.cpp [108]
-[109]) (./code/LineSweep.cpp [110] [111]) (./code/points_and_vectors.cpp
-[112]) (./code/persistent_seg.cpp [113] [114]) (./code/treap.cpp [115] [116])
-(./code/segtree2d.cpp [117]) (./code/mergesorttree.cpp [118])
-(./code/sparsetable.cpp) (./code/sqrt_decomposition2.cpp [119]) [120]
-(./code/implicit_seg.cpp [121]) (./code/min_queue.cpp) [122]
-(./code/SegTree_pa.cpp [123]) (./code/segtree_lazy.cpp [124])
-(./code/fenwick3.cpp [125]) (./code/treap2.cpp [126] [127])
-(./code/persistent_seg2.cpp [128]) (./code/SegTree.cpp [129])
-(./code/binary_lifting.cpp) (./code/Segtree2.cpp [130])
-(./code/sqrt_decomposition.cpp [131]) (./code/color_update.cpp [132] [133])
-(./code/bit2d.cpp [134]) (./code/fenwick2.cpp [135]) (./code/bit2D.cpp [136])
-(./code/fenwick.cpp)) [137]
+[99]) (./code/aho_corasick.cpp [100] [101]) (./code/stringhashing2.cpp [102])
+(./code/substring_fft.cpp [103]) (./code/min_suffix.cpp [104])
+(./code/z-function.cpp) (./code/rabin-karp.cpp [105]) (./code/manacher.cpp
+[106]) (./code/stringhashing.cpp [107]) (./code/smallest_enclosing_circle.cpp
+[108] [109]) (./code/ConvexHull.cpp [110] [111]) (./code/minkowski.cpp [112]
+[113]) (./code/LineSweep.cpp [114] [115]) (./code/points_and_vectors.cpp
+[116]) (./code/persistent_seg.cpp [117] [118]) (./code/treap.cpp [119] [120])
+(./code/segtree2d.cpp [121]) (./code/mergesorttree.cpp [122])
+(./code/sparsetable.cpp) (./code/sqrt_decomposition2.cpp [123] [124])
+(./code/implicit_seg.cpp [125]) (./code/min_queue.cpp [126])
+(./code/SegTree_pa.cpp [127]) (./code/segtree_lazy.cpp [128])
+(./code/fenwick3.cpp [129]) (./code/treap2.cpp [130] [131])
+(./code/persistent_seg2.cpp [132]) (./code/SegTree.cpp [133])
+(./code/binary_lifting.cpp [134]) (./code/Segtree2.cpp)
+(./code/sqrt_decomposition.cpp [135]) (./code/color_update.cpp [136] [137])
+(./code/bit2d.cpp [138]) (./code/fenwick2.cpp [139]) (./code/bit2D.cpp [140])
+(./code/fenwick.cpp [141])) [142]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (./notebook.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: A06DDCFFE6DBE64BE8F5D5384D3B9B1F;8849.
+(rerunfilecheck)             Checksum: 06DC0E2CFD2F29886AA5D8B8C4E71560;8976.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 24162 strings out of 481239
- 366437 string characters out of 5920377
- 1120239 words of memory out of 5000000
- 26130 multiletter control sequences out of 15000+600000
+ 24573 strings out of 481239
+ 373412 string characters out of 5920377
+ 940239 words of memory out of 5000000
+ 26154 multiletter control sequences out of 15000+600000
  538533 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,12n,69p,567b,2247s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -596,10 +597,10 @@ type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
 er/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on notebook.pdf (137 pages, 747861 bytes).
+Output written on notebook.pdf (142 pages, 766437 bytes).
 PDF statistics:
- 16528 PDF objects out of 18468 (max. 8388607)
- 16218 compressed objects within 163 object streams
- 12753 named destinations out of 12825 (max. 500000)
- 1161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 17012 PDF objects out of 18468 (max. 8388607)
+ 16693 compressed objects within 167 object streams
+ 13134 named destinations out of 15390 (max. 500000)
+ 1177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

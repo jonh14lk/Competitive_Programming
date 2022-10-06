@@ -91,6 +91,7 @@ eulertour.cpp	eulertour
 TreeDiameter.cpp	TreeDiameter
 Grafo_Bipartido.cpp	Grafo Bipartido
 dsu.cpp	dsu
+block-cut-tree.cpp	block-cut-tree
 reroot.cpp	reroot
 hld_edge.cpp	hld edge
 two_sat.cpp	two sat
@@ -102,6 +103,7 @@ MatrixDijkstra.cpp	MatrixDijkstra
 sack.cpp	sack
 bridges.cpp	bridges
 Ford_Fulkerson.cpp	Ford Fulkerson
+bipartite.cpp	bipartite
 notes.md	notes
 caminhoeuleriano.cpp	caminhoeuleriano
 mo_trees.cpp	mo trees

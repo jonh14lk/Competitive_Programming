@@ -80,66 +80,68 @@
 \contentsline {subsection}{\numberline {7.11}TreeDiameter}{63}{subsection.7.11}%
 \contentsline {subsection}{\numberline {7.12}Grafo Bipartido}{64}{subsection.7.12}%
 \contentsline {subsection}{\numberline {7.13}dsu}{64}{subsection.7.13}%
-\contentsline {subsection}{\numberline {7.14}reroot}{65}{subsection.7.14}%
-\contentsline {subsection}{\numberline {7.15}hld edge}{66}{subsection.7.15}%
-\contentsline {subsection}{\numberline {7.16}two sat}{68}{subsection.7.16}%
-\contentsline {subsection}{\numberline {7.17}hungarian}{70}{subsection.7.17}%
-\contentsline {subsection}{\numberline {7.18}dinic}{71}{subsection.7.18}%
-\contentsline {subsection}{\numberline {7.19}hopcroft karp}{72}{subsection.7.19}%
-\contentsline {subsection}{\numberline {7.20}dsu rollback}{73}{subsection.7.20}%
-\contentsline {subsection}{\numberline {7.21}MatrixDijkstra}{75}{subsection.7.21}%
-\contentsline {subsection}{\numberline {7.22}sack}{77}{subsection.7.22}%
-\contentsline {subsection}{\numberline {7.23}bridges}{78}{subsection.7.23}%
-\contentsline {subsection}{\numberline {7.24}Ford Fulkerson}{78}{subsection.7.24}%
-\contentsline {subsection}{\numberline {7.25}notes}{80}{subsection.7.25}%
-\contentsline {subsection}{\numberline {7.26}caminhoeuleriano}{82}{subsection.7.26}%
-\contentsline {subsection}{\numberline {7.27}mo trees}{82}{subsection.7.27}%
-\contentsline {subsection}{\numberline {7.28}LCA}{84}{subsection.7.28}%
-\contentsline {subsection}{\numberline {7.29}Topological Sort}{85}{subsection.7.29}%
-\contentsline {subsection}{\numberline {7.30}Dijkstra}{86}{subsection.7.30}%
-\contentsline {subsection}{\numberline {7.31}centroid decomposition}{87}{subsection.7.31}%
-\contentsline {subsection}{\numberline {7.32}DFS}{88}{subsection.7.32}%
-\contentsline {subsection}{\numberline {7.33}cycle detection}{89}{subsection.7.33}%
-\contentsline {subsection}{\numberline {7.34}Kruskal}{90}{subsection.7.34}%
-\contentsline {subsection}{\numberline {7.35}BFS}{91}{subsection.7.35}%
-\contentsline {section}{\numberline {8}Strings}{91}{section.8}%
-\contentsline {subsection}{\numberline {8.1}suffix automaton}{91}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}suffix array}{94}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}kmp}{95}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}aho corasick}{96}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}stringhashing2}{98}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}substring fft}{99}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}min suffix}{100}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}z-function}{101}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}rabin-karp}{101}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}manacher}{102}{subsection.8.10}%
-\contentsline {subsection}{\numberline {8.11}stringhashing}{103}{subsection.8.11}%
-\contentsline {section}{\numberline {9}Geometry}{104}{section.9}%
-\contentsline {subsection}{\numberline {9.1}smallest enclosing circle}{104}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}ConvexHull}{106}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}minkowski}{108}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}LineSweep}{110}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}points and vectors}{112}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Structures}{113}{section.10}%
-\contentsline {subsection}{\numberline {10.1}persistent seg}{113}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}treap}{115}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}segtree2d}{117}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}mergesorttree}{118}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}sparsetable}{119}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}sqrt decomposition2}{119}{subsection.10.6}%
-\contentsline {subsection}{\numberline {10.7}implicit seg}{121}{subsection.10.7}%
-\contentsline {subsection}{\numberline {10.8}min queue}{122}{subsection.10.8}%
-\contentsline {subsection}{\numberline {10.9}SegTree pa}{123}{subsection.10.9}%
-\contentsline {subsection}{\numberline {10.10}segtree lazy}{124}{subsection.10.10}%
-\contentsline {subsection}{\numberline {10.11}fenwick3}{125}{subsection.10.11}%
-\contentsline {subsection}{\numberline {10.12}treap2}{126}{subsection.10.12}%
-\contentsline {subsection}{\numberline {10.13}persistent seg2}{128}{subsection.10.13}%
-\contentsline {subsection}{\numberline {10.14}SegTree}{129}{subsection.10.14}%
-\contentsline {subsection}{\numberline {10.15}binary lifting}{130}{subsection.10.15}%
-\contentsline {subsection}{\numberline {10.16}Segtree2}{130}{subsection.10.16}%
-\contentsline {subsection}{\numberline {10.17}sqrt decomposition}{131}{subsection.10.17}%
-\contentsline {subsection}{\numberline {10.18}color update}{132}{subsection.10.18}%
-\contentsline {subsection}{\numberline {10.19}bit2d}{134}{subsection.10.19}%
-\contentsline {subsection}{\numberline {10.20}fenwick2}{135}{subsection.10.20}%
-\contentsline {subsection}{\numberline {10.21}bit2D}{136}{subsection.10.21}%
-\contentsline {subsection}{\numberline {10.22}fenwick}{137}{subsection.10.22}%
+\contentsline {subsection}{\numberline {7.14}block-cut-tree}{65}{subsection.7.14}%
+\contentsline {subsection}{\numberline {7.15}reroot}{68}{subsection.7.15}%
+\contentsline {subsection}{\numberline {7.16}hld edge}{69}{subsection.7.16}%
+\contentsline {subsection}{\numberline {7.17}two sat}{72}{subsection.7.17}%
+\contentsline {subsection}{\numberline {7.18}hungarian}{73}{subsection.7.18}%
+\contentsline {subsection}{\numberline {7.19}dinic}{74}{subsection.7.19}%
+\contentsline {subsection}{\numberline {7.20}hopcroft karp}{75}{subsection.7.20}%
+\contentsline {subsection}{\numberline {7.21}dsu rollback}{77}{subsection.7.21}%
+\contentsline {subsection}{\numberline {7.22}MatrixDijkstra}{78}{subsection.7.22}%
+\contentsline {subsection}{\numberline {7.23}sack}{80}{subsection.7.23}%
+\contentsline {subsection}{\numberline {7.24}bridges}{81}{subsection.7.24}%
+\contentsline {subsection}{\numberline {7.25}Ford Fulkerson}{82}{subsection.7.25}%
+\contentsline {subsection}{\numberline {7.26}bipartite}{83}{subsection.7.26}%
+\contentsline {subsection}{\numberline {7.27}notes}{84}{subsection.7.27}%
+\contentsline {subsection}{\numberline {7.28}caminhoeuleriano}{86}{subsection.7.28}%
+\contentsline {subsection}{\numberline {7.29}mo trees}{86}{subsection.7.29}%
+\contentsline {subsection}{\numberline {7.30}LCA}{88}{subsection.7.30}%
+\contentsline {subsection}{\numberline {7.31}Topological Sort}{89}{subsection.7.31}%
+\contentsline {subsection}{\numberline {7.32}Dijkstra}{90}{subsection.7.32}%
+\contentsline {subsection}{\numberline {7.33}centroid decomposition}{91}{subsection.7.33}%
+\contentsline {subsection}{\numberline {7.34}DFS}{92}{subsection.7.34}%
+\contentsline {subsection}{\numberline {7.35}cycle detection}{93}{subsection.7.35}%
+\contentsline {subsection}{\numberline {7.36}Kruskal}{94}{subsection.7.36}%
+\contentsline {subsection}{\numberline {7.37}BFS}{95}{subsection.7.37}%
+\contentsline {section}{\numberline {8}Strings}{95}{section.8}%
+\contentsline {subsection}{\numberline {8.1}suffix automaton}{95}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}suffix array}{98}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}kmp}{99}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}aho corasick}{100}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}stringhashing2}{102}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}substring fft}{103}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}min suffix}{104}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}z-function}{105}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}rabin-karp}{105}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}manacher}{106}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}stringhashing}{107}{subsection.8.11}%
+\contentsline {section}{\numberline {9}Geometry}{109}{section.9}%
+\contentsline {subsection}{\numberline {9.1}smallest enclosing circle}{109}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}ConvexHull}{110}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}minkowski}{112}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}LineSweep}{114}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}points and vectors}{116}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Structures}{117}{section.10}%
+\contentsline {subsection}{\numberline {10.1}persistent seg}{117}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}treap}{119}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}segtree2d}{121}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}mergesorttree}{122}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}sparsetable}{123}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}sqrt decomposition2}{123}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}implicit seg}{125}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}min queue}{126}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.9}SegTree pa}{127}{subsection.10.9}%
+\contentsline {subsection}{\numberline {10.10}segtree lazy}{128}{subsection.10.10}%
+\contentsline {subsection}{\numberline {10.11}fenwick3}{130}{subsection.10.11}%
+\contentsline {subsection}{\numberline {10.12}treap2}{130}{subsection.10.12}%
+\contentsline {subsection}{\numberline {10.13}persistent seg2}{132}{subsection.10.13}%
+\contentsline {subsection}{\numberline {10.14}SegTree}{133}{subsection.10.14}%
+\contentsline {subsection}{\numberline {10.15}binary lifting}{134}{subsection.10.15}%
+\contentsline {subsection}{\numberline {10.16}Segtree2}{135}{subsection.10.16}%
+\contentsline {subsection}{\numberline {10.17}sqrt decomposition}{135}{subsection.10.17}%
+\contentsline {subsection}{\numberline {10.18}color update}{136}{subsection.10.18}%
+\contentsline {subsection}{\numberline {10.19}bit2d}{138}{subsection.10.19}%
+\contentsline {subsection}{\numberline {10.20}fenwick2}{139}{subsection.10.20}%
+\contentsline {subsection}{\numberline {10.21}bit2D}{140}{subsection.10.21}%
+\contentsline {subsection}{\numberline {10.22}fenwick}{141}{subsection.10.22}%

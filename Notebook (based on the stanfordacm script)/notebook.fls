@@ -378,6 +378,9 @@ INPUT code/Grafo_Bipartido.cpp
 INPUT code/dsu.cpp
 INPUT code/dsu.cpp
 INPUT code/dsu.cpp
+INPUT code/block-cut-tree.cpp
+INPUT code/block-cut-tree.cpp
+INPUT code/block-cut-tree.cpp
 INPUT code/reroot.cpp
 INPUT code/reroot.cpp
 INPUT code/reroot.cpp
@@ -411,6 +414,9 @@ INPUT code/bridges.cpp
 INPUT code/Ford_Fulkerson.cpp
 INPUT code/Ford_Fulkerson.cpp
 INPUT code/Ford_Fulkerson.cpp
+INPUT code/bipartite.cpp
+INPUT code/bipartite.cpp
+INPUT code/bipartite.cpp
 INPUT code/notes.md
 INPUT code/notes.md
 INPUT code/notes.md
