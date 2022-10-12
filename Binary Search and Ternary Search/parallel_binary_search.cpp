@@ -132,10 +132,10 @@ signed main()
 // https://www.spoj.com/problems/METEORS/
 
 // tem n member states e m sectors
-// cada sector ta associado a uma member statee
+// cada sector ta associado a uma member state
 // cada query incrementa o range [l[i], r[i]] de sectors por a[i]
 // seja q[i] a soma de todos os v[j], sendo j um sector associado ao member state i
-// qual o primeiro momento no qual q[i] > min_qt[i]
+// qual o primeiro momento no qual q[i] >= min_qt[i]
 // para todos os i
 
 // a sagacidade vai ser fzr uma busca binaria pra cada resposta
