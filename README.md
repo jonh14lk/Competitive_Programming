@@ -30,6 +30,7 @@ And many others, sky is the limit :)
 - Binary Search and Ternary Search :smile:
 
   - [Aplications and examples](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/Aplications.cpp)
+  - [Parallel Binary Search](https://github.com/jonh14lk/Competitive_Programming/blob/master/Binary%20Search%20and%20Ternary%20Search/parallel_binary_search.cpp)
 
 - Dynamic Programming :heart:
 
@@ -49,6 +50,7 @@ And many others, sky is the limit :)
   - [Aliens Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/aliens_trick.cpp)
   - [Convex Hull Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/cht.cpp)
   - [Dynamic Convex Hull Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/dynamic_cht.cpp)
+  - [Exchange Arguments](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/exchange_arguments.cpp)
 
 - Geometry :angry:
 
@@ -56,6 +58,7 @@ And many others, sky is the limit :)
   - [Line Sweep](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/LineSweep.cpp)
   - [Minkowski sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/minkowski.cpp)
   - [Convex Hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/ConvexHull.cpp)
+  - [Smallest Enclosing Circle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/smallest_enclosing_circle.cpp)
 
 - Graphs :heart:
 
@@ -63,7 +66,8 @@ And many others, sky is the limit :)
   - [DFS](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/DFS.cpp)
   - [Dijkstra](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Dijkstra.cpp)
   - [Floyd Warshall](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Floyd_Warshall.cpp)
-  - [Bipartite Check](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Grafo_Bipartido.cpp)
+  - [Bipartite Check](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/bipartite.cpp)
+  - [Bipartite DSU](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Grafo_Bipartido.cpp)
   - [Kruskal](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Kruskal.cpp)
   - [Prim](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Prim.cpp)
   - [Topological Sort](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Topological_Sort.cpp)
@@ -76,6 +80,8 @@ And many others, sky is the limit :)
   - [SCCs & Condensation Graph](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/scc.cpp)
   - [2-SAT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/two_sat.cpp)
   - [Strong Orientation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/strong_orientation.cpp)
+  - [Block Cut Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/block-cut-tree.cpp)
+  - [Notes](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/notes.md)
 
 - Trees :heart:
 
@@ -120,6 +126,7 @@ And many others, sky is the limit :)
   - [Euler Totient Function](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/totient.cpp)
   - [Stars and Bars](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/stars_and_bars.cpp)
   - [Maximum Xor Subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/max_xor_subsequence.cpp)
+  - [FWHT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/fwht.cpp)
 
 - Strings :smile:
 
@@ -137,11 +144,14 @@ And many others, sky is the limit :)
 - Data Structures :heart:
 
   - [Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/SegTree.cpp)
+  - [Segtree 2D](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/segtree2d.cpp)
   - [Iterative Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/Segtree2.cpp)
   - [Implicit Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/implicit_seg.cpp)
   - [Segtree with Lazy Propagation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/segtree_lazy.cpp)
+  - [Arithmetic Progression Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/SegTree_pa.cpp)
   - [Fenwick Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick.cpp)
   - [Fenwick Tree with Range Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick2.cpp)
+  - [Fenwick Tree 2D](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/bit2D.cpp)
   - [Fenwick Tree 2D (with cordinate compression)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/bit2d.cpp)
   - [Merge Sort Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/mergesorttree.cpp)
   - [Merge Sort Tree (BIT)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick3.cpp)
