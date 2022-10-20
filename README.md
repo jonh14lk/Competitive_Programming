@@ -177,7 +177,7 @@ And many others, sky is the limit :)
 ## **Competitions solutions :white_check_mark:**
 
 - [2022-2023 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103960)
-  - [All problems solved, except problem K](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202022)
+  - [All problems solved ](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202022)
 - [2021-2022 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103388)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202021)
 - [2021-2022 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103640)
