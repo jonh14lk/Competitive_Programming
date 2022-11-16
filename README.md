@@ -59,6 +59,7 @@ And many others, sky is the limit :)
   - [Minkowski sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/minkowski.cpp)
   - [Convex Hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/ConvexHull.cpp)
   - [Smallest Enclosing Circle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/smallest_enclosing_circle.cpp)
+  - [KDTree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/kd_tree.cpp)
 
 - Graphs :heart:
 
@@ -127,6 +128,7 @@ And many others, sky is the limit :)
   - [Stars and Bars](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/stars_and_bars.cpp)
   - [Maximum Xor Subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/max_xor_subsequence.cpp)
   - [FWHT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/fwht.cpp)
+  - [Berlekamp Massey](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/berlekamp_massey.cpp)
 
 - Strings :smile:
 
@@ -173,6 +175,7 @@ And many others, sky is the limit :)
   - [Meet in the middle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/meetinthemiddle.cpp)
   - [Sprague-Grundy](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/sprague_grundy.cpp)
   - [Coordinate Compression](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/coordinate_compression.cpp)
+  - [Tower of Hanoi](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/tower_of_hanoi.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 
