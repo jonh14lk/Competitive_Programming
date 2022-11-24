@@ -7,6 +7,8 @@
 <summary>Editorial</summary>
 
 A maior quantidade de pedaços de chocolate ele pode dar para cada amigo é N / M arredondado para baixo.
+  
+Complexidade: O(1)
 </details>
 
 <details>
@@ -36,6 +38,8 @@ int main()
 <summary>Editorial</summary>
 
 Um jeito de resolver o problema é fazendo recursivamente. Como N é no máximo 10, é suficiente para passar.
+  
+Complexidade: O(4^N)
 </details>
 
 <details>
@@ -78,6 +82,8 @@ int main()
 <summary>Editorial</summary>
 
 Um jeito de resolver o problema é lendo o número como string e em seguida checando as condições do problema
+  
+Complexidade: O(1)
 </details>
 
 <details>
@@ -119,6 +125,8 @@ int main()
 <summary>Editorial</summary>
 
 Um detalhe interessante é que em linguagens como o C e o C++ por exemplo, nós podemos atribuir um inteiro a um char, e esse char vai passar a ter o caractere equivalente de acordo com a tabela ASCII. Sendo assim, podemos achar o mapeamento.
+  
+Complexidade: O(N)
 </details>
 
 <details>
@@ -160,6 +168,8 @@ A grande sacada aqui é olhar para os casos em que a soma de dois números pode 
 - Ímpar + Ímpar = Par
 
 Então, precisamos contar os pares (i, j) no qual A[i] é par e A[j] é ímpar, ou A[i] é ímpar e A[j] é par. Seja cnt_impar a quantidade de números ímpares no array e seja cnt_par a quantidade de números pares no array. A nossa resposta então vai ser igual a (cnt_impar * cnt_par), pois cada par (i, j) vai ser contado apenas uma vez, além disso, um número par fecha um par válido com todos os números impares e vice-versa.
+  
+Complexidade: O(N)
 </details>
 
 <details>
@@ -205,6 +215,8 @@ Para construir uma subsequência válida, podemos pensar nos seguintes casos:
 - Se B = 0, então não preciso realizar nenhum movimento nem pra esquerda nem pra direita
 
 No qual abs(X) é o valor absoluto de X.
+  
+Complexidade: O(N * log(N)) na implementação abaixo, mas da para ser feito em O(N).
 
 </details>
 
@@ -252,8 +264,9 @@ int main()
 
 <summary>Editorial</summary>
 
-Vamos ler o array de pais, e para responder uma pergunta vamos indo de pai em pai durante k vezes. Devemos tomar cuidado com o caso do -1 também. Lembrando que o nó 0 da árvore não tem pai. 
-
+Vamos ler o array de pais, e para responder uma pergunta vamos indo de pai em pai durante k vezes. Devemos tomar cuidado com o caso do -1 também. Lembrando que o nó 0 da árvore não tem pai.
+ 
+Complexidade: O(N + (Q * K))
 </details>
 
 <details>
@@ -309,6 +322,8 @@ A solução desse subproblema é a seguinte: Seja sum1 a soma dos (a[i] - X), pa
 Além disso, a gente pode perceber que se podemos encher todos os copos com X ml, também podemos encher todos os copos com Y ml (Y <= X).
 
 Portanto, podemos fazer uma busca binária para achar o maior X possível no qual é possível fazer com que todos os copos tenham exatamente X ml de bebida.
+
+Complexidade: O(N * log(1000))
 
 </details>
 
