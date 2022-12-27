@@ -39,7 +39,7 @@ struct segtree2d
   int qry(int x1, int y1, int x2, int y2)
   {
     int ret = neutral();
-    int y3 = y1 + n, y4 = y2 + n;
+    int y3 = y1 + m, y4 = y2 + m;
     for (x1 += n, x2 += n; x1 <= x2; ++x1 /= 2, --x2 /= 2)
     {
       for (y1 = y3, y2 = y4; y1 <= y2; ++y1 /= 2, --y2 /= 2)
@@ -58,7 +58,7 @@ struct segtree2d
   }
   void upd(int x, int y, int val)
   {
-    int y2 = y += n;
+    int y2 = y += m;
     for (x += n; x; x /= 2, y = y2)
     {
       if (x >= n)
