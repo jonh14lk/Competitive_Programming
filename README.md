@@ -142,6 +142,7 @@ And many others, sky is the limit :)
   - [Rabin Karp](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/rabin-karp.cpp)
   - [Manacher](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/manacher.cpp)
   - [String Matching (FFT)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/substring_fft.cpp)
+  - [De Bruijin sequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Strings/de_bruijin.cpp)
 
 - Data Structures :heart:
 
