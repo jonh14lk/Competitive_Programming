@@ -104,6 +104,7 @@ And many others, sky is the limit :)
   - [MinCostFlow](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/mincostflow.cpp)
   - [Hopcroft-Karp-Karzanov](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hopcroft_karp.cpp)
   - [Hungarian](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hungarian.cpp)
+  - [Maximum flow problem with minimum capacities](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/flow_with_minimum_capacities.cpp)
 
 - Math :angry:
 
