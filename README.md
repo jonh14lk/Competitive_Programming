@@ -82,6 +82,7 @@ And many others, sky is the limit :)
   - [2-SAT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/two_sat.cpp)
   - [Strong Orientation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/strong_orientation.cpp)
   - [Block Cut Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/block-cut-tree.cpp)
+  - [Stable Matching](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/stable_matching.cpp)
   - [Notes](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/notes.md)
 
 - Trees :heart:
@@ -130,6 +131,7 @@ And many others, sky is the limit :)
   - [Maximum Xor Subsequence](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/max_xor_subsequence.cpp)
   - [FWHT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/fwht.cpp)
   - [Berlekamp Massey](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/berlekamp_massey.cpp)
+  - [Simplex](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/simplex.cpp)
 
 - Strings :smile:
 
@@ -178,6 +180,7 @@ And many others, sky is the limit :)
   - [Sprague-Grundy](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/sprague_grundy.cpp)
   - [Coordinate Compression](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/coordinate_compression.cpp)
   - [Tower of Hanoi](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/tower_of_hanoi.cpp)
+  - [Segment Covering](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/segment_covering.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 
