@@ -50,6 +50,7 @@ And many others, sky is the limit :)
   - [Aliens Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/aliens_trick.cpp)
   - [Convex Hull Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/cht.cpp)
   - [Dynamic Convex Hull Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/dynamic_cht.cpp)
+  - [Li-Chao Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/lichao.cpp)
   - [Exchange Arguments](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/exchange_arguments.cpp)
 
 - Geometry :angry:
