@@ -85,7 +85,7 @@ And many others, sky is the limit :)
   - [Strong Orientation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/strong_orientation.cpp)
   - [Block Cut Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/block-cut-tree.cpp)
   - [Stable Matching](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/stable_matching.cpp)
-  - [Notes](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/notes.md)
+  - [Notes](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/graph_notes.md)
 
 - Trees :heart:
 
@@ -134,6 +134,7 @@ And many others, sky is the limit :)
   - [FWHT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/fwht.cpp)
   - [Berlekamp Massey](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/berlekamp_massey.cpp)
   - [Simplex](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/simplex.cpp)
+  - [Chicken Mcnugget Theorem](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/chicken_mcnugget.md)
 
 - Strings :smile:
 
