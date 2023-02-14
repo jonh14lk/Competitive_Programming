@@ -61,6 +61,7 @@ And many others, sky is the limit :)
   - [Convex Hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/ConvexHull.cpp)
   - [Smallest Enclosing Circle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/smallest_enclosing_circle.cpp)
   - [KDTree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/kd_tree.cpp)
+  - [Half-plane intersection](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/halfplane_intersection.cpp)
 
 - Graphs :heart:
 
