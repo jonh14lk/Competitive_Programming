@@ -52,6 +52,8 @@ And many others, sky is the limit :)
   - [Dynamic Convex Hull Trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/dynamic_cht.cpp)
   - [Li-Chao Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/lichao.cpp)
   - [Exchange Arguments](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/exchange_arguments.cpp)
+  - [Bitwise DIgit DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/bitwise_digit_dp.cpp)
+  - [Subset Sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/subset_sum.cpp)
 
 - Geometry :angry:
 
@@ -62,6 +64,7 @@ And many others, sky is the limit :)
   - [Smallest Enclosing Circle](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/smallest_enclosing_circle.cpp)
   - [KDTree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/kd_tree.cpp)
   - [Half-plane intersection](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/halfplane_intersection.cpp)
+  - [Dynamic Convex Hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/dynamic_ch.cpp)
 
 - Graphs :heart:
 
