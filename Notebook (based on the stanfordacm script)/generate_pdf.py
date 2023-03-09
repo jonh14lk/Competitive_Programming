@@ -5,7 +5,7 @@
 import subprocess
 import unidecode
 code_dir = "code"
-title = "UFAL Notebook"
+title = "Geração EAD Coda y Coda"
 
 
 def get_sections():

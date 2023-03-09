@@ -7,7 +7,7 @@ using namespace __gnu_pbds;
 template <class T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
-//#define int long long int
+// #define int long long int
 #define endl '\n'
 #define pb push_back
 #define pi pair<int, int>
@@ -22,7 +22,7 @@ struct treap
   int data, priority;
   int sz, lazy2;
   bool lazy;
-  treap *l, *r;
+  treap *l, *r, *parent;
 };
 int size(treap *node)
 {
@@ -33,10 +33,11 @@ void recalc(treap *node)
   if (!node)
     return;
   node->sz = 1;
+  node->parent = 0;
   if (node->l)
-    node->sz += node->l->sz;
+    node->sz += node->l->sz, node->l->parent = node;
   if (node->r)
-    node->sz += node->r->sz;
+    node->sz += node->r->sz, node->r->parent = node;
 }
 void lazy_propagation(treap *node)
 {
@@ -135,7 +136,17 @@ treap *create_node(int data, int priority)
   ret->sz = 1;
   ret->lazy = 0;
   ret->lazy2 = 0;
+  ret->parent = 0;
   return ret;
+}
+void goup(treap *&ans, treap *t) // vai pra raiz da arvore
+{
+  if (!t->parent)
+  {
+    ans = t;
+    return;
+  }
+  goup(ans, t->parent);
 }
 signed main()
 {
@@ -174,3 +185,6 @@ signed main()
 // - lazy propagation
 // - reverse range with lazy propagation
 // - swap ranges with equal lenght
+
+// extra:
+// - save node parent

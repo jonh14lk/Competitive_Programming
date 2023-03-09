@@ -97,6 +97,13 @@ namespace p
       return a.x < b.x;
     return a.y < b.y;
   }
+  pt polar_to_cartesian(double r, double theta) // r - distancia do centro, theta - polar angle
+  {
+    pt ans;
+    ans.x = r * cos(double(theta) / 180 * PI); // assumindo que theta ta em graus, transforma pra radiano
+    ans.y = r * sin(double(theta) / 180 * PI);
+    return ans;
+  }
 }
 signed main()
 {

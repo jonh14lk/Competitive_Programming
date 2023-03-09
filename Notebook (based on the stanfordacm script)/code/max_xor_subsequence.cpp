@@ -11,22 +11,82 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define endl '\n'
 #define pb push_back
 #define pi pair<int, int>
-#define pii pair<int, pi>
+#define pii pair<pi, int>
 #define fir first
 #define sec second
-#define MAXN 500001
+#define MAXN 300005
 #define mod 1000000007
 
-vector<int> adj[64];
-
-int msb(int x)
+int modpow(int a, int b)
 {
-  for (int i = 63; i >= 0; i--)
+  int res = 1;
+  while (b > 0)
+  {
+    if (b & 1)
+      res = (res * a) % mod;
+    a = (a * a) % mod;
+    b >>= 1;
+  }
+  return res;
+}
+
+int all, qt;
+int dp[33];
+
+void add(int x)
+{
+  all++;
+  for (int i = 32; i >= 0; i--)
   {
     if (x & (1ll << i))
-      return i;
+    {
+      if (dp[i] == 0)
+      {
+        dp[i] = x;
+        qt++;
+        return;
+      }
+      x ^= dp[i];
+    }
   }
-  return 0;
+}
+int get(int x) // qual o x-esimo menor valor de xor de uma subsequencia
+{
+  int tot = (1ll << qt), ans = 0;
+  for (int i = 32; i >= 0; i--)
+  {
+    if (dp[i] > 0)
+    {
+      int d = tot / 2;
+      if (d < x && !(ans & (1ll << i)))
+        ans ^= dp[i];
+      else if (d >= x && (ans & (1ll << i)))
+        ans ^= dp[i];
+      if (d < x)
+        x -= d;
+      tot /= 2;
+    }
+  }
+  return ans;
+}
+bool check(int x) // se existe pelo menos uma subsequencia com xor x
+{
+  for (int i = 32; i >= 0; i--)
+  {
+    if (x & (1ll << i))
+    {
+      if (!dp[i])
+        return 0;
+      x ^= dp[i];
+    }
+  }
+  return 1;
+}
+int count(int x) // quantas subsequencias tem xor x
+{
+  if (!check(x))
+    return 0;
+  return modpow(2, all - qt);
 }
 signed main()
 {
@@ -34,36 +94,21 @@ signed main()
   cin.tie(NULL);
   int n;
   cin >> n;
+  vector<int> v(n);
   for (int i = 0; i < n; i++)
   {
-    int x;
-    cin >> x;
-    if (x > 0)
-      adj[msb(x)].pb(x);
+    cin >> v[i];
+    add(v[i]);
   }
-  vector<int> ans;
-  for (int i = 63; i >= 0; i--)
-  {
-    if (adj[i].size() > 0)
-    {
-      int x = adj[i].back();
-      adj[i].pop_back();
-      ans.pb(x);
-      for (auto const &j : adj[i])
-      {
-        int y = j ^ x;
-        if (y > 0)
-          adj[msb(y)].pb(y);
-      }
-      adj[i].clear();
-    }
-  }
-  int x = 0;
-  for (auto const &i : ans)
-  {
-    int curr = x ^ i;
-    x = max(x, curr);
-  }
-  cout << x << endl;
+  int x = get(1ll << qt); // maior xor possivel de uma subsequencia
+  int y = get(1);         // maior xor possivel != 0 (o 0 sempre eh possivel - subsequencia vazia)
   return 0;
 }
+// referencia:
+// https://codeforces.com/blog/entry/68953
+
+// problemas:
+// https://codeforces.com/gym/103708/problem/A
+// https://codeforces.com/contest/959/problem/F
+// https://codeforces.com/contest/1101/problem/G
+// https://atcoder.jp/contests/abc283/tasks/abc283_g

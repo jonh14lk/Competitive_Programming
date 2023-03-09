@@ -49,17 +49,40 @@ struct modint
 };
 
 modint f[MAXN];
+modint inv[MAXN];
+modint invfat[MAXN];
 
-void fat()
+void calc()
 {
   f[0] = 1;
   for (int i = 1; i < MAXN; i++)
+  {
     f[i] = f[i - 1] * i;
+  }
+  inv[1] = 1;
+  for (int i = 2; i < MAXN; ++i)
+  {
+    int val = mod / i;
+    val = (inv[mod % i] * val) % mod;
+    val = mod - val;
+    inv[i] = val;
+  }
+  invfat[0] = 1;
+  invfat[MAXN - 1] = modint(f[MAXN - 1]).inv();
+  for (int i = MAXN - 2; i >= 1; i--)
+  {
+    invfat[i] = invfat[i + 1] * (i + 1);
+  }
 }
-modint ncr(int n, int k)
+modint ncr(int n, int k) // combinacao
 {
-  modint d = f[k] * f[n - k];
-  modint ans = f[n] / d;
+  modint ans = f[n] * invfat[k];
+  ans *= invfat[n - k];
+  return ans;
+}
+modint arr(int n, int k) // arranjo
+{
+  modint ans = f[n] * invfat[n - k];
   return ans;
 }
 signed main()

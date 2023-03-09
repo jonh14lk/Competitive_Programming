@@ -23,7 +23,8 @@ namespace sa
     int len, suf_link;
     map<char, int> nxt;
   };
-
+  
+  vector<int> term;
   state st[2 * MAXN];
   int dp[2 * MAXN];
   int sz, last;
@@ -76,6 +77,14 @@ namespace sa
       st[curr].len = st[last].len + 1;
       get_link(curr, last, c);
       last = curr;
+    }
+    // achar os estados terminais
+    // um estado terminal e aquele que representa um sufixo da string s
+    int p = last;
+    while (p != -1)
+    {
+      term.pb(p);
+      p = st[p].suf_link;
     }
   }
   void dfs2(int v)

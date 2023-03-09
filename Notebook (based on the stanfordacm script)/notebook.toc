@@ -3,145 +3,162 @@
 \contentsline {subsection}{\numberline {1.2}Aplications}{2}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}TS}{3}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}UpperBound}{3}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}STL}{4}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}BS}{4}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.5}parallel binary search}{3}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}STL}{4}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}BS}{4}{subsection.1.7}%
 \contentsline {section}{\numberline {2}Miscellaneous}{5}{section.2}%
 \contentsline {subsection}{\numberline {2.1}meetinthemiddle}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}bitmasks}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}bitmasks}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}coordinate compression}{6}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}two pointers}{7}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}inversion count}{8}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}sprague grundy}{9}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}stack trick}{10}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.4}tower of hanoi}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}two pointers}{7}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}inversion count}{7}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}sprague grundy}{8}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}stack trick}{9}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}segment covering}{9}{subsection.2.9}%
 \contentsline {section}{\numberline {3}STL}{10}{section.3}%
 \contentsline {subsection}{\numberline {3.1}ordered set}{10}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}STL}{11}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Utils}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}runner2}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2} int128}{13}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}execution time}{13}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}runner}{13}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Math}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}totient}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}iterative fft}{14}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}max xor subsequence}{15}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}fraction}{16}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}gaussian elimination2}{17}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}modular arithmetic}{17}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}crivo}{18}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}divisors}{19}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}gaussian elimination}{19}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}primefactors2}{20}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}matrix exponentiation2}{21}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}segmentedsieve}{22}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}pollard rho}{22}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}xor trie}{24}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}mobius}{25}{subsection.5.15}%
-\contentsline {subsection}{\numberline {5.16}fft}{27}{subsection.5.16}%
-\contentsline {subsection}{\numberline {5.17}lagrange}{28}{subsection.5.17}%
-\contentsline {subsection}{\numberline {5.18}primefactors}{30}{subsection.5.18}%
-\contentsline {subsection}{\numberline {5.19}fwht}{30}{subsection.5.19}%
-\contentsline {subsection}{\numberline {5.20}operadores binarios}{31}{subsection.5.20}%
-\contentsline {subsection}{\numberline {5.21}baby step gigant step}{32}{subsection.5.21}%
-\contentsline {subsection}{\numberline {5.22}stars and bars}{33}{subsection.5.22}%
-\contentsline {subsection}{\numberline {5.23}matrix exponentiation}{34}{subsection.5.23}%
-\contentsline {subsection}{\numberline {5.24}diophantine}{35}{subsection.5.24}%
-\contentsline {subsection}{\numberline {5.25}crt}{36}{subsection.5.25}%
-\contentsline {subsection}{\numberline {5.26}ntt}{37}{subsection.5.26}%
-\contentsline {section}{\numberline {6}Dynamic programming and common problems}{39}{section.6}%
-\contentsline {subsection}{\numberline {6.1}cht}{39}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}subsequences string}{40}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}sos dp}{40}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}aliens trick}{41}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}largest square}{42}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}broken profile}{42}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}exchange arguments}{43}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}max matrix path}{44}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}dynamic cht}{45}{subsection.6.9}%
-\contentsline {subsection}{\numberline {6.10}lis}{46}{subsection.6.10}%
-\contentsline {subsection}{\numberline {6.11}Knapsack}{47}{subsection.6.11}%
-\contentsline {subsection}{\numberline {6.12}tip}{47}{subsection.6.12}%
-\contentsline {subsection}{\numberline {6.13}largest-sum-contiguous-subarray}{48}{subsection.6.13}%
-\contentsline {subsection}{\numberline {6.14}lcs}{49}{subsection.6.14}%
-\contentsline {subsection}{\numberline {6.15}divideandconquer}{49}{subsection.6.15}%
-\contentsline {subsection}{\numberline {6.16}expected value}{50}{subsection.6.16}%
-\contentsline {subsection}{\numberline {6.17}Digitdp}{51}{subsection.6.17}%
-\contentsline {section}{\numberline {7}Graph}{51}{section.7}%
-\contentsline {subsection}{\numberline {7.1}centroid decomposition2}{51}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Floyd Warshall}{53}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}strong orientation}{53}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}scc}{54}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}hld}{56}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Prim}{58}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}articulation points}{59}{subsection.7.7}%
-\contentsline {subsection}{\numberline {7.8}tree isomorfism}{59}{subsection.7.8}%
-\contentsline {subsection}{\numberline {7.9}mincostflow}{61}{subsection.7.9}%
-\contentsline {subsection}{\numberline {7.10}eulertour}{62}{subsection.7.10}%
-\contentsline {subsection}{\numberline {7.11}TreeDiameter}{63}{subsection.7.11}%
-\contentsline {subsection}{\numberline {7.12}Grafo Bipartido}{64}{subsection.7.12}%
-\contentsline {subsection}{\numberline {7.13}dsu}{64}{subsection.7.13}%
-\contentsline {subsection}{\numberline {7.14}block-cut-tree}{65}{subsection.7.14}%
-\contentsline {subsection}{\numberline {7.15}reroot}{68}{subsection.7.15}%
-\contentsline {subsection}{\numberline {7.16}hld edge}{69}{subsection.7.16}%
-\contentsline {subsection}{\numberline {7.17}two sat}{72}{subsection.7.17}%
-\contentsline {subsection}{\numberline {7.18}hungarian}{73}{subsection.7.18}%
-\contentsline {subsection}{\numberline {7.19}dinic}{74}{subsection.7.19}%
-\contentsline {subsection}{\numberline {7.20}hopcroft karp}{75}{subsection.7.20}%
-\contentsline {subsection}{\numberline {7.21}dsu rollback}{77}{subsection.7.21}%
-\contentsline {subsection}{\numberline {7.22}MatrixDijkstra}{78}{subsection.7.22}%
-\contentsline {subsection}{\numberline {7.23}sack}{80}{subsection.7.23}%
-\contentsline {subsection}{\numberline {7.24}bridges}{81}{subsection.7.24}%
-\contentsline {subsection}{\numberline {7.25}Ford Fulkerson}{82}{subsection.7.25}%
-\contentsline {subsection}{\numberline {7.26}bipartite}{83}{subsection.7.26}%
-\contentsline {subsection}{\numberline {7.27}notes}{84}{subsection.7.27}%
-\contentsline {subsection}{\numberline {7.28}caminhoeuleriano}{86}{subsection.7.28}%
-\contentsline {subsection}{\numberline {7.29}mo trees}{86}{subsection.7.29}%
-\contentsline {subsection}{\numberline {7.30}LCA}{88}{subsection.7.30}%
-\contentsline {subsection}{\numberline {7.31}Topological Sort}{89}{subsection.7.31}%
-\contentsline {subsection}{\numberline {7.32}Dijkstra}{90}{subsection.7.32}%
-\contentsline {subsection}{\numberline {7.33}centroid decomposition}{91}{subsection.7.33}%
-\contentsline {subsection}{\numberline {7.34}DFS}{92}{subsection.7.34}%
-\contentsline {subsection}{\numberline {7.35}cycle detection}{93}{subsection.7.35}%
-\contentsline {subsection}{\numberline {7.36}Kruskal}{94}{subsection.7.36}%
-\contentsline {subsection}{\numberline {7.37}BFS}{95}{subsection.7.37}%
-\contentsline {section}{\numberline {8}Strings}{95}{section.8}%
-\contentsline {subsection}{\numberline {8.1}suffix automaton}{95}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}suffix array}{98}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}kmp}{99}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}aho corasick}{100}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}stringhashing2}{102}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}substring fft}{103}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}min suffix}{104}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}z-function}{105}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}rabin-karp}{105}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}manacher}{106}{subsection.8.10}%
-\contentsline {subsection}{\numberline {8.11}stringhashing}{107}{subsection.8.11}%
-\contentsline {section}{\numberline {9}Geometry}{109}{section.9}%
-\contentsline {subsection}{\numberline {9.1}smallest enclosing circle}{109}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}ConvexHull}{110}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}minkowski}{112}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}LineSweep}{114}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}points and vectors}{116}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Structures}{117}{section.10}%
-\contentsline {subsection}{\numberline {10.1}persistent seg}{117}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}treap}{119}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}segtree2d}{121}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}mergesorttree}{122}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}sparsetable}{123}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}sqrt decomposition2}{123}{subsection.10.6}%
-\contentsline {subsection}{\numberline {10.7}implicit seg}{125}{subsection.10.7}%
-\contentsline {subsection}{\numberline {10.8}min queue}{126}{subsection.10.8}%
-\contentsline {subsection}{\numberline {10.9}SegTree pa}{127}{subsection.10.9}%
-\contentsline {subsection}{\numberline {10.10}segtree lazy}{128}{subsection.10.10}%
-\contentsline {subsection}{\numberline {10.11}fenwick3}{130}{subsection.10.11}%
-\contentsline {subsection}{\numberline {10.12}treap2}{130}{subsection.10.12}%
-\contentsline {subsection}{\numberline {10.13}persistent seg2}{132}{subsection.10.13}%
-\contentsline {subsection}{\numberline {10.14}SegTree}{133}{subsection.10.14}%
-\contentsline {subsection}{\numberline {10.15}binary lifting}{134}{subsection.10.15}%
-\contentsline {subsection}{\numberline {10.16}Segtree2}{135}{subsection.10.16}%
-\contentsline {subsection}{\numberline {10.17}sqrt decomposition}{135}{subsection.10.17}%
-\contentsline {subsection}{\numberline {10.18}color update}{136}{subsection.10.18}%
-\contentsline {subsection}{\numberline {10.19}bit2d}{138}{subsection.10.19}%
-\contentsline {subsection}{\numberline {10.20}fenwick2}{139}{subsection.10.20}%
-\contentsline {subsection}{\numberline {10.21}bit2D}{140}{subsection.10.21}%
-\contentsline {subsection}{\numberline {10.22}fenwick}{141}{subsection.10.22}%
+\contentsline {subsection}{\numberline {3.2}STL}{10}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Utils}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}runner2}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}rand}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3} int128}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}execution time}{12}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}runner}{12}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Math}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}totient}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}iterative fft}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}max xor subsequence}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}fraction}{14}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}gaussian elimination2}{14}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}modular arithmetic}{15}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}crivo}{15}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}divisors}{16}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}gaussian elimination}{16}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}primefactors2}{17}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}matrix exponentiation2}{17}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}segmentedsieve}{18}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}pollard rho}{18}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}xor trie}{19}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}mobius}{20}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.16}berlekamp massey}{21}{subsection.5.16}%
+\contentsline {subsection}{\numberline {5.17}fft}{22}{subsection.5.17}%
+\contentsline {subsection}{\numberline {5.18}lagrange}{23}{subsection.5.18}%
+\contentsline {subsection}{\numberline {5.19}primefactors}{24}{subsection.5.19}%
+\contentsline {subsection}{\numberline {5.20}fwht}{24}{subsection.5.20}%
+\contentsline {subsection}{\numberline {5.21}operadores binarios}{25}{subsection.5.21}%
+\contentsline {subsection}{\numberline {5.22}baby step gigant step}{25}{subsection.5.22}%
+\contentsline {subsection}{\numberline {5.23}simplex}{26}{subsection.5.23}%
+\contentsline {subsection}{\numberline {5.24}stars and bars}{27}{subsection.5.24}%
+\contentsline {subsection}{\numberline {5.25}matrix exponentiation}{28}{subsection.5.25}%
+\contentsline {subsection}{\numberline {5.26}diophantine}{29}{subsection.5.26}%
+\contentsline {subsection}{\numberline {5.27}crt}{29}{subsection.5.27}%
+\contentsline {subsection}{\numberline {5.28}ntt}{30}{subsection.5.28}%
+\contentsline {section}{\numberline {6}Dynamic programming and common problems}{31}{section.6}%
+\contentsline {subsection}{\numberline {6.1}cht}{31}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}subset sum}{31}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}subsequences string}{32}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}sos dp}{32}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}aliens trick}{33}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}largest square}{33}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}broken profile}{34}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}bitwise digit dp}{34}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}exchange arguments}{35}{subsection.6.9}%
+\contentsline {subsection}{\numberline {6.10}max matrix path}{35}{subsection.6.10}%
+\contentsline {subsection}{\numberline {6.11}dynamic cht}{36}{subsection.6.11}%
+\contentsline {subsection}{\numberline {6.12}lis}{37}{subsection.6.12}%
+\contentsline {subsection}{\numberline {6.13}Knapsack}{37}{subsection.6.13}%
+\contentsline {subsection}{\numberline {6.14}tip}{37}{subsection.6.14}%
+\contentsline {subsection}{\numberline {6.15}largest-sum-contiguous-subarray}{38}{subsection.6.15}%
+\contentsline {subsection}{\numberline {6.16}lcs}{38}{subsection.6.16}%
+\contentsline {subsection}{\numberline {6.17}divideandconquer}{39}{subsection.6.17}%
+\contentsline {subsection}{\numberline {6.18}expected value}{39}{subsection.6.18}%
+\contentsline {subsection}{\numberline {6.19}lichao}{40}{subsection.6.19}%
+\contentsline {subsection}{\numberline {6.20}Digitdp}{41}{subsection.6.20}%
+\contentsline {section}{\numberline {7}Theorems and Formulas}{41}{section.7}%
+\contentsline {subsection}{\numberline {7.1}chicken mcnugget}{41}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}graph notes}{41}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Graph}{42}{section.8}%
+\contentsline {subsection}{\numberline {8.1}centroid decomposition2}{42}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Floyd Warshall}{43}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}strong orientation}{44}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}scc}{44}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}hld}{45}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Prim}{46}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}articulation points}{47}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}flow with minimum capacities}{47}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}tree isomorfism}{49}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}mincostflow}{50}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}eulertour}{51}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}TreeDiameter}{51}{subsection.8.12}%
+\contentsline {subsection}{\numberline {8.13}Grafo Bipartido}{52}{subsection.8.13}%
+\contentsline {subsection}{\numberline {8.14}dsu}{52}{subsection.8.14}%
+\contentsline {subsection}{\numberline {8.15}block-cut-tree}{53}{subsection.8.15}%
+\contentsline {subsection}{\numberline {8.16}reroot}{55}{subsection.8.16}%
+\contentsline {subsection}{\numberline {8.17}hld edge}{55}{subsection.8.17}%
+\contentsline {subsection}{\numberline {8.18}two sat}{57}{subsection.8.18}%
+\contentsline {subsection}{\numberline {8.19}hungarian}{57}{subsection.8.19}%
+\contentsline {subsection}{\numberline {8.20}dinic}{58}{subsection.8.20}%
+\contentsline {subsection}{\numberline {8.21}hopcroft karp}{59}{subsection.8.21}%
+\contentsline {subsection}{\numberline {8.22}dsu rollback}{61}{subsection.8.22}%
+\contentsline {subsection}{\numberline {8.23}MatrixDijkstra}{62}{subsection.8.23}%
+\contentsline {subsection}{\numberline {8.24}sack}{63}{subsection.8.24}%
+\contentsline {subsection}{\numberline {8.25}bridges}{63}{subsection.8.25}%
+\contentsline {subsection}{\numberline {8.26}Ford Fulkerson}{64}{subsection.8.26}%
+\contentsline {subsection}{\numberline {8.27}bipartite}{65}{subsection.8.27}%
+\contentsline {subsection}{\numberline {8.28}caminhoeuleriano}{65}{subsection.8.28}%
+\contentsline {subsection}{\numberline {8.29}mo trees}{66}{subsection.8.29}%
+\contentsline {subsection}{\numberline {8.30}LCA}{67}{subsection.8.30}%
+\contentsline {subsection}{\numberline {8.31}Topological Sort}{68}{subsection.8.31}%
+\contentsline {subsection}{\numberline {8.32}Dijkstra}{68}{subsection.8.32}%
+\contentsline {subsection}{\numberline {8.33}centroid decomposition}{69}{subsection.8.33}%
+\contentsline {subsection}{\numberline {8.34}DFS}{69}{subsection.8.34}%
+\contentsline {subsection}{\numberline {8.35}stable matching}{70}{subsection.8.35}%
+\contentsline {subsection}{\numberline {8.36}cycle detection}{71}{subsection.8.36}%
+\contentsline {subsection}{\numberline {8.37}Kruskal}{71}{subsection.8.37}%
+\contentsline {subsection}{\numberline {8.38}BFS}{72}{subsection.8.38}%
+\contentsline {section}{\numberline {9}Strings}{72}{section.9}%
+\contentsline {subsection}{\numberline {9.1}suffix automaton}{72}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}suffix array}{74}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}kmp}{75}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}aho corasick}{76}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}stringhashing2}{76}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}substring fft}{77}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}min suffix}{78}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}z-function}{78}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}rabin-karp}{79}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}manacher}{79}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}de bruijin}{80}{subsection.9.11}%
+\contentsline {subsection}{\numberline {9.12}stringhashing}{81}{subsection.9.12}%
+\contentsline {section}{\numberline {10}Geometry}{81}{section.10}%
+\contentsline {subsection}{\numberline {10.1}dynamic ch}{81}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}smallest enclosing circle}{82}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}ConvexHull}{83}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}minkowski}{84}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}halfplane intersection}{86}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}LineSweep}{87}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}kd tree}{88}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}points and vectors}{89}{subsection.10.8}%
+\contentsline {section}{\numberline {11}Structures}{90}{section.11}%
+\contentsline {subsection}{\numberline {11.1}persistent seg}{90}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}treap}{91}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}segtree2d}{92}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}mo update}{93}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}mergesorttree}{94}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}sparsetable}{94}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}implicit seg}{95}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}min queue}{95}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}SegTree pa}{96}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}segtree lazy}{97}{subsection.11.10}%
+\contentsline {subsection}{\numberline {11.11}fenwick3}{98}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}treap2}{98}{subsection.11.12}%
+\contentsline {subsection}{\numberline {11.13}persistent seg2}{99}{subsection.11.13}%
+\contentsline {subsection}{\numberline {11.14}SegTree}{100}{subsection.11.14}%
+\contentsline {subsection}{\numberline {11.15}binary lifting}{101}{subsection.11.15}%
+\contentsline {subsection}{\numberline {11.16}Segtree2}{101}{subsection.11.16}%
+\contentsline {subsection}{\numberline {11.17}color update}{102}{subsection.11.17}%
+\contentsline {subsection}{\numberline {11.18}bit2d}{103}{subsection.11.18}%
+\contentsline {subsection}{\numberline {11.19}fenwick2}{103}{subsection.11.19}%
+\contentsline {subsection}{\numberline {11.20}mo}{104}{subsection.11.20}%
+\contentsline {subsection}{\numberline {11.21}bit2D}{105}{subsection.11.21}%
+\contentsline {subsection}{\numberline {11.22}fenwick}{105}{subsection.11.22}%

@@ -14,11 +14,11 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define pii pair<int, pi>
 #define fir first
 #define sec second
-#define MAXN 100001
+#define MAXN 500005
 #define mod 1000000007
 
 int n, q;
-vector<int> v;
+int v[MAXN];
 
 namespace mo
 {
@@ -35,41 +35,45 @@ namespace mo
   {
     if (x.l / block != y.l / block)
       return x.l / block < y.l / block;
-    if (x.r != y.r)
-      return x.r < y.r;
+    return x.r < y.r;
   }
-  void sqrt_decomposition()
+  void run()
   {
     block = (int)sqrt(n);
     sort(queries.begin(), queries.end(), cmp);
     ans.resize(queries.size());
-    int curr_left = 0, curr_right = 0, curr_sum = 0;
+    int cl = 0, cr = -1, sum = 0;
+    auto add = [&](int x)
+    {
+      sum += x;
+    };
+    auto rem = [&](int x)
+    {
+      sum -= x;
+    };
     for (int i = 0; i < queries.size(); i++)
     {
-      int idx = queries[i].idx;
-      int l = queries[i].l;
-      int r = queries[i].r;
-      while (curr_left < l)
+      while (cl > queries[i].l)
       {
-        curr_sum -= v[curr_left];
-        curr_left++;
+        cl--;
+        add(v[cl]);
       }
-      while (curr_left > l)
+      while (cr < queries[i].r)
       {
-        curr_left--;
-        curr_sum += v[curr_left];
+        cr++;
+        add(v[cr]);
       }
-      while (curr_right <= r)
+      while (cl < queries[i].l)
       {
-        curr_sum += v[curr_right];
-        curr_right++;
+        rem(v[cl]);
+        cl++;
       }
-      while (curr_right > r + 1)
+      while (cr > queries[i].r)
       {
-        curr_right--;
-        curr_sum -= v[curr_right];
+        rem(v[cr]);
+        cr--;
       }
-      ans[idx] = curr_sum;
+      ans[queries[i].idx] = sum;
     }
   }
 }
@@ -78,7 +82,6 @@ signed main()
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
   cin >> n >> q;
-  v.resize(n);
   for (int i = 0; i < n; i++)
     cin >> v[i];
   for (int i = 0; i < q; i++)
@@ -89,7 +92,7 @@ signed main()
     curr.idx = i;
     mo::queries.pb(curr);
   }
-  mo::sqrt_decomposition();
+  mo::run();
   for (auto const &i : mo::ans)
     cout << i << endl;
 }

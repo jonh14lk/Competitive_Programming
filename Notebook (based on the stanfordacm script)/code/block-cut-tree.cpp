@@ -94,7 +94,7 @@ struct block_cut_tree
   // blocks[i] eh uma componente 2-vertce-conexa maximal
   // edgblocks[i] sao as arestas do bloco i
   // tree[i] eh um vertice da arvore que corresponde ao bloco i
-  //
+  // tree - eh a propia block-cut tree
   // pos[i] responde a qual vertice da arvore vertice i pertence
   // Arvore tem no maximo 2n vertices
   //
@@ -300,3 +300,11 @@ signed main()
 // da pra resolver pra cada componente conexa
 // caminhos entre vertices de mesma cor tem paridade impar
 // caminhos entre vertices de cor diferente tem paridade par
+
+// https://codeforces.com/gym/102512/problem/A
+// ter queries do tipo 
+// quantos pontos de articulacao desconectam u e v
+// dai monta a block cut tree
+// para cada ponto de articulacao, seta a pos[i] dele como 1 na arvore
+// e o valor dos demais vertices como 0
+// dai responde uma query com hld (ou com lca tbm sai)
