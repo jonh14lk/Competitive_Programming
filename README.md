@@ -192,6 +192,8 @@ And many others, sky is the limit :)
 
 - [2022-2023 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103960)
   - [All problems solved ](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202022)
+- [2022-2023 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104252)
+  - [All problems solved, except problems G and J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202022)
 - [2021-2022 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103388)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202021)
 - [2021-2022 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103640)
