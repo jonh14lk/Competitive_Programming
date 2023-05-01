@@ -114,15 +114,17 @@ struct lagrange
   }
   vector<modint> find_coefs() // encontra os coeficientes do polinomio
   {
-    int d = n - 1;
-    vector<modint> c(n, 0);
+    int nn = n;
+    int d = nn - 1;
+    vector<modint> c(nn, 0);
     for (int i = 0; i < y.size(); i++)
     {
       c[d] += (y[i] * den[i]);
     }
-    for (int p = n - 2; p >= 0; p--)
+    for (int p = nn - 2; p >= 0; p--)
     {
-      calc_den(n - 1);
+      nn--;
+      calc_den(nn);
       for (int i = 0; i <= p; i++)
       {
         y[i] -= (c[p + 1] * modint(i).pow(d));
