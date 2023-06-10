@@ -138,6 +138,7 @@ And many others, sky is the limit :)
   - [Berlekamp Massey](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/berlekamp_massey.cpp)
   - [Simplex](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/simplex.cpp)
   - [Chicken Mcnugget Theorem](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/chicken_mcnugget.md)
+  - [Catalan Numbers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/catalan.cpp)
 
 - Strings :smile:
 
