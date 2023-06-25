@@ -162,6 +162,7 @@ And many others, sky is the limit :)
   - [Implicit Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/implicit_seg.cpp)
   - [Segtree with Lazy Propagation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/segtree_lazy.cpp)
   - [Arithmetic Progression Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/SegTree_pa.cpp)
+  - [Segment with Maximum/Minimum sum Segtree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/segtree_max_seg_sum.cpp)
   - [Fenwick Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick.cpp)
   - [Fenwick Tree with Range Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/fenwick2.cpp)
   - [Fenwick Tree 2D](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/bit2D.cpp)
@@ -188,6 +189,7 @@ And many others, sky is the limit :)
   - [Coordinate Compression](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/coordinate_compression.cpp)
   - [Tower of Hanoi](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/tower_of_hanoi.cpp)
   - [Segment Covering](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/segment_covering.cpp)
+  - [2D Prefix Sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/prefix_sum_2d.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 

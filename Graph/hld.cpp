@@ -1,4 +1,4 @@
-//https://codeforces.com/contest/343/problem/D
+// https://codeforces.com/contest/343/problem/D
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -12,14 +12,20 @@ using namespace std;
 #define MAXN 500001
 #define mod 1000000007
 
-int n, q;
-vector<int> adj[MAXN];
-
-namespace seg
+struct segtree
 {
-  int seg[4 * MAXN];
-  int lazy[4 * MAXN];
+  int n;
+  vector<int> v;
+  vector<int> seg;
+  vector<int> lazy;
 
+  segtree() {}
+  segtree(int sz)
+  {
+    n = sz;
+    seg.assign(4 * n, 0);
+    lazy.assign(4 * n, -1);
+  }
   int single(int x)
   {
     return x;
@@ -69,10 +75,12 @@ namespace seg
     int mid = (l + r) >> 1;
     return merge(query(l, mid, ql, qr, i << 1), query(mid + 1, r, ql, qr, (i << 1) | 1));
   }
-} // namespace seg
-namespace hld
+};
+struct hld
 {
-  int cur_pos;
+  int n, cur_pos;
+  segtree seg;
+  vector<vector<int>> adj;
   vector<int> parent, depth, heavy, head, pos, sz;
 
   int dfs(int s)
@@ -104,20 +112,20 @@ namespace hld
         decompose(c, c);
     }
   }
-  void init()
+  hld(vector<vector<int>> &g)
   {
-    memset(seg::lazy, -1, sizeof(seg::lazy));
-    parent.assign(MAXN, -1);
-    depth.assign(MAXN, -1);
-    heavy.assign(MAXN, -1);
-    head.assign(MAXN, -1);
-    pos.assign(MAXN, -1);
-    sz.assign(MAXN, 1);
+    n = g.size();
+    adj = g;
+    seg = segtree(n);
+    parent.assign(n, -1);
+    depth.assign(n, -1);
+    heavy.assign(n, -1);
+    head.assign(n, -1);
+    pos.assign(n, -1);
+    sz.assign(n, 1);
     cur_pos = 0;
     dfs(0);
     decompose(0, 0);
-    for (int i = 0; i < 4 * n; i++)
-      seg::lazy[i] = -1;
   }
   int query_path(int a, int b)
   {
@@ -126,13 +134,11 @@ namespace hld
     {
       if (depth[head[a]] > depth[head[b]])
         swap(a, b);
-      int cur_heavy_path_max = seg::query(0, n - 1, pos[head[b]], pos[b], 1);
-      res += cur_heavy_path_max;
+      res += seg.query(0, n - 1, pos[head[b]], pos[b], 1);
     }
     if (depth[a] > depth[b])
       swap(a, b);
-    int last_heavy_path_max = seg::query(0, n - 1, pos[a], pos[b], 1);
-    res += last_heavy_path_max;
+    res += seg.query(0, n - 1, pos[a], pos[b], 1);
     return res;
   }
   void update_path(int a, int b, int x)
@@ -141,24 +147,28 @@ namespace hld
     {
       if (depth[head[a]] > depth[head[b]])
         swap(a, b);
-      seg::update(1, 0, n - 1, pos[head[b]], pos[b], x);
+      seg.update(1, 0, n - 1, pos[head[b]], pos[b], x);
     }
     if (depth[a] > depth[b])
       swap(a, b);
-    seg::update(1, 0, n - 1, pos[a], pos[b], x);
+    seg.update(1, 0, n - 1, pos[a], pos[b], x);
   }
   void update_subtree(int a, int x)
   {
-    seg::update(1, 0, n - 1, pos[a], pos[a] + sz[a] - 1, x);
+    seg.update(1, 0, n - 1, pos[a], pos[a] + sz[a] - 1, x);
   }
-  void query_subtree(int a, int x)
+  int query_subtree(int a)
   {
-    seg::query(0, n - 1, pos[a], pos[a] + sz[a] - 1, 1);
+    return seg.query(0, n - 1, pos[a], pos[a] + sz[a] - 1, 1);
   }
-} // namespace hld
+};
 signed main()
 {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  int n;
   cin >> n;
+  vector<vector<int>> adj(n);
   for (int i = 0; i < n - 1; i++)
   {
     int a, b;
@@ -167,7 +177,8 @@ signed main()
     adj[a].pb(b);
     adj[b].pb(a);
   }
-  hld::init();
+  hld h(adj);
+  int q;
   cin >> q;
   while (q--)
   {
@@ -176,15 +187,15 @@ signed main()
     b--;
     if (a == 1)
     {
-      hld::update_subtree(b, 1);
+      h.update_subtree(b, 1);
     }
     if (a == 2)
     {
-      hld::update_path(0, b, 0);
+      h.update_path(0, b, 0);
     }
     if (a == 3)
     {
-      cout << hld::query_path(b, b) << endl;
+      cout << h.query_path(b, b) << endl;
     }
   }
   return 0;
