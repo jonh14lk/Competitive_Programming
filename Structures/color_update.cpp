@@ -74,10 +74,36 @@ struct color_upd
         ranges.insert(upd2);
     }
   }
+  void add(int a, int b, int c) // não ter dois intervalos adjacentes com a mesma cor no set de ranges
+  {
+    auto it = ranges.lower_bound({a, {b, 0}});
+    pii aa = {-1, {-1, -1}};
+    pii bb = {-1, {-1, -1}};
+    if (it != ranges.end())
+    {
+      if ((*it).color == c && (*it).left == b + 1)
+      {
+        aa = *it;
+        b = (*it).right;
+      }
+    }
+    if (it != ranges.begin())
+    {
+      it--;
+      if ((*it).color == c && (*it).right == a - 1)
+      {
+        bb = *it;
+        a = (*it).left;
+      }
+    }
+    ranges.erase(aa);
+    ranges.erase(bb);
+    ranges.insert({a, {b, c}});
+  }
   void upd(int a, int b, int c) // pinta o intervalo [a, b] com a cor c
   {
     del(a, b);
-    ranges.insert({a, {b, c}});
+    add(a, b, c);
   }
 };
 struct segtree

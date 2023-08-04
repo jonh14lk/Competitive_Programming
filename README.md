@@ -88,6 +88,7 @@ And many others, sky is the limit :)
   - [Strong Orientation](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/strong_orientation.cpp)
   - [Block Cut Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/block-cut-tree.cpp)
   - [Stable Matching](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/stable_matching.cpp)
+  - [Erdos Gallai](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/erdos_gallai.cpp)
   - [Notes](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/graph_notes.md)
 
 - Trees :heart:
@@ -177,6 +178,7 @@ And many others, sky is the limit :)
   - [Mo's algorithm with Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/mo_update.cpp)
   - [Treap](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/treap2.cpp)
   - [Color Update](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/color_update.cpp)
+  - [RMQ](https://github.com/jonh14lk/Competitive_Programming/blob/master/Structures/rmq.cpp)
 
 - Miscellaneous :smile:
 
