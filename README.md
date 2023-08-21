@@ -77,7 +77,7 @@ And many others, sky is the limit :)
   - [Kruskal](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Kruskal.cpp)
   - [Prim](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Prim.cpp)
   - [Topological Sort](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Topological_Sort.cpp)
-  - [DSU](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/Union_Find.cpp)
+  - [DSU](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dsu.cpp)
   - [DSU with rollback](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dsu_rollback.cpp)
   - [Eulerian Path](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/caminhoeuleriano.cpp)
   - [Cycle Detection](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/cycle_detection.cpp)
@@ -103,6 +103,7 @@ And many others, sky is the limit :)
   - [Mo's Algorithm on Trees](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/mo_trees.cpp)
   - [Tree Isomorfism](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/tree_isomorfism.cpp)
   - [Sack (dsu on tree)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/sack.cpp)
+  - [Link Cut Tree (Edge cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/link_cut_tree_edge.cpp)
 
 - Flows and Matchings :heart:
 
