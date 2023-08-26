@@ -141,6 +141,7 @@ And many others, sky is the limit :)
   - [Simplex](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/simplex.cpp)
   - [Chicken Mcnugget Theorem](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/chicken_mcnugget.md)
   - [Catalan Numbers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/catalan.cpp)
+  - [Matrix inverse and matrix determinant](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/matrix_inverse_and_determinant.cpp)
 
 - Strings :smile:
 
