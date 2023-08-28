@@ -16,6 +16,59 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define MAXN 100005
 #define mod 1000000007
 
+// subset sum com bitset de tamanho variado
+// usada no https://codeforces.com/contest/1856/problem/E2
+// with n <= 10^6
+template <int len = 1>
+int subset_sum(int n, int h)
+{
+  if (n >= len)
+  {
+    return subset_sum<std::min(len * 2, (int)MAXN)>(n, h);
+  }
+  bitset<len> dp;
+  dp[0] = 1;
+  for (auto const &x : w)
+  {
+    dp = dp | (dp << x);
+  }
+  return dp._Find_next(max(0ll, h - 1)); // retorna o proximo bit setado apos a posicao passada como parametro
+}
+int solve(vector<int> &w, int tot, int h)
+{
+  // tot -> soma de todos os elementos de w
+  // h -> valor desejado
+  // quero retornar o menor valor x >= h, tal que existe um subset com soma x em w
+  if (!w.size())
+    return 0;
+  sort(w.rbegin(), w.rend());
+  if (w[0] * 2 >= tot)
+    return w[0];
+  int n = w.size();
+  w.pb(0);
+  vector<int> aux;
+  int p = 0;
+  for (int i = 1; i <= n; i++)
+  {
+    if (w[i] != w[i - 1])
+    {
+      int cnt = i - p;
+      int x = w[i - 1];
+      int j = 1;
+      while (j < cnt)
+      {
+        aux.pb(x * j);
+        cnt -= j;
+        j *= 2;
+      }
+      aux.pb(x * cnt);
+      p = i;
+    }
+  }
+  swap(aux, w);
+  return subset_sum(tot, h);
+}
+
 int f[MAXN];     // f[i] -> quantos "itens" com valor i tem
 bitset<MAXN> dp; // dp[i] = 1, se existe um subset com soma i
 // garantir que a soma de todo mundo seja < MAXN

@@ -18,32 +18,33 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define MAXN 10005
 #define mod 1000000007
  
-int n;
-vector<int> v;
- 
-namespace st
+struct rmq
 {
-  int st[MAXN][25];
-  int log[MAXN + 1];
+  bool is_min;
+  vector<vector<int>> st;
+  vector<int> log;
  
-  void init()
+  int f(int a, int b) { return (is_min) ? min(a, b) : max(a, b); }
+  int qry(int l, int r) { return f(st[l][log[r - l + 1]], st[r - (1 << log[r - l + 1]) + 1][log[r - l + 1]]); }
+  rmq(vector<int> &v, bool flag)
   {
+    is_min = flag;
+    int n = v.size();
+    log.resize(n + 1);
     log[1] = 0;
-    for (int i = 2; i <= MAXN; i++)
+    for (int i = 2; i <= n; i++)
       log[i] = log[i / 2] + 1;
+    int m = log[n] + 2;
+    st.assign(n + 1, vector<int>(m, 0));
     for (int i = 0; i < n; i++)
       st[i][0] = v[i];
-    for (int j = 1; j <= 25; j++)
+    for (int j = 1; j < m; j++)
+    {
       for (int i = 0; i + (1 << j) <= n; i++)
-        st[i][j] = min(st[i][j - 1], st[i + (1 << (j - 1))][j - 1]);
+        st[i][j] = f(st[i][j - 1], st[i + (1 << (j - 1))][j - 1]);
+    }
   }
-  int query(int l, int r)
-  {
-    int j = log[r - l + 1];
-    int minimum = min(st[l][j], st[r - (1 << j) + 1][j]);
-    return minimum;
-  }
-}
+};
 signed main()
 {
   ios_base::sync_with_stdio(false);

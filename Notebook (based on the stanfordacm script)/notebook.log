@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.22)  9 MAR 2023 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  28 AUG 2023 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,91 +511,98 @@ LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <7> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 19.
 ) (./code/Aplications.cpp [2]) (./code/TS.cpp)
 (./code/UpperBound.cpp) (./code/parallel_binary_search.cpp [3]) (./code/STL.cpp
-) (./code/BS.cpp [4]) (./code/meetinthemiddle.cpp) (./code/bitmasks.cpp
-[5]) (./code/coordinate_compression.cpp) (./code/tower_of_hanoi.cpp [6])
-(./code/two_pointers.cpp) (./code/inversion_count.cpp [7])
-(./code/sprague_grundy.cpp [8]) (./code/stack_trick.cpp)
-(./code/segment_covering.cpp [9]) (./code/ordered_set.cpp) (./code/STL.txt
-[10]) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[4]) (./code/BS.cpp) (./code/meetinthemiddle.cpp) (./code/bitmasks.cpp [5])
+(./code/coordinate_compression.cpp) (./code/tower_of_hanoi.cpp [6])
+(./code/two_pointers.cpp) (./code/prefix_sum_2d.cpp [7])
+(./code/inversion_count.cpp) (./code/sprague_grundy.cpp [8])
+(./code/stack_trick.cpp) (./code/segment_covering.cpp [9])
+(./code/ordered_set.cpp) [10] (./code/STL.txt)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-(./code/runner2.py) (./code/rand.cpp) (./code/__int128.cpp [11])
-(./code/execution_time.cpp) (./code/runner.py) (./code/totient.cpp)
-(./code/iterative_fft.cpp [12]) (./code/max_xor_subsequence.cpp [13])
-(./code/fraction.cpp) (./code/gaussian_elimination2.cpp [14])
-(./code/modular_arithmetic.cpp) (./code/crivo.cpp [15]) (./code/divisors.cpp)
-(./code/gaussian_elimination.cpp [16]) (./code/primefactors2.cpp)
-(./code/matrix_exponentiation2.cpp [17]) (./code/segmentedsieve.cpp)
-(./code/pollard_rho.cpp [18]) (./code/xor_trie.cpp [19]) (./code/mobius.cpp
-[20]) (./code/berlekamp_massey.cpp [21]) (./code/fft.cpp [22])
-(./code/lagrange.cpp [23]) (./code/primefactors.cpp) (./code/fwht.cpp [24])
-(./code/operadores_binarios.cpp) (./code/baby_step_gigant_step.cpp [25])
-(./code/simplex.cpp [26]) (./code/stars_and_bars.cpp [27])
-(./code/matrix_exponentiation.cpp [28]) (./code/diophantine.cpp)
-(./code/crt.cpp [29]) (./code/ntt.cpp [30]) (./code/cht.cpp)
-(./code/subset_sum.cpp [31]) (./code/subsequences_string.cpp)
-(./code/sos_dp.cpp [32]) (./code/aliens_trick.cpp) (./code/largest_square.cpp
-[33]) (./code/broken_profile.cpp) (./code/bitwise_digit_dp.cpp [34])
-(./code/exchange_arguments.cpp) (./code/max_matrix_path.cpp [35])
-(./code/dynamic_cht.cpp [36]) (./code/lis.cpp) (./code/Knapsack.cpp)
-(./code/tip.cpp [37]) (./code/largest-sum-contiguous-subarray.cpp)
-(./code/lcs.cpp [38]) (./code/divideandconquer.cpp) (./code/expected_value.cpp
-[39]) (./code/lichao.cpp) [40] (./code/Digitdp.cpp) (./code/chicken_mcnugget.md
-) (./code/graph_notes.md [41]) (./code/centroid_decomposition2.cpp [42])
-(./code/Floyd_Warshall.cpp) [43] (./code/strong_orientation.cpp)
-(./code/scc.cpp [44]) (./code/hld.cpp [45]) (./code/Prim.cpp [46])
-(./code/articulation_points.cpp) (./code/flow_with_minimum_capacities.cpp
-[47] [48]) (./code/tree_isomorfism.cpp [49]) (./code/mincostflow.cpp [50])
-(./code/eulertour.cpp) (./code/TreeDiameter.cpp) (./code/Grafo_Bipartido.cpp
-[51]) (./code/dsu.cpp) [52] (./code/block-cut-tree.cpp [53] [54])
-(./code/reroot.cpp) (./code/hld_edge.cpp [55] [56]) (./code/two_sat.cpp)
-(./code/hungarian.cpp [57]) (./code/dinic.cpp [58]) (./code/hopcroft_karp.cpp
-[59]) [60] (./code/dsu_rollback.cpp [61]) (./code/MatrixDijkstra.cpp [62])
-(./code/sack.cpp) (./code/bridges.cpp [63]) (./code/Ford_Fulkerson.cpp [64])
-(./code/bipartite.cpp) (./code/caminhoeuleriano.cpp [65]) (./code/mo_trees.cpp
-[66]) (./code/LCA.cpp [67]) (./code/Topological_Sort.cpp) (./code/Dijkstra.cpp)
-[68] (./code/centroid_decomposition.cpp
+(./code/runner2.py) (./code/rand.cpp [11]) (./code/__int128.cpp)
+(./code/execution_time.cpp) (./code/runner.py [12]) (./code/totient.cpp)
+(./code/iterative_fft.cpp) (./code/extended_euclidean.cpp [13])
+(./code/max_xor_subsequence.cpp [14]) (./code/fraction.cpp) (./code/catalan.cpp
+[15]) (./code/gaussian_elimination2.cpp) (./code/modular_arithmetic.cpp
+[16]) (./code/crivo.cpp) (./code/divisors.cpp) (./code/gaussian_elimination.cpp
+[17]) (./code/primefactors2.cpp [18]) (./code/matrix_exponentiation2.cpp)
+(./code/mobius2.cpp [19]) (./code/segmentedsieve.cpp) (./code/pollard_rho.cpp
+[20]) (./code/xor_trie.cpp [21]) (./code/mobius.cpp [22])
+(./code/berlekamp_massey.cpp [23]) (./code/fft.cpp [24]) (./code/lagrange.cpp
+[25]) (./code/primefactors.cpp) (./code/fwht.cpp [26])
+(./code/operadores_binarios.cpp [27]) (./code/baby_step_gigant_step.cpp)
+(./code/simplex.cpp [28]) [29] (./code/matrix_inverse_and_determinant.cpp)
+(./code/stars_and_bars.cpp [30]) (./code/matrix_exponentiation.cpp [31])
+(./code/binomial_theorem.cpp [32]) (./code/diophantine.cpp) [33]
+(./code/crt.cpp) (./code/ntt.cpp [34]) (./code/cht.cpp [35])
+(./code/subset_sum.cpp [36]) (./code/subsequences_string.cpp)
+(./code/sos_dp.cpp) (./code/aliens_trick.cpp [37]) (./code/largest_square.cpp)
+(./code/broken_profile.cpp [38]) (./code/bitwise_digit_dp.cpp)
+(./code/exchange_arguments.cpp [39]) (./code/max_matrix_path.cpp)
+(./code/dynamic_cht.cpp [40]) (./code/lis.cpp [41]) (./code/Knapsack.cpp)
+(./code/tip.cpp) (./code/largest-sum-contiguous-subarray.cpp [42])
+(./code/lcs.cpp) (./code/divideandconquer.cpp [43]) (./code/expected_value.cpp)
+(./code/lichao.cpp [44]) (./code/Digitdp.cpp) (./code/chicken_mcnugget.md
+[45]) (./code/graph_notes.md [46]) (./code/binomial_theorem.md
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 5
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+))
+(./code/centroid_decomposition2.cpp [47]) (./code/Floyd_Warshall.cpp) [48]
+(./code/strong_orientation.cpp) (./code/scc.cpp [49]) (./code/hld.cpp [50])
+(./code/Prim.cpp [51]) (./code/articulation_points.cpp)
+(./code/flow_with_minimum_capacities.cpp [52] [53]) (./code/tree_isomorfism.cpp
+[54]) (./code/mincostflow.cpp [55]) (./code/eulertour.cpp)
+(./code/TreeDiameter.cpp [56]) (./code/Grafo_Bipartido.cpp) (./code/dsu.cpp
+[57]) (./code/link_cut_tree_edge.cpp [58]) (./code/block-cut-tree.cpp [59]
+[60]) [61] (./code/reroot.cpp) (./code/hld_edge.cpp [62] [63])
+(./code/two_sat.cpp) (./code/hungarian.cpp [64]) (./code/dinic.cpp [65])
+(./code/hopcroft_karp.cpp [66]) (./code/dsu_rollback.cpp [67] [68])
+(./code/MatrixDijkstra.cpp) [69] (./code/sack.cpp) (./code/bridges.cpp [70])
+(./code/Ford_Fulkerson.cpp) [71] (./code/bipartite.cpp)
+(./code/caminhoeuleriano.cpp [72]) (./code/mo_trees.cpp [73]) (./code/LCA.cpp)
+(./code/Topological_Sort.cpp [74]) (./code/Dijkstra.cpp)
+(./code/centroid_decomposition.cpp
 Overfull \hbox (39.2668pt too wide) in paragraph at lines 6--8
 [][][][] 
  []
 
-) (./code/DFS.cpp [69]) (./code/stable_matching.cpp [70])
-(./code/cycle_detection.cpp) (./code/Kruskal.cpp [71]) (./code/BFS.cpp)
-(./code/suffix_automaton.cpp [72] [73]) (./code/suffix_array.cpp [74]
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 7
-0.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)) (./code/kmp.cpp)
-(./code/aho_corasick.cpp [75]) (./code/stringhashing2.cpp [76])
-(./code/substring_fft.cpp [77]) (./code/min_suffix.cpp) (./code/z-function.cpp
-[78]) (./code/rabin-karp.cpp) (./code/manacher.cpp [79]) (./code/de_bruijin.cpp
-[80]) (./code/stringhashing.cpp) (./code/dynamic_ch.cpp [81])
-(./code/smallest_enclosing_circle.cpp [82]) (./code/ConvexHull.cpp [83])
-(./code/minkowski.cpp [84] [85]) (./code/halfplane_intersection.cpp [86])
-(./code/LineSweep.cpp [87]) (./code/kd_tree.cpp [88])
-(./code/points_and_vectors.cpp [89]) (./code/persistent_seg.cpp [90])
-(./code/treap.cpp [91]) (./code/segtree2d.cpp [92]) (./code/mo_update.cpp
-[93]) (./code/mergesorttree.cpp) (./code/sparsetable.cpp [94])
-(./code/implicit_seg.cpp) (./code/min_queue.cpp [95]) (./code/SegTree_pa.cpp
-[96]) (./code/segtree_lazy.cpp [97]) (./code/fenwick3.cpp) (./code/treap2.cpp
-[98]) (./code/persistent_seg2.cpp [99]) (./code/SegTree.cpp [100])
-(./code/binary_lifting.cpp) (./code/Segtree2.cpp) [101]
-(./code/color_update.cpp [102]) (./code/bit2d.cpp) (./code/fenwick2.cpp
-[103]) (./code/mo.cpp) (./code/bit2D.cpp [104]) (./code/fenwick.cpp [105]))
-[106] (./notebook.aux)
+[75]) (./code/DFS.cpp [76]) (./code/erdos_gallai.cpp)
+(./code/stable_matching.cpp [77]) (./code/cycle_detection.cpp [78])
+(./code/Kruskal.cpp) (./code/BFS.cpp [79]) (./code/suffix_automaton.cpp
+[80]) [81] (./code/suffix_array.cpp) (./code/kmp.cpp [82])
+(./code/aho_corasick.cpp [83]) (./code/stringhashing2.cpp) [84]
+(./code/substring_fft.cpp) (./code/min_suffix.cpp [85]) (./code/z-function.cpp)
+(./code/rabin-karp.cpp [86]) (./code/manacher.cpp) (./code/de_bruijin.cpp
+[87]) (./code/stringhashing.cpp [88]) (./code/dynamic_ch.cpp [89])
+(./code/smallest_enclosing_circle.cpp) [90] (./code/polygon_area.cpp)
+(./code/ConvexHull.cpp [91]) (./code/minkowski.cpp [92])
+(./code/halfplane_intersection.cpp [93] [94]) (./code/LineSweep.cpp [95])
+(./code/kd_tree.cpp [96]) (./code/points_and_vectors.cpp)
+(./code/persistent_seg.cpp [97]) (./code/treap.cpp [98] [99])
+(./code/segtree2d.cpp) (./code/mo_update.cpp [100]) (./code/mergesorttree.cpp
+[101]) (./code/sparsetable.cpp) (./code/implicit_seg.cpp [102])
+(./code/min_queue.cpp [103]) (./code/SegTree_pa.cpp [104])
+(./code/segtree_lazy.cpp [105]) (./code/segtree_max_seg_sum.cpp)
+(./code/fenwick3.cpp) (./code/treap2.cpp [106]) (./code/persistent_seg2.cpp
+[107]) (./code/SegTree.cpp [108]) (./code/binary_lifting.cpp)
+(./code/Segtree2.cpp [109]) (./code/rmq.cpp [110]) (./code/color_update.cpp
+[111]) (./code/bit2d.cpp [112]) (./code/fenwick2.cpp) (./code/mo.cpp [113])
+(./code/bit2D.cpp) (./code/fenwick.cpp [114])) [115] (./notebook.aux)
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 6AB8924081B0B4CAAA7294815698BBB0;19009.
+(rerunfilecheck)             Checksum: 06FDBEB15D309FC91FB1AD9F7792D4A6;20636.
  ) 
 Here is how much of TeX's memory you used:
- 30313 strings out of 478287
- 472066 string characters out of 5849289
- 1700214 words of memory out of 5000000
- 32596 multiletter control sequences out of 15000+600000
+ 31975 strings out of 478287
+ 499758 string characters out of 5849289
+ 1691865 words of memory out of 5000000
+ 32824 multiletter control sequences out of 15000+600000
  475454 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,13n,76p,574b,2192s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,13n,76p,574b,2185s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
@@ -604,10 +611,10 @@ type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
 er/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on notebook.pdf (106 pages, 828774 bytes).
+Output written on notebook.pdf (115 pages, 889713 bytes).
 PDF statistics:
- 19609 PDF objects out of 22161 (max. 8388607)
- 19292 compressed objects within 193 object streams
- 15309 named destinations out of 15390 (max. 500000)
- 1313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21385 PDF objects out of 22161 (max. 8388607)
+ 21041 compressed objects within 211 object streams
+ 16708 named destinations out of 18468 (max. 500000)
+ 1409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

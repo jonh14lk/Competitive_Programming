@@ -39,6 +39,7 @@ struct trie_xor
   void add(int n, int id)
   {
     int v = 0;
+    t[v].cnt++;
     for (int i = 30; i >= 0; i--)
     {
       int bit = (n & (1 << i)) ? 1 : 0;
@@ -55,6 +56,7 @@ struct trie_xor
   void rem(int n, int id)
   {
     int v = 0;
+    t[v].cnt--;
     for (int i = 30; i >= 0; i--)
     {
       int bit = (n & (1 << i)) ? 1 : 0;
@@ -64,6 +66,8 @@ struct trie_xor
   }
   int qry(int n) // maximum xor with n
   {
+    if (t[0].cnt == 0) // no element
+      return -1;
     int v = 0;
     for (int i = 30; i >= 0; i--)
     {

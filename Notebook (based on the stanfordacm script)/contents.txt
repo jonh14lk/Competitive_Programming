@@ -18,6 +18,7 @@ bitmasks.cpp	bitmasks
 coordinate_compression.cpp	coordinate compression
 tower_of_hanoi.cpp	tower of hanoi
 two_pointers.cpp	two pointers
+prefix_sum_2d.cpp	prefix sum 2d
 inversion_count.cpp	inversion count
 sprague_grundy.cpp	sprague grundy
 stack_trick.cpp	stack trick
@@ -37,8 +38,10 @@ runner.py	runner
 [Math]
 totient.cpp	totient
 iterative_fft.cpp	iterative fft
+extended_euclidean.cpp	extended euclidean
 max_xor_subsequence.cpp	max xor subsequence
 fraction.cpp	fraction
+catalan.cpp	catalan
 gaussian_elimination2.cpp	gaussian elimination2
 modular_arithmetic.cpp	modular arithmetic
 crivo.cpp	crivo
@@ -46,6 +49,7 @@ divisors.cpp	divisors
 gaussian_elimination.cpp	gaussian elimination
 primefactors2.cpp	primefactors2
 matrix_exponentiation2.cpp	matrix exponentiation2
+mobius2.cpp	mobius2
 segmentedsieve.cpp	segmentedsieve
 pollard_rho.cpp	pollard rho
 xor_trie.cpp	xor trie
@@ -58,8 +62,10 @@ fwht.cpp	fwht
 operadores_binarios.cpp	operadores binarios
 baby_step_gigant_step.cpp	baby step gigant step
 simplex.cpp	simplex
+matrix_inverse_and_determinant.cpp	matrix inverse and determinant
 stars_and_bars.cpp	stars and bars
 matrix_exponentiation.cpp	matrix exponentiation
+binomial_theorem.cpp	binomial theorem
 diophantine.cpp	diophantine
 crt.cpp	crt
 ntt.cpp	ntt
@@ -89,6 +95,7 @@ Digitdp.cpp	Digitdp
 [Theorems and Formulas]
 chicken_mcnugget.md	chicken mcnugget
 graph_notes.md	graph notes
+binomial_theorem.md	binomial theorem
 
 [Graph]
 centroid_decomposition2.cpp	centroid decomposition2
@@ -105,6 +112,7 @@ eulertour.cpp	eulertour
 TreeDiameter.cpp	TreeDiameter
 Grafo_Bipartido.cpp	Grafo Bipartido
 dsu.cpp	dsu
+link_cut_tree_edge.cpp	link cut tree edge
 block-cut-tree.cpp	block-cut-tree
 reroot.cpp	reroot
 hld_edge.cpp	hld edge
@@ -125,6 +133,7 @@ Topological_Sort.cpp	Topological Sort
 Dijkstra.cpp	Dijkstra
 centroid_decomposition.cpp	centroid decomposition
 DFS.cpp	DFS
+erdos_gallai.cpp	erdos gallai
 stable_matching.cpp	stable matching
 cycle_detection.cpp	cycle detection
 Kruskal.cpp	Kruskal
@@ -147,6 +156,7 @@ stringhashing.cpp	stringhashing
 [Geometry]
 dynamic_ch.cpp	dynamic ch
 smallest_enclosing_circle.cpp	smallest enclosing circle
+polygon_area.cpp	polygon area
 ConvexHull.cpp	ConvexHull
 minkowski.cpp	minkowski
 halfplane_intersection.cpp	halfplane intersection
@@ -165,12 +175,14 @@ implicit_seg.cpp	implicit seg
 min_queue.cpp	min queue
 SegTree_pa.cpp	SegTree pa
 segtree_lazy.cpp	segtree lazy
+segtree_max_seg_sum.cpp	segtree max seg sum
 fenwick3.cpp	fenwick3
 treap2.cpp	treap2
 persistent_seg2.cpp	persistent seg2
 SegTree.cpp	SegTree
 binary_lifting.cpp	binary lifting
 Segtree2.cpp	Segtree2
+rmq.cpp	rmq
 color_update.cpp	color update
 bit2d.cpp	bit2d
 fenwick2.cpp	fenwick2
