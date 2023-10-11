@@ -65,6 +65,8 @@ And many others, sky is the limit :)
   - [KDTree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/kd_tree.cpp)
   - [Half-plane intersection](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/halfplane_intersection.cpp)
   - [Dynamic Convex Hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/dynamic_ch.cpp)
+  - [Polygons Distance](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/polygons_distance.cpp)
+  - [Point Location Query on convex hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/convex_hull_point_location.cpp)
 
 - Graphs :heart:
 
@@ -94,6 +96,7 @@ And many others, sky is the limit :)
 - Trees :heart:
 
   - [Lowest Common Ancestor](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/LCA.cpp)
+  - [RMQ on tree using LCA](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/rmq_tree.cpp)
   - [Diameter of a tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/TreeDiameter.cpp)
   - [Euler Tour](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/eulertour.cpp)
   - [Reroot](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/reroot.cpp)
@@ -197,6 +200,8 @@ And many others, sky is the limit :)
 
 ## **Competitions solutions :white_check_mark:**
 
+- [2023-2024 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/104555)
+  - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202023)
 - [2022-2023 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103960)
   - [All problems solved ](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202022)
 - [2022-2023 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104252)
@@ -223,6 +228,8 @@ And many others, sky is the limit :)
   - [All problems solved, except problems A, K and L](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202017)
 - [2013-2014 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/101473)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202013)
+- [2023 Argentinian Programming Tournament (TAP)](https://codeforces.com/gym/104603)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/TAP%202023)
 - [UFPE Starters Final Try-Outs 2020](https://codeforces.com/gym/102448)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/UFPE%20try-outs%202020)
 - [UFPE Starters Final Try-Outs 2021](https://codeforces.com/gym/103076)
