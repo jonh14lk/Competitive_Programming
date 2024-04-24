@@ -95,6 +95,7 @@ And many others, sky is the limit :)
   - [Block Cut Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/block-cut-tree.cpp)
   - [Stable Matching](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/stable_matching.cpp)
   - [Erdos Gallai](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/erdos_gallai.cpp)
+  - [Dominator Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dominator_tree.cpp)
   - [Notes](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/graph_notes.md)
 
 - Trees :heart:
@@ -112,6 +113,7 @@ And many others, sky is the limit :)
   - [Tree Isomorfism](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/tree_isomorfism.cpp)
   - [Sack (dsu on tree)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/sack.cpp)
   - [Link Cut Tree (Edge cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/link_cut_tree_edge.cpp)
+  - [Link Cut Tree (Vertex cost)](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/link_cut_tree_vertex.cpp)
   - [Virtual Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/virtual_tree.cpp)
 
 - Flows and Matchings :heart:
