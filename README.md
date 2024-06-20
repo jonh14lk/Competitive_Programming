@@ -206,6 +206,7 @@ And many others, sky is the limit :)
   - [Tower of Hanoi](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/tower_of_hanoi.cpp)
   - [Segment Covering](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/segment_covering.cpp)
   - [2D Prefix Sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/prefix_sum_2d.cpp)
+  - [Sum hash](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/sum_hash.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 

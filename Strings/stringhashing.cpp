@@ -48,6 +48,10 @@ struct string_hashing
     int hash = h[r] - (l ? mulmod(h[l - 1], p[r - l + 1]) : 0);
     return hash < 0 ? hash + MOD : hash;
   }
+  int append(int h, int hb, int blen)
+  {
+    return (hb + mulmod(h, p[blen])) % MOD;
+  }
 };
 signed main()
 {
