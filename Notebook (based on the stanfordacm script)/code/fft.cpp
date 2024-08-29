@@ -1,11 +1,6 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-using namespace std;
-using namespace __gnu_pbds;
 
-template <class T>
-using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+using namespace std;
 
 #define PI acos(-1)
 #define int long long int
@@ -14,130 +9,103 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define pii pair<pi, int>
 #define fir first
 #define sec second
-#define DEBUG 0
-#define MAXN 100001
+#define MAXN 125001
 #define mod 1000000007
-#define cd complex<double> // numeros complexos na STL
+#define cd complex<double>
 
-void dft(vector<cd> &a)
+namespace fft
 {
-  int n = a.size();
-  if (n == 1)
-    return;
-  vector<cd> a0(n / 2), a1(n / 2);
-  for (int i = 0; 2 * i < n; i++)
+  int n;
+
+  void fft(vector<cd> &a, bool invert)
   {
-    a0[i] = a[2 * i];
-    a1[i] = a[2 * i + 1];
+    int n = a.size();
+    for (int i = 1, j = 0; i < n; i++)
+    {
+      int bit = n >> 1;
+      for (; j & bit; bit >>= 1)
+        j ^= bit;
+      j ^= bit;
+      if (i < j)
+        swap(a[i], a[j]);
+    }
+    for (int len = 2; len <= n; len <<= 1)
+    {
+      double ang = 2 * PI / len * (invert ? -1 : 1);
+      cd wlen(cos(ang), sin(ang));
+      for (int i = 0; i < n; i += len)
+      {
+        cd w(1);
+        for (int j = 0; j < len / 2; j++)
+        {
+          cd u = a[i + j], v = a[i + j + len / 2] * w;
+          a[i + j] = u + v;
+          a[i + j + len / 2] = u - v;
+          w *= wlen;
+        }
+      }
+    }
+    if (invert)
+      for (cd &x : a)
+        x /= n;
   }
-  dft(a0);
-  dft(a1);
-  double ang = 2 * PI / n;
-  cd w(1), wn(cos(ang), sin(ang));
-  for (int i = 0; 2 * i < n; i++)
+  vector<int> mul(vector<int> a, vector<int> b)
   {
-    a[i] = a0[i] + w * a1[i];
-    a[i + n / 2] = a0[i] - w * a1[i];
-    w *= wn;
+    vector<cd> fa(a.begin(), a.end()), fb(b.begin(), b.end());
+    n = 1;
+    while (n < a.size() + b.size())
+      n <<= 1;
+    fa.resize(n);
+    fb.resize(n);
+    fft(fa, false);
+    fft(fb, false);
+    for (int i = 0; i < n; i++)
+      fa[i] *= fb[i];
+    fft(fa, true);
+    vector<int> ans(n);
+    for (int i = 0; i < n; i++)
+      ans[i] = round(fa[i].real());
+    return ans;
   }
-}
-void inverse_dft(vector<cd> &a)
-{
-  int n = a.size();
-  if (n == 1)
-    return;
-  vector<cd> a0(n / 2), a1(n / 2);
-  for (int i = 0; 2 * i < n; i++)
-  {
-    a0[i] = a[2 * i];
-    a1[i] = a[2 * i + 1];
-  }
-  inverse_dft(a0);
-  inverse_dft(a1);
-  double ang = 2 * PI / n * -1;
-  cd w(1), wn(cos(ang), sin(ang));
-  for (int i = 0; 2 * i < n; i++)
-  {
-    a[i] = a0[i] + w * a1[i];
-    a[i + n / 2] = a0[i] - w * a1[i];
-    a[i] /= 2;
-    a[i + n / 2] /= 2;
-    w *= wn;
-  }
-}
-vector<int> fft(vector<int> a, vector<int> b)
-{
-  vector<cd> fa(a.begin(), a.end()), fb(b.begin(), b.end());
-  int n = 1;
-  while (n < a.size() + b.size())
-    n <<= 1;
-  fa.resize(n);
-  fb.resize(n);
-  dft(fa);                    // DFT(A)
-  dft(fb);                    // DFT(B)
-  for (int i = 0; i < n; i++) // DFT(A * B) = DFT(A) * DFT(B)
-    fa[i] *= fb[i];
-  inverse_dft(fa); // inverseDFT(DFT(A * B))
-  vector<int> ans(n);
-  for (int i = 0; i < n; i++)
-    ans[i] = round(fa[i].real()); // arredondar para ter os coeficientes como inteiros
-  return ans;
 }
 signed main()
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  int n, m, caso = 1;
-  while (cin >> n >> m)
+  ios::sync_with_stdio(false);
+  cin.tie(0);
+  int n;
+  cin >> n;
+  int m = n + n;
+  vector<int> a(m, 0);
+  vector<int> aa(m, 0);
+  for (int i = 0; i < n; i++)
   {
-    cout << "Caso #" << caso << ": ";
-    vector<int> a(n + 1);
-    vector<int> b(m + 1);
-    for (int i = 0; i <= n; i++)
-      cin >> a[i];
-    for (int i = 0; i <= m; i++)
-      cin >> b[i];
-    vector<int> ans = fft(a, b);
-    for (int i = 0; i <= n + m; i++)
-    {
-      cout << ans[i];
-      (i == n + m) ? cout << endl : cout << " ";
-    }
-    caso++;
+    cin >> a[i];
+    aa[i] = (a[i] == 47) ? 1 : 0;
+    a[i + n] = a[i];
+    aa[i + n] = aa[i];
   }
+  vector<int> b(m, 0);
+  vector<int> bb(m, 0);
+  for (int i = n - 1; i >= 0; i--)
+  {
+    cin >> b[i + n];
+    bb[i + n] = (b[i + n] == 47) ? 1 : 0;
+  }
+  vector<int> ans1 = fft::mul(a, b);
+  vector<int> ans2 = fft::mul(aa, bb);
+  int ans = 0;
+  for (int i = (m - 1); i < (m - 1) + n; i++)
+  {
+    if (ans2[i] > 0)
+      continue;
+    ans = max(ans1[i], ans); // produto escalar de algum cyclic shift
+  }
+  cout << ans << endl;
   return 0;
 }
-// fft
-// multiplicar dois polinomios A e B
-// basic approach:
-// aplicar a propiedade distributiva e fazer essa multiplicacao em O(N^2)
-// porem podemos melhorar
-// vamos la
-// 1  - todo polinomio de grau d que e representado na forma de coeficientes
-//      de coeficientes possui uma representacao em forma de d - 1 pontos
-// 2  - para esse conjunto de pontos, so existe um unico polinomio equivalente
-// 3  - DFT -> transformacao da representacao de coeficientes para represntacao
-//             de pontos
-// 4  - com isso, para multiplicar os dois polinomios agora basta multiplicar
-//      os conjuntos de pontos e com isso obtemos a representacao usando pontos
-//      do polinomio resultante
-// 5  - DFT(A * B) = DFT(A) * DFT(B);
-// 6  - porem agora precisamos transformar a resposta obtida na multiplicacao dos pontos
-//      para a representacao em que usa os coeficientes
-// 7  - inverseDFT -> transformacao da representacao de pontos para represntacao
-//                    de coeficientes
-// 8  - A * B = inverseDFT(DFT(A) * DFT(B))
-// 9  - FFT -> metodo para computar a DFT em O(N * low(N))
-// 10 - iremos usar divide and conquer para isso, vamos splitar o polinomio
-//      atual em 2 polinomos de grau ((n / 2) - 1) , tal que, a soma deles
-//      resulte no polinomio que tinhamos antes
-// 11 - agora para achar a inverseDFT de uma DFT, iremos escrever a DFT
-//      em forma de matriz, essa matriz e chamada de matriz de vandermonde
-//      e em geral, podemos escrever a resposta como uma multiplicacao de
-//      matrizes
-// 12 - essa multplicacao de matrizes pode ser descrita como:
-//      a^-1 * b = c
-//      no qual:
-//      a^-1 -> inversa da matriz a(DFT)
-//      b -> valores dos coeficientes do polinomio A
-//      c -> valores dos coeficientes da resposta
+// https://algo.sk/br24/problem.php?problem=d3-badsquare
+// exemplo do all possible scalar products
+// dados dois arrays a e b de tamanho n
+// quero computar o scalar product de todos os cyclics shifts de a com b
+// duplicar o array a
+// dar reverse no array b e adicionar n zeros no inicio

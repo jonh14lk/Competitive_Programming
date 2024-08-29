@@ -3,190 +3,204 @@
 # Subsections within a section should follow the format:
 # [filename within code directory][tab character \t][subsection title]
 
-[Binary Search and Ternary Search]
-LowerBound.cpp	LowerBound
-Aplications.cpp	Aplications
-TS.cpp	TS
-UpperBound.cpp	UpperBound
-parallel_binary_search.cpp	parallel binary search
-STL.cpp	STL
-BS.cpp	BS
-
-[Miscellaneous]
-meetinthemiddle.cpp	meetinthemiddle
-bitmasks.cpp	bitmasks
-coordinate_compression.cpp	coordinate compression
-tower_of_hanoi.cpp	tower of hanoi
-two_pointers.cpp	two pointers
-prefix_sum_2d.cpp	prefix sum 2d
-inversion_count.cpp	inversion count
-sprague_grundy.cpp	sprague grundy
-stack_trick.cpp	stack trick
-segment_covering.cpp	segment covering
-
-[STL]
-ordered_set.cpp	ordered set
-STL.txt	STL
-
-[Utils]
-runner2.py	runner2
-rand.cpp	rand
-__int128.cpp	  int128
-execution_time.cpp	execution time
-runner.py	runner
-
-[Math]
-totient.cpp	totient
-iterative_fft.cpp	iterative fft
-extended_euclidean.cpp	extended euclidean
-max_xor_subsequence.cpp	max xor subsequence
-fraction.cpp	fraction
-catalan.cpp	catalan
-gaussian_elimination2.cpp	gaussian elimination2
-modular_arithmetic.cpp	modular arithmetic
-crivo.cpp	crivo
-divisors.cpp	divisors
-gaussian_elimination.cpp	gaussian elimination
-primefactors2.cpp	primefactors2
-matrix_exponentiation2.cpp	matrix exponentiation2
-mobius2.cpp	mobius2
-segmentedsieve.cpp	segmentedsieve
-pollard_rho.cpp	pollard rho
-xor_trie.cpp	xor trie
-mobius.cpp	mobius
-berlekamp_massey.cpp	berlekamp massey
-fft.cpp	fft
-lagrange.cpp	lagrange
-primefactors.cpp	primefactors
-fwht.cpp	fwht
-operadores_binarios.cpp	operadores binarios
-baby_step_gigant_step.cpp	baby step gigant step
-simplex.cpp	simplex
-matrix_inverse_and_determinant.cpp	matrix inverse and determinant
-stars_and_bars.cpp	stars and bars
-matrix_exponentiation.cpp	matrix exponentiation
-binomial_theorem.cpp	binomial theorem
-diophantine.cpp	diophantine
-crt.cpp	crt
-ntt.cpp	ntt
-
-[Dynamic programming and common problems]
-cht.cpp	cht
-subset_sum.cpp	subset sum
-subsequences_string.cpp	subsequences string
-sos_dp.cpp	sos dp
-aliens_trick.cpp	aliens trick
-largest_square.cpp	largest square
-broken_profile.cpp	broken profile
-bitwise_digit_dp.cpp	bitwise digit dp
-exchange_arguments.cpp	exchange arguments
-max_matrix_path.cpp	max matrix path
-dynamic_cht.cpp	dynamic cht
-lis.cpp	lis
-Knapsack.cpp	Knapsack
-tip.cpp	tip
-largest-sum-contiguous-subarray.cpp	largest-sum-contiguous-subarray
-lcs.cpp	lcs
-divideandconquer.cpp	divideandconquer
-expected_value.cpp	expected value
-lichao.cpp	lichao
-Digitdp.cpp	Digitdp
-
-[Theorems and Formulas]
-chicken_mcnugget.md	chicken mcnugget
-graph_notes.md	graph notes
-binomial_theorem.md	binomial theorem
-
-[Graph]
-centroid_decomposition2.cpp	centroid decomposition2
-Floyd_Warshall.cpp	Floyd Warshall
-strong_orientation.cpp	strong orientation
-scc.cpp	scc
-hld.cpp	hld
-Prim.cpp	Prim
-articulation_points.cpp	articulation points
-flow_with_minimum_capacities.cpp	flow with minimum capacities
-tree_isomorfism.cpp	tree isomorfism
-mincostflow.cpp	mincostflow
-eulertour.cpp	eulertour
-TreeDiameter.cpp	TreeDiameter
-Grafo_Bipartido.cpp	Grafo Bipartido
-dsu.cpp	dsu
-link_cut_tree_edge.cpp	link cut tree edge
-block-cut-tree.cpp	block-cut-tree
-reroot.cpp	reroot
-hld_edge.cpp	hld edge
-two_sat.cpp	two sat
-hungarian.cpp	hungarian
-dinic.cpp	dinic
-hopcroft_karp.cpp	hopcroft karp
-dsu_rollback.cpp	dsu rollback
-MatrixDijkstra.cpp	MatrixDijkstra
-sack.cpp	sack
-bridges.cpp	bridges
-Ford_Fulkerson.cpp	Ford Fulkerson
-bipartite.cpp	bipartite
-caminhoeuleriano.cpp	caminhoeuleriano
-mo_trees.cpp	mo trees
-LCA.cpp	LCA
-Topological_Sort.cpp	Topological Sort
-Dijkstra.cpp	Dijkstra
-centroid_decomposition.cpp	centroid decomposition
-DFS.cpp	DFS
-erdos_gallai.cpp	erdos gallai
-stable_matching.cpp	stable matching
-cycle_detection.cpp	cycle detection
-Kruskal.cpp	Kruskal
-BFS.cpp	BFS
-
-[Strings]
-suffix_automaton.cpp	suffix automaton
-suffix_array.cpp	suffix array
-kmp.cpp	kmp
-aho_corasick.cpp	aho corasick
-stringhashing2.cpp	stringhashing2
-substring_fft.cpp	substring fft
-min_suffix.cpp	min suffix
-z-function.cpp	z-function
-rabin-karp.cpp	rabin-karp
-manacher.cpp	manacher
-de_bruijin.cpp	de bruijin
-stringhashing.cpp	stringhashing
-
 [Geometry]
-dynamic_ch.cpp	dynamic ch
+polygon_isomorfism.cpp	polygon isomorfism
+LineSweep.cpp	LineSweep
+convex_hull_point_location.cpp	convex hull point location
+polygons_distance.cpp	polygons distance
 smallest_enclosing_circle.cpp	smallest enclosing circle
-polygon_area.cpp	polygon area
+kd_tree.cpp	kd tree
 ConvexHull.cpp	ConvexHull
+dynamic_ch.cpp	dynamic ch
+polygon_area.cpp	polygon area
+points_and_vectors.cpp	points and vectors
 minkowski.cpp	minkowski
 halfplane_intersection.cpp	halfplane intersection
-LineSweep.cpp	LineSweep
-kd_tree.cpp	kd tree
-points_and_vectors.cpp	points and vectors
+
+[Strings]
+min_suffix.cpp	min suffix
+manacher.cpp	manacher
+de_bruijin.cpp	de bruijin
+stringhashing2.cpp	stringhashing2
+aho_corasick.cpp	aho corasick
+z-function.cpp	z-function
+substring_fft.cpp	substring fft
+suffix_array.cpp	suffix array
+stringhashing.cpp	stringhashing
+suffix_automaton.cpp	suffix automaton
+kmp.cpp	kmp
+rabin-karp.cpp	rabin-karp
+
+[Binary Search and Ternary Search]
+parallel_binary_search.cpp	parallel binary search
+Aplications.cpp	Aplications
+UpperBound.cpp	UpperBound
+STL.cpp	STL
+TS.cpp	TS
+BS.cpp	BS
+LowerBound.cpp	LowerBound
+
+[Graph]
+Floyd_Warshall.cpp	Floyd Warshall
+reroot.cpp	reroot
+Ford_Fulkerson.cpp	Ford Fulkerson
+stable_matching.cpp	stable matching
+bridges.cpp	bridges
+mincostflow.cpp	mincostflow
+link_cut_tree_vertex.cpp	link cut tree vertex
+strong_orientation.cpp	strong orientation
+centroid_decomposition2.cpp	centroid decomposition2
+LCA.cpp	LCA
+dsu_rollback.cpp	dsu rollback
+sack.cpp	sack
+two_sat.cpp	two sat
+Dijkstra.cpp	Dijkstra
+scc.cpp	scc
+dominator_tree.cpp	dominator tree
+flow_with_minimum_capacities.cpp	flow with minimum capacities
+centroid_decomposition.cpp	centroid decomposition
+TreeDiameter.cpp	TreeDiameter
+virtual_tree.cpp	virtual tree
+dinic.cpp	dinic
+hall_theorem.cpp	hall theorem
+Kruskal.cpp	Kruskal
+hungarian.cpp	hungarian
+BFS.cpp	BFS
+hld_edge.cpp	hld edge
+dsu.cpp	dsu
+MatrixDijkstra.cpp	MatrixDijkstra
+articulation_points.cpp	articulation points
+link_cut_tree_edge.cpp	link cut tree edge
+hopcroft_karp.cpp	hopcroft karp
+cycle_detection.cpp	cycle detection
+eulertour.cpp	eulertour
+bipartite.cpp	bipartite
+mo_dsu.cpp	mo dsu
+Prim.cpp	Prim
+tree_isomorfism.cpp	tree isomorfism
+caminhoeuleriano.cpp	caminhoeuleriano
+hld.cpp	hld
+caminhoeuleriano2.cpp	caminhoeuleriano2
+DFS.cpp	DFS
+block-cut-tree.cpp	block-cut-tree
+mo_trees_edges.cpp	mo trees edges
+mo_trees.cpp	mo trees
+erdos_gallai.cpp	erdos gallai
+rmq_tree.cpp	rmq tree
+Topological_Sort.cpp	Topological Sort
+Grafo_Bipartido.cpp	Grafo Bipartido
+
+[Miscellaneous]
+inversion_count.cpp	inversion count
+two_pointers.cpp	two pointers
+bitmasks.cpp	bitmasks
+sprague_grundy.cpp	sprague grundy
+coordinate_compression.cpp	coordinate compression
+meetinthemiddle.cpp	meetinthemiddle
+segment_covering.cpp	segment covering
+sum_hash.cpp	sum hash
+tower_of_hanoi.cpp	tower of hanoi
+prefix_sum_2d.cpp	prefix sum 2d
+stack_trick.cpp	stack trick
+
+[Theorems and Formulas]
+binomial_theorem.md	binomial theorem
+chicken_mcnugget.md	chicken mcnugget
+graph_notes.md	graph notes
 
 [Structures]
-persistent_seg.cpp	persistent seg
-treap.cpp	treap
-segtree2d.cpp	segtree2d
-mo_update.cpp	mo update
-mergesorttree.cpp	mergesorttree
-sparsetable.cpp	sparsetable
-implicit_seg.cpp	implicit seg
-min_queue.cpp	min queue
-SegTree_pa.cpp	SegTree pa
-segtree_lazy.cpp	segtree lazy
-segtree_max_seg_sum.cpp	segtree max seg sum
-fenwick3.cpp	fenwick3
-treap2.cpp	treap2
-persistent_seg2.cpp	persistent seg2
-SegTree.cpp	SegTree
-binary_lifting.cpp	binary lifting
+lower_bound_segtree.cpp	lower bound segtree
 Segtree2.cpp	Segtree2
+SegTree_pa.cpp	SegTree pa
+min_queue.cpp	min queue
+mo_update.cpp	mo update
+treap2.cpp	treap2
+segtree_lazy.cpp	segtree lazy
+SegTree.cpp	SegTree
+fenwick2D.cpp	fenwick2D
+mergesorttree.cpp	mergesorttree
+treap.cpp	treap
+bit2d.cpp	bit2d
+fenwick3.cpp	fenwick3
+segtree2d.cpp	segtree2d
+persistent_seg2.cpp	persistent seg2
 rmq.cpp	rmq
 color_update.cpp	color update
-bit2d.cpp	bit2d
+segtree_max_seg_sum.cpp	segtree max seg sum
+fenwick.cpp	fenwick
+implicit_seg.cpp	implicit seg
 fenwick2.cpp	fenwick2
 mo.cpp	mo
-bit2D.cpp	bit2D
-fenwick.cpp	fenwick
+persistent_seg.cpp	persistent seg
+binary_lifting.cpp	binary lifting
+sparsetable.cpp	sparsetable
+
+[Utils]
+execution_time.cpp	execution time
+runner.py	runner
+__int128.cpp	  int128
+runner2.py	runner2
+rand.cpp	rand
+
+[Dynamic programming and common problems]
+divideandconquer.cpp	divideandconquer
+suffix_sum.cpp	suffix sum
+steiner_tree.cpp	steiner tree
+lcs.cpp	lcs
+bitwise_digit_dp.cpp	bitwise digit dp
+aliens_trick.cpp	aliens trick
+Digitdp.cpp	Digitdp
+broken_profile.cpp	broken profile
+largest_square.cpp	largest square
+max_matrix_path.cpp	max matrix path
+largest-sum-contiguous-subarray.cpp	largest-sum-contiguous-subarray
+exchange_arguments.cpp	exchange arguments
+tip.cpp	tip
+Knapsack.cpp	Knapsack
+subsequences_string.cpp	subsequences string
+dynamic_cht.cpp	dynamic cht
+lis.cpp	lis
+lichao.cpp	lichao
+expected_value.cpp	expected value
+subset_sum.cpp	subset sum
+sos_dp.cpp	sos dp
+cht.cpp	cht
+
+[STL]
+STL.txt	STL
+ordered_set.cpp	ordered set
+
+[Math]
+mobius2.cpp	mobius2
+binomial_theorem.cpp	binomial theorem
+diophantine.cpp	diophantine
+primefactors.cpp	primefactors
+xor_trie.cpp	xor trie
+totient.cpp	totient
+matrix_inverse_and_determinant.cpp	matrix inverse and determinant
+gaussian_elimination.cpp	gaussian elimination
+extended_euclidean.cpp	extended euclidean
+primefactors2.cpp	primefactors2
+catalan.cpp	catalan
+berlekamp_massey.cpp	berlekamp massey
+fraction.cpp	fraction
+pollard_rho.cpp	pollard rho
+baby_step_gigant_step.cpp	baby step gigant step
+matrix_exponentiation2.cpp	matrix exponentiation2
+simplex.cpp	simplex
+lagrange.cpp	lagrange
+crt.cpp	crt
+fft.cpp	fft
+segmentedsieve.cpp	segmentedsieve
+gaussian_elimination2.cpp	gaussian elimination2
+stars_and_bars.cpp	stars and bars
+fwht.cpp	fwht
+operadores_binarios.cpp	operadores binarios
+matrix_exponentiation.cpp	matrix exponentiation
+max_xor_subsequence.cpp	max xor subsequence
+divisors.cpp	divisors
+ntt.cpp	ntt
+modular_arithmetic.cpp	modular arithmetic
+crivo.cpp	crivo
+mobius.cpp	mobius
 

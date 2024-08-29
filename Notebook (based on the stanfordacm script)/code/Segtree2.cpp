@@ -29,8 +29,7 @@ struct segtree
   {
     return a + b;
   }
-  segtree() {}
-  segtree(vector<int> &v)
+  void build(vector<int> &v)
   {
     n = 1;
     while (n < v.size())

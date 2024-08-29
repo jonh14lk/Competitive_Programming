@@ -10,117 +10,88 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define int long long int
 #define pb push_back
 #define pi pair<int, int>
-#define pii pair<pi, int>
+#define pii pair<int, pi>
 #define fir first
 #define sec second
-#define DEBUG 0
-#define MAXN 5001
-#define mod 1000000007
+#define MAXN 1000001
 
-int n;
-vector<int> v;
-
-int modpow(int x, int y)
+// https://github.com/brunomaletta/Biblioteca/blob/master/Codigo/Strings/hashingLargeMod.cpp
+const int MOD = (1ll << 61) - 1;
+int P;
+int mulmod(int a, int b)
 {
-  int z = 1;
-  while (y)
-  {
-    if (y & 1)
-      z = (z * x) % mod;
-    x = (x * x) % mod;
-    y >>= 1;
-  }
-  return z;
+  const static int LOWER = (1ll << 30) - 1, GET31 = (1ll << 31) - 1;
+  int l1 = a & LOWER, h1 = a >> 30, l2 = b & LOWER, h2 = b >> 30;
+  int m = l1 * h2 + l2 * h1, h = h1 * h2;
+  int ans = l1 * l2 + (h >> 1) + ((h & 1) << 60) + (m >> 31) + ((m & GET31) << 30) + 1;
+  ans = (ans & MOD) + (ans >> 61), ans = (ans & MOD) + (ans >> 61);
+  return ans - 1;
 }
-int inverse(int x)
+mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
+int uniform(int l, int r)
 {
-  return modpow(x, mod - 2);
+  uniform_int_distribution<int> uid(l, r);
+  return uid(rng);
 }
-int divide(int x, int y)
+struct string_hashing
 {
-  return (x * inverse(y)) % mod;
-}
-int subtract(int x, int y)
-{
-  return ((x + mod) - y) % mod;
-}
-int multiplicate(int x, int y)
-{
-  return (x * y) % mod;
-}
-int sum(int x, int y)
-{
-  return (x + y) % mod;
-}
-
-namespace sh
-{
-  const int d = 31;
-  vector<int> pot;
-  vector<int> pref;
-  vector<int> suf;
-
-  void calc()
+  vector<int> h, p;
+  string_hashing() {}
+  string_hashing(string s) : h(s.size()), p(s.size())
   {
-    pot.resize(n + 1);
-    pot[0] = 1;
-    for (int i = 1; i <= n; i++)
-      pot[i] = multiplicate(pot[i - 1], d);
+    p[0] = 1, h[0] = s[0];
+    for (int i = 1; i < s.size(); i++)
+      p[i] = mulmod(p[i - 1], P), h[i] = (mulmod(h[i - 1], P) + s[i]) % MOD;
   }
-  void suffix_hash()
+  int get(int l, int r)
   {
-    suf.resize(n + 1);
-    suf[0] = 0;
-    for (int i = 0; i < n; i++)
-    {
-      int val = multiplicate(v[n - i - 1], pot[i]);
-      suf[i + 1] = sum(suf[i], val);
-    }
+    int hash = h[r] - (l ? mulmod(h[l - 1], p[r - l + 1]) : 0);
+    return hash < 0 ? hash + MOD : hash;
   }
-  void prefix_hash()
+  int append(int h, int hb, int blen)
   {
-    pref.resize(n + 1);
-    pref[0] = 0;
-    for (int i = 0; i < n; i++)
-    {
-      int val = multiplicate(v[i], pot[i]);
-      pref[i + 1] = sum(pref[i], val);
-    }
+    return (hb + mulmod(h, p[blen])) % MOD;
   }
-  int prefix(int l, int r)
-  {
-    return divide(subtract(pref[r + 1], pref[l]), pot[l]);
-  }
-  int suffix(int l, int r)
-  {
-    return divide(subtract(suf[n - l], suf[n - r - 1]), pot[n - r - 1]);
-  }
-} // namespace sh
+};
 signed main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  string s;
-  cin >> s;
-  n = s.size();
-  for (auto const &i : s)
-    v.pb((i - 'a') + 1);                // indexar a partir do 1
-  sh::calc();                           // potencias de d
-  sh::prefix_hash();                    // hashing dos prefixos de s
-  cout << sh::prefix(0, n - 1) << endl; // resposta final
-  return 0;
+  int n;
+  cin >> n;
+  P = uniform(256, MOD - 1);
+  vector<string_hashing> v(n);
+  vector<string_hashing> v_rev(n);
+  vector<int> sz(n);
+  int ans = 0;
+  for (int i = 0; i < n; i++)
+  {
+    string s;
+    cin >> s;
+    v[i] = string_hashing(s);
+    sz[i] = s.size();
+    ans += (s.size() * n);
+    ans += (s.size() * n);
+    reverse(s.begin(), s.end());
+    v_rev[i] = string_hashing(s);
+  }
+  unordered_map<int, int> mp;
+  for (int i = 0; i < n; i++)
+  {
+    for (int j = 1; j <= sz[i]; j++)
+      mp[v[i].get(0, j - 1)]++;
+  }
+  for (int i = 0; i < n; i++)
+  {
+    int acc = 0;
+    for (int j = sz[i]; j >= 1; j--)
+    {
+      int curr = mp[v_rev[i].get(0, j - 1)];
+      ans -= ((curr - acc) * j * 2);
+      acc = curr;
+    }
+  }
+  cout << ans << endl;
 }
-// string hashing
-// podemos representar uma string como um valor inteiro
-// seja s uma string e d o tamanho do alfabeto
-// o valor de hashing de s eh igual a:
-// (s[0] * pow(d, 0)) + (s[1] * pow(d, 1)) + ... (s[n - 1] * pow(d, n - 1))
-// como esse valor pode ser gigantesco
-// fazer isso com um modulo que for o maior possivel
-// nesse caso usaremos 10^9 + 7
-// logo o hashing fica:
-// ((s[0] * pow(d, 0)) + (s[1] * pow(d, 1)) + ... (s[n - 1] * pow(d, n - 1))) % mod
-// o hashing possui diversas aplicacoes como:
-// checar substring que sao palindromas
-// numeros de substrings diferentes em uma string
-// etc...
+// https://codeforces.com/contest/1902/problem/E
+// solucao usando hash mod 2^61 - 1

@@ -1,21 +1,14 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
-using namespace __gnu_pbds;
-
-template <class T>
-using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
 #define int long long int
-#define endl '\n'
 #define pb push_back
 #define pi pair<int, int>
 #define pii pair<int, pi>
 #define fir first
 #define sec second
-#define MAXN 230
-#define mod 1000000001
+#define MAXN 4007
+#define mod 998244353
 #define EPS 1e-9
 
 bitset<MAXN> ans;
@@ -62,4 +55,68 @@ int gauss(vector<bitset<MAXN>> &a)
 }
 signed main()
 {
+  ios::sync_with_stdio(false);
+  cin.tie(0);
+  int m, n;
+  cin >> m >> n;
+  string s;
+  getline(cin, s);
+  auto get_id = [&](string st)
+  {
+    return n - stoi(st.substr(1));
+  };
+  vector<bitset<MAXN>> v(n + m);
+  for (int i = 0; i < m; i++)
+  {
+    getline(cin, s);
+    s = s.substr(1); // (
+    if (i == m - 1)
+      s = s.substr(0, s.size() - 1); // )
+    else
+      s = s.substr(0, s.size() - 5); // ) and
+    istringstream input_stream(s);
+    string t;
+    while (input_stream >> t)
+    {
+      if (t == "not") // not var
+      {
+        input_stream >> t;
+        v[i][n + get_id(t)] = v[i][n + get_id(t)] ^ 1;
+      }
+      else if (t != "or") // var
+      {
+        v[i][get_id(t)] = v[i][get_id(t)] ^ 1;
+      }
+    }
+    v[i][MAXN - 1] = v[i][MAXN - 1] ^ 1;
+  }
+  for (int i = 0; i < n; i++)
+  {
+    v[i + m][i] = v[i + m][i] ^ 1;
+    v[i + m][n + i] = v[i + m][n + i] ^ 1;
+    v[i + m][MAXN - 1] = v[i + m][MAXN - 1] ^ 1;
+  }
+  if (gauss(v) == 0)
+  {
+    cout << "impossible\n";
+    return 0;
+  }
+  string resp(n, 'F');
+  int id = n - 1;
+  for (int i = 0; i < (n + n); i++)
+  {
+    if (ans[i])
+    {
+      (i < n) ? resp[id] = 'T' : resp[id] = 'F';
+    }
+    id--;
+    if (id < 0)
+      id = n - 1;
+  }
+  cout << resp << endl;
+  return 0;
 }
+// exemplo de solucao para o https://codeforces.com/gym/101908/problem/M
+// esse codigo ja acha a menor solucao lexicograficamente (caso exista)
+// caso a gente queira a maior lexicograficamente (que e o caso desse problema exemplo)
+// basta considerar as variaveis na ordem contraria

@@ -161,6 +161,12 @@ struct hld
   {
     return seg.query(0, n - 1, pos[a], pos[a] + sz[a] - 1, 1);
   }
+  int lca(int a, int b)
+  {
+    if (pos[a] < pos[b])
+      swap(a, b);
+    return (head[a] == head[b]) ? b : lca(parent[head[a]], b);
+  }
 };
 signed main()
 {

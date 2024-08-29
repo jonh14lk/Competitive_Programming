@@ -20,7 +20,7 @@ namespace dsu
 {
   struct rollback
   {
-    int u, v, rankv, ranku;
+    int u, v, ranku, rankv;
   };
 
   int num_sets;

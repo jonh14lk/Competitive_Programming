@@ -115,6 +115,7 @@ signed main()
   cin.tie(NULL);
   string s;
   cin >> s;
+  int n = s.size();
   suffix_array sa(s);
   for (int i = 0; i <= s.size(); i++) // sufix array
     cout << sa.p[i] << " ";
@@ -123,5 +124,29 @@ signed main()
   for (int i = 1; i <= s.size(); i++) // lcp entre 2 suffixos adjacentes no suffix array
     cout << sa.lcp[i] << " ";
   cout << endl;
+  // queries de dada uma string t, diga quantas occorrencias tem de t como substring em s
+  int q;
+  cin >> q;
+  while (q--)
+  {
+    string t;
+    cin >> t;
+    int i = 0, f = n, m, lb, ub;
+    while (i < f)
+    {
+      m = (i + f) / 2;
+      (t <= s.substr(sa.p[m], t.size())) ? f = m : i = m + 1;
+    }
+    ub = i, i = 0, f = n;
+    while (i < f)
+    {
+      m = (i + f) / 2;
+      (t >= s.substr(sa.p[m], t.size())) ? i = m + 1 : f = m;
+    }
+    lb = i;
+    if (s.substr(sa.p[lb], t.size()) == t)
+      lb++;
+    cout << lb - ub << endl;
+  }
   return 0;
 }

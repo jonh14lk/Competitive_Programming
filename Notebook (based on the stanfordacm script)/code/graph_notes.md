@@ -70,15 +70,21 @@ We can construct a network N=(V,E) from G with vertex capacities, where the capa
 
 ## Minimum vertex-disjoint path cover in directed acyclic graph (DAG)
 
-Given a directed acyclic graph G=(V, E), we are to find the minimum number of vertex-disjoint paths to cover each vertex in V. We can construct a bipartite graph G' from G. Each vertex v is replaced by v-in and v-out, where v-in is connected by edges going into v and v-out is connected to edges coming out from v. Then it can be shown that G' has a matching M of sizem if and only if G has a vertex-disjoint path cover C of containing m edges and n-m paths.
+Given a directed acyclic graph G=(V, E), we are to find the minimum number of vertex-disjoint paths to cover each vertex in V. We can construct a bipartite graph G' from G. Each vertex v is replaced by v-in and v-out, where v-in is connected by edges going into v and v-out is connected to edges coming out from v. Then it can be shown that G' has a matching M of size m if and only if G has a vertex-disjoint path cover C of containing m edges and n-m paths.
 
 ## Minimum general path cover in directed acyclic graph (DAG)
 
 A general path cover is a path cover where a vertex can belong to more than one path. A minimum general path cover may be smaller than a minimum vertex-disjoint path cover. A minimum general path cover can be found almost like a minimum vertex-disjoint path cover. It suffices to add some new edges to the matching graph so that there is an edge a - b always when there is a path from a to b in the original graph.
 
-## Dilworth's theorem
+## Dilworth's theorem and maximum antichain
 
 An antichain is a set of nodes of a graph such that there is no path from any node to another node using the edges of the graph. Dilworth's theorem states that in a directed acyclic graph, the size of a minimum general path cover equals the size of a maximum antichain.
+
+Or in other words: For a DAG G that if has edges from vertex i -> vertex j and vertex j -> k, then it also has a edge from vertex i -> vertex k, the size of a minimum path cover is equal to the size of a maximum independent set.
+
+## Maximum weighted antichain
+
+(https://atcoder.jp/contests/abc354/tasks/abc354_g) In this problem, each vertex has a cost a[i]. The cost of an antichain is equal to the sum of the costs of the vertices present in it. We need to find the maximum cost of a antichain. We can construct the same bipartite of the maximum antichain problem from a dag G, these edges have an infinite capacity. We also need to create a source vertex and a sink, and we need to add edges source -> v-in with capacity a[v] and v-out -> sink with capacity a[v]. The answer is equal to the sum of all a[i] minus the maximum flow on this network.
 
 ## Hall's Theorem
 
