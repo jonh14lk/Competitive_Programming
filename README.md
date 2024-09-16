@@ -210,6 +210,8 @@ And many others, sky is the limit :)
 
 ## **Competitions solutions :white_check_mark:**
 
+- [2024-2025 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/105327)
+  - [All problems solved, except problem G](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202024)
 - [2023-2024 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/104555)
   - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202023)
 - [2023-2024 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104736)
