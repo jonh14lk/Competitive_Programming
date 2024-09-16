@@ -18,97 +18,64 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 #define MAXN 500001
 #define mod 1000000007
 
-struct suffix_array
+vector<int> suffix_array(string s)
 {
-  int n, k;
-  string s;
-  vector<int> p, c, lcp;
-  vector<pci> a;
+  s += "$"; // menor do que todos os chars da string st
+  int n = s.size(), N = max(n + 1, 260ll);
+  vector<int> sa(n), ra(n);
+  for (int i = 0; i < n; i++)
+  {
+    sa[i] = i, ra[i] = s[i];
+  }
+  for (int k = 0; k < n; k ? k *= 2 : k++)
+  {
+    vector<int> nsa(sa), nra(n), cnt(N);
+    for (int i = 0; i < n; i++)
+    {
+      nsa[i] = (nsa[i] - k + n) % n;
+      cnt[ra[i]]++;
+    }
+    for (int i = 1; i < N; i++)
+    {
+      cnt[i] += cnt[i - 1];
+    }
+    for (int i = n - 1; i + 1; i--)
+    {
+      sa[--cnt[ra[nsa[i]]]] = nsa[i];
+    }
+    for (int i = 1, r = 0; i < n; i++)
+    {
+      nra[sa[i]] = r += (ra[sa[i]] != ra[sa[i - 1]] || ra[(sa[i] + k) % n] != ra[(sa[i - 1] + k) % n]);
+    }
+    ra = nra;
+    if (ra[sa[n - 1]] == n - 1)
+      break;
+  }
+  return vector<int>(sa.begin() + 1, sa.end());
+}
 
-  void radix(vector<pii> &v)
+vector<int> kasai(string s, vector<int> sa)
+{
+  int n = s.size(), k = 0;
+  vector<int> ra(n), lcp(n);
+  for (int i = 0; i < n; i++)
   {
-    {
-      int n = v.size();
-      vector<int> cnt(n);
-      for (auto const &i : v)
-        cnt[i.fir.sec]++;
-      vector<pii> ans(n);
-      vector<int> pos(n);
-      pos[0] = 0;
-      for (int i = 1; i < n; i++)
-        pos[i] = pos[i - 1] + cnt[i - 1];
-      for (auto const &i : v)
-      {
-        int k = i.fir.sec;
-        ans[pos[k]] = i;
-        pos[k]++;
-      }
-      v = ans;
-    }
-    {
-      int n = v.size();
-      vector<int> cnt(n);
-      for (auto const &i : v)
-        cnt[i.fir.fir]++;
-      vector<pii> ans(n);
-      vector<int> pos(n);
-      pos[0] = 0;
-      for (int i = 1; i < n; i++)
-        pos[i] = pos[i - 1] + cnt[i - 1];
-      for (auto const &i : v)
-      {
-        int k = i.fir.fir;
-        ans[pos[k]] = i;
-        pos[k]++;
-      }
-      v = ans;
-    }
+    ra[sa[i]] = i;
   }
-  suffix_array(string &st)
+  for (int i = 0; i < n; i++, k -= !!k)
   {
-    s = st;
-    s += '$'; // menor do que todos os chars da string st
-    n = s.size();
-    p.resize(n);
-    c.resize(n);
-    a.resize(n);
-    for (int i = 0; i < n; i++)
-      a[i] = {s[i], i};
-    sort(a.begin(), a.end());
-    for (int i = 0; i < n; i++)
-      p[i] = a[i].sec;
-    c[p[0]] = 0;
-    for (int i = 1; i < n; i++)
-      (a[i].fir == a[i - 1].fir) ? c[p[i]] = c[p[i - 1]] : c[p[i]] = c[p[i - 1]] + 1;
-    k = 0;
-    while ((1 << k) < n)
+    if (ra[i] == n - 1)
     {
-      vector<pii> v(n);
-      for (int i = 0; i < n; i++)
-        v[i] = {{c[i], c[(i + (1 << k)) % n]}, i};
-      radix(v); // pode usar std::sort()
-      for (int i = 0; i < n; i++)
-        p[i] = v[i].sec;
-      c[p[0]] = 0;
-      for (int i = 1; i < n; i++)
-        (v[i].fir == v[i - 1].fir) ? c[p[i]] = c[p[i - 1]] : c[p[i]] = c[p[i - 1]] + 1;
+      k = 0;
+      continue;
+    }
+    int j = sa[ra[i] + 1];
+    while (i + k < n and j + k < n and s[i + k] == s[j + k])
       k++;
-    }
+    lcp[ra[i]] = k;
   }
-  void build_lcp()
-  {
-    lcp.resize(n);
-    k = 0;
-    for (int i = 0; i < n - 1; i++)
-    {
-      int idx = c[i], j = p[idx - 1];
-      while (s[i + k] == s[j + k])
-        k++;
-      lcp[idx] = k;
-      k = max(k - 1, 0ll);
-    }
-  }
-};
+  return lcp;
+}
 signed main()
 {
   ios_base::sync_with_stdio(false);
@@ -116,35 +83,34 @@ signed main()
   string s;
   cin >> s;
   int n = s.size();
-  suffix_array sa(s);
-  for (int i = 0; i <= s.size(); i++) // sufix array
-    cout << sa.p[i] << " ";
+  vector<int> p = suffix_array(s);
+  vector<int> lcp = kasai(s, p);
+  for (int i = 0; i < s.size(); i++) // sufix array
+    cout << p[i] << " ";
   cout << endl;
-  sa.build_lcp();
-  for (int i = 1; i <= s.size(); i++) // lcp entre 2 suffixos adjacentes no suffix array
-    cout << sa.lcp[i] << " ";
+  for (int i = 0; i + 1 < s.size(); i++) // lcp entre 2 suffixos adjacentes no suffix array
+    cout << lcp[i] << " ";
   cout << endl;
-  // queries de dada uma string t, diga quantas occorrencias tem de t como substring em s
   int q;
   cin >> q;
   while (q--)
   {
     string t;
     cin >> t;
-    int i = 0, f = n, m, lb, ub;
+    int i = 0, f = n - 1, m, lb, ub;
     while (i < f)
     {
       m = (i + f) / 2;
-      (t <= s.substr(sa.p[m], t.size())) ? f = m : i = m + 1;
+      (t <= s.substr(p[m], t.size())) ? f = m : i = m + 1;
     }
-    ub = i, i = 0, f = n;
+    ub = i, i = 0, f = n - 1;
     while (i < f)
     {
       m = (i + f) / 2;
-      (t >= s.substr(sa.p[m], t.size())) ? i = m + 1 : f = m;
+      (t >= s.substr(p[m], t.size())) ? i = m + 1 : f = m;
     }
     lb = i;
-    if (s.substr(sa.p[lb], t.size()) == t)
+    if (s.substr(p[lb], t.size()) == t)
       lb++;
     cout << lb - ub << endl;
   }
