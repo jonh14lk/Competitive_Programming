@@ -56,6 +56,8 @@ And many others, sky is the limit :)
   - [Bitwise DIgit DP](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/bitwise_digit_dp.cpp)
   - [Subset Sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/subset_sum.cpp)
   - [Steiner Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/steiner_tree.cpp)
+  - [Inclusion Exclusion](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/inclusion_exclusion.cpp)
+  - [Permutation Counting](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/permutations.cpp)
 
 - Geometry :angry:
 
@@ -70,6 +72,7 @@ And many others, sky is the limit :)
   - [Polygons Distance](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/polygons_distance.cpp)
   - [Point Location Query on convex hull](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/convex_hull_point_location.cpp)
   - [Polygon Isomorfism](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/polygon_isomorfism.cpp)
+  - [Lines comparison](https://github.com/jonh14lk/Competitive_Programming/blob/master/Geometry/line_trick.cpp)
 
 - Graphs :heart:
 
@@ -153,6 +156,8 @@ And many others, sky is the limit :)
   - [Chicken Mcnugget Theorem](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/chicken_mcnugget.md)
   - [Catalan Numbers](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/catalan.cpp)
   - [Matrix inverse and matrix determinant](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/matrix_inverse_and_determinant.cpp)
+  - [CRT trick](https://github.com/jonh14lk/Competitive_Programming/blob/master/Math/crt_trick.cpp)
+  - [Markov chain](https://github.com/jonh14lk/Competitive_Programming/blob/b653b39048e73d5584222578978ab12ae6dfb7aa/Math/markov.cpp)
 
 - Strings :smile:
 
@@ -207,11 +212,14 @@ And many others, sky is the limit :)
   - [Segment Covering](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/segment_covering.cpp)
   - [2D Prefix Sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/prefix_sum_2d.cpp)
   - [Sum hash](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/sum_hash.cpp)
+  - [Rectangle Union Area](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/rectangle_union.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 
 - [2024-2025 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/105327)
   - [All problems solved, except problem G](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202024)
+- [2024-2025 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/105505)
+  - [All problems solved, except problem C](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202024)
 - [2023-2024 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/104555)
   - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202023)
 - [2023-2024 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104736)
