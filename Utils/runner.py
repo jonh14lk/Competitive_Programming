@@ -4,6 +4,7 @@
 # 3 - Run your code with this input
 # 4 - Compare the outputs
 import os
+import subprocess
 
 naive = "brute.cpp" # path to naive code
 code = "d.cpp" # path to your code
@@ -22,8 +23,9 @@ def get_naive_output():
     return output
 
 def get_code_output():
-    output = os.popen('./code <in').read()
-    return output
+    # se tiver um runtime error, vai parar
+    xalala = subprocess.run('./code <in', shell=True, text=True, capture_output=True, check=True)
+    return xalala.stdout
 
 def main():
     compile_codes()

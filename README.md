@@ -58,6 +58,7 @@ And many others, sky is the limit :)
   - [Steiner Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/steiner_tree.cpp)
   - [Inclusion Exclusion](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/inclusion_exclusion.cpp)
   - [Permutation Counting](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/permutations.cpp)
+  - [Optimization with FFT](https://github.com/jonh14lk/Competitive_Programming/blob/master/Dynamic%20programming%20and%20common%20problems/optimization_with_fft.cpp)
 
 - Geometry :angry:
 
@@ -100,6 +101,7 @@ And many others, sky is the limit :)
   - [Erdos Gallai](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/erdos_gallai.cpp)
   - [Dominator Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dominator_tree.cpp)
   - [Notes](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/graph_notes.md)
+  - [Segtree Graph](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/segtree_graph.cpp)
 
 - Trees :heart:
 
@@ -213,11 +215,12 @@ And many others, sky is the limit :)
   - [2D Prefix Sum](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/prefix_sum_2d.cpp)
   - [Sum hash](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/sum_hash.cpp)
   - [Rectangle Union Area](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/rectangle_union.cpp)
+  - [Max Plus Convolution](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/max_plus_convolution.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 
 - [2024-2025 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/105327)
-  - [All problems solved, except problem G](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202024)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202024)
 - [2024-2025 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/105505)
   - [All problems solved, except problem C](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202024)
 - [2023-2024 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/104555)
@@ -225,7 +228,7 @@ And many others, sky is the limit :)
 - [2023-2024 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104736)
   - [All problems solved, except problems A and E](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202023)
 - [2022-2023 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103960)
-  - [All problems solved ](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202022)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202022)
 - [2022-2023 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104252)
   - [All problems solved, except problems G and J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202022)
 - [2021-2022 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/103388)
@@ -235,7 +238,7 @@ And many others, sky is the limit :)
 - [2020-2021 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102861)
   - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202020)
 - [2020-2021 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/103185)
-  - [All problems solved, except problem I and M](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202020)
+  - [All problems solved, except problem I](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202020)
 - [2019-2020 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/102346)
   - [All problems solved, except problems C and E](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202019)
 - [2019-2020 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/102428)
