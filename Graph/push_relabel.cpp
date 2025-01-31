@@ -8,13 +8,12 @@ template <class T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
 #define int long long int
-#define endl '\n'
 #define pb push_back
 #define pi pair<int, int>
 #define pii pair<int, pi>
 #define fir first
 #define sec second
-#define MAXN 500001
+#define MAXN 300005
 #define mod 1000000007
 #define INF 1e9
 
@@ -135,84 +134,72 @@ struct flow_with_demands
     return 1;
   }
 };
-
-int dx[] = {1, -1, 0, 0};
-int dy[] = {0, 0, 1, -1};
-
 signed main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  int h, w;
-  cin >> h >> w;
-  vector<string> v(h);
-  for (int i = 0; i < h; i++)
+  int n;
+  cin >> n;
+  vector<pi> v(n);
+  vector<int> x_vals, y_vals;
+  for (int i = 0; i < n; i++)
   {
-    cin >> v[i];
+    cin >> v[i].fir >> v[i].sec;
+    x_vals.pb(v[i].fir);
+    y_vals.pb(v[i].sec);
   }
-  vector<pi> s[2];
-  for (int i = 0; i < h; i++)
+  sort(x_vals.begin(), x_vals.end());
+  sort(y_vals.begin(), y_vals.end());
+  x_vals.erase(unique(x_vals.begin(), x_vals.end()), x_vals.end());
+  y_vals.erase(unique(y_vals.begin(), y_vals.end()), y_vals.end());
+  int xx = x_vals.size();
+  int yy = y_vals.size();
+  vector<int> cntx(xx, 0);
+  vector<int> cnty(yy, 0);
+  for (int i = 0; i < n; i++)
   {
-    for (int j = 0; j < w; j++)
-    {
-      if (v[i][j] != '1')
-        s[(i + j) % 2].pb({i, j});
-    }
+    v[i].fir = lower_bound(x_vals.begin(), x_vals.end(), v[i].fir) - x_vals.begin();
+    v[i].sec = lower_bound(y_vals.begin(), y_vals.end(), v[i].sec) - y_vals.begin();
+    cntx[v[i].fir]++;
+    cnty[v[i].sec]++;
   }
-  for (int i = 0; i < 2; i++)
+  flow_with_demands mf(xx + yy + 2);
+  int src = xx + yy;
+  int sink = xx + yy + 1;
+  int edge_id = 0;
+  for (int i = 0; i < xx; i++)
   {
-    sort(s[i].begin(), s[i].end());
+    int half = cntx[i] / 2;
+    int can_pass = cntx[i] - half;
+    mf.add_edge(src, i, can_pass, half, edge_id++);
   }
-  flow_with_demands mf(s[0].size() + s[1].size() + 2);
-  int src = s[0].size() + s[1].size();
-  int sink = s[0].size() + s[1].size() + 1;
-  for (int x = 0; x < s[0].size(); x++)
+  for (int i = 0; i < yy; i++)
   {
-    int i = s[0][x].fir, j = s[0][x].sec;
-    if (v[i][j] == '2')
-      mf.add_edge(src, x, 1, 1, -1);
-    else
-      mf.add_edge(src, x, 1, 0, -1);
+    int half = cnty[i] / 2;
+    int can_pass = cnty[i] - half;
+    mf.add_edge(xx + i, sink, can_pass, half, edge_id++);
   }
-  for (int x = 0; x < s[1].size(); x++)
+  vector<int> middle_edges(n);
+  for (int i = 0; i < n; i++)
   {
-    int i = s[1][x].fir, j = s[1][x].sec;
-    if (v[i][j] == '2')
-      mf.add_edge(s[0].size() + x, sink, 1, 1, -1);
-    else
-      mf.add_edge(s[0].size() + x, sink, 1, 0, -1);
-  }
-  for (int x = 0; x < s[0].size(); x++)
-  {
-    for (int d = 0; d < 4; d++)
-    {
-      pi curr = {s[0][x].fir + dx[d], s[0][x].sec + dy[d]};
-      if (binary_search(s[1].begin(), s[1].end(), curr))
-      {
-        int y = lower_bound(s[1].begin(), s[1].end(), curr) - s[1].begin();
-        mf.add_edge(x, s[0].size() + y, 1, 0, -1);
-      }
-    }
+    middle_edges[i] = edge_id;
+    mf.add_edge(v[i].fir, xx + v[i].sec, 1, 0, edge_id++);
   }
   mf.run(src, sink);
-  // existe um jeito de passar fluxo que satisfaz todas as constraints?
-  (mf.check()) ? cout << "Yes\n" : cout << "No\n";
-  return 0;
+  assert(mf.check());
+  vector<int> flow_edges = mf.pr.flow_edges(edge_id);
+  for (int i = 0; i < n; i++)
+  {
+    if (flow_edges[middle_edges[i]])
+      cout << "L";
+    else
+      cout << "F";
+  }
+  cout << endl;
 }
-// problema exemplo
-// https://atcoder.jp/contests/abc285/tasks/abc285_g
-
-// as celulas com 1 eu posso ignorar
-// agr pras celulas com 2, eu preciso achar um matching dela com alguem
-// so considerando os 2 e as ?
-
-// entao a missao vira achar um matching (nao necessariamente maximo)
-// mas que englobe todos os 2
-// pode ter 2 de um lado e pode ter 2 do outro
-
-// e se eu pudesse adicionar a seguinte constraint para algumas arestas:
-// a quantidade de fluxo passada naquela aresta tem que ser entre [l, r]
-// Maximum flow problem with minimum capacities, tambem conhecido como flow with demands
-// ai da pra dale em resolver
-
-// https://cp-algorithms.com/graph/flow_with_demands.html
+// https://codeforces.com/group/TFrGcBYYxs/contest/584448/problem/D
+// questao de flow com demands da summer school
+// grafo bipartido com n = 10ˆ5
+// e esse push relabel do kactl passa, incrivel kkkkkkkkkkkk
+// https://github.com/kth-competitive-programming/kactl/blob/main/content/graph/PushRelabel.h
+// obrigado kactl
