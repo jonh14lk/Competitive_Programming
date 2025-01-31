@@ -131,6 +131,7 @@ And many others, sky is the limit :)
   - [Maximum flow problem with minimum capacities](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/flow_with_minimum_capacities.cpp)
   - [Hall theorem](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/hall_theorem.cpp)
   - [Push Relabel](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/push_relabel.cpp)
+  - [Maximum bipartite matching after remove one vertex](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/max_matching_without_one_vertex.cpp)
 
 - Math :angry:
 
