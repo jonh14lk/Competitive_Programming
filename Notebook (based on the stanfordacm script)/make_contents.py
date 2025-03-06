@@ -15,12 +15,37 @@ def normalize(s):
 
 
 def check(name):
+    print(name)
     while name[-1] != '.':
         name = name[:-1]
     name = name[:-1]
     name = name.replace('_', ' ')
     return name
 
+def dale(directory, foldername, id, path):
+   curr_dir = directory + foldername
+
+   if os.path.isdir(curr_dir):
+    f.write('[' + path + ']\n')
+    
+    for filename in os.listdir(curr_dir):
+        if not '.' in filename:
+            continue
+
+        name = check(filename)
+        f.write( id + filename + '\t' + name + '\n')
+
+        with open('code/' + id + filename, 'x') as f2:
+            with open(curr_dir + '/' + filename) as f3:
+                lines = f3.readlines()
+                for l in lines:
+                    f2.write(normalize(l))
+    
+    for filename in os.listdir(curr_dir):
+        if not '.' in filename:
+            dale(curr_dir + '/', filename, id + '_' + foldername + '_', path + '/' + filename)
+
+    f.write('\n')
 
 def write_folders_content(f):
     directory = os.getcwd()
@@ -36,22 +61,7 @@ def write_folders_content(f):
         if foldername in banned:
             continue
 
-        curr_dir = directory + foldername
-
-        if os.path.isdir(curr_dir):
-            f.write('[' + foldername + ']\n')
-
-            for filename in os.listdir(curr_dir):
-                name = check(filename)
-                f.write(filename + '\t' + name + '\n')
-
-                with open('code/' + filename, 'x') as f2:
-                    with open(curr_dir + '/' + filename) as f3:
-                        lines = f3.readlines()
-                        for l in lines:
-                            f2.write(normalize(l))
-
-            f.write('\n')
+        dale(directory, foldername, '', foldername)
 
 
 def write_info(f):

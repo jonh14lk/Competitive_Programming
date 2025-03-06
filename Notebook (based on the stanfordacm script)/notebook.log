@@ -1,62 +1,62 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.8.29)  29 AUG 2024 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.3.6)  6 MAR 2025 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **notebook.tex
 (./notebook.tex
-LaTeX2e <2020-02-02> patch level 2
-L3 programming layer <2020-02-14>
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen134
+\bibindent=\dimen138
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count175
-\Gm@cntv=\count176
-\c@Gm@tempcnt=\count177
-\Gm@bindingoffset=\dimen135
-\Gm@wd@mp=\dimen136
-\Gm@odd@mp=\dimen137
-\Gm@even@mp=\dimen138
-\Gm@layoutwidth=\dimen139
-\Gm@layoutheight=\dimen140
-\Gm@layouthoffset=\dimen141
-\Gm@layoutvoffset=\dimen142
-\Gm@dimlist=\toks15
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
 (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -85,16 +85,20 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen143
-\Hy@linkcounter=\count178
-\Hy@pagecounter=\count179
+\@linkdim=\dimen147
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
 )
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
@@ -102,23 +106,28 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count180
-\pdfmajorversion=\count181
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
+\Hy@SavedSpaceFactor=\count198
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count182
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count199
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen144
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen148
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -127,37 +136,39 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count183
-\Field@Width=\dimen145
-\Fld@charsize=\dimen146
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring OFF on input line 6450.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
+\Fld@menulength=\count266
+\Field@Width=\dimen149
+\Fld@charsize=\dimen150
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
 
-(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-\Hy@abspage=\count184
-\c@Item=\count185
-\c@Hfootnote=\count186
+\Hy@abspage=\count267
+\c@Item=\count268
+\c@Hfootnote=\count269
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
 )
-\Fld@listcount=\count187
-\c@bookmark@seq@number=\count188
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -171,8 +182,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip49
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
 \f@nch@headwidth=\skip50
 \f@nch@O@elh=\skip51
 \f@nch@O@erh=\skip52
@@ -184,50 +195,50 @@ s
 \f@nch@O@orf=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count189
-\lst@gtempboxa=\box45
-\lst@token=\toks16
-\lst@length=\count190
-\lst@currlwidth=\dimen147
-\lst@column=\count191
-\lst@pos=\count192
-\lst@lostspace=\dimen148
-\lst@width=\dimen149
-\lst@newlines=\count193
-\lst@lineno=\count194
-\lst@maxwidth=\dimen150
+\lst@mode=\count272
+\lst@gtempboxa=\box50
+\lst@token=\toks18
+\lst@length=\count273
+\lst@currlwidth=\dimen151
+\lst@column=\count274
+\lst@pos=\count275
+\lst@lostspace=\dimen152
+\lst@width=\dimen153
+\lst@newlines=\count276
+\lst@lineno=\count277
+\lst@maxwidth=\dimen154
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-\c@lstnumber=\count195
-\lst@skipnumbers=\count196
-\lst@framebox=\box46
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count278
+\lst@skipnumbers=\count279
+\lst@framebox=\box51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2019/09/10 1.8c listings configuration
+File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
-Package: listings 2019/09/10 1.8c (Carsten Heinz)
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
@@ -258,8 +269,8 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cftbeforefigskip=\skip82
 \cftfigindent=\skip83
 \cftfignumwidth=\skip84
-\c@lofdepth=\count197
-\c@lotdepth=\count198
+\c@lofdepth=\count280
+\c@lotdepth=\count281
 \cftbeforelottitleskip=\skip85
 \cftafterlottitleskip=\skip86
 \cftbeforetabskip=\skip87
@@ -270,49 +281,44 @@ Package tocloft Info: The document has section divisions on input line 51.
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 ))
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count199
-\mult@box=\box47
-\multicol@leftmargin=\dimen151
-\c@unbalance=\count266
-\c@collectmore=\count267
-\doublecol@number=\count268
-\multicoltolerance=\count269
-\multicolpretolerance=\count270
-\full@width=\dimen152
-\page@free=\dimen153
-\premulticols=\dimen154
-\postmulticols=\dimen155
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count282
+\mult@box=\box52
+\multicol@leftmargin=\dimen155
+\c@unbalance=\count283
+\c@collectmore=\count284
+\doublecol@number=\count285
+\multicoltolerance=\count286
+\multicolpretolerance=\count287
+\full@width=\dimen156
+\page@free=\dimen157
+\premulticols=\dimen158
+\postmulticols=\dimen159
 \multicolsep=\skip90
 \multicolbaselineskip=\skip91
-\partial@page=\box48
-\last@line=\box49
-\maxbalancingoverflow=\dimen156
-\mult@rightbox=\box50
-\mult@grightbox=\box51
-\mult@gfirstbox=\box52
-\mult@firstbox=\box53
-\@tempa=\box54
-\@tempa=\box55
-\@tempa=\box56
-\@tempa=\box57
-\@tempa=\box58
+\partial@page=\box53
+\last@line=\box54
+\maxbalancingoverflow=\dimen160
+\mult@rightbox=\box55
+\mult@grightbox=\box56
+\mult@firstbox=\box57
+\mult@gfirstbox=\box58
 \@tempa=\box59
 \@tempa=\box60
 \@tempa=\box61
@@ -345,20 +351,24 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box88
 \@tempa=\box89
 \@tempa=\box90
-\c@minrows=\count271
-\c@columnbadness=\count272
-\c@finalcolumnbadness=\count273
-\last@try=\dimen157
-\multicolovershoot=\dimen158
-\multicolundershoot=\dimen159
-\mult@nat@firstbox=\box91
-\colbreak@box=\box92
-\mc@col@check@num=\count274
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count288
+\c@columnbadness=\count289
+\c@finalcolumnbadness=\count290
+\last@try=\dimen161
+\multicolovershoot=\dimen162
+\multicolundershoot=\dimen163
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count291
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count275
-\l__pdf_internal_box=\box93
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count292
+\l__pdf_internal_box=\box97
 )
 (./notebook.aux)
 \openout1 = `notebook.aux'.
@@ -378,6 +388,8 @@ LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
@@ -414,10 +426,9 @@ LaTeX Font Info:    ... okay on input line 71.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box94
 Package hyperref Info: Link coloring OFF on input line 71.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -425,7 +436,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count276
+\c@section@level=\count293
 )
 LaTeX Info: Redefining \ref on input line 71.
 LaTeX Info: Redefining \pageref on input line 71.
@@ -435,21 +446,21 @@ LaTeX Info: Redefining \nameref on input line 71.
 \@outlinefile=\write3
 \openout3 = `notebook.out'.
 
-\c@lstlisting=\count277
+\c@lstlisting=\count294
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count278
-\scratchdimen=\dimen160
-\scratchbox=\box95
-\nofMPsegments=\count279
-\nofMParguments=\count280
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count281
-\MPscratchDim=\dimen161
-\MPnumerator=\count282
-\makeMPintoPDFobject=\count283
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count295
+\scratchdimen=\dimen164
+\scratchbox=\box98
+\nofMPsegments=\count296
+\nofMParguments=\count297
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count298
+\MPscratchDim=\dimen165
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
+\everyMPtoPDFconversion=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -471,22 +482,23 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
- [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-])
+] [2]
+[3] [4])
 \tf@toc=\write4
 \openout4 = `notebook.toc'.
 
  (./contents.tex
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
@@ -496,119 +508,337 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-(./code/polygon_isomorfism.cpp [2]
+(./code/Aplications.cpp
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <7> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 133.
-) (./code/LineSweep.cpp [3])
-(./code/convex_hull_point_location.cpp [4]) (./code/polygons_distance.cpp
-[5]) (./code/smallest_enclosing_circle.cpp [6]) (./code/kd_tree.cpp [7])
-(./code/ConvexHull.cpp [8]) (./code/dynamic_ch.cpp [9])
-(./code/polygon_area.cpp) (./code/points_and_vectors.cpp [10])
-(./code/minkowski.cpp [11]) (./code/halfplane_intersection.cpp [12] [13])
-(./code/min_suffix.cpp) (./code/manacher.cpp [14]) (./code/de_bruijin.cpp
-[15]) (./code/stringhashing2.cpp) (./code/aho_corasick.cpp [16]
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 3
-3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-))
-(./code/z-function.cpp [17]) (./code/substring_fft.cpp)
-(./code/suffix_array.cpp [18]) (./code/stringhashing.cpp [19])
-(./code/suffix_automaton.cpp [20] [21]) (./code/kmp.cpp) (./code/rabin-karp.cpp
-[22]) (./code/parallel_binary_search.cpp [23]) (./code/Aplications.cpp)
-(./code/UpperBound.cpp [24]) (./code/STL.cpp) (./code/TS.cpp) (./code/BS.cpp
-[25]) (./code/LowerBound.cpp) (./code/Floyd_Warshall.cpp) (./code/reroot.cpp
-[26]) (./code/Ford_Fulkerson.cpp [27]) (./code/stable_matching.cpp) [28]
-(./code/bridges.cpp) (./code/mincostflow.cpp [29])
-(./code/link_cut_tree_vertex.cpp [30]) (./code/strong_orientation.cpp [31])
-(./code/centroid_decomposition2.cpp [32]) (./code/LCA.cpp)
-(./code/dsu_rollback.cpp [33] [34]) (./code/sack.cpp) (./code/two_sat.cpp
-[35]) (./code/Dijkstra.cpp [36]) (./code/scc.cpp) (./code/dominator_tree.cpp
-[37] [38]) (./code/flow_with_minimum_capacities.cpp [39])
-(./code/centroid_decomposition.cpp
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 14.
+) (./code/BS.cpp [5]) (./code/LowerBound.cpp)
+(./code/parallel_binary_search.cpp [6])
+(./code/recursive_parallel_binary_search.cpp [7]) (./code/STL.cpp)
+(./code/TS.cpp) (./code/UpperBound.cpp) (./code/aliens_trick.cpp [8])
+(./code/bitwise_digit_dp.cpp) (./code/broken_profile.cpp [9]) (./code/cht.cpp
+[10]) (./code/Digitdp.cpp) (./code/divideandconquer.cpp [11])
+(./code/dynamic_cht.cpp) (./code/exchange_arguments.cpp [12])
+(./code/expected_value.cpp [13]) (./code/inclusion_exclusion.cpp [14])
+(./code/Knapsack.cpp) (./code/largest-sum-contiguous-subarray.cpp)
+(./code/largest_square.cpp [15]) (./code/lcs.cpp) (./code/lichao.cpp [16])
+(./code/lis.cpp) (./code/max_matrix_path.cpp [17])
+(./code/optimization_with_fft.cpp [18]) (./code/permutations.cpp)
+(./code/sos_dp.cpp [19]) (./code/steiner_tree.cpp [20])
+(./code/subsequences_string.cpp) [21] (./code/subset_sum.cpp)
+(./code/suffix_sum.cpp [22]) (./code/tip.cpp) (./code/ConvexHull.cpp [23])
+(./code/convex_hull_point_location.cpp [24]) (./code/dynamic_ch.cpp) [25]
+(./code/halfplane_intersection.cpp [26]) (./code/kd_tree.cpp [27])
+(./code/LineSweep.cpp [28]) (./code/line_trick.cpp) (./code/minkowski.cpp
+[29] [30]) (./code/points_and_vectors.cpp) (./code/polygons_distance.cpp
+[31] [32]) (./code/polygon_area.cpp) (./code/polygon_isomorfism.cpp [33])
+(./code/smallest_enclosing_circle.cpp [34]) (./code/articulation_points.cpp
+[35]) (./code/BFS.cpp) (./code/bipartite.cpp [36]) (./code/block-cut-tree.cpp
+[37] [38]) (./code/bridges.cpp) (./code/caminhoeuleriano.cpp [39])
+(./code/caminhoeuleriano2.cpp [40]) (./code/centroid_decomposition.cpp
 Overfull \hbox (39.2668pt too wide) in paragraph at lines 6--8
 [][][][] 
  []
 
-[40]) (./code/TreeDiameter.cpp) (./code/virtual_tree.cpp [41] [42])
-(./code/dinic.cpp [43]) (./code/hall_theorem.cpp) [44] (./code/Kruskal.cpp)
-(./code/hungarian.cpp [45]) (./code/BFS.cpp) (./code/hld_edge.cpp [46] [47])
-(./code/dsu.cpp) (./code/MatrixDijkstra.cpp [48])
-(./code/articulation_points.cpp [49]) (./code/link_cut_tree_edge.cpp [50])
-[51] (./code/hopcroft_karp.cpp [52]) (./code/cycle_detection.cpp) [53]
-(./code/eulertour.cpp) (./code/bipartite.cpp) [54] (./code/mo_dsu.cpp) [55]
-(./code/Prim.cpp) (./code/tree_isomorfism.cpp [56])
-(./code/caminhoeuleriano.cpp [57]) (./code/hld.cpp [58])
-(./code/caminhoeuleriano2.cpp [59]) (./code/DFS.cpp) (./code/block-cut-tree.cpp
-[60] [61]) (./code/mo_trees_edges.cpp [62] [63]) (./code/mo_trees.cpp [64])
-(./code/erdos_gallai.cpp) (./code/rmq_tree.cpp [65])
-(./code/Topological_Sort.cpp [66]) (./code/Grafo_Bipartido.cpp)
-(./code/inversion_count.cpp [67]) (./code/two_pointers.cpp)
-(./code/bitmasks.cpp [68]) (./code/sprague_grundy.cpp [69])
-(./code/coordinate_compression.cpp) (./code/meetinthemiddle.cpp) [70]
-(./code/segment_covering.cpp) (./code/sum_hash.cpp [71])
-(./code/tower_of_hanoi.cpp) (./code/prefix_sum_2d.cpp) [72]
-(./code/stack_trick.cpp) (./code/binomial_theorem.md)
-(./code/chicken_mcnugget.md [73]) (./code/graph_notes.md [74])
-(./code/lower_bound_segtree.cpp) (./code/Segtree2.cpp [75])
-(./code/SegTree_pa.cpp [76]) (./code/min_queue.cpp) (./code/mo_update.cpp
-[77]) [78] (./code/treap2.cpp) (./code/segtree_lazy.cpp [79])
-(./code/SegTree.cpp [80]) (./code/fenwick2D.cpp [81]) (./code/mergesorttree.cpp
-) (./code/treap.cpp [82]) (./code/bit2d.cpp [83]) (./code/fenwick3.cpp)
-[84] (./code/segtree2d.cpp) (./code/persistent_seg2.cpp [85]) (./code/rmq.cpp
-[86]) (./code/color_update.cpp [87]) (./code/segtree_max_seg_sum.cpp [88])
-(./code/fenwick.cpp) (./code/implicit_seg.cpp [89]) (./code/fenwick2.cpp)
-(./code/mo.cpp [90]) (./code/persistent_seg.cpp [91])
-(./code/binary_lifting.cpp [92]) (./code/sparsetable.cpp)
-(./code/execution_time.cpp)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
+[41]) (./code/centroid_decomposition2.cpp) [42] (./code/cycle_detection.cpp)
+(./code/DFS.cpp) (./code/Dijkstra.cpp [43]) (./code/dinic.cpp [44])
+(./code/dominator_tree.cpp [45]) (./code/dsu.cpp) (./code/dsu_rollback.cpp
+[46] [47]) (./code/erdos_gallai.cpp) (./code/eulertour.cpp [48])
+(./code/flow_with_minimum_capacities.cpp [49]) (./code/Floyd_Warshall.cpp
+[50]) (./code/Ford_Fulkerson.cpp) (./code/Grafo_Bipartido.cpp [51])
+(./code/hall_theorem.cpp [52]) (./code/hld.cpp [53]) (./code/hld_edge.cpp
+[54]) (./code/hopcroft_karp.cpp [55] [56]) (./code/hungarian.cpp [57])
+(./code/Kruskal.cpp) (./code/kuhn.cpp [58]) (./code/LCA.cpp [59])
+(./code/link_cut_tree_edge.cpp [60] [61]) (./code/link_cut_tree_vertex.cpp
+[62]) (./code/MatrixDijkstra.cpp [63])
+(./code/max_matching_without_one_vertex.cpp [64] [65]) (./code/mincostflow.cpp)
+(./code/mo_dsu.cpp [66]) (./code/mo_trees.cpp [67] [68])
+(./code/mo_trees_edges.cpp [69]) (./code/Prim.cpp [70])
+(./code/push_relabel.cpp [71]) (./code/reroot.cpp [72]) (./code/rmq_tree.cpp)
+(./code/sack.cpp [73]) (./code/scc.cpp [74]) (./code/segtree_graph.cpp [75])
+(./code/stable_matching.cpp [76]) (./code/strong_orientation.cpp)
+(./code/Topological_Sort.cpp [77]) (./code/TreeDiameter.cpp)
+(./code/tree_isomorfism.cpp [78]) (./code/two_sat.cpp [79])
+(./code/virtual_tree.cpp [80]) (./code/_kactl forked_IntPerm.h [81])
+(./code/_kactl forked_multinomial.h
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 5
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+))
+(./code/_kactl forked_FenwickTree.h) (./code/_kactl forked_FenwickTree2d.h)
+(./code/_kactl forked_HashMap.h) [82] (./code/_kactl forked_LazySegmentTree.h)
+(./code/_kactl forked_LineContainer.h) (./code/_kactl forked_Matrix.h [83])
+(./code/_kactl forked_MoQueries.h) (./code/_kactl forked_OrderStatisticTree.h)
+(./code/_kactl forked_RMQ.h) [84] (./code/_kactl forked_SegmentTree.h)
+(./code/_kactl forked_SubMatrix.h) (./code/_kactl forked_Treap.h)
+(./code/_kactl forked_UnionFind.h [85])
+(./code/_kactl forked_UnionFindRollback.h) (./code/_kactl forked_3dHull.h)
+(./code/_kactl forked_Angle.h [86]) (./code/_kactl forked_CircleIntersection.h)
+(./code/_kactl forked_CircleLine.h)
+(./code/_kactl forked_CirclePolygonIntersection.h)
+(./code/_kactl forked_CircleTangents.h [87])
+(./code/_kactl forked_circumcircle.h) (./code/_kactl forked_ClosestPair.h)
+(./code/_kactl forked_ConvexHull.h)
+(./code/_kactl forked_DelaunayTriangulation.h) [88]
+(./code/_kactl forked_FastDelaunay.h) (./code/_kactl forked_HullDiameter.h)
+(./code/_kactl forked_InsidePolygon.h [89]) (./code/_kactl forked_kdTree.h)
+(./code/_kactl forked_linearTransformation.h)
+(./code/_kactl forked_lineDistance.h [90])
+(./code/_kactl forked_LineHullIntersection.h)
+(./code/_kactl forked_lineIntersection.h)
+(./code/_kactl forked_LineProjectionReflection.h [91])
+(./code/_kactl forked_ManhattanMST.h)
+(./code/_kactl forked_MinimumEnclosingCircle.h)
+(./code/_kactl forked_OnSegment.h) (./code/_kactl forked_Point.h) [92]
+(./code/_kactl forked_Point3D.h) (./code/_kactl forked_PointInsideHull.h)
+(./code/_kactl forked_PolygonArea.h) (./code/_kactl forked_PolygonCenter.h)
+(./code/_kactl forked_PolygonCut.h [93]) (./code/_kactl forked_PolygonUnion.h)
+(./code/_kactl forked_PolyhedronVolume.h)
+(./code/_kactl forked_SegmentDistance.h)
+(./code/_kactl forked_SegmentIntersection.h [94])
+(./code/_kactl forked_sideOf.h) (./code/_kactl forked_sphericalDistance.h)
+(./code/_kactl forked_2sat.h [95]) (./code/_kactl forked_BellmanFord.h)
+(./code/_kactl forked_BiconnectedComponents.h)
+(./code/_kactl forked_BinaryLifting.h [96])
+(./code/_kactl forked_CompressTree.h) (./code/_kactl forked_DFSMatching.h)
+(./code/_kactl forked_Dinic.h [97]) (./code/_kactl forked_DirectedMST.h)
+(./code/_kactl forked_EdgeColoring.h [98]) (./code/_kactl forked_EdmondsKarp.h)
+(./code/_kactl forked_EulerWalk.h) (./code/_kactl forked_FloydWarshall.h)
+(./code/_kactl forked_GeneralMatching.h [99])
+(./code/_kactl forked_GlobalMinCut.h) (./code/_kactl forked_GomoryHu.h)
+(./code/_kactl forked_HLD.h [100]) (./code/_kactl forked_hopcroftKarp.h)
+(./code/_kactl forked_LCA.h) (./code/_kactl forked_LinkCutTree.h [101])
+(./code/_kactl forked_MaximalCliques.h) (./code/_kactl forked_MaximumClique.h
+[102]) (./code/_kactl forked_MaximumIndependentSet.h)
+(./code/_kactl forked_MinCostMaxFlow.h [103]) (./code/_kactl forked_MinCut.h)
+(./code/_kactl forked_MinimumVertexCover.h) (./code/_kactl forked_PushRelabel.h
+) (./code/_kactl forked_SCC.h [104]) (./code/_kactl forked_TopoSort.h)
+(./code/_kactl forked_WeightedMatching.h)
+(./code/_kactl forked_ContinuedFractions.h) [105] (./code/_kactl forked_CRT.h)
+(./code/_kactl forked_Eratosthenes.h) (./code/_kactl forked_euclid.h)
+(./code/_kactl forked_Factor.h) [106] (./code/_kactl forked_FastEratosthenes.h)
+(./code/_kactl forked_FracBinarySearch.h) (./code/_kactl forked_MillerRabin.h)
+(./code/_kactl forked_ModInverse.h) (./code/_kactl forked_ModLog.h [107])
+(./code/_kactl forked_ModMulLL.h) (./code/_kactl forked_ModPow.h)
+(./code/_kactl forked_ModSqrt.h) (./code/_kactl forked_ModSum.h [108])
+(./code/_kactl forked_ModularArithmetic.h) (./code/_kactl forked_phiFunction.h)
+(./code/_kactl forked_BerlekampMassey.h) [109]
+(./code/_kactl forked_Determinant.h)
+(./code/_kactl forked_FastFourierTransform.h)
+(./code/_kactl forked_FastFourierTransformMod.h)
+(./code/_kactl forked_FastSubsetTransform.h [110])
+(./code/_kactl forked_GoldenSectionSearch.h)
+(./code/_kactl forked_HillClimbing.h) (./code/_kactl forked_IntDeterminant.h)
+(./code/_kactl forked_Integrate.h [111])
+(./code/_kactl forked_IntegrateAdaptive.h)
+(./code/_kactl forked_LinearRecurrence.h)
+(./code/_kactl forked_MatrixInverse-mod.h) [112]
+(./code/_kactl forked_MatrixInverse.h)
+(./code/_kactl forked_NumberTheoreticTransform.h)
+(./code/_kactl forked_PolyInterpolate.h) (./code/_kactl forked_Polynomial.h
+[113]) (./code/_kactl forked_PolyRoots.h) (./code/_kactl forked_Simplex.h
+[114]) (./code/_kactl forked_SolveLinear.h)
+(./code/_kactl forked_SolveLinear2.h) (./code/_kactl forked_SolveLinearBinary.h
+) (./code/_kactl forked_Tridiagonal.h [115])
+(./code/_kactl forked_AhoCorasick.h) [116]
+(./code/_kactl forked_Hashing-codeforces.h) (./code/_kactl forked_Hashing.h)
+(./code/_kactl forked_KMP.h [117]) (./code/_kactl forked_Manacher.h)
+(./code/_kactl forked_MinRotation.h) (./code/_kactl forked_SuffixArray.h)
+(./code/_kactl forked_SuffixTree.h [118]) (./code/_kactl forked_Zfunc.h)
+(./code/_kactl forked_BumpAllocator.h) (./code/_kactl forked_BumpAllocatorSTL.h
+) (./code/_kactl forked_ConstantIntervals.h) [119]
+(./code/_kactl forked_DivideAndConquerDP.h) (./code/_kactl forked_FastInput.h)
+(./code/_kactl forked_FastKnapsack.h) (./code/_kactl forked_FastMod.h)
+(./code/_kactl forked_IntervalContainer.h [120])
+(./code/_kactl forked_IntervalCover.h) (./code/_kactl forked_KnuthDP.h)
+(./code/_kactl forked_LIS.h) (./code/_kactl forked_SIMD.h [121])
+(./code/_kactl forked_SmallPtr.h) (./code/_kactl forked_TernarySearch.h)
+(./code/_kactl forked_Unrolling.h) (./code/baby_step_gigant_step.cpp [122])
+(./code/berlekamp_massey.cpp [123]) (./code/binomial_theorem.cpp [124])
+(./code/catalan.cpp [125]) (./code/crivo.cpp) (./code/crt.cpp) [126]
+(./code/crt_trick.cpp) (./code/diophantine.cpp [127])
+(./code/division_trick.cpp) (./code/divisors.cpp [128])
+(./code/extended_euclidean.cpp) (./code/fft.cpp [129]) (./code/fraction.cpp)
+(./code/fwht.cpp [130]) (./code/gaussian_elimination.cpp [131])
+(./code/gaussian_elimination2.cpp [132]) (./code/lagrange.cpp [133])
+(./code/lucas_theorem.cpp) (./code/markov.cpp [134])
+(./code/matrix_exponentiation.cpp [135]) (./code/matrix_exponentiation2.cpp
+[136]) (./code/matrix_inverse_and_determinant.cpp [137])
+(./code/max_xor_subsequence.cpp) (./code/mobius.cpp [138]) (./code/mobius2.cpp
+[139]) (./code/modular_arithmetic.cpp) (./code/ntt.cpp [140])
+(./code/operadores_binarios.cpp [141]) (./code/pollard_rho.cpp [142])
+(./code/primefactors.cpp) (./code/primefactors2.cpp [143])
+(./code/segmentedsieve.cpp) (./code/simplex.cpp [144] [145])
+(./code/stars_and_bars.cpp) (./code/totient.cpp [146]) (./code/xor_trie.cpp)
+(./code/bitmasks.cpp [147]) (./code/coordinate_compression.cpp)
+(./code/inversion_count.cpp [148]) (./code/max_plus_convolution.cpp [149])
+(./code/meetinthemiddle.cpp) (./code/prefix_sum_2d.cpp [150])
+(./code/rectangle_union.cpp [151]) (./code/segment_covering.cpp) [152]
+(./code/sprague_grundy.cpp) (./code/stack_trick.cpp [153]) (./code/sum_hash.cpp
+) (./code/tower_of_hanoi.cpp) [154] (./code/two_pointers.cpp)
+(./code/ordered_set.cpp) (./code/STL.txt [155]) (./code/aho_corasick.cpp
+[156]) (./code/de_bruijin.cpp [157]) (./code/kmp.cpp) (./code/manacher.cpp
+[158]) (./code/min_suffix.cpp) (./code/rabin-karp.cpp [159])
+(./code/stringhashing.cpp [160]) (./code/stringhashing2.cpp)
+(./code/substring_fft.cpp [161]) (./code/suffix_array.cpp [162])
+(./code/suffix_automaton.cpp [163] [164]) (./code/z-function.cpp)
+(./code/binary_lifting.cpp) (./code/bit2d.cpp [165]) (./code/color_update.cpp
+[166]) (./code/fenwick.cpp [167]) (./code/fenwick2.cpp) (./code/fenwick2D.cpp
+[168]) (./code/fenwick3.cpp) (./code/implicit_seg.cpp [169])
+(./code/lower_bound_segtree.cpp [170]) (./code/mergesorttree.cpp) [171]
+(./code/min_queue.cpp) (./code/mo.cpp [172]) (./code/mo_update.cpp [173])
+(./code/persistent_seg.cpp [174]) (./code/persistent_seg2.cpp [175])
+(./code/rmq.cpp) (./code/SegTree.cpp [176]) (./code/Segtree2.cpp)
+(./code/segtree2d.cpp [177]) (./code/segtree_lazy.cpp [178])
+(./code/segtree_max_seg_sum.cpp [179]) (./code/SegTree_pa.cpp [180])
+(./code/sparsetable.cpp) (./code/treap.cpp [181]) (./code/treap2.cpp [182])
+(./code/binomial_theorem.md [183]) (./code/chicken_mcnugget.md)
+(./code/graph_notes.md [184]) (./code/manhattan_and_chebyshev.md)
+(./code/_ufmg forked_dcDp.cpp) (./code/_ufmg forked_lcs.cpp [185])
+(./code/_ufmg forked_mochila.cpp) (./code/_ufmg forked_sosDP.cpp)
+(./code/_ufmg forked_subsetSum.cpp [186]) (./code/_ufmg forked_bit.cpp)
+(./code/_ufmg forked_bit2d.cpp) (./code/_ufmg forked_bitRange.cpp [187])
+(./code/_ufmg forked_bitSortTree.cpp) (./code/_ufmg forked_cht.cpp)
+(./code/_ufmg forked_chtDinamico.cpp) [188] (./code/_ufmg forked_dsu.cpp)
+(./code/_ufmg forked_lichao.cpp [189]) (./code/_ufmg forked_lichaoLazy.cpp)
+(./code/_ufmg forked_mergeSortTree.cpp [190])
+(./code/_ufmg forked_minqueueDeque.cpp) (./code/_ufmg forked_minqueueStack.cpp)
+[191] (./code/_ufmg forked_orderStatisticSet.cpp)
+(./code/_ufmg forked_priorityQueueDs.cpp) (./code/_ufmg forked_rangeColor.cpp)
+(./code/_ufmg forked_rmq.cpp [192]) (./code/_ufmg forked_slopeTrick.cpp
+[193]) (./code/_ufmg forked_sparseTable.cpp)
+(./code/_ufmg forked_sparseTableDisjunta.cpp)
+(./code/_ufmg forked_splaytree.cpp [194])
+(./code/_ufmg forked_splaytreeImplicita.cpp [195])
+(./code/_ufmg forked_splitMergeSet.cpp [196])
+(./code/_ufmg forked_splitMergeSetLazy.cpp [197] [198])
+(./code/_ufmg forked_sqrtTree.cpp) (./code/_ufmg forked_treap.cpp [199])
+(./code/_ufmg forked_treapImplicita.cpp)
+(./code/_ufmg forked_treapPersistent.cpp [200])
+(./code/_ufmg forked_waveletTree.cpp)
+(./code/_ufmg forked__Estruturas_segTreap.cpp [201])
+(./code/_ufmg forked__Estruturas_segTree.cpp [202])
+(./code/_ufmg forked__Estruturas_segTree2D.cpp)
+(./code/_ufmg forked__Estruturas_segTreeBeats.cpp [203])
+(./code/_ufmg forked__Estruturas_segTreeColor.cpp [204])
+(./code/_ufmg forked__Estruturas_segTreeEsparsa.cpp)
+(./code/_ufmg forked__Estruturas_segTreeEsparsa2.cpp [205])
+(./code/_ufmg forked__Estruturas_segTreeIterativa.cpp)
+(./code/_ufmg forked__Estruturas_segTreeIterativaComLazy.cpp)
+(./code/_ufmg forked__Estruturas_segTreePa.cpp [206])
+(./code/_ufmg forked__Estruturas_segTreePersistent.cpp [207])
+(./code/_ufmg forked__Estruturas_segTreePersistentComLazy.cpp)
+(./code/_ufmg forked_debug.cpp) (./code/_ufmg forked_fastIO.cpp)
+(./code/_ufmg forked_hash.sh) (./code/_ufmg forked_pragma.cpp)
+(./code/_ufmg forked_rand.cpp [208]) (./code/_ufmg forked_stress.sh)
+(./code/_ufmg forked_template.cpp) (./code/_ufmg forked_timer.cpp)
+(./code/_ufmg forked_articulationPoints.cpp)
+(./code/_ufmg forked_bellmanFord.cpp) [209]
+(./code/_ufmg forked_blockCutTree.cpp) (./code/_ufmg forked_blossom.cpp
+[210]) (./code/_ufmg forked_center.cpp) (./code/_ufmg forked_centroid.cpp)
+(./code/_ufmg forked_centroidDecomp.cpp) (./code/_ufmg forked_centroidTree.cpp
+[211]) (./code/_ufmg forked_cover.cpp) (./code/_ufmg forked_dijkstra.cpp)
+(./code/_ufmg forked_dinitz.cpp [212]) (./code/_ufmg forked_directedMst.cpp)
+(./code/_ufmg forked_dominatorTree.cpp [213])
+(./code/_ufmg forked_eulerPath.cpp [214])
+(./code/_ufmg forked_eulerTourTree.cpp [215])
+(./code/_ufmg forked_floydWarshall.cpp)
+(./code/_ufmg forked_functionalGraph.cpp [216])
+(./code/_ufmg forked_hopcroftKarp.cpp) (./code/_ufmg forked_johnson.cpp)
+(./code/_ufmg forked_kosaraju.cpp [217]) (./code/_ufmg forked_kruskal.cpp)
+(./code/_ufmg forked_kuhn.cpp) (./code/_ufmg forked_linetree.cpp [218])
+(./code/_ufmg forked_lowerBoundMaxFlow.cpp)
+(./code/_ufmg forked_minCostMaxFlow.cpp [219]) (./code/_ufmg forked_prufer.cpp)
+(./code/_ufmg forked_sack.cpp [220]) (./code/_ufmg forked_stableMarriage.cpp)
+(./code/_ufmg forked_tarjan.cpp) (./code/_ufmg forked_topoSort.cpp)
+(./code/_ufmg forked_treeIsomorf.cpp [221])
+(./code/_ufmg forked_virtualTree.cpp)
+(./code/_ufmg forked__Grafos_hldAresta.cpp [222])
+(./code/_ufmg forked__Grafos_hldSemUpdate.cpp)
+(./code/_ufmg forked__Grafos_hldVertice.cpp [223])
+(./code/_ufmg forked__Grafos_lca.cpp)
+(./code/_ufmg forked__Grafos_lcaComBinaryLifting.cpp [224])
+(./code/_ufmg forked__Grafos_lcaComHld.cpp)
+(./code/_ufmg forked__Grafos_lct.cpp)
+(./code/_ufmg forked__Grafos_lctAresta.cpp [225])
+(./code/_ufmg forked__Grafos_lctVertice.cpp [226])
+(./code/_ufmg forked_2sat.cpp) [227] (./code/_ufmg forked_berlekampMassey.cpp)
+(./code/_ufmg forked_chinese.cpp) (./code/_ufmg forked_convolution.cpp [228])
+(./code/_ufmg forked_coprimeBasis.cpp) (./code/_ufmg forked_crivo.cpp [229])
+(./code/_ufmg forked_cycleDetection.cpp [230])
+(./code/_ufmg forked_diofantina.cpp) (./code/_ufmg forked_divisionTrick.cpp)
+(./code/_ufmg forked_evalInterpol.cpp) (./code/_ufmg forked_fastPow.cpp)
+(./code/_ufmg forked_fwht.cpp [231]) (./code/_ufmg forked_gauss.cpp)
+(./code/_ufmg forked_gaussZ2.cpp [232]) (./code/_ufmg forked_gcdEstendido.cpp)
+(./code/_ufmg forked_gcdLcmConvolution.cpp) (./code/_ufmg forked_integral.cpp)
+(./code/_ufmg forked_karatsuba.cpp) [233] (./code/_ufmg forked_logDiscreto.cpp)
+(./code/_ufmg forked_millerRabin.cpp) (./code/_ufmg forked_modInverse.cpp)
+(./code/_ufmg forked_mulmod.cpp) (./code/_ufmg forked_multipointEvaluation.cpp
+[234]) (./code/_ufmg forked_ntt.cpp) (./code/_ufmg forked_pollardrho.cpp)
+(./code/_ufmg forked_powerSeries.cpp [235])
+(./code/_ufmg forked_probabilityBinomial.cpp) (./code/_ufmg forked_simplex.cpp
+[236]) (./code/_ufmg forked_totiente.cpp) (./code/_ufmg forked_bigint.cpp
+[237] [238]) (./code/_ufmg forked_calendario.cpp) (./code/_ufmg forked_frac.cpp
+) (./code/_ufmg forked_geometria.cpp [239] [240] [241])
+(./code/_ufmg forked_geometria3d.cpp [242])
+(./code/_ufmg forked_geometriaInt.cpp [243]) (./code/_ufmg forked_matrix.cpp
+[244]) (./code/_ufmg forked_matroid.cpp [245])
+(./code/_ufmg forked_modularArithmetic.cpp) [246]
+(./code/_ufmg forked_additionChain.cpp) (./code/_ufmg forked_angleRange.cpp)
+(./code/_ufmg forked_areaHistograma.cpp)
+(./code/_ufmg forked_areaUniaoRetangulo.cpp [247])
+(./code/_ufmg forked_binomial.cpp) (./code/_ufmg forked_closestPairOfPoints.cpp
+[248]) (./code/_ufmg forked_conectividadeDinamica.cpp)
+(./code/_ufmg forked_conectividadeDinamica2.cpp [249])
+(./code/_ufmg forked_deBrujin.cpp) (./code/_ufmg forked_delaunay.cpp [250])
+(./code/_ufmg forked_distinct.cpp) (./code/_ufmg forked_distinctUpdate.cpp
+[251]) (./code/_ufmg forked_dominacao3d.cpp [252])
+(./code/_ufmg forked_dominatorPoints.cpp) (./code/_ufmg forked_dynamicHull.cpp)
+(./code/_ufmg forked_graphTriangles.cpp) (./code/_ufmg forked_grayCode.cpp
+[253]) (./code/_ufmg forked_halfPlaneIntersection.cpp)
+(./code/_ufmg forked_heapSort.cpp) (./code/_ufmg forked_hungarian.cpp)
+(./code/_ufmg forked_intervalGraphColoring.cpp [254])
+(./code/_ufmg forked_intervalGraphIndSet.cpp)
+(./code/_ufmg forked_inversionCount.cpp) (./code/_ufmg forked_lis.cpp)
+(./code/_ufmg forked_lis2.cpp) (./code/_ufmg forked_maxDist.cpp [255])
+(./code/_ufmg forked_minCirc.cpp) (./code/_ufmg forked_minkowski.cpp)
+(./code/_ufmg forked_mo.cpp [256]) (./code/_ufmg forked_moDsu.cpp)
+(./code/_ufmg forked_moOnTrees.cpp [257])
+(./code/_ufmg forked_palindromicFactorization.cpp)
+(./code/_ufmg forked_parsing.cpp [258]) (./code/_ufmg forked_rmqOffline.cpp)
+(./code/_ufmg forked_segmentIntersection.cpp)
+(./code/_ufmg forked_simplePolygon.cpp [259])
+(./code/_ufmg forked_steinerTree.cpp) (./code/_ufmg forked_sweepDirection.cpp
+[260]) (./code/_ufmg forked_ahocorasick.cpp)
+(./code/_ufmg forked_dynamicSuffixArray.cpp [261])
+(./code/_ufmg forked_eertree.cpp [262]) (./code/_ufmg forked_hashing.cpp)
+(./code/_ufmg forked_hashingLargeMod.cpp) (./code/_ufmg forked_kmp.cpp)
+(./code/_ufmg forked_manacher.cpp [263])
+(./code/_ufmg forked_minMaxSuffixCyclic.cpp)
+(./code/_ufmg forked_suffixArray.cpp [264]
+LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <7> not available
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 169.
 )
-(./code/runner.py [93]) (./code/__int128.cpp) (./code/runner2.py)
-(./code/rand.cpp [94]) (./code/divideandconquer.cpp) (./code/suffix_sum.cpp)
-[95] (./code/steiner_tree.cpp [96]) (./code/lcs.cpp)
-(./code/bitwise_digit_dp.cpp [97]) (./code/aliens_trick.cpp)
-(./code/Digitdp.cpp [98]) (./code/broken_profile.cpp)
-(./code/largest_square.cpp [99]) (./code/max_matrix_path.cpp)
-(./code/largest-sum-contiguous-subarray.cpp) (./code/exchange_arguments.cpp
-[100]) (./code/tip.cpp) (./code/Knapsack.cpp [101])
-(./code/subsequences_string.cpp) (./code/dynamic_cht.cpp [102]) (./code/lis.cpp
-) (./code/lichao.cpp [103]) (./code/expected_value.cpp [104])
-(./code/subset_sum.cpp [105]) (./code/sos_dp.cpp) (./code/cht.cpp [106])
-(./code/STL.txt) (./code/ordered_set.cpp [107]) (./code/mobius2.cpp)
-(./code/binomial_theorem.cpp [108]) (./code/diophantine.cpp [109])
-(./code/primefactors.cpp) (./code/xor_trie.cpp [110]) (./code/totient.cpp)
-(./code/matrix_inverse_and_determinant.cpp [111])
-(./code/gaussian_elimination.cpp [112]) (./code/extended_euclidean.cpp)
-(./code/primefactors2.cpp [113]) (./code/catalan.cpp)
-(./code/berlekamp_massey.cpp [114]) (./code/fraction.cpp [115])
-(./code/pollard_rho.cpp [116]) (./code/baby_step_gigant_step.cpp [117])
-(./code/matrix_exponentiation2.cpp) (./code/simplex.cpp [118] [119])
-(./code/lagrange.cpp [120]) (./code/crt.cpp) (./code/fft.cpp [121])
-(./code/segmentedsieve.cpp) (./code/gaussian_elimination2.cpp [122])
-(./code/stars_and_bars.cpp [123]) (./code/fwht.cpp [124])
-(./code/operadores_binarios.cpp) (./code/matrix_exponentiation.cpp [125])
-(./code/max_xor_subsequence.cpp [126]) (./code/divisors.cpp) (./code/ntt.cpp
-[127]) (./code/modular_arithmetic.cpp [128]) (./code/crivo.cpp)
-(./code/mobius.cpp [129])) [130]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
- (./notebook.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+(./code/_ufmg forked_suffixArray2.cpp [265])
+(./code/_ufmg forked_suffixAutomaton.cpp) (./code/_ufmg forked_trie.cpp
+[266]) (./code/_ufmg forked_z.cpp) (./code/execution_time.cpp) (./code/rand.cpp
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(./code/runner.py [267]) (./code/runner2.py) (./code/__int128.cpp)) [268]
+(./notebook.aux)
 Package rerunfilecheck Info: File `notebook.out' has not changed.
-(rerunfilecheck)             Checksum: 2AB412B6DC711F15F925E0D8A7FBCC5F;11806.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+(rerunfilecheck)             Checksum: 77F3F4C896E1F12086F41CE358B093E9;65781.
  ) 
 Here is how much of TeX's memory you used:
- 31179 strings out of 481239
- 480750 string characters out of 5920377
- 1199710 words of memory out of 5000000
- 26841 multiletter control sequences out of 15000+600000
- 538533 words of font info for 45 fonts, out of 8000000 for 9000
+ 61185 strings out of 478287
+ 992696 string characters out of 5849290
+ 1850879 words of memory out of 5000000
+ 39183 multiletter control sequences out of 15000+600000
+ 475766 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,12n,69p,703b,2251s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,12n,76p,704b,2283s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
@@ -617,10 +847,10 @@ type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
 er/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on notebook.pdf (130 pages, 979851 bytes).
+Output written on notebook.pdf (268 pages, 1950910 bytes).
 PDF statistics:
- 24170 PDF objects out of 26593 (max. 8388607)
- 23792 compressed objects within 238 object streams
- 18928 named destinations out of 22161 (max. 500000)
- 1521 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 49797 PDF objects out of 55141 (max. 8388607)
+ 49020 compressed objects within 491 object streams
+ 38494 named destinations out of 45951 (max. 500000)
+ 4409 words of extra memory for PDF output out of 10000 (max. 10000000)
 

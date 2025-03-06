@@ -22,16 +22,19 @@ vector<int> path;
 vector<pi> edges, edges2;
 vector<pi> ans;
 vector<pi> adj[MAXN];
-set<pi> a[MAXN];
+vector<pi> a[MAXN];
 
 void dfs2(int s)
 {
   while (a[s].size() > 0)
   {
-    auto v = (*a[s].begin());
-    a[s].erase(v);
-    a[v.fir].erase({s, v.sec});
-    dfs2(v.fir);
+    auto v = a[s].back();
+    a[s].pop_back();
+    if (!vis[v.sec])
+    {
+      vis[v.sec] = 1;
+      dfs2(v.fir);
+    }
   }
   path.pb(s);
 }
@@ -89,6 +92,8 @@ signed main()
         adj[b].pb({a, edges.size() - 1});
       }
     }
+    // ajeita pra ver se consegue fazer todo mundo ficar com grau par
+    // considerando so os edges nao obrigatorios
     for (int i = 0; i < n; i++)
     {
       if (!vis[i])
@@ -109,21 +114,24 @@ signed main()
     {
       a[i].clear();
     }
+    // se ajeitei, agora dale
     // monta o grafo final e acha o ciclo euleriano
     // funciona para grafos com self loops e multiple edges
     int id = 0;
     for (auto [u, v] : ans)
     {
-      a[u].insert({v, id});
-      a[v].insert({u, id});
+      a[u].pb({v, id});
+      a[v].pb({u, id});
       id++;
     }
     for (auto [u, v] : edges2)
     {
-      a[u].insert({v, id});
-      a[v].insert({u, id});
+      a[u].pb({v, id});
+      a[v].pb({u, id});
       id++;
     }
+    for (int i = 0; i < m; i++)
+      vis[i] = 0;
     path.clear();
     dfs2(0);
     cout << "YES\n";

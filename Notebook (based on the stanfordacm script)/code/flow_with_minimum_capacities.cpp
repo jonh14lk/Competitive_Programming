@@ -20,95 +20,119 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 
 struct edge
 {
-  int to, from, flow, capacity;
+  int dest, back, f, c, id;
 };
-struct dinic
+struct push_relabel
 {
-  int n, src, sink;
-  vector<vector<edge>> adj;
-  vector<int> level;
-  vector<int> ptr;
-
-  dinic(int sz)
+  int n;
+  vector<vector<edge>> g;
+  vector<int> ec;
+  vector<edge *> cur;
+  vector<vector<int>> hs;
+  vector<int> H;
+  push_relabel(int sz) : g(sz), ec(sz), cur(sz), hs(2 * sz), H(sz) { n = sz; }
+  void add_edge(int s, int t, int cap, int rcap, int id)
   {
-    n = sz;
-    adj.resize(n);
-    level.resize(n);
-    ptr.resize(n);
+    if (s == t)
+      return;
+    g[s].pb({t, (int)g[t].size(), 0, cap, id});
+    g[t].pb({s, (int)g[s].size() - 1, 0, rcap, -1});
   }
-  void add_edge(int a, int b, int c)
+  void add_flow(edge &e, int f)
   {
-    adj[a].pb({b, (int)adj[b].size(), c, c});
-    adj[b].pb({a, (int)adj[a].size() - 1, 0, 0});
+    edge &back = g[e.dest][e.back];
+    if (!ec[e.dest] && f)
+      hs[H[e.dest]].push_back(e.dest);
+    e.f += f;
+    e.c -= f;
+    ec[e.dest] += f;
+    back.f -= f;
+    back.c += f;
+    ec[back.dest] -= f;
   }
-  bool bfs()
+  int calc(int s, int t)
   {
-    level.assign(n, -1);
-    level[src] = 0;
-    queue<int> q;
-    q.push(src);
-    while (!q.empty())
+    int v = g.size();
+    H[s] = v;
+    ec[t] = 1;
+    vector<int> co(2 * v);
+    co[0] = v - 1;
+    for (int i = 0; i < v; i++)
+      cur[i] = g[i].data();
+    for (edge &e : g[s])
+      add_flow(e, e.c);
+    for (int hi = 0;;)
     {
-      int u = q.front();
-      q.pop();
-      for (auto at : adj[u])
+      while (hs[hi].empty())
+        if (!hi--)
+          return -ec[s];
+      int u = hs[hi].back();
+      hs[hi].pop_back();
+      while (ec[u] > 0)
       {
-        if (at.flow && level[at.to] == -1)
+        if (cur[u] == g[u].data() + g[u].size())
         {
-          q.push(at.to);
-          level[at.to] = level[u] + 1;
+          H[u] = INF;
+          for (edge &e : g[u])
+            if (e.c && H[u] > H[e.dest] + 1)
+              H[u] = H[e.dest] + 1, cur[u] = &e;
+          if (++co[H[u]], !--co[hi] && hi < v)
+            for (int i = 0; i < v; i++)
+              if (hi < H[i] && H[i] < v)
+                --co[H[i]], H[i] = v + 1;
+          hi = H[u];
         }
+        else if (cur[u]->c && H[u] == H[cur[u]->dest] + 1)
+          add_flow(*cur[u], min(ec[u], cur[u]->c));
+        else
+          ++cur[u];
       }
     }
-    return level[sink] != -1;
   }
-  int dfs(int u, int flow)
+  vector<int> flow_edges(int m) // fluxo em cada aresta
   {
-    if (u == sink || flow == 0)
-      return flow;
-    for (int &p = ptr[u]; p < adj[u].size(); p++)
-    {
-      edge &at = adj[u][p];
-      if (at.flow && level[u] == level[at.to] - 1)
-      {
-        int kappa = dfs(at.to, min(flow, at.flow));
-        at.flow -= kappa;
-        adj[at.to][at.from].flow += kappa;
-        if (kappa != 0)
-          return kappa;
-      }
-    }
-    return 0;
-  }
-  int run()
-  {
-    int max_flow = 0;
-    while (bfs())
-    {
-      ptr.assign(n, 0);
-      while (1)
-      {
-        int flow = dfs(src, INF);
-        if (flow == 0)
-          break;
-        max_flow += flow;
-      }
-    }
-    return max_flow;
-  }
-  vector<pii> cut_edges() // arestas do corte minimo
-  {
-    bfs();
-    vector<pii> ans;
+    vector<int> ans(m);
     for (int i = 0; i < n; i++)
     {
-      for (auto const &j : adj[i])
+      for (auto const &j : g[i])
       {
-        if (level[i] != -1 && level[j.to] == -1 && j.capacity > 0)
-          ans.pb({j.capacity, {i, j.to}});
+        if (j.id != -1)
+          ans[j.id] = j.f;
       }
     }
     return ans;
+  }
+};
+struct flow_with_demands
+{
+  push_relabel pr;
+  vector<int> in, out;
+  int n;
+
+  flow_with_demands(int sz) : n(sz), pr(sz + 2), in(sz), out(sz) {}
+  void add_edge(int u, int v, int cap, int dem, int id)
+  {
+    pr.add_edge(u, v, cap - dem, 0, id);
+    out[u] += dem, in[v] += dem;
+  }
+  int run(int s, int t)
+  {
+    pr.add_edge(t, s, INF, 0, -1);
+    for (int i = 0; i < n; i++)
+    {
+      pr.add_edge(n, i, in[i], 0, -1);
+      pr.add_edge(i, n + 1, out[i], 0, -1);
+    }
+    return pr.calc(n, n + 1);
+  }
+  bool check() // todas as constraints foram satisfeitas?
+  {
+    for (auto const &i : pr.g[n])
+    {
+      if (i.c > 0)
+        return 0;
+    }
+    return 1;
   }
 };
 
@@ -127,52 +151,36 @@ signed main()
     cin >> v[i];
   }
   vector<pi> s[2];
-  int cnt = 0;
   for (int i = 0; i < h; i++)
   {
     for (int j = 0; j < w; j++)
     {
       if (v[i][j] != '1')
         s[(i + j) % 2].pb({i, j});
-      else if (v[i][j] == '2')
-        cnt++;
     }
   }
   for (int i = 0; i < 2; i++)
   {
     sort(s[i].begin(), s[i].end());
   }
-  int sz = s[0].size() + s[1].size() + 4;
+  flow_with_demands mf(s[0].size() + s[1].size() + 2);
   int src = s[0].size() + s[1].size();
-  int src1 = s[0].size() + s[1].size() + 1;
-  int sink = s[0].size() + s[1].size() + 2;
-  int sink1 = s[0].size() + s[1].size() + 3;
-  dinic d(sz);
-  auto add_edge = [&](int a, int b, int r) // a quantidade de fluxo na aresta tem que ser <= r
-  {
-    d.add_edge(a, b, r);
-  };
-  auto add_edge2 = [&](int a, int b, int l, int r) // a quantidade de fluxo na aresta tem que estar em [l, r]
-  {
-    d.add_edge(a, b, r - l);
-    d.add_edge(src1, b, l);
-    d.add_edge(a, sink1, l);
-  };
+  int sink = s[0].size() + s[1].size() + 1;
   for (int x = 0; x < s[0].size(); x++)
   {
     int i = s[0][x].fir, j = s[0][x].sec;
     if (v[i][j] == '2')
-      add_edge2(src, x, 1, 1);
+      mf.add_edge(src, x, 1, 1, -1);
     else
-      add_edge(src, x, 1);
+      mf.add_edge(src, x, 1, 0, -1);
   }
   for (int x = 0; x < s[1].size(); x++)
   {
     int i = s[1][x].fir, j = s[1][x].sec;
     if (v[i][j] == '2')
-      add_edge2(s[0].size() + x, sink, 1, 1);
+      mf.add_edge(s[0].size() + x, sink, 1, 1, -1);
     else
-      add_edge(s[0].size() + x, sink, 1);
+      mf.add_edge(s[0].size() + x, sink, 1, 0, -1);
   }
   for (int x = 0; x < s[0].size(); x++)
   {
@@ -182,34 +190,13 @@ signed main()
       if (binary_search(s[1].begin(), s[1].end(), curr))
       {
         int y = lower_bound(s[1].begin(), s[1].end(), curr) - s[1].begin();
-        add_edge(x, s[0].size() + y, 1);
+        mf.add_edge(x, s[0].size() + y, 1, 0, -1);
       }
     }
   }
-  // preciso tentar passar o fluxo desses 4 jeitos, e na ordem
-  d.src = src1, d.sink = sink1;
-  int i = d.run();
-  d.src = src1, d.sink = sink;
-  int j = d.run();
-  d.src = src, d.sink = sink1;
-  int k = d.run();
-  d.src = src, d.sink = sink;
-  int l = d.run();
-  bool ok = 1;
-  // pra poder checar se existe um jeito de passar fluxo
-  // que satisfaz todas as constraints
-  for (int i = 0; i < sz; i++)
-  {
-    for (auto const &j : d.adj[i])
-    {
-      if (i == src1 || j.to == sink1)
-        ok &= (j.flow == 0);
-    }
-  }
-  // e pra uma aresta com a restricao de [l, r]
-  // se eu olhar quanto de fluxo foi passado na aresta com capacidade r - l que foi criada pra ela
-  // ai tenho que foi passado l + (essa quantidade)
-  (ok) ? cout << "Yes\n" : cout << "No\n";
+  mf.run(src, sink);
+  // existe um jeito de passar fluxo que satisfaz todas as constraints?
+  (mf.check()) ? cout << "Yes\n" : cout << "No\n";
   return 0;
 }
 // problema exemplo
@@ -225,5 +212,7 @@ signed main()
 
 // e se eu pudesse adicionar a seguinte constraint para algumas arestas:
 // a quantidade de fluxo passada naquela aresta tem que ser entre [l, r]
-// Maximum flow problem with minimum capacities
+// Maximum flow problem with minimum capacities, tambem conhecido como flow with demands
 // ai da pra dale em resolver
+
+// https://cp-algorithms.com/graph/flow_with_demands.html

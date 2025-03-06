@@ -1,190 +1,551 @@
-\BOOKMARK [1][-]{section.1}{Geometry}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{polygon isomorfism}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{LineSweep}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{convex hull point location}{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.4}{polygons distance}{section.1}% 5
-\BOOKMARK [2][-]{subsection.1.5}{smallest enclosing circle}{section.1}% 6
-\BOOKMARK [2][-]{subsection.1.6}{kd tree}{section.1}% 7
-\BOOKMARK [2][-]{subsection.1.7}{ConvexHull}{section.1}% 8
-\BOOKMARK [2][-]{subsection.1.8}{dynamic ch}{section.1}% 9
-\BOOKMARK [2][-]{subsection.1.9}{polygon area}{section.1}% 10
-\BOOKMARK [2][-]{subsection.1.10}{points and vectors}{section.1}% 11
-\BOOKMARK [2][-]{subsection.1.11}{minkowski}{section.1}% 12
-\BOOKMARK [2][-]{subsection.1.12}{halfplane intersection}{section.1}% 13
-\BOOKMARK [1][-]{section.2}{Strings}{}% 14
-\BOOKMARK [2][-]{subsection.2.1}{min suffix}{section.2}% 15
-\BOOKMARK [2][-]{subsection.2.2}{manacher}{section.2}% 16
-\BOOKMARK [2][-]{subsection.2.3}{de bruijin}{section.2}% 17
-\BOOKMARK [2][-]{subsection.2.4}{stringhashing2}{section.2}% 18
-\BOOKMARK [2][-]{subsection.2.5}{aho corasick}{section.2}% 19
-\BOOKMARK [2][-]{subsection.2.6}{z-function}{section.2}% 20
-\BOOKMARK [2][-]{subsection.2.7}{substring fft}{section.2}% 21
-\BOOKMARK [2][-]{subsection.2.8}{suffix array}{section.2}% 22
-\BOOKMARK [2][-]{subsection.2.9}{stringhashing}{section.2}% 23
-\BOOKMARK [2][-]{subsection.2.10}{suffix automaton}{section.2}% 24
-\BOOKMARK [2][-]{subsection.2.11}{kmp}{section.2}% 25
-\BOOKMARK [2][-]{subsection.2.12}{rabin-karp}{section.2}% 26
-\BOOKMARK [1][-]{section.3}{Binary Search and Ternary Search}{}% 27
-\BOOKMARK [2][-]{subsection.3.1}{parallel binary search}{section.3}% 28
-\BOOKMARK [2][-]{subsection.3.2}{Aplications}{section.3}% 29
-\BOOKMARK [2][-]{subsection.3.3}{UpperBound}{section.3}% 30
-\BOOKMARK [2][-]{subsection.3.4}{STL}{section.3}% 31
-\BOOKMARK [2][-]{subsection.3.5}{TS}{section.3}% 32
-\BOOKMARK [2][-]{subsection.3.6}{BS}{section.3}% 33
-\BOOKMARK [2][-]{subsection.3.7}{LowerBound}{section.3}% 34
-\BOOKMARK [1][-]{section.4}{Graph}{}% 35
-\BOOKMARK [2][-]{subsection.4.1}{Floyd Warshall}{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.2}{reroot}{section.4}% 37
-\BOOKMARK [2][-]{subsection.4.3}{Ford Fulkerson}{section.4}% 38
-\BOOKMARK [2][-]{subsection.4.4}{stable matching}{section.4}% 39
-\BOOKMARK [2][-]{subsection.4.5}{bridges}{section.4}% 40
-\BOOKMARK [2][-]{subsection.4.6}{mincostflow}{section.4}% 41
-\BOOKMARK [2][-]{subsection.4.7}{link cut tree vertex}{section.4}% 42
-\BOOKMARK [2][-]{subsection.4.8}{strong orientation}{section.4}% 43
-\BOOKMARK [2][-]{subsection.4.9}{centroid decomposition2}{section.4}% 44
-\BOOKMARK [2][-]{subsection.4.10}{LCA}{section.4}% 45
-\BOOKMARK [2][-]{subsection.4.11}{dsu rollback}{section.4}% 46
-\BOOKMARK [2][-]{subsection.4.12}{sack}{section.4}% 47
-\BOOKMARK [2][-]{subsection.4.13}{two sat}{section.4}% 48
-\BOOKMARK [2][-]{subsection.4.14}{Dijkstra}{section.4}% 49
-\BOOKMARK [2][-]{subsection.4.15}{scc}{section.4}% 50
-\BOOKMARK [2][-]{subsection.4.16}{dominator tree}{section.4}% 51
-\BOOKMARK [2][-]{subsection.4.17}{flow with minimum capacities}{section.4}% 52
-\BOOKMARK [2][-]{subsection.4.18}{centroid decomposition}{section.4}% 53
-\BOOKMARK [2][-]{subsection.4.19}{TreeDiameter}{section.4}% 54
-\BOOKMARK [2][-]{subsection.4.20}{virtual tree}{section.4}% 55
-\BOOKMARK [2][-]{subsection.4.21}{dinic}{section.4}% 56
-\BOOKMARK [2][-]{subsection.4.22}{hall theorem}{section.4}% 57
-\BOOKMARK [2][-]{subsection.4.23}{Kruskal}{section.4}% 58
-\BOOKMARK [2][-]{subsection.4.24}{hungarian}{section.4}% 59
-\BOOKMARK [2][-]{subsection.4.25}{BFS}{section.4}% 60
-\BOOKMARK [2][-]{subsection.4.26}{hld edge}{section.4}% 61
-\BOOKMARK [2][-]{subsection.4.27}{dsu}{section.4}% 62
-\BOOKMARK [2][-]{subsection.4.28}{MatrixDijkstra}{section.4}% 63
-\BOOKMARK [2][-]{subsection.4.29}{articulation points}{section.4}% 64
-\BOOKMARK [2][-]{subsection.4.30}{link cut tree edge}{section.4}% 65
-\BOOKMARK [2][-]{subsection.4.31}{hopcroft karp}{section.4}% 66
-\BOOKMARK [2][-]{subsection.4.32}{cycle detection}{section.4}% 67
-\BOOKMARK [2][-]{subsection.4.33}{eulertour}{section.4}% 68
-\BOOKMARK [2][-]{subsection.4.34}{bipartite}{section.4}% 69
-\BOOKMARK [2][-]{subsection.4.35}{mo dsu}{section.4}% 70
-\BOOKMARK [2][-]{subsection.4.36}{Prim}{section.4}% 71
-\BOOKMARK [2][-]{subsection.4.37}{tree isomorfism}{section.4}% 72
-\BOOKMARK [2][-]{subsection.4.38}{caminhoeuleriano}{section.4}% 73
-\BOOKMARK [2][-]{subsection.4.39}{hld}{section.4}% 74
-\BOOKMARK [2][-]{subsection.4.40}{caminhoeuleriano2}{section.4}% 75
-\BOOKMARK [2][-]{subsection.4.41}{DFS}{section.4}% 76
-\BOOKMARK [2][-]{subsection.4.42}{block-cut-tree}{section.4}% 77
-\BOOKMARK [2][-]{subsection.4.43}{mo trees edges}{section.4}% 78
-\BOOKMARK [2][-]{subsection.4.44}{mo trees}{section.4}% 79
-\BOOKMARK [2][-]{subsection.4.45}{erdos gallai}{section.4}% 80
-\BOOKMARK [2][-]{subsection.4.46}{rmq tree}{section.4}% 81
-\BOOKMARK [2][-]{subsection.4.47}{Topological Sort}{section.4}% 82
-\BOOKMARK [2][-]{subsection.4.48}{Grafo Bipartido}{section.4}% 83
-\BOOKMARK [1][-]{section.5}{Miscellaneous}{}% 84
-\BOOKMARK [2][-]{subsection.5.1}{inversion count}{section.5}% 85
-\BOOKMARK [2][-]{subsection.5.2}{two pointers}{section.5}% 86
-\BOOKMARK [2][-]{subsection.5.3}{bitmasks}{section.5}% 87
-\BOOKMARK [2][-]{subsection.5.4}{sprague grundy}{section.5}% 88
-\BOOKMARK [2][-]{subsection.5.5}{coordinate compression}{section.5}% 89
-\BOOKMARK [2][-]{subsection.5.6}{meetinthemiddle}{section.5}% 90
-\BOOKMARK [2][-]{subsection.5.7}{segment covering}{section.5}% 91
-\BOOKMARK [2][-]{subsection.5.8}{sum hash}{section.5}% 92
-\BOOKMARK [2][-]{subsection.5.9}{tower of hanoi}{section.5}% 93
-\BOOKMARK [2][-]{subsection.5.10}{prefix sum 2d}{section.5}% 94
-\BOOKMARK [2][-]{subsection.5.11}{stack trick}{section.5}% 95
-\BOOKMARK [1][-]{section.6}{Theorems and Formulas}{}% 96
-\BOOKMARK [2][-]{subsection.6.1}{binomial theorem}{section.6}% 97
-\BOOKMARK [2][-]{subsection.6.2}{chicken mcnugget}{section.6}% 98
-\BOOKMARK [2][-]{subsection.6.3}{graph notes}{section.6}% 99
-\BOOKMARK [1][-]{section.7}{Structures}{}% 100
-\BOOKMARK [2][-]{subsection.7.1}{lower bound segtree}{section.7}% 101
-\BOOKMARK [2][-]{subsection.7.2}{Segtree2}{section.7}% 102
-\BOOKMARK [2][-]{subsection.7.3}{SegTree pa}{section.7}% 103
-\BOOKMARK [2][-]{subsection.7.4}{min queue}{section.7}% 104
-\BOOKMARK [2][-]{subsection.7.5}{mo update}{section.7}% 105
-\BOOKMARK [2][-]{subsection.7.6}{treap2}{section.7}% 106
-\BOOKMARK [2][-]{subsection.7.7}{segtree lazy}{section.7}% 107
-\BOOKMARK [2][-]{subsection.7.8}{SegTree}{section.7}% 108
-\BOOKMARK [2][-]{subsection.7.9}{fenwick2D}{section.7}% 109
-\BOOKMARK [2][-]{subsection.7.10}{mergesorttree}{section.7}% 110
-\BOOKMARK [2][-]{subsection.7.11}{treap}{section.7}% 111
-\BOOKMARK [2][-]{subsection.7.12}{bit2d}{section.7}% 112
-\BOOKMARK [2][-]{subsection.7.13}{fenwick3}{section.7}% 113
-\BOOKMARK [2][-]{subsection.7.14}{segtree2d}{section.7}% 114
-\BOOKMARK [2][-]{subsection.7.15}{persistent seg2}{section.7}% 115
-\BOOKMARK [2][-]{subsection.7.16}{rmq}{section.7}% 116
-\BOOKMARK [2][-]{subsection.7.17}{color update}{section.7}% 117
-\BOOKMARK [2][-]{subsection.7.18}{segtree max seg sum}{section.7}% 118
-\BOOKMARK [2][-]{subsection.7.19}{fenwick}{section.7}% 119
-\BOOKMARK [2][-]{subsection.7.20}{implicit seg}{section.7}% 120
-\BOOKMARK [2][-]{subsection.7.21}{fenwick2}{section.7}% 121
-\BOOKMARK [2][-]{subsection.7.22}{mo}{section.7}% 122
-\BOOKMARK [2][-]{subsection.7.23}{persistent seg}{section.7}% 123
-\BOOKMARK [2][-]{subsection.7.24}{binary lifting}{section.7}% 124
-\BOOKMARK [2][-]{subsection.7.25}{sparsetable}{section.7}% 125
-\BOOKMARK [1][-]{section.8}{Utils}{}% 126
-\BOOKMARK [2][-]{subsection.8.1}{execution time}{section.8}% 127
-\BOOKMARK [2][-]{subsection.8.2}{runner}{section.8}% 128
-\BOOKMARK [2][-]{subsection.8.3}{ int128}{section.8}% 129
-\BOOKMARK [2][-]{subsection.8.4}{runner2}{section.8}% 130
-\BOOKMARK [2][-]{subsection.8.5}{rand}{section.8}% 131
-\BOOKMARK [1][-]{section.9}{Dynamic programming and common problems}{}% 132
-\BOOKMARK [2][-]{subsection.9.1}{divideandconquer}{section.9}% 133
-\BOOKMARK [2][-]{subsection.9.2}{suffix sum}{section.9}% 134
-\BOOKMARK [2][-]{subsection.9.3}{steiner tree}{section.9}% 135
-\BOOKMARK [2][-]{subsection.9.4}{lcs}{section.9}% 136
-\BOOKMARK [2][-]{subsection.9.5}{bitwise digit dp}{section.9}% 137
-\BOOKMARK [2][-]{subsection.9.6}{aliens trick}{section.9}% 138
-\BOOKMARK [2][-]{subsection.9.7}{Digitdp}{section.9}% 139
-\BOOKMARK [2][-]{subsection.9.8}{broken profile}{section.9}% 140
-\BOOKMARK [2][-]{subsection.9.9}{largest square}{section.9}% 141
-\BOOKMARK [2][-]{subsection.9.10}{max matrix path}{section.9}% 142
-\BOOKMARK [2][-]{subsection.9.11}{largest-sum-contiguous-subarray}{section.9}% 143
-\BOOKMARK [2][-]{subsection.9.12}{exchange arguments}{section.9}% 144
-\BOOKMARK [2][-]{subsection.9.13}{tip}{section.9}% 145
-\BOOKMARK [2][-]{subsection.9.14}{Knapsack}{section.9}% 146
-\BOOKMARK [2][-]{subsection.9.15}{subsequences string}{section.9}% 147
-\BOOKMARK [2][-]{subsection.9.16}{dynamic cht}{section.9}% 148
-\BOOKMARK [2][-]{subsection.9.17}{lis}{section.9}% 149
-\BOOKMARK [2][-]{subsection.9.18}{lichao}{section.9}% 150
-\BOOKMARK [2][-]{subsection.9.19}{expected value}{section.9}% 151
-\BOOKMARK [2][-]{subsection.9.20}{subset sum}{section.9}% 152
-\BOOKMARK [2][-]{subsection.9.21}{sos dp}{section.9}% 153
-\BOOKMARK [2][-]{subsection.9.22}{cht}{section.9}% 154
-\BOOKMARK [1][-]{section.10}{STL}{}% 155
-\BOOKMARK [2][-]{subsection.10.1}{STL}{section.10}% 156
-\BOOKMARK [2][-]{subsection.10.2}{ordered set}{section.10}% 157
-\BOOKMARK [1][-]{section.11}{Math}{}% 158
-\BOOKMARK [2][-]{subsection.11.1}{mobius2}{section.11}% 159
-\BOOKMARK [2][-]{subsection.11.2}{binomial theorem}{section.11}% 160
-\BOOKMARK [2][-]{subsection.11.3}{diophantine}{section.11}% 161
-\BOOKMARK [2][-]{subsection.11.4}{primefactors}{section.11}% 162
-\BOOKMARK [2][-]{subsection.11.5}{xor trie}{section.11}% 163
-\BOOKMARK [2][-]{subsection.11.6}{totient}{section.11}% 164
-\BOOKMARK [2][-]{subsection.11.7}{matrix inverse and determinant}{section.11}% 165
-\BOOKMARK [2][-]{subsection.11.8}{gaussian elimination}{section.11}% 166
-\BOOKMARK [2][-]{subsection.11.9}{extended euclidean}{section.11}% 167
-\BOOKMARK [2][-]{subsection.11.10}{primefactors2}{section.11}% 168
-\BOOKMARK [2][-]{subsection.11.11}{catalan}{section.11}% 169
-\BOOKMARK [2][-]{subsection.11.12}{berlekamp massey}{section.11}% 170
-\BOOKMARK [2][-]{subsection.11.13}{fraction}{section.11}% 171
-\BOOKMARK [2][-]{subsection.11.14}{pollard rho}{section.11}% 172
-\BOOKMARK [2][-]{subsection.11.15}{baby step gigant step}{section.11}% 173
-\BOOKMARK [2][-]{subsection.11.16}{matrix exponentiation2}{section.11}% 174
-\BOOKMARK [2][-]{subsection.11.17}{simplex}{section.11}% 175
-\BOOKMARK [2][-]{subsection.11.18}{lagrange}{section.11}% 176
-\BOOKMARK [2][-]{subsection.11.19}{crt}{section.11}% 177
-\BOOKMARK [2][-]{subsection.11.20}{fft}{section.11}% 178
-\BOOKMARK [2][-]{subsection.11.21}{segmentedsieve}{section.11}% 179
-\BOOKMARK [2][-]{subsection.11.22}{gaussian elimination2}{section.11}% 180
-\BOOKMARK [2][-]{subsection.11.23}{stars and bars}{section.11}% 181
-\BOOKMARK [2][-]{subsection.11.24}{fwht}{section.11}% 182
-\BOOKMARK [2][-]{subsection.11.25}{operadores binarios}{section.11}% 183
-\BOOKMARK [2][-]{subsection.11.26}{matrix exponentiation}{section.11}% 184
-\BOOKMARK [2][-]{subsection.11.27}{max xor subsequence}{section.11}% 185
-\BOOKMARK [2][-]{subsection.11.28}{divisors}{section.11}% 186
-\BOOKMARK [2][-]{subsection.11.29}{ntt}{section.11}% 187
-\BOOKMARK [2][-]{subsection.11.30}{modular arithmetic}{section.11}% 188
-\BOOKMARK [2][-]{subsection.11.31}{crivo}{section.11}% 189
-\BOOKMARK [2][-]{subsection.11.32}{mobius}{section.11}% 190
+\BOOKMARK [1][-]{section.1}{\376\377\000B\000i\000n\000a\000r\000y\000\040\000S\000e\000a\000r\000c\000h\000\040\000a\000n\000d\000\040\000T\000e\000r\000n\000a\000r\000y\000\040\000S\000e\000a\000r\000c\000h}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{\376\377\000A\000p\000l\000i\000c\000a\000t\000i\000o\000n\000s}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{\376\377\000B\000S}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{\376\377\000L\000o\000w\000e\000r\000B\000o\000u\000n\000d}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{\376\377\000p\000a\000r\000a\000l\000l\000e\000l\000\040\000b\000i\000n\000a\000r\000y\000\040\000s\000e\000a\000r\000c\000h}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{\376\377\000r\000e\000c\000u\000r\000s\000i\000v\000e\000\040\000p\000a\000r\000a\000l\000l\000e\000l\000\040\000b\000i\000n\000a\000r\000y\000\040\000s\000e\000a\000r\000c\000h}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{\376\377\000S\000T\000L}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.7}{\376\377\000T\000S}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.8}{\376\377\000U\000p\000p\000e\000r\000B\000o\000u\000n\000d}{section.1}% 9
+\BOOKMARK [1][-]{section.2}{\376\377\000D\000y\000n\000a\000m\000i\000c\000\040\000p\000r\000o\000g\000r\000a\000m\000m\000i\000n\000g\000\040\000a\000n\000d\000\040\000c\000o\000m\000m\000o\000n\000\040\000p\000r\000o\000b\000l\000e\000m\000s}{}% 10
+\BOOKMARK [2][-]{subsection.2.1}{\376\377\000a\000l\000i\000e\000n\000s\000\040\000t\000r\000i\000c\000k}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.2}{\376\377\000b\000i\000t\000w\000i\000s\000e\000\040\000d\000i\000g\000i\000t\000\040\000d\000p}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.3}{\376\377\000b\000r\000o\000k\000e\000n\000\040\000p\000r\000o\000f\000i\000l\000e}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.4}{\376\377\000c\000h\000t}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.5}{\376\377\000D\000i\000g\000i\000t\000d\000p}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.6}{\376\377\000d\000i\000v\000i\000d\000e\000a\000n\000d\000c\000o\000n\000q\000u\000e\000r}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.7}{\376\377\000d\000y\000n\000a\000m\000i\000c\000\040\000c\000h\000t}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.8}{\376\377\000e\000x\000c\000h\000a\000n\000g\000e\000\040\000a\000r\000g\000u\000m\000e\000n\000t\000s}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.9}{\376\377\000e\000x\000p\000e\000c\000t\000e\000d\000\040\000v\000a\000l\000u\000e}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.10}{\376\377\000i\000n\000c\000l\000u\000s\000i\000o\000n\000\040\000e\000x\000c\000l\000u\000s\000i\000o\000n}{section.2}% 20
+\BOOKMARK [2][-]{subsection.2.11}{\376\377\000K\000n\000a\000p\000s\000a\000c\000k}{section.2}% 21
+\BOOKMARK [2][-]{subsection.2.12}{\376\377\000l\000a\000r\000g\000e\000s\000t\000-\000s\000u\000m\000-\000c\000o\000n\000t\000i\000g\000u\000o\000u\000s\000-\000s\000u\000b\000a\000r\000r\000a\000y}{section.2}% 22
+\BOOKMARK [2][-]{subsection.2.13}{\376\377\000l\000a\000r\000g\000e\000s\000t\000\040\000s\000q\000u\000a\000r\000e}{section.2}% 23
+\BOOKMARK [2][-]{subsection.2.14}{\376\377\000l\000c\000s}{section.2}% 24
+\BOOKMARK [2][-]{subsection.2.15}{\376\377\000l\000i\000c\000h\000a\000o}{section.2}% 25
+\BOOKMARK [2][-]{subsection.2.16}{\376\377\000l\000i\000s}{section.2}% 26
+\BOOKMARK [2][-]{subsection.2.17}{\376\377\000m\000a\000x\000\040\000m\000a\000t\000r\000i\000x\000\040\000p\000a\000t\000h}{section.2}% 27
+\BOOKMARK [2][-]{subsection.2.18}{\376\377\000o\000p\000t\000i\000m\000i\000z\000a\000t\000i\000o\000n\000\040\000w\000i\000t\000h\000\040\000f\000f\000t}{section.2}% 28
+\BOOKMARK [2][-]{subsection.2.19}{\376\377\000p\000e\000r\000m\000u\000t\000a\000t\000i\000o\000n\000s}{section.2}% 29
+\BOOKMARK [2][-]{subsection.2.20}{\376\377\000s\000o\000s\000\040\000d\000p}{section.2}% 30
+\BOOKMARK [2][-]{subsection.2.21}{\376\377\000s\000t\000e\000i\000n\000e\000r\000\040\000t\000r\000e\000e}{section.2}% 31
+\BOOKMARK [2][-]{subsection.2.22}{\376\377\000s\000u\000b\000s\000e\000q\000u\000e\000n\000c\000e\000s\000\040\000s\000t\000r\000i\000n\000g}{section.2}% 32
+\BOOKMARK [2][-]{subsection.2.23}{\376\377\000s\000u\000b\000s\000e\000t\000\040\000s\000u\000m}{section.2}% 33
+\BOOKMARK [2][-]{subsection.2.24}{\376\377\000s\000u\000f\000f\000i\000x\000\040\000s\000u\000m}{section.2}% 34
+\BOOKMARK [2][-]{subsection.2.25}{\376\377\000t\000i\000p}{section.2}% 35
+\BOOKMARK [1][-]{section.3}{\376\377\000G\000e\000o\000m\000e\000t\000r\000y}{}% 36
+\BOOKMARK [2][-]{subsection.3.1}{\376\377\000C\000o\000n\000v\000e\000x\000H\000u\000l\000l}{section.3}% 37
+\BOOKMARK [2][-]{subsection.3.2}{\376\377\000c\000o\000n\000v\000e\000x\000\040\000h\000u\000l\000l\000\040\000p\000o\000i\000n\000t\000\040\000l\000o\000c\000a\000t\000i\000o\000n}{section.3}% 38
+\BOOKMARK [2][-]{subsection.3.3}{\376\377\000d\000y\000n\000a\000m\000i\000c\000\040\000c\000h}{section.3}% 39
+\BOOKMARK [2][-]{subsection.3.4}{\376\377\000h\000a\000l\000f\000p\000l\000a\000n\000e\000\040\000i\000n\000t\000e\000r\000s\000e\000c\000t\000i\000o\000n}{section.3}% 40
+\BOOKMARK [2][-]{subsection.3.5}{\376\377\000k\000d\000\040\000t\000r\000e\000e}{section.3}% 41
+\BOOKMARK [2][-]{subsection.3.6}{\376\377\000L\000i\000n\000e\000S\000w\000e\000e\000p}{section.3}% 42
+\BOOKMARK [2][-]{subsection.3.7}{\376\377\000l\000i\000n\000e\000\040\000t\000r\000i\000c\000k}{section.3}% 43
+\BOOKMARK [2][-]{subsection.3.8}{\376\377\000m\000i\000n\000k\000o\000w\000s\000k\000i}{section.3}% 44
+\BOOKMARK [2][-]{subsection.3.9}{\376\377\000p\000o\000i\000n\000t\000s\000\040\000a\000n\000d\000\040\000v\000e\000c\000t\000o\000r\000s}{section.3}% 45
+\BOOKMARK [2][-]{subsection.3.10}{\376\377\000p\000o\000l\000y\000g\000o\000n\000s\000\040\000d\000i\000s\000t\000a\000n\000c\000e}{section.3}% 46
+\BOOKMARK [2][-]{subsection.3.11}{\376\377\000p\000o\000l\000y\000g\000o\000n\000\040\000a\000r\000e\000a}{section.3}% 47
+\BOOKMARK [2][-]{subsection.3.12}{\376\377\000p\000o\000l\000y\000g\000o\000n\000\040\000i\000s\000o\000m\000o\000r\000f\000i\000s\000m}{section.3}% 48
+\BOOKMARK [2][-]{subsection.3.13}{\376\377\000s\000m\000a\000l\000l\000e\000s\000t\000\040\000e\000n\000c\000l\000o\000s\000i\000n\000g\000\040\000c\000i\000r\000c\000l\000e}{section.3}% 49
+\BOOKMARK [1][-]{section.4}{\376\377\000G\000r\000a\000p\000h}{}% 50
+\BOOKMARK [2][-]{subsection.4.1}{\376\377\000a\000r\000t\000i\000c\000u\000l\000a\000t\000i\000o\000n\000\040\000p\000o\000i\000n\000t\000s}{section.4}% 51
+\BOOKMARK [2][-]{subsection.4.2}{\376\377\000B\000F\000S}{section.4}% 52
+\BOOKMARK [2][-]{subsection.4.3}{\376\377\000b\000i\000p\000a\000r\000t\000i\000t\000e}{section.4}% 53
+\BOOKMARK [2][-]{subsection.4.4}{\376\377\000b\000l\000o\000c\000k\000-\000c\000u\000t\000-\000t\000r\000e\000e}{section.4}% 54
+\BOOKMARK [2][-]{subsection.4.5}{\376\377\000b\000r\000i\000d\000g\000e\000s}{section.4}% 55
+\BOOKMARK [2][-]{subsection.4.6}{\376\377\000c\000a\000m\000i\000n\000h\000o\000e\000u\000l\000e\000r\000i\000a\000n\000o}{section.4}% 56
+\BOOKMARK [2][-]{subsection.4.7}{\376\377\000c\000a\000m\000i\000n\000h\000o\000e\000u\000l\000e\000r\000i\000a\000n\000o\0002}{section.4}% 57
+\BOOKMARK [2][-]{subsection.4.8}{\376\377\000c\000e\000n\000t\000r\000o\000i\000d\000\040\000d\000e\000c\000o\000m\000p\000o\000s\000i\000t\000i\000o\000n}{section.4}% 58
+\BOOKMARK [2][-]{subsection.4.9}{\376\377\000c\000e\000n\000t\000r\000o\000i\000d\000\040\000d\000e\000c\000o\000m\000p\000o\000s\000i\000t\000i\000o\000n\0002}{section.4}% 59
+\BOOKMARK [2][-]{subsection.4.10}{\376\377\000c\000y\000c\000l\000e\000\040\000d\000e\000t\000e\000c\000t\000i\000o\000n}{section.4}% 60
+\BOOKMARK [2][-]{subsection.4.11}{\376\377\000D\000F\000S}{section.4}% 61
+\BOOKMARK [2][-]{subsection.4.12}{\376\377\000D\000i\000j\000k\000s\000t\000r\000a}{section.4}% 62
+\BOOKMARK [2][-]{subsection.4.13}{\376\377\000d\000i\000n\000i\000c}{section.4}% 63
+\BOOKMARK [2][-]{subsection.4.14}{\376\377\000d\000o\000m\000i\000n\000a\000t\000o\000r\000\040\000t\000r\000e\000e}{section.4}% 64
+\BOOKMARK [2][-]{subsection.4.15}{\376\377\000d\000s\000u}{section.4}% 65
+\BOOKMARK [2][-]{subsection.4.16}{\376\377\000d\000s\000u\000\040\000r\000o\000l\000l\000b\000a\000c\000k}{section.4}% 66
+\BOOKMARK [2][-]{subsection.4.17}{\376\377\000e\000r\000d\000o\000s\000\040\000g\000a\000l\000l\000a\000i}{section.4}% 67
+\BOOKMARK [2][-]{subsection.4.18}{\376\377\000e\000u\000l\000e\000r\000t\000o\000u\000r}{section.4}% 68
+\BOOKMARK [2][-]{subsection.4.19}{\376\377\000f\000l\000o\000w\000\040\000w\000i\000t\000h\000\040\000m\000i\000n\000i\000m\000u\000m\000\040\000c\000a\000p\000a\000c\000i\000t\000i\000e\000s}{section.4}% 69
+\BOOKMARK [2][-]{subsection.4.20}{\376\377\000F\000l\000o\000y\000d\000\040\000W\000a\000r\000s\000h\000a\000l\000l}{section.4}% 70
+\BOOKMARK [2][-]{subsection.4.21}{\376\377\000F\000o\000r\000d\000\040\000F\000u\000l\000k\000e\000r\000s\000o\000n}{section.4}% 71
+\BOOKMARK [2][-]{subsection.4.22}{\376\377\000G\000r\000a\000f\000o\000\040\000B\000i\000p\000a\000r\000t\000i\000d\000o}{section.4}% 72
+\BOOKMARK [2][-]{subsection.4.23}{\376\377\000h\000a\000l\000l\000\040\000t\000h\000e\000o\000r\000e\000m}{section.4}% 73
+\BOOKMARK [2][-]{subsection.4.24}{\376\377\000h\000l\000d}{section.4}% 74
+\BOOKMARK [2][-]{subsection.4.25}{\376\377\000h\000l\000d\000\040\000e\000d\000g\000e}{section.4}% 75
+\BOOKMARK [2][-]{subsection.4.26}{\376\377\000h\000o\000p\000c\000r\000o\000f\000t\000\040\000k\000a\000r\000p}{section.4}% 76
+\BOOKMARK [2][-]{subsection.4.27}{\376\377\000h\000u\000n\000g\000a\000r\000i\000a\000n}{section.4}% 77
+\BOOKMARK [2][-]{subsection.4.28}{\376\377\000K\000r\000u\000s\000k\000a\000l}{section.4}% 78
+\BOOKMARK [2][-]{subsection.4.29}{\376\377\000k\000u\000h\000n}{section.4}% 79
+\BOOKMARK [2][-]{subsection.4.30}{\376\377\000L\000C\000A}{section.4}% 80
+\BOOKMARK [2][-]{subsection.4.31}{\376\377\000l\000i\000n\000k\000\040\000c\000u\000t\000\040\000t\000r\000e\000e\000\040\000e\000d\000g\000e}{section.4}% 81
+\BOOKMARK [2][-]{subsection.4.32}{\376\377\000l\000i\000n\000k\000\040\000c\000u\000t\000\040\000t\000r\000e\000e\000\040\000v\000e\000r\000t\000e\000x}{section.4}% 82
+\BOOKMARK [2][-]{subsection.4.33}{\376\377\000M\000a\000t\000r\000i\000x\000D\000i\000j\000k\000s\000t\000r\000a}{section.4}% 83
+\BOOKMARK [2][-]{subsection.4.34}{\376\377\000m\000a\000x\000\040\000m\000a\000t\000c\000h\000i\000n\000g\000\040\000w\000i\000t\000h\000o\000u\000t\000\040\000o\000n\000e\000\040\000v\000e\000r\000t\000e\000x}{section.4}% 84
+\BOOKMARK [2][-]{subsection.4.35}{\376\377\000m\000i\000n\000c\000o\000s\000t\000f\000l\000o\000w}{section.4}% 85
+\BOOKMARK [2][-]{subsection.4.36}{\376\377\000m\000o\000\040\000d\000s\000u}{section.4}% 86
+\BOOKMARK [2][-]{subsection.4.37}{\376\377\000m\000o\000\040\000t\000r\000e\000e\000s}{section.4}% 87
+\BOOKMARK [2][-]{subsection.4.38}{\376\377\000m\000o\000\040\000t\000r\000e\000e\000s\000\040\000e\000d\000g\000e\000s}{section.4}% 88
+\BOOKMARK [2][-]{subsection.4.39}{\376\377\000P\000r\000i\000m}{section.4}% 89
+\BOOKMARK [2][-]{subsection.4.40}{\376\377\000p\000u\000s\000h\000\040\000r\000e\000l\000a\000b\000e\000l}{section.4}% 90
+\BOOKMARK [2][-]{subsection.4.41}{\376\377\000r\000e\000r\000o\000o\000t}{section.4}% 91
+\BOOKMARK [2][-]{subsection.4.42}{\376\377\000r\000m\000q\000\040\000t\000r\000e\000e}{section.4}% 92
+\BOOKMARK [2][-]{subsection.4.43}{\376\377\000s\000a\000c\000k}{section.4}% 93
+\BOOKMARK [2][-]{subsection.4.44}{\376\377\000s\000c\000c}{section.4}% 94
+\BOOKMARK [2][-]{subsection.4.45}{\376\377\000s\000e\000g\000t\000r\000e\000e\000\040\000g\000r\000a\000p\000h}{section.4}% 95
+\BOOKMARK [2][-]{subsection.4.46}{\376\377\000s\000t\000a\000b\000l\000e\000\040\000m\000a\000t\000c\000h\000i\000n\000g}{section.4}% 96
+\BOOKMARK [2][-]{subsection.4.47}{\376\377\000s\000t\000r\000o\000n\000g\000\040\000o\000r\000i\000e\000n\000t\000a\000t\000i\000o\000n}{section.4}% 97
+\BOOKMARK [2][-]{subsection.4.48}{\376\377\000T\000o\000p\000o\000l\000o\000g\000i\000c\000a\000l\000\040\000S\000o\000r\000t}{section.4}% 98
+\BOOKMARK [2][-]{subsection.4.49}{\376\377\000T\000r\000e\000e\000D\000i\000a\000m\000e\000t\000e\000r}{section.4}% 99
+\BOOKMARK [2][-]{subsection.4.50}{\376\377\000t\000r\000e\000e\000\040\000i\000s\000o\000m\000o\000r\000f\000i\000s\000m}{section.4}% 100
+\BOOKMARK [2][-]{subsection.4.51}{\376\377\000t\000w\000o\000\040\000s\000a\000t}{section.4}% 101
+\BOOKMARK [2][-]{subsection.4.52}{\376\377\000v\000i\000r\000t\000u\000a\000l\000\040\000t\000r\000e\000e}{section.4}% 102
+\BOOKMARK [1][-]{section.5}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d}{}% 103
+\BOOKMARK [1][-]{section.6}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d\000/\000c\000o\000m\000b\000i\000n\000a\000t\000o\000r\000i\000a\000l}{}% 104
+\BOOKMARK [2][-]{subsection.6.1}{\376\377\000I\000n\000t\000P\000e\000r\000m}{section.6}% 105
+\BOOKMARK [2][-]{subsection.6.2}{\376\377\000m\000u\000l\000t\000i\000n\000o\000m\000i\000a\000l}{section.6}% 106
+\BOOKMARK [1][-]{section.7}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d\000/\000d\000a\000t\000a\000-\000s\000t\000r\000u\000c\000t\000u\000r\000e\000s}{}% 107
+\BOOKMARK [2][-]{subsection.7.1}{\376\377\000F\000e\000n\000w\000i\000c\000k\000T\000r\000e\000e}{section.7}% 108
+\BOOKMARK [2][-]{subsection.7.2}{\376\377\000F\000e\000n\000w\000i\000c\000k\000T\000r\000e\000e\0002\000d}{section.7}% 109
+\BOOKMARK [2][-]{subsection.7.3}{\376\377\000H\000a\000s\000h\000M\000a\000p}{section.7}% 110
+\BOOKMARK [2][-]{subsection.7.4}{\376\377\000L\000a\000z\000y\000S\000e\000g\000m\000e\000n\000t\000T\000r\000e\000e}{section.7}% 111
+\BOOKMARK [2][-]{subsection.7.5}{\376\377\000L\000i\000n\000e\000C\000o\000n\000t\000a\000i\000n\000e\000r}{section.7}% 112
+\BOOKMARK [2][-]{subsection.7.6}{\376\377\000M\000a\000t\000r\000i\000x}{section.7}% 113
+\BOOKMARK [2][-]{subsection.7.7}{\376\377\000M\000o\000Q\000u\000e\000r\000i\000e\000s}{section.7}% 114
+\BOOKMARK [2][-]{subsection.7.8}{\376\377\000O\000r\000d\000e\000r\000S\000t\000a\000t\000i\000s\000t\000i\000c\000T\000r\000e\000e}{section.7}% 115
+\BOOKMARK [2][-]{subsection.7.9}{\376\377\000R\000M\000Q}{section.7}% 116
+\BOOKMARK [2][-]{subsection.7.10}{\376\377\000S\000e\000g\000m\000e\000n\000t\000T\000r\000e\000e}{section.7}% 117
+\BOOKMARK [2][-]{subsection.7.11}{\376\377\000S\000u\000b\000M\000a\000t\000r\000i\000x}{section.7}% 118
+\BOOKMARK [2][-]{subsection.7.12}{\376\377\000T\000r\000e\000a\000p}{section.7}% 119
+\BOOKMARK [2][-]{subsection.7.13}{\376\377\000U\000n\000i\000o\000n\000F\000i\000n\000d}{section.7}% 120
+\BOOKMARK [2][-]{subsection.7.14}{\376\377\000U\000n\000i\000o\000n\000F\000i\000n\000d\000R\000o\000l\000l\000b\000a\000c\000k}{section.7}% 121
+\BOOKMARK [1][-]{section.8}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d\000/\000g\000e\000o\000m\000e\000t\000r\000y}{}% 122
+\BOOKMARK [2][-]{subsection.8.1}{\376\377\0003\000d\000H\000u\000l\000l}{section.8}% 123
+\BOOKMARK [2][-]{subsection.8.2}{\376\377\000A\000n\000g\000l\000e}{section.8}% 124
+\BOOKMARK [2][-]{subsection.8.3}{\376\377\000C\000i\000r\000c\000l\000e\000I\000n\000t\000e\000r\000s\000e\000c\000t\000i\000o\000n}{section.8}% 125
+\BOOKMARK [2][-]{subsection.8.4}{\376\377\000C\000i\000r\000c\000l\000e\000L\000i\000n\000e}{section.8}% 126
+\BOOKMARK [2][-]{subsection.8.5}{\376\377\000C\000i\000r\000c\000l\000e\000P\000o\000l\000y\000g\000o\000n\000I\000n\000t\000e\000r\000s\000e\000c\000t\000i\000o\000n}{section.8}% 127
+\BOOKMARK [2][-]{subsection.8.6}{\376\377\000C\000i\000r\000c\000l\000e\000T\000a\000n\000g\000e\000n\000t\000s}{section.8}% 128
+\BOOKMARK [2][-]{subsection.8.7}{\376\377\000c\000i\000r\000c\000u\000m\000c\000i\000r\000c\000l\000e}{section.8}% 129
+\BOOKMARK [2][-]{subsection.8.8}{\376\377\000C\000l\000o\000s\000e\000s\000t\000P\000a\000i\000r}{section.8}% 130
+\BOOKMARK [2][-]{subsection.8.9}{\376\377\000C\000o\000n\000v\000e\000x\000H\000u\000l\000l}{section.8}% 131
+\BOOKMARK [2][-]{subsection.8.10}{\376\377\000D\000e\000l\000a\000u\000n\000a\000y\000T\000r\000i\000a\000n\000g\000u\000l\000a\000t\000i\000o\000n}{section.8}% 132
+\BOOKMARK [2][-]{subsection.8.11}{\376\377\000F\000a\000s\000t\000D\000e\000l\000a\000u\000n\000a\000y}{section.8}% 133
+\BOOKMARK [2][-]{subsection.8.12}{\376\377\000H\000u\000l\000l\000D\000i\000a\000m\000e\000t\000e\000r}{section.8}% 134
+\BOOKMARK [2][-]{subsection.8.13}{\376\377\000I\000n\000s\000i\000d\000e\000P\000o\000l\000y\000g\000o\000n}{section.8}% 135
+\BOOKMARK [2][-]{subsection.8.14}{\376\377\000k\000d\000T\000r\000e\000e}{section.8}% 136
+\BOOKMARK [2][-]{subsection.8.15}{\376\377\000l\000i\000n\000e\000a\000r\000T\000r\000a\000n\000s\000f\000o\000r\000m\000a\000t\000i\000o\000n}{section.8}% 137
+\BOOKMARK [2][-]{subsection.8.16}{\376\377\000l\000i\000n\000e\000D\000i\000s\000t\000a\000n\000c\000e}{section.8}% 138
+\BOOKMARK [2][-]{subsection.8.17}{\376\377\000L\000i\000n\000e\000H\000u\000l\000l\000I\000n\000t\000e\000r\000s\000e\000c\000t\000i\000o\000n}{section.8}% 139
+\BOOKMARK [2][-]{subsection.8.18}{\376\377\000l\000i\000n\000e\000I\000n\000t\000e\000r\000s\000e\000c\000t\000i\000o\000n}{section.8}% 140
+\BOOKMARK [2][-]{subsection.8.19}{\376\377\000L\000i\000n\000e\000P\000r\000o\000j\000e\000c\000t\000i\000o\000n\000R\000e\000f\000l\000e\000c\000t\000i\000o\000n}{section.8}% 141
+\BOOKMARK [2][-]{subsection.8.20}{\376\377\000M\000a\000n\000h\000a\000t\000t\000a\000n\000M\000S\000T}{section.8}% 142
+\BOOKMARK [2][-]{subsection.8.21}{\376\377\000M\000i\000n\000i\000m\000u\000m\000E\000n\000c\000l\000o\000s\000i\000n\000g\000C\000i\000r\000c\000l\000e}{section.8}% 143
+\BOOKMARK [2][-]{subsection.8.22}{\376\377\000O\000n\000S\000e\000g\000m\000e\000n\000t}{section.8}% 144
+\BOOKMARK [2][-]{subsection.8.23}{\376\377\000P\000o\000i\000n\000t}{section.8}% 145
+\BOOKMARK [2][-]{subsection.8.24}{\376\377\000P\000o\000i\000n\000t\0003\000D}{section.8}% 146
+\BOOKMARK [2][-]{subsection.8.25}{\376\377\000P\000o\000i\000n\000t\000I\000n\000s\000i\000d\000e\000H\000u\000l\000l}{section.8}% 147
+\BOOKMARK [2][-]{subsection.8.26}{\376\377\000P\000o\000l\000y\000g\000o\000n\000A\000r\000e\000a}{section.8}% 148
+\BOOKMARK [2][-]{subsection.8.27}{\376\377\000P\000o\000l\000y\000g\000o\000n\000C\000e\000n\000t\000e\000r}{section.8}% 149
+\BOOKMARK [2][-]{subsection.8.28}{\376\377\000P\000o\000l\000y\000g\000o\000n\000C\000u\000t}{section.8}% 150
+\BOOKMARK [2][-]{subsection.8.29}{\376\377\000P\000o\000l\000y\000g\000o\000n\000U\000n\000i\000o\000n}{section.8}% 151
+\BOOKMARK [2][-]{subsection.8.30}{\376\377\000P\000o\000l\000y\000h\000e\000d\000r\000o\000n\000V\000o\000l\000u\000m\000e}{section.8}% 152
+\BOOKMARK [2][-]{subsection.8.31}{\376\377\000S\000e\000g\000m\000e\000n\000t\000D\000i\000s\000t\000a\000n\000c\000e}{section.8}% 153
+\BOOKMARK [2][-]{subsection.8.32}{\376\377\000S\000e\000g\000m\000e\000n\000t\000I\000n\000t\000e\000r\000s\000e\000c\000t\000i\000o\000n}{section.8}% 154
+\BOOKMARK [2][-]{subsection.8.33}{\376\377\000s\000i\000d\000e\000O\000f}{section.8}% 155
+\BOOKMARK [2][-]{subsection.8.34}{\376\377\000s\000p\000h\000e\000r\000i\000c\000a\000l\000D\000i\000s\000t\000a\000n\000c\000e}{section.8}% 156
+\BOOKMARK [1][-]{section.9}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d\000/\000g\000r\000a\000p\000h}{}% 157
+\BOOKMARK [2][-]{subsection.9.1}{\376\377\0002\000s\000a\000t}{section.9}% 158
+\BOOKMARK [2][-]{subsection.9.2}{\376\377\000B\000e\000l\000l\000m\000a\000n\000F\000o\000r\000d}{section.9}% 159
+\BOOKMARK [2][-]{subsection.9.3}{\376\377\000B\000i\000c\000o\000n\000n\000e\000c\000t\000e\000d\000C\000o\000m\000p\000o\000n\000e\000n\000t\000s}{section.9}% 160
+\BOOKMARK [2][-]{subsection.9.4}{\376\377\000B\000i\000n\000a\000r\000y\000L\000i\000f\000t\000i\000n\000g}{section.9}% 161
+\BOOKMARK [2][-]{subsection.9.5}{\376\377\000C\000o\000m\000p\000r\000e\000s\000s\000T\000r\000e\000e}{section.9}% 162
+\BOOKMARK [2][-]{subsection.9.6}{\376\377\000D\000F\000S\000M\000a\000t\000c\000h\000i\000n\000g}{section.9}% 163
+\BOOKMARK [2][-]{subsection.9.7}{\376\377\000D\000i\000n\000i\000c}{section.9}% 164
+\BOOKMARK [2][-]{subsection.9.8}{\376\377\000D\000i\000r\000e\000c\000t\000e\000d\000M\000S\000T}{section.9}% 165
+\BOOKMARK [2][-]{subsection.9.9}{\376\377\000E\000d\000g\000e\000C\000o\000l\000o\000r\000i\000n\000g}{section.9}% 166
+\BOOKMARK [2][-]{subsection.9.10}{\376\377\000E\000d\000m\000o\000n\000d\000s\000K\000a\000r\000p}{section.9}% 167
+\BOOKMARK [2][-]{subsection.9.11}{\376\377\000E\000u\000l\000e\000r\000W\000a\000l\000k}{section.9}% 168
+\BOOKMARK [2][-]{subsection.9.12}{\376\377\000F\000l\000o\000y\000d\000W\000a\000r\000s\000h\000a\000l\000l}{section.9}% 169
+\BOOKMARK [2][-]{subsection.9.13}{\376\377\000G\000e\000n\000e\000r\000a\000l\000M\000a\000t\000c\000h\000i\000n\000g}{section.9}% 170
+\BOOKMARK [2][-]{subsection.9.14}{\376\377\000G\000l\000o\000b\000a\000l\000M\000i\000n\000C\000u\000t}{section.9}% 171
+\BOOKMARK [2][-]{subsection.9.15}{\376\377\000G\000o\000m\000o\000r\000y\000H\000u}{section.9}% 172
+\BOOKMARK [2][-]{subsection.9.16}{\376\377\000H\000L\000D}{section.9}% 173
+\BOOKMARK [2][-]{subsection.9.17}{\376\377\000h\000o\000p\000c\000r\000o\000f\000t\000K\000a\000r\000p}{section.9}% 174
+\BOOKMARK [2][-]{subsection.9.18}{\376\377\000L\000C\000A}{section.9}% 175
+\BOOKMARK [2][-]{subsection.9.19}{\376\377\000L\000i\000n\000k\000C\000u\000t\000T\000r\000e\000e}{section.9}% 176
+\BOOKMARK [2][-]{subsection.9.20}{\376\377\000M\000a\000x\000i\000m\000a\000l\000C\000l\000i\000q\000u\000e\000s}{section.9}% 177
+\BOOKMARK [2][-]{subsection.9.21}{\376\377\000M\000a\000x\000i\000m\000u\000m\000C\000l\000i\000q\000u\000e}{section.9}% 178
+\BOOKMARK [2][-]{subsection.9.22}{\376\377\000M\000a\000x\000i\000m\000u\000m\000I\000n\000d\000e\000p\000e\000n\000d\000e\000n\000t\000S\000e\000t}{section.9}% 179
+\BOOKMARK [2][-]{subsection.9.23}{\376\377\000M\000i\000n\000C\000o\000s\000t\000M\000a\000x\000F\000l\000o\000w}{section.9}% 180
+\BOOKMARK [2][-]{subsection.9.24}{\376\377\000M\000i\000n\000C\000u\000t}{section.9}% 181
+\BOOKMARK [2][-]{subsection.9.25}{\376\377\000M\000i\000n\000i\000m\000u\000m\000V\000e\000r\000t\000e\000x\000C\000o\000v\000e\000r}{section.9}% 182
+\BOOKMARK [2][-]{subsection.9.26}{\376\377\000P\000u\000s\000h\000R\000e\000l\000a\000b\000e\000l}{section.9}% 183
+\BOOKMARK [2][-]{subsection.9.27}{\376\377\000S\000C\000C}{section.9}% 184
+\BOOKMARK [2][-]{subsection.9.28}{\376\377\000T\000o\000p\000o\000S\000o\000r\000t}{section.9}% 185
+\BOOKMARK [2][-]{subsection.9.29}{\376\377\000W\000e\000i\000g\000h\000t\000e\000d\000M\000a\000t\000c\000h\000i\000n\000g}{section.9}% 186
+\BOOKMARK [1][-]{section.10}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d\000/\000n\000u\000m\000b\000e\000r\000-\000t\000h\000e\000o\000r\000y}{}% 187
+\BOOKMARK [2][-]{subsection.10.1}{\376\377\000C\000o\000n\000t\000i\000n\000u\000e\000d\000F\000r\000a\000c\000t\000i\000o\000n\000s}{section.10}% 188
+\BOOKMARK [2][-]{subsection.10.2}{\376\377\000C\000R\000T}{section.10}% 189
+\BOOKMARK [2][-]{subsection.10.3}{\376\377\000E\000r\000a\000t\000o\000s\000t\000h\000e\000n\000e\000s}{section.10}% 190
+\BOOKMARK [2][-]{subsection.10.4}{\376\377\000e\000u\000c\000l\000i\000d}{section.10}% 191
+\BOOKMARK [2][-]{subsection.10.5}{\376\377\000F\000a\000c\000t\000o\000r}{section.10}% 192
+\BOOKMARK [2][-]{subsection.10.6}{\376\377\000F\000a\000s\000t\000E\000r\000a\000t\000o\000s\000t\000h\000e\000n\000e\000s}{section.10}% 193
+\BOOKMARK [2][-]{subsection.10.7}{\376\377\000F\000r\000a\000c\000B\000i\000n\000a\000r\000y\000S\000e\000a\000r\000c\000h}{section.10}% 194
+\BOOKMARK [2][-]{subsection.10.8}{\376\377\000M\000i\000l\000l\000e\000r\000R\000a\000b\000i\000n}{section.10}% 195
+\BOOKMARK [2][-]{subsection.10.9}{\376\377\000M\000o\000d\000I\000n\000v\000e\000r\000s\000e}{section.10}% 196
+\BOOKMARK [2][-]{subsection.10.10}{\376\377\000M\000o\000d\000L\000o\000g}{section.10}% 197
+\BOOKMARK [2][-]{subsection.10.11}{\376\377\000M\000o\000d\000M\000u\000l\000L\000L}{section.10}% 198
+\BOOKMARK [2][-]{subsection.10.12}{\376\377\000M\000o\000d\000P\000o\000w}{section.10}% 199
+\BOOKMARK [2][-]{subsection.10.13}{\376\377\000M\000o\000d\000S\000q\000r\000t}{section.10}% 200
+\BOOKMARK [2][-]{subsection.10.14}{\376\377\000M\000o\000d\000S\000u\000m}{section.10}% 201
+\BOOKMARK [2][-]{subsection.10.15}{\376\377\000M\000o\000d\000u\000l\000a\000r\000A\000r\000i\000t\000h\000m\000e\000t\000i\000c}{section.10}% 202
+\BOOKMARK [2][-]{subsection.10.16}{\376\377\000p\000h\000i\000F\000u\000n\000c\000t\000i\000o\000n}{section.10}% 203
+\BOOKMARK [1][-]{section.11}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d\000/\000n\000u\000m\000e\000r\000i\000c\000a\000l}{}% 204
+\BOOKMARK [2][-]{subsection.11.1}{\376\377\000B\000e\000r\000l\000e\000k\000a\000m\000p\000M\000a\000s\000s\000e\000y}{section.11}% 205
+\BOOKMARK [2][-]{subsection.11.2}{\376\377\000D\000e\000t\000e\000r\000m\000i\000n\000a\000n\000t}{section.11}% 206
+\BOOKMARK [2][-]{subsection.11.3}{\376\377\000F\000a\000s\000t\000F\000o\000u\000r\000i\000e\000r\000T\000r\000a\000n\000s\000f\000o\000r\000m}{section.11}% 207
+\BOOKMARK [2][-]{subsection.11.4}{\376\377\000F\000a\000s\000t\000F\000o\000u\000r\000i\000e\000r\000T\000r\000a\000n\000s\000f\000o\000r\000m\000M\000o\000d}{section.11}% 208
+\BOOKMARK [2][-]{subsection.11.5}{\376\377\000F\000a\000s\000t\000S\000u\000b\000s\000e\000t\000T\000r\000a\000n\000s\000f\000o\000r\000m}{section.11}% 209
+\BOOKMARK [2][-]{subsection.11.6}{\376\377\000G\000o\000l\000d\000e\000n\000S\000e\000c\000t\000i\000o\000n\000S\000e\000a\000r\000c\000h}{section.11}% 210
+\BOOKMARK [2][-]{subsection.11.7}{\376\377\000H\000i\000l\000l\000C\000l\000i\000m\000b\000i\000n\000g}{section.11}% 211
+\BOOKMARK [2][-]{subsection.11.8}{\376\377\000I\000n\000t\000D\000e\000t\000e\000r\000m\000i\000n\000a\000n\000t}{section.11}% 212
+\BOOKMARK [2][-]{subsection.11.9}{\376\377\000I\000n\000t\000e\000g\000r\000a\000t\000e}{section.11}% 213
+\BOOKMARK [2][-]{subsection.11.10}{\376\377\000I\000n\000t\000e\000g\000r\000a\000t\000e\000A\000d\000a\000p\000t\000i\000v\000e}{section.11}% 214
+\BOOKMARK [2][-]{subsection.11.11}{\376\377\000L\000i\000n\000e\000a\000r\000R\000e\000c\000u\000r\000r\000e\000n\000c\000e}{section.11}% 215
+\BOOKMARK [2][-]{subsection.11.12}{\376\377\000M\000a\000t\000r\000i\000x\000I\000n\000v\000e\000r\000s\000e\000-\000m\000o\000d}{section.11}% 216
+\BOOKMARK [2][-]{subsection.11.13}{\376\377\000M\000a\000t\000r\000i\000x\000I\000n\000v\000e\000r\000s\000e}{section.11}% 217
+\BOOKMARK [2][-]{subsection.11.14}{\376\377\000N\000u\000m\000b\000e\000r\000T\000h\000e\000o\000r\000e\000t\000i\000c\000T\000r\000a\000n\000s\000f\000o\000r\000m}{section.11}% 218
+\BOOKMARK [2][-]{subsection.11.15}{\376\377\000P\000o\000l\000y\000I\000n\000t\000e\000r\000p\000o\000l\000a\000t\000e}{section.11}% 219
+\BOOKMARK [2][-]{subsection.11.16}{\376\377\000P\000o\000l\000y\000n\000o\000m\000i\000a\000l}{section.11}% 220
+\BOOKMARK [2][-]{subsection.11.17}{\376\377\000P\000o\000l\000y\000R\000o\000o\000t\000s}{section.11}% 221
+\BOOKMARK [2][-]{subsection.11.18}{\376\377\000S\000i\000m\000p\000l\000e\000x}{section.11}% 222
+\BOOKMARK [2][-]{subsection.11.19}{\376\377\000S\000o\000l\000v\000e\000L\000i\000n\000e\000a\000r}{section.11}% 223
+\BOOKMARK [2][-]{subsection.11.20}{\376\377\000S\000o\000l\000v\000e\000L\000i\000n\000e\000a\000r\0002}{section.11}% 224
+\BOOKMARK [2][-]{subsection.11.21}{\376\377\000S\000o\000l\000v\000e\000L\000i\000n\000e\000a\000r\000B\000i\000n\000a\000r\000y}{section.11}% 225
+\BOOKMARK [2][-]{subsection.11.22}{\376\377\000T\000r\000i\000d\000i\000a\000g\000o\000n\000a\000l}{section.11}% 226
+\BOOKMARK [1][-]{section.12}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d\000/\000s\000t\000r\000i\000n\000g\000s}{}% 227
+\BOOKMARK [2][-]{subsection.12.1}{\376\377\000A\000h\000o\000C\000o\000r\000a\000s\000i\000c\000k}{section.12}% 228
+\BOOKMARK [2][-]{subsection.12.2}{\376\377\000H\000a\000s\000h\000i\000n\000g\000-\000c\000o\000d\000e\000f\000o\000r\000c\000e\000s}{section.12}% 229
+\BOOKMARK [2][-]{subsection.12.3}{\376\377\000H\000a\000s\000h\000i\000n\000g}{section.12}% 230
+\BOOKMARK [2][-]{subsection.12.4}{\376\377\000K\000M\000P}{section.12}% 231
+\BOOKMARK [2][-]{subsection.12.5}{\376\377\000M\000a\000n\000a\000c\000h\000e\000r}{section.12}% 232
+\BOOKMARK [2][-]{subsection.12.6}{\376\377\000M\000i\000n\000R\000o\000t\000a\000t\000i\000o\000n}{section.12}% 233
+\BOOKMARK [2][-]{subsection.12.7}{\376\377\000S\000u\000f\000f\000i\000x\000A\000r\000r\000a\000y}{section.12}% 234
+\BOOKMARK [2][-]{subsection.12.8}{\376\377\000S\000u\000f\000f\000i\000x\000T\000r\000e\000e}{section.12}% 235
+\BOOKMARK [2][-]{subsection.12.9}{\376\377\000Z\000f\000u\000n\000c}{section.12}% 236
+\BOOKMARK [1][-]{section.13}{\376\377\000k\000a\000c\000t\000l\000\040\000f\000o\000r\000k\000e\000d\000/\000v\000a\000r\000i\000o\000u\000s}{}% 237
+\BOOKMARK [2][-]{subsection.13.1}{\376\377\000B\000u\000m\000p\000A\000l\000l\000o\000c\000a\000t\000o\000r}{section.13}% 238
+\BOOKMARK [2][-]{subsection.13.2}{\376\377\000B\000u\000m\000p\000A\000l\000l\000o\000c\000a\000t\000o\000r\000S\000T\000L}{section.13}% 239
+\BOOKMARK [2][-]{subsection.13.3}{\376\377\000C\000o\000n\000s\000t\000a\000n\000t\000I\000n\000t\000e\000r\000v\000a\000l\000s}{section.13}% 240
+\BOOKMARK [2][-]{subsection.13.4}{\376\377\000D\000i\000v\000i\000d\000e\000A\000n\000d\000C\000o\000n\000q\000u\000e\000r\000D\000P}{section.13}% 241
+\BOOKMARK [2][-]{subsection.13.5}{\376\377\000F\000a\000s\000t\000I\000n\000p\000u\000t}{section.13}% 242
+\BOOKMARK [2][-]{subsection.13.6}{\376\377\000F\000a\000s\000t\000K\000n\000a\000p\000s\000a\000c\000k}{section.13}% 243
+\BOOKMARK [2][-]{subsection.13.7}{\376\377\000F\000a\000s\000t\000M\000o\000d}{section.13}% 244
+\BOOKMARK [2][-]{subsection.13.8}{\376\377\000I\000n\000t\000e\000r\000v\000a\000l\000C\000o\000n\000t\000a\000i\000n\000e\000r}{section.13}% 245
+\BOOKMARK [2][-]{subsection.13.9}{\376\377\000I\000n\000t\000e\000r\000v\000a\000l\000C\000o\000v\000e\000r}{section.13}% 246
+\BOOKMARK [2][-]{subsection.13.10}{\376\377\000K\000n\000u\000t\000h\000D\000P}{section.13}% 247
+\BOOKMARK [2][-]{subsection.13.11}{\376\377\000L\000I\000S}{section.13}% 248
+\BOOKMARK [2][-]{subsection.13.12}{\376\377\000S\000I\000M\000D}{section.13}% 249
+\BOOKMARK [2][-]{subsection.13.13}{\376\377\000S\000m\000a\000l\000l\000P\000t\000r}{section.13}% 250
+\BOOKMARK [2][-]{subsection.13.14}{\376\377\000T\000e\000r\000n\000a\000r\000y\000S\000e\000a\000r\000c\000h}{section.13}% 251
+\BOOKMARK [2][-]{subsection.13.15}{\376\377\000U\000n\000r\000o\000l\000l\000i\000n\000g}{section.13}% 252
+\BOOKMARK [1][-]{section.14}{\376\377\000M\000a\000t\000h}{}% 253
+\BOOKMARK [2][-]{subsection.14.1}{\376\377\000b\000a\000b\000y\000\040\000s\000t\000e\000p\000\040\000g\000i\000g\000a\000n\000t\000\040\000s\000t\000e\000p}{section.14}% 254
+\BOOKMARK [2][-]{subsection.14.2}{\376\377\000b\000e\000r\000l\000e\000k\000a\000m\000p\000\040\000m\000a\000s\000s\000e\000y}{section.14}% 255
+\BOOKMARK [2][-]{subsection.14.3}{\376\377\000b\000i\000n\000o\000m\000i\000a\000l\000\040\000t\000h\000e\000o\000r\000e\000m}{section.14}% 256
+\BOOKMARK [2][-]{subsection.14.4}{\376\377\000c\000a\000t\000a\000l\000a\000n}{section.14}% 257
+\BOOKMARK [2][-]{subsection.14.5}{\376\377\000c\000r\000i\000v\000o}{section.14}% 258
+\BOOKMARK [2][-]{subsection.14.6}{\376\377\000c\000r\000t}{section.14}% 259
+\BOOKMARK [2][-]{subsection.14.7}{\376\377\000c\000r\000t\000\040\000t\000r\000i\000c\000k}{section.14}% 260
+\BOOKMARK [2][-]{subsection.14.8}{\376\377\000d\000i\000o\000p\000h\000a\000n\000t\000i\000n\000e}{section.14}% 261
+\BOOKMARK [2][-]{subsection.14.9}{\376\377\000d\000i\000v\000i\000s\000i\000o\000n\000\040\000t\000r\000i\000c\000k}{section.14}% 262
+\BOOKMARK [2][-]{subsection.14.10}{\376\377\000d\000i\000v\000i\000s\000o\000r\000s}{section.14}% 263
+\BOOKMARK [2][-]{subsection.14.11}{\376\377\000e\000x\000t\000e\000n\000d\000e\000d\000\040\000e\000u\000c\000l\000i\000d\000e\000a\000n}{section.14}% 264
+\BOOKMARK [2][-]{subsection.14.12}{\376\377\000f\000f\000t}{section.14}% 265
+\BOOKMARK [2][-]{subsection.14.13}{\376\377\000f\000r\000a\000c\000t\000i\000o\000n}{section.14}% 266
+\BOOKMARK [2][-]{subsection.14.14}{\376\377\000f\000w\000h\000t}{section.14}% 267
+\BOOKMARK [2][-]{subsection.14.15}{\376\377\000g\000a\000u\000s\000s\000i\000a\000n\000\040\000e\000l\000i\000m\000i\000n\000a\000t\000i\000o\000n}{section.14}% 268
+\BOOKMARK [2][-]{subsection.14.16}{\376\377\000g\000a\000u\000s\000s\000i\000a\000n\000\040\000e\000l\000i\000m\000i\000n\000a\000t\000i\000o\000n\0002}{section.14}% 269
+\BOOKMARK [2][-]{subsection.14.17}{\376\377\000l\000a\000g\000r\000a\000n\000g\000e}{section.14}% 270
+\BOOKMARK [2][-]{subsection.14.18}{\376\377\000l\000u\000c\000a\000s\000\040\000t\000h\000e\000o\000r\000e\000m}{section.14}% 271
+\BOOKMARK [2][-]{subsection.14.19}{\376\377\000m\000a\000r\000k\000o\000v}{section.14}% 272
+\BOOKMARK [2][-]{subsection.14.20}{\376\377\000m\000a\000t\000r\000i\000x\000\040\000e\000x\000p\000o\000n\000e\000n\000t\000i\000a\000t\000i\000o\000n}{section.14}% 273
+\BOOKMARK [2][-]{subsection.14.21}{\376\377\000m\000a\000t\000r\000i\000x\000\040\000e\000x\000p\000o\000n\000e\000n\000t\000i\000a\000t\000i\000o\000n\0002}{section.14}% 274
+\BOOKMARK [2][-]{subsection.14.22}{\376\377\000m\000a\000t\000r\000i\000x\000\040\000i\000n\000v\000e\000r\000s\000e\000\040\000a\000n\000d\000\040\000d\000e\000t\000e\000r\000m\000i\000n\000a\000n\000t}{section.14}% 275
+\BOOKMARK [2][-]{subsection.14.23}{\376\377\000m\000a\000x\000\040\000x\000o\000r\000\040\000s\000u\000b\000s\000e\000q\000u\000e\000n\000c\000e}{section.14}% 276
+\BOOKMARK [2][-]{subsection.14.24}{\376\377\000m\000o\000b\000i\000u\000s}{section.14}% 277
+\BOOKMARK [2][-]{subsection.14.25}{\376\377\000m\000o\000b\000i\000u\000s\0002}{section.14}% 278
+\BOOKMARK [2][-]{subsection.14.26}{\376\377\000m\000o\000d\000u\000l\000a\000r\000\040\000a\000r\000i\000t\000h\000m\000e\000t\000i\000c}{section.14}% 279
+\BOOKMARK [2][-]{subsection.14.27}{\376\377\000n\000t\000t}{section.14}% 280
+\BOOKMARK [2][-]{subsection.14.28}{\376\377\000o\000p\000e\000r\000a\000d\000o\000r\000e\000s\000\040\000b\000i\000n\000a\000r\000i\000o\000s}{section.14}% 281
+\BOOKMARK [2][-]{subsection.14.29}{\376\377\000p\000o\000l\000l\000a\000r\000d\000\040\000r\000h\000o}{section.14}% 282
+\BOOKMARK [2][-]{subsection.14.30}{\376\377\000p\000r\000i\000m\000e\000f\000a\000c\000t\000o\000r\000s}{section.14}% 283
+\BOOKMARK [2][-]{subsection.14.31}{\376\377\000p\000r\000i\000m\000e\000f\000a\000c\000t\000o\000r\000s\0002}{section.14}% 284
+\BOOKMARK [2][-]{subsection.14.32}{\376\377\000s\000e\000g\000m\000e\000n\000t\000e\000d\000s\000i\000e\000v\000e}{section.14}% 285
+\BOOKMARK [2][-]{subsection.14.33}{\376\377\000s\000i\000m\000p\000l\000e\000x}{section.14}% 286
+\BOOKMARK [2][-]{subsection.14.34}{\376\377\000s\000t\000a\000r\000s\000\040\000a\000n\000d\000\040\000b\000a\000r\000s}{section.14}% 287
+\BOOKMARK [2][-]{subsection.14.35}{\376\377\000t\000o\000t\000i\000e\000n\000t}{section.14}% 288
+\BOOKMARK [2][-]{subsection.14.36}{\376\377\000x\000o\000r\000\040\000t\000r\000i\000e}{section.14}% 289
+\BOOKMARK [1][-]{section.15}{\376\377\000M\000i\000s\000c\000e\000l\000l\000a\000n\000e\000o\000u\000s}{}% 290
+\BOOKMARK [2][-]{subsection.15.1}{\376\377\000b\000i\000t\000m\000a\000s\000k\000s}{section.15}% 291
+\BOOKMARK [2][-]{subsection.15.2}{\376\377\000c\000o\000o\000r\000d\000i\000n\000a\000t\000e\000\040\000c\000o\000m\000p\000r\000e\000s\000s\000i\000o\000n}{section.15}% 292
+\BOOKMARK [2][-]{subsection.15.3}{\376\377\000i\000n\000v\000e\000r\000s\000i\000o\000n\000\040\000c\000o\000u\000n\000t}{section.15}% 293
+\BOOKMARK [2][-]{subsection.15.4}{\376\377\000m\000a\000x\000\040\000p\000l\000u\000s\000\040\000c\000o\000n\000v\000o\000l\000u\000t\000i\000o\000n}{section.15}% 294
+\BOOKMARK [2][-]{subsection.15.5}{\376\377\000m\000e\000e\000t\000i\000n\000t\000h\000e\000m\000i\000d\000d\000l\000e}{section.15}% 295
+\BOOKMARK [2][-]{subsection.15.6}{\376\377\000p\000r\000e\000f\000i\000x\000\040\000s\000u\000m\000\040\0002\000d}{section.15}% 296
+\BOOKMARK [2][-]{subsection.15.7}{\376\377\000r\000e\000c\000t\000a\000n\000g\000l\000e\000\040\000u\000n\000i\000o\000n}{section.15}% 297
+\BOOKMARK [2][-]{subsection.15.8}{\376\377\000s\000e\000g\000m\000e\000n\000t\000\040\000c\000o\000v\000e\000r\000i\000n\000g}{section.15}% 298
+\BOOKMARK [2][-]{subsection.15.9}{\376\377\000s\000p\000r\000a\000g\000u\000e\000\040\000g\000r\000u\000n\000d\000y}{section.15}% 299
+\BOOKMARK [2][-]{subsection.15.10}{\376\377\000s\000t\000a\000c\000k\000\040\000t\000r\000i\000c\000k}{section.15}% 300
+\BOOKMARK [2][-]{subsection.15.11}{\376\377\000s\000u\000m\000\040\000h\000a\000s\000h}{section.15}% 301
+\BOOKMARK [2][-]{subsection.15.12}{\376\377\000t\000o\000w\000e\000r\000\040\000o\000f\000\040\000h\000a\000n\000o\000i}{section.15}% 302
+\BOOKMARK [2][-]{subsection.15.13}{\376\377\000t\000w\000o\000\040\000p\000o\000i\000n\000t\000e\000r\000s}{section.15}% 303
+\BOOKMARK [1][-]{section.16}{\376\377\000S\000T\000L}{}% 304
+\BOOKMARK [2][-]{subsection.16.1}{\376\377\000o\000r\000d\000e\000r\000e\000d\000\040\000s\000e\000t}{section.16}% 305
+\BOOKMARK [2][-]{subsection.16.2}{\376\377\000S\000T\000L}{section.16}% 306
+\BOOKMARK [1][-]{section.17}{\376\377\000S\000t\000r\000i\000n\000g\000s}{}% 307
+\BOOKMARK [2][-]{subsection.17.1}{\376\377\000a\000h\000o\000\040\000c\000o\000r\000a\000s\000i\000c\000k}{section.17}% 308
+\BOOKMARK [2][-]{subsection.17.2}{\376\377\000d\000e\000\040\000b\000r\000u\000i\000j\000i\000n}{section.17}% 309
+\BOOKMARK [2][-]{subsection.17.3}{\376\377\000k\000m\000p}{section.17}% 310
+\BOOKMARK [2][-]{subsection.17.4}{\376\377\000m\000a\000n\000a\000c\000h\000e\000r}{section.17}% 311
+\BOOKMARK [2][-]{subsection.17.5}{\376\377\000m\000i\000n\000\040\000s\000u\000f\000f\000i\000x}{section.17}% 312
+\BOOKMARK [2][-]{subsection.17.6}{\376\377\000r\000a\000b\000i\000n\000-\000k\000a\000r\000p}{section.17}% 313
+\BOOKMARK [2][-]{subsection.17.7}{\376\377\000s\000t\000r\000i\000n\000g\000h\000a\000s\000h\000i\000n\000g}{section.17}% 314
+\BOOKMARK [2][-]{subsection.17.8}{\376\377\000s\000t\000r\000i\000n\000g\000h\000a\000s\000h\000i\000n\000g\0002}{section.17}% 315
+\BOOKMARK [2][-]{subsection.17.9}{\376\377\000s\000u\000b\000s\000t\000r\000i\000n\000g\000\040\000f\000f\000t}{section.17}% 316
+\BOOKMARK [2][-]{subsection.17.10}{\376\377\000s\000u\000f\000f\000i\000x\000\040\000a\000r\000r\000a\000y}{section.17}% 317
+\BOOKMARK [2][-]{subsection.17.11}{\376\377\000s\000u\000f\000f\000i\000x\000\040\000a\000u\000t\000o\000m\000a\000t\000o\000n}{section.17}% 318
+\BOOKMARK [2][-]{subsection.17.12}{\376\377\000z\000-\000f\000u\000n\000c\000t\000i\000o\000n}{section.17}% 319
+\BOOKMARK [1][-]{section.18}{\376\377\000S\000t\000r\000u\000c\000t\000u\000r\000e\000s}{}% 320
+\BOOKMARK [2][-]{subsection.18.1}{\376\377\000b\000i\000n\000a\000r\000y\000\040\000l\000i\000f\000t\000i\000n\000g}{section.18}% 321
+\BOOKMARK [2][-]{subsection.18.2}{\376\377\000b\000i\000t\0002\000d}{section.18}% 322
+\BOOKMARK [2][-]{subsection.18.3}{\376\377\000c\000o\000l\000o\000r\000\040\000u\000p\000d\000a\000t\000e}{section.18}% 323
+\BOOKMARK [2][-]{subsection.18.4}{\376\377\000f\000e\000n\000w\000i\000c\000k}{section.18}% 324
+\BOOKMARK [2][-]{subsection.18.5}{\376\377\000f\000e\000n\000w\000i\000c\000k\0002}{section.18}% 325
+\BOOKMARK [2][-]{subsection.18.6}{\376\377\000f\000e\000n\000w\000i\000c\000k\0002\000D}{section.18}% 326
+\BOOKMARK [2][-]{subsection.18.7}{\376\377\000f\000e\000n\000w\000i\000c\000k\0003}{section.18}% 327
+\BOOKMARK [2][-]{subsection.18.8}{\376\377\000i\000m\000p\000l\000i\000c\000i\000t\000\040\000s\000e\000g}{section.18}% 328
+\BOOKMARK [2][-]{subsection.18.9}{\376\377\000l\000o\000w\000e\000r\000\040\000b\000o\000u\000n\000d\000\040\000s\000e\000g\000t\000r\000e\000e}{section.18}% 329
+\BOOKMARK [2][-]{subsection.18.10}{\376\377\000m\000e\000r\000g\000e\000s\000o\000r\000t\000t\000r\000e\000e}{section.18}% 330
+\BOOKMARK [2][-]{subsection.18.11}{\376\377\000m\000i\000n\000\040\000q\000u\000e\000u\000e}{section.18}% 331
+\BOOKMARK [2][-]{subsection.18.12}{\376\377\000m\000o}{section.18}% 332
+\BOOKMARK [2][-]{subsection.18.13}{\376\377\000m\000o\000\040\000u\000p\000d\000a\000t\000e}{section.18}% 333
+\BOOKMARK [2][-]{subsection.18.14}{\376\377\000p\000e\000r\000s\000i\000s\000t\000e\000n\000t\000\040\000s\000e\000g}{section.18}% 334
+\BOOKMARK [2][-]{subsection.18.15}{\376\377\000p\000e\000r\000s\000i\000s\000t\000e\000n\000t\000\040\000s\000e\000g\0002}{section.18}% 335
+\BOOKMARK [2][-]{subsection.18.16}{\376\377\000r\000m\000q}{section.18}% 336
+\BOOKMARK [2][-]{subsection.18.17}{\376\377\000S\000e\000g\000T\000r\000e\000e}{section.18}% 337
+\BOOKMARK [2][-]{subsection.18.18}{\376\377\000S\000e\000g\000t\000r\000e\000e\0002}{section.18}% 338
+\BOOKMARK [2][-]{subsection.18.19}{\376\377\000s\000e\000g\000t\000r\000e\000e\0002\000d}{section.18}% 339
+\BOOKMARK [2][-]{subsection.18.20}{\376\377\000s\000e\000g\000t\000r\000e\000e\000\040\000l\000a\000z\000y}{section.18}% 340
+\BOOKMARK [2][-]{subsection.18.21}{\376\377\000s\000e\000g\000t\000r\000e\000e\000\040\000m\000a\000x\000\040\000s\000e\000g\000\040\000s\000u\000m}{section.18}% 341
+\BOOKMARK [2][-]{subsection.18.22}{\376\377\000S\000e\000g\000T\000r\000e\000e\000\040\000p\000a}{section.18}% 342
+\BOOKMARK [2][-]{subsection.18.23}{\376\377\000s\000p\000a\000r\000s\000e\000t\000a\000b\000l\000e}{section.18}% 343
+\BOOKMARK [2][-]{subsection.18.24}{\376\377\000t\000r\000e\000a\000p}{section.18}% 344
+\BOOKMARK [2][-]{subsection.18.25}{\376\377\000t\000r\000e\000a\000p\0002}{section.18}% 345
+\BOOKMARK [1][-]{section.19}{\376\377\000T\000h\000e\000o\000r\000e\000m\000s\000\040\000a\000n\000d\000\040\000F\000o\000r\000m\000u\000l\000a\000s}{}% 346
+\BOOKMARK [2][-]{subsection.19.1}{\376\377\000b\000i\000n\000o\000m\000i\000a\000l\000\040\000t\000h\000e\000o\000r\000e\000m}{section.19}% 347
+\BOOKMARK [2][-]{subsection.19.2}{\376\377\000c\000h\000i\000c\000k\000e\000n\000\040\000m\000c\000n\000u\000g\000g\000e\000t}{section.19}% 348
+\BOOKMARK [2][-]{subsection.19.3}{\376\377\000g\000r\000a\000p\000h\000\040\000n\000o\000t\000e\000s}{section.19}% 349
+\BOOKMARK [2][-]{subsection.19.4}{\376\377\000m\000a\000n\000h\000a\000t\000t\000a\000n\000\040\000a\000n\000d\000\040\000c\000h\000e\000b\000y\000s\000h\000e\000v}{section.19}% 350
+\BOOKMARK [1][-]{section.20}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d}{}% 351
+\BOOKMARK [1][-]{section.21}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000D\000P}{}% 352
+\BOOKMARK [2][-]{subsection.21.1}{\376\377\000d\000c\000D\000p}{section.21}% 353
+\BOOKMARK [2][-]{subsection.21.2}{\376\377\000l\000c\000s}{section.21}% 354
+\BOOKMARK [2][-]{subsection.21.3}{\376\377\000m\000o\000c\000h\000i\000l\000a}{section.21}% 355
+\BOOKMARK [2][-]{subsection.21.4}{\376\377\000s\000o\000s\000D\000P}{section.21}% 356
+\BOOKMARK [2][-]{subsection.21.5}{\376\377\000s\000u\000b\000s\000e\000t\000S\000u\000m}{section.21}% 357
+\BOOKMARK [1][-]{section.22}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000E\000s\000t\000r\000u\000t\000u\000r\000a\000s}{}% 358
+\BOOKMARK [2][-]{subsection.22.1}{\376\377\000b\000i\000t}{section.22}% 359
+\BOOKMARK [2][-]{subsection.22.2}{\376\377\000b\000i\000t\0002\000d}{section.22}% 360
+\BOOKMARK [2][-]{subsection.22.3}{\376\377\000b\000i\000t\000R\000a\000n\000g\000e}{section.22}% 361
+\BOOKMARK [2][-]{subsection.22.4}{\376\377\000b\000i\000t\000S\000o\000r\000t\000T\000r\000e\000e}{section.22}% 362
+\BOOKMARK [2][-]{subsection.22.5}{\376\377\000c\000h\000t}{section.22}% 363
+\BOOKMARK [2][-]{subsection.22.6}{\376\377\000c\000h\000t\000D\000i\000n\000a\000m\000i\000c\000o}{section.22}% 364
+\BOOKMARK [2][-]{subsection.22.7}{\376\377\000d\000s\000u}{section.22}% 365
+\BOOKMARK [2][-]{subsection.22.8}{\376\377\000l\000i\000c\000h\000a\000o}{section.22}% 366
+\BOOKMARK [2][-]{subsection.22.9}{\376\377\000l\000i\000c\000h\000a\000o\000L\000a\000z\000y}{section.22}% 367
+\BOOKMARK [2][-]{subsection.22.10}{\376\377\000m\000e\000r\000g\000e\000S\000o\000r\000t\000T\000r\000e\000e}{section.22}% 368
+\BOOKMARK [2][-]{subsection.22.11}{\376\377\000m\000i\000n\000q\000u\000e\000u\000e\000D\000e\000q\000u\000e}{section.22}% 369
+\BOOKMARK [2][-]{subsection.22.12}{\376\377\000m\000i\000n\000q\000u\000e\000u\000e\000S\000t\000a\000c\000k}{section.22}% 370
+\BOOKMARK [2][-]{subsection.22.13}{\376\377\000o\000r\000d\000e\000r\000S\000t\000a\000t\000i\000s\000t\000i\000c\000S\000e\000t}{section.22}% 371
+\BOOKMARK [2][-]{subsection.22.14}{\376\377\000p\000r\000i\000o\000r\000i\000t\000y\000Q\000u\000e\000u\000e\000D\000s}{section.22}% 372
+\BOOKMARK [2][-]{subsection.22.15}{\376\377\000r\000a\000n\000g\000e\000C\000o\000l\000o\000r}{section.22}% 373
+\BOOKMARK [2][-]{subsection.22.16}{\376\377\000r\000m\000q}{section.22}% 374
+\BOOKMARK [2][-]{subsection.22.17}{\376\377\000s\000l\000o\000p\000e\000T\000r\000i\000c\000k}{section.22}% 375
+\BOOKMARK [2][-]{subsection.22.18}{\376\377\000s\000p\000a\000r\000s\000e\000T\000a\000b\000l\000e}{section.22}% 376
+\BOOKMARK [2][-]{subsection.22.19}{\376\377\000s\000p\000a\000r\000s\000e\000T\000a\000b\000l\000e\000D\000i\000s\000j\000u\000n\000t\000a}{section.22}% 377
+\BOOKMARK [2][-]{subsection.22.20}{\376\377\000s\000p\000l\000a\000y\000t\000r\000e\000e}{section.22}% 378
+\BOOKMARK [2][-]{subsection.22.21}{\376\377\000s\000p\000l\000a\000y\000t\000r\000e\000e\000I\000m\000p\000l\000i\000c\000i\000t\000a}{section.22}% 379
+\BOOKMARK [2][-]{subsection.22.22}{\376\377\000s\000p\000l\000i\000t\000M\000e\000r\000g\000e\000S\000e\000t}{section.22}% 380
+\BOOKMARK [2][-]{subsection.22.23}{\376\377\000s\000p\000l\000i\000t\000M\000e\000r\000g\000e\000S\000e\000t\000L\000a\000z\000y}{section.22}% 381
+\BOOKMARK [2][-]{subsection.22.24}{\376\377\000s\000q\000r\000t\000T\000r\000e\000e}{section.22}% 382
+\BOOKMARK [2][-]{subsection.22.25}{\376\377\000t\000r\000e\000a\000p}{section.22}% 383
+\BOOKMARK [2][-]{subsection.22.26}{\376\377\000t\000r\000e\000a\000p\000I\000m\000p\000l\000i\000c\000i\000t\000a}{section.22}% 384
+\BOOKMARK [2][-]{subsection.22.27}{\376\377\000t\000r\000e\000a\000p\000P\000e\000r\000s\000i\000s\000t\000e\000n\000t}{section.22}% 385
+\BOOKMARK [2][-]{subsection.22.28}{\376\377\000w\000a\000v\000e\000l\000e\000t\000T\000r\000e\000e}{section.22}% 386
+\BOOKMARK [1][-]{section.23}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000E\000s\000t\000r\000u\000t\000u\000r\000a\000s\000/\000S\000e\000g\000t\000r\000e\000e}{}% 387
+\BOOKMARK [2][-]{subsection.23.1}{\376\377\000s\000e\000g\000T\000r\000e\000a\000p}{section.23}% 388
+\BOOKMARK [2][-]{subsection.23.2}{\376\377\000s\000e\000g\000T\000r\000e\000e}{section.23}% 389
+\BOOKMARK [2][-]{subsection.23.3}{\376\377\000s\000e\000g\000T\000r\000e\000e\0002\000D}{section.23}% 390
+\BOOKMARK [2][-]{subsection.23.4}{\376\377\000s\000e\000g\000T\000r\000e\000e\000B\000e\000a\000t\000s}{section.23}% 391
+\BOOKMARK [2][-]{subsection.23.5}{\376\377\000s\000e\000g\000T\000r\000e\000e\000C\000o\000l\000o\000r}{section.23}% 392
+\BOOKMARK [2][-]{subsection.23.6}{\376\377\000s\000e\000g\000T\000r\000e\000e\000E\000s\000p\000a\000r\000s\000a}{section.23}% 393
+\BOOKMARK [2][-]{subsection.23.7}{\376\377\000s\000e\000g\000T\000r\000e\000e\000E\000s\000p\000a\000r\000s\000a\0002}{section.23}% 394
+\BOOKMARK [2][-]{subsection.23.8}{\376\377\000s\000e\000g\000T\000r\000e\000e\000I\000t\000e\000r\000a\000t\000i\000v\000a}{section.23}% 395
+\BOOKMARK [2][-]{subsection.23.9}{\376\377\000s\000e\000g\000T\000r\000e\000e\000I\000t\000e\000r\000a\000t\000i\000v\000a\000C\000o\000m\000L\000a\000z\000y}{section.23}% 396
+\BOOKMARK [2][-]{subsection.23.10}{\376\377\000s\000e\000g\000T\000r\000e\000e\000P\000a}{section.23}% 397
+\BOOKMARK [2][-]{subsection.23.11}{\376\377\000s\000e\000g\000T\000r\000e\000e\000P\000e\000r\000s\000i\000s\000t\000e\000n\000t}{section.23}% 398
+\BOOKMARK [2][-]{subsection.23.12}{\376\377\000s\000e\000g\000T\000r\000e\000e\000P\000e\000r\000s\000i\000s\000t\000e\000n\000t\000C\000o\000m\000L\000a\000z\000y}{section.23}% 399
+\BOOKMARK [1][-]{section.24}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000E\000x\000t\000r\000a}{}% 400
+\BOOKMARK [2][-]{subsection.24.1}{\376\377\000d\000e\000b\000u\000g}{section.24}% 401
+\BOOKMARK [2][-]{subsection.24.2}{\376\377\000f\000a\000s\000t\000I\000O}{section.24}% 402
+\BOOKMARK [2][-]{subsection.24.3}{\376\377\000h\000a\000s\000h}{section.24}% 403
+\BOOKMARK [2][-]{subsection.24.4}{\376\377\000p\000r\000a\000g\000m\000a}{section.24}% 404
+\BOOKMARK [2][-]{subsection.24.5}{\376\377\000r\000a\000n\000d}{section.24}% 405
+\BOOKMARK [2][-]{subsection.24.6}{\376\377\000s\000t\000r\000e\000s\000s}{section.24}% 406
+\BOOKMARK [2][-]{subsection.24.7}{\376\377\000t\000e\000m\000p\000l\000a\000t\000e}{section.24}% 407
+\BOOKMARK [2][-]{subsection.24.8}{\376\377\000t\000i\000m\000e\000r}{section.24}% 408
+\BOOKMARK [1][-]{section.25}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000G\000r\000a\000f\000o\000s}{}% 409
+\BOOKMARK [2][-]{subsection.25.1}{\376\377\000a\000r\000t\000i\000c\000u\000l\000a\000t\000i\000o\000n\000P\000o\000i\000n\000t\000s}{section.25}% 410
+\BOOKMARK [2][-]{subsection.25.2}{\376\377\000b\000e\000l\000l\000m\000a\000n\000F\000o\000r\000d}{section.25}% 411
+\BOOKMARK [2][-]{subsection.25.3}{\376\377\000b\000l\000o\000c\000k\000C\000u\000t\000T\000r\000e\000e}{section.25}% 412
+\BOOKMARK [2][-]{subsection.25.4}{\376\377\000b\000l\000o\000s\000s\000o\000m}{section.25}% 413
+\BOOKMARK [2][-]{subsection.25.5}{\376\377\000c\000e\000n\000t\000e\000r}{section.25}% 414
+\BOOKMARK [2][-]{subsection.25.6}{\376\377\000c\000e\000n\000t\000r\000o\000i\000d}{section.25}% 415
+\BOOKMARK [2][-]{subsection.25.7}{\376\377\000c\000e\000n\000t\000r\000o\000i\000d\000D\000e\000c\000o\000m\000p}{section.25}% 416
+\BOOKMARK [2][-]{subsection.25.8}{\376\377\000c\000e\000n\000t\000r\000o\000i\000d\000T\000r\000e\000e}{section.25}% 417
+\BOOKMARK [2][-]{subsection.25.9}{\376\377\000c\000o\000v\000e\000r}{section.25}% 418
+\BOOKMARK [2][-]{subsection.25.10}{\376\377\000d\000i\000j\000k\000s\000t\000r\000a}{section.25}% 419
+\BOOKMARK [2][-]{subsection.25.11}{\376\377\000d\000i\000n\000i\000t\000z}{section.25}% 420
+\BOOKMARK [2][-]{subsection.25.12}{\376\377\000d\000i\000r\000e\000c\000t\000e\000d\000M\000s\000t}{section.25}% 421
+\BOOKMARK [2][-]{subsection.25.13}{\376\377\000d\000o\000m\000i\000n\000a\000t\000o\000r\000T\000r\000e\000e}{section.25}% 422
+\BOOKMARK [2][-]{subsection.25.14}{\376\377\000e\000u\000l\000e\000r\000P\000a\000t\000h}{section.25}% 423
+\BOOKMARK [2][-]{subsection.25.15}{\376\377\000e\000u\000l\000e\000r\000T\000o\000u\000r\000T\000r\000e\000e}{section.25}% 424
+\BOOKMARK [2][-]{subsection.25.16}{\376\377\000f\000l\000o\000y\000d\000W\000a\000r\000s\000h\000a\000l\000l}{section.25}% 425
+\BOOKMARK [2][-]{subsection.25.17}{\376\377\000f\000u\000n\000c\000t\000i\000o\000n\000a\000l\000G\000r\000a\000p\000h}{section.25}% 426
+\BOOKMARK [2][-]{subsection.25.18}{\376\377\000h\000o\000p\000c\000r\000o\000f\000t\000K\000a\000r\000p}{section.25}% 427
+\BOOKMARK [2][-]{subsection.25.19}{\376\377\000j\000o\000h\000n\000s\000o\000n}{section.25}% 428
+\BOOKMARK [2][-]{subsection.25.20}{\376\377\000k\000o\000s\000a\000r\000a\000j\000u}{section.25}% 429
+\BOOKMARK [2][-]{subsection.25.21}{\376\377\000k\000r\000u\000s\000k\000a\000l}{section.25}% 430
+\BOOKMARK [2][-]{subsection.25.22}{\376\377\000k\000u\000h\000n}{section.25}% 431
+\BOOKMARK [2][-]{subsection.25.23}{\376\377\000l\000i\000n\000e\000t\000r\000e\000e}{section.25}% 432
+\BOOKMARK [2][-]{subsection.25.24}{\376\377\000l\000o\000w\000e\000r\000B\000o\000u\000n\000d\000M\000a\000x\000F\000l\000o\000w}{section.25}% 433
+\BOOKMARK [2][-]{subsection.25.25}{\376\377\000m\000i\000n\000C\000o\000s\000t\000M\000a\000x\000F\000l\000o\000w}{section.25}% 434
+\BOOKMARK [2][-]{subsection.25.26}{\376\377\000p\000r\000u\000f\000e\000r}{section.25}% 435
+\BOOKMARK [2][-]{subsection.25.27}{\376\377\000s\000a\000c\000k}{section.25}% 436
+\BOOKMARK [2][-]{subsection.25.28}{\376\377\000s\000t\000a\000b\000l\000e\000M\000a\000r\000r\000i\000a\000g\000e}{section.25}% 437
+\BOOKMARK [2][-]{subsection.25.29}{\376\377\000t\000a\000r\000j\000a\000n}{section.25}% 438
+\BOOKMARK [2][-]{subsection.25.30}{\376\377\000t\000o\000p\000o\000S\000o\000r\000t}{section.25}% 439
+\BOOKMARK [2][-]{subsection.25.31}{\376\377\000t\000r\000e\000e\000I\000s\000o\000m\000o\000r\000f}{section.25}% 440
+\BOOKMARK [2][-]{subsection.25.32}{\376\377\000v\000i\000r\000t\000u\000a\000l\000T\000r\000e\000e}{section.25}% 441
+\BOOKMARK [1][-]{section.26}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000G\000r\000a\000f\000o\000s\000/\000L\000C\000A\000-\000H\000L\000D}{}% 442
+\BOOKMARK [2][-]{subsection.26.1}{\376\377\000h\000l\000d\000A\000r\000e\000s\000t\000a}{section.26}% 443
+\BOOKMARK [2][-]{subsection.26.2}{\376\377\000h\000l\000d\000S\000e\000m\000U\000p\000d\000a\000t\000e}{section.26}% 444
+\BOOKMARK [2][-]{subsection.26.3}{\376\377\000h\000l\000d\000V\000e\000r\000t\000i\000c\000e}{section.26}% 445
+\BOOKMARK [2][-]{subsection.26.4}{\376\377\000l\000c\000a}{section.26}% 446
+\BOOKMARK [2][-]{subsection.26.5}{\376\377\000l\000c\000a\000C\000o\000m\000B\000i\000n\000a\000r\000y\000L\000i\000f\000t\000i\000n\000g}{section.26}% 447
+\BOOKMARK [2][-]{subsection.26.6}{\376\377\000l\000c\000a\000C\000o\000m\000H\000l\000d}{section.26}% 448
+\BOOKMARK [1][-]{section.27}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000G\000r\000a\000f\000o\000s\000/\000L\000C\000T}{}% 449
+\BOOKMARK [2][-]{subsection.27.1}{\376\377\000l\000c\000t}{section.27}% 450
+\BOOKMARK [2][-]{subsection.27.2}{\376\377\000l\000c\000t\000A\000r\000e\000s\000t\000a}{section.27}% 451
+\BOOKMARK [2][-]{subsection.27.3}{\376\377\000l\000c\000t\000V\000e\000r\000t\000i\000c\000e}{section.27}% 452
+\BOOKMARK [1][-]{section.28}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000M\000a\000t\000e\000m\000a\000t\000i\000c\000a}{}% 453
+\BOOKMARK [2][-]{subsection.28.1}{\376\377\0002\000s\000a\000t}{section.28}% 454
+\BOOKMARK [2][-]{subsection.28.2}{\376\377\000b\000e\000r\000l\000e\000k\000a\000m\000p\000M\000a\000s\000s\000e\000y}{section.28}% 455
+\BOOKMARK [2][-]{subsection.28.3}{\376\377\000c\000h\000i\000n\000e\000s\000e}{section.28}% 456
+\BOOKMARK [2][-]{subsection.28.4}{\376\377\000c\000o\000n\000v\000o\000l\000u\000t\000i\000o\000n}{section.28}% 457
+\BOOKMARK [2][-]{subsection.28.5}{\376\377\000c\000o\000p\000r\000i\000m\000e\000B\000a\000s\000i\000s}{section.28}% 458
+\BOOKMARK [2][-]{subsection.28.6}{\376\377\000c\000r\000i\000v\000o}{section.28}% 459
+\BOOKMARK [2][-]{subsection.28.7}{\376\377\000c\000y\000c\000l\000e\000D\000e\000t\000e\000c\000t\000i\000o\000n}{section.28}% 460
+\BOOKMARK [2][-]{subsection.28.8}{\376\377\000d\000i\000o\000f\000a\000n\000t\000i\000n\000a}{section.28}% 461
+\BOOKMARK [2][-]{subsection.28.9}{\376\377\000d\000i\000v\000i\000s\000i\000o\000n\000T\000r\000i\000c\000k}{section.28}% 462
+\BOOKMARK [2][-]{subsection.28.10}{\376\377\000e\000v\000a\000l\000I\000n\000t\000e\000r\000p\000o\000l}{section.28}% 463
+\BOOKMARK [2][-]{subsection.28.11}{\376\377\000f\000a\000s\000t\000P\000o\000w}{section.28}% 464
+\BOOKMARK [2][-]{subsection.28.12}{\376\377\000f\000w\000h\000t}{section.28}% 465
+\BOOKMARK [2][-]{subsection.28.13}{\376\377\000g\000a\000u\000s\000s}{section.28}% 466
+\BOOKMARK [2][-]{subsection.28.14}{\376\377\000g\000a\000u\000s\000s\000Z\0002}{section.28}% 467
+\BOOKMARK [2][-]{subsection.28.15}{\376\377\000g\000c\000d\000E\000s\000t\000e\000n\000d\000i\000d\000o}{section.28}% 468
+\BOOKMARK [2][-]{subsection.28.16}{\376\377\000g\000c\000d\000L\000c\000m\000C\000o\000n\000v\000o\000l\000u\000t\000i\000o\000n}{section.28}% 469
+\BOOKMARK [2][-]{subsection.28.17}{\376\377\000i\000n\000t\000e\000g\000r\000a\000l}{section.28}% 470
+\BOOKMARK [2][-]{subsection.28.18}{\376\377\000k\000a\000r\000a\000t\000s\000u\000b\000a}{section.28}% 471
+\BOOKMARK [2][-]{subsection.28.19}{\376\377\000l\000o\000g\000D\000i\000s\000c\000r\000e\000t\000o}{section.28}% 472
+\BOOKMARK [2][-]{subsection.28.20}{\376\377\000m\000i\000l\000l\000e\000r\000R\000a\000b\000i\000n}{section.28}% 473
+\BOOKMARK [2][-]{subsection.28.21}{\376\377\000m\000o\000d\000I\000n\000v\000e\000r\000s\000e}{section.28}% 474
+\BOOKMARK [2][-]{subsection.28.22}{\376\377\000m\000u\000l\000m\000o\000d}{section.28}% 475
+\BOOKMARK [2][-]{subsection.28.23}{\376\377\000m\000u\000l\000t\000i\000p\000o\000i\000n\000t\000E\000v\000a\000l\000u\000a\000t\000i\000o\000n}{section.28}% 476
+\BOOKMARK [2][-]{subsection.28.24}{\376\377\000n\000t\000t}{section.28}% 477
+\BOOKMARK [2][-]{subsection.28.25}{\376\377\000p\000o\000l\000l\000a\000r\000d\000r\000h\000o}{section.28}% 478
+\BOOKMARK [2][-]{subsection.28.26}{\376\377\000p\000o\000w\000e\000r\000S\000e\000r\000i\000e\000s}{section.28}% 479
+\BOOKMARK [2][-]{subsection.28.27}{\376\377\000p\000r\000o\000b\000a\000b\000i\000l\000i\000t\000y\000B\000i\000n\000o\000m\000i\000a\000l}{section.28}% 480
+\BOOKMARK [2][-]{subsection.28.28}{\376\377\000s\000i\000m\000p\000l\000e\000x}{section.28}% 481
+\BOOKMARK [2][-]{subsection.28.29}{\376\377\000t\000o\000t\000i\000e\000n\000t\000e}{section.28}% 482
+\BOOKMARK [1][-]{section.29}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000P\000r\000i\000m\000i\000t\000i\000v\000a\000s}{}% 483
+\BOOKMARK [2][-]{subsection.29.1}{\376\377\000b\000i\000g\000i\000n\000t}{section.29}% 484
+\BOOKMARK [2][-]{subsection.29.2}{\376\377\000c\000a\000l\000e\000n\000d\000a\000r\000i\000o}{section.29}% 485
+\BOOKMARK [2][-]{subsection.29.3}{\376\377\000f\000r\000a\000c}{section.29}% 486
+\BOOKMARK [2][-]{subsection.29.4}{\376\377\000g\000e\000o\000m\000e\000t\000r\000i\000a}{section.29}% 487
+\BOOKMARK [2][-]{subsection.29.5}{\376\377\000g\000e\000o\000m\000e\000t\000r\000i\000a\0003\000d}{section.29}% 488
+\BOOKMARK [2][-]{subsection.29.6}{\376\377\000g\000e\000o\000m\000e\000t\000r\000i\000a\000I\000n\000t}{section.29}% 489
+\BOOKMARK [2][-]{subsection.29.7}{\376\377\000m\000a\000t\000r\000i\000x}{section.29}% 490
+\BOOKMARK [2][-]{subsection.29.8}{\376\377\000m\000a\000t\000r\000o\000i\000d}{section.29}% 491
+\BOOKMARK [2][-]{subsection.29.9}{\376\377\000m\000o\000d\000u\000l\000a\000r\000A\000r\000i\000t\000h\000m\000e\000t\000i\000c}{section.29}% 492
+\BOOKMARK [1][-]{section.30}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000P\000r\000o\000b\000l\000e\000m\000a\000s}{}% 493
+\BOOKMARK [2][-]{subsection.30.1}{\376\377\000a\000d\000d\000i\000t\000i\000o\000n\000C\000h\000a\000i\000n}{section.30}% 494
+\BOOKMARK [2][-]{subsection.30.2}{\376\377\000a\000n\000g\000l\000e\000R\000a\000n\000g\000e}{section.30}% 495
+\BOOKMARK [2][-]{subsection.30.3}{\376\377\000a\000r\000e\000a\000H\000i\000s\000t\000o\000g\000r\000a\000m\000a}{section.30}% 496
+\BOOKMARK [2][-]{subsection.30.4}{\376\377\000a\000r\000e\000a\000U\000n\000i\000a\000o\000R\000e\000t\000a\000n\000g\000u\000l\000o}{section.30}% 497
+\BOOKMARK [2][-]{subsection.30.5}{\376\377\000b\000i\000n\000o\000m\000i\000a\000l}{section.30}% 498
+\BOOKMARK [2][-]{subsection.30.6}{\376\377\000c\000l\000o\000s\000e\000s\000t\000P\000a\000i\000r\000O\000f\000P\000o\000i\000n\000t\000s}{section.30}% 499
+\BOOKMARK [2][-]{subsection.30.7}{\376\377\000c\000o\000n\000e\000c\000t\000i\000v\000i\000d\000a\000d\000e\000D\000i\000n\000a\000m\000i\000c\000a}{section.30}% 500
+\BOOKMARK [2][-]{subsection.30.8}{\376\377\000c\000o\000n\000e\000c\000t\000i\000v\000i\000d\000a\000d\000e\000D\000i\000n\000a\000m\000i\000c\000a\0002}{section.30}% 501
+\BOOKMARK [2][-]{subsection.30.9}{\376\377\000d\000e\000B\000r\000u\000j\000i\000n}{section.30}% 502
+\BOOKMARK [2][-]{subsection.30.10}{\376\377\000d\000e\000l\000a\000u\000n\000a\000y}{section.30}% 503
+\BOOKMARK [2][-]{subsection.30.11}{\376\377\000d\000i\000s\000t\000i\000n\000c\000t}{section.30}% 504
+\BOOKMARK [2][-]{subsection.30.12}{\376\377\000d\000i\000s\000t\000i\000n\000c\000t\000U\000p\000d\000a\000t\000e}{section.30}% 505
+\BOOKMARK [2][-]{subsection.30.13}{\376\377\000d\000o\000m\000i\000n\000a\000c\000a\000o\0003\000d}{section.30}% 506
+\BOOKMARK [2][-]{subsection.30.14}{\376\377\000d\000o\000m\000i\000n\000a\000t\000o\000r\000P\000o\000i\000n\000t\000s}{section.30}% 507
+\BOOKMARK [2][-]{subsection.30.15}{\376\377\000d\000y\000n\000a\000m\000i\000c\000H\000u\000l\000l}{section.30}% 508
+\BOOKMARK [2][-]{subsection.30.16}{\376\377\000g\000r\000a\000p\000h\000T\000r\000i\000a\000n\000g\000l\000e\000s}{section.30}% 509
+\BOOKMARK [2][-]{subsection.30.17}{\376\377\000g\000r\000a\000y\000C\000o\000d\000e}{section.30}% 510
+\BOOKMARK [2][-]{subsection.30.18}{\376\377\000h\000a\000l\000f\000P\000l\000a\000n\000e\000I\000n\000t\000e\000r\000s\000e\000c\000t\000i\000o\000n}{section.30}% 511
+\BOOKMARK [2][-]{subsection.30.19}{\376\377\000h\000e\000a\000p\000S\000o\000r\000t}{section.30}% 512
+\BOOKMARK [2][-]{subsection.30.20}{\376\377\000h\000u\000n\000g\000a\000r\000i\000a\000n}{section.30}% 513
+\BOOKMARK [2][-]{subsection.30.21}{\376\377\000i\000n\000t\000e\000r\000v\000a\000l\000G\000r\000a\000p\000h\000C\000o\000l\000o\000r\000i\000n\000g}{section.30}% 514
+\BOOKMARK [2][-]{subsection.30.22}{\376\377\000i\000n\000t\000e\000r\000v\000a\000l\000G\000r\000a\000p\000h\000I\000n\000d\000S\000e\000t}{section.30}% 515
+\BOOKMARK [2][-]{subsection.30.23}{\376\377\000i\000n\000v\000e\000r\000s\000i\000o\000n\000C\000o\000u\000n\000t}{section.30}% 516
+\BOOKMARK [2][-]{subsection.30.24}{\376\377\000l\000i\000s}{section.30}% 517
+\BOOKMARK [2][-]{subsection.30.25}{\376\377\000l\000i\000s\0002}{section.30}% 518
+\BOOKMARK [2][-]{subsection.30.26}{\376\377\000m\000a\000x\000D\000i\000s\000t}{section.30}% 519
+\BOOKMARK [2][-]{subsection.30.27}{\376\377\000m\000i\000n\000C\000i\000r\000c}{section.30}% 520
+\BOOKMARK [2][-]{subsection.30.28}{\376\377\000m\000i\000n\000k\000o\000w\000s\000k\000i}{section.30}% 521
+\BOOKMARK [2][-]{subsection.30.29}{\376\377\000m\000o}{section.30}% 522
+\BOOKMARK [2][-]{subsection.30.30}{\376\377\000m\000o\000D\000s\000u}{section.30}% 523
+\BOOKMARK [2][-]{subsection.30.31}{\376\377\000m\000o\000O\000n\000T\000r\000e\000e\000s}{section.30}% 524
+\BOOKMARK [2][-]{subsection.30.32}{\376\377\000p\000a\000l\000i\000n\000d\000r\000o\000m\000i\000c\000F\000a\000c\000t\000o\000r\000i\000z\000a\000t\000i\000o\000n}{section.30}% 525
+\BOOKMARK [2][-]{subsection.30.33}{\376\377\000p\000a\000r\000s\000i\000n\000g}{section.30}% 526
+\BOOKMARK [2][-]{subsection.30.34}{\376\377\000r\000m\000q\000O\000f\000f\000l\000i\000n\000e}{section.30}% 527
+\BOOKMARK [2][-]{subsection.30.35}{\376\377\000s\000e\000g\000m\000e\000n\000t\000I\000n\000t\000e\000r\000s\000e\000c\000t\000i\000o\000n}{section.30}% 528
+\BOOKMARK [2][-]{subsection.30.36}{\376\377\000s\000i\000m\000p\000l\000e\000P\000o\000l\000y\000g\000o\000n}{section.30}% 529
+\BOOKMARK [2][-]{subsection.30.37}{\376\377\000s\000t\000e\000i\000n\000e\000r\000T\000r\000e\000e}{section.30}% 530
+\BOOKMARK [2][-]{subsection.30.38}{\376\377\000s\000w\000e\000e\000p\000D\000i\000r\000e\000c\000t\000i\000o\000n}{section.30}% 531
+\BOOKMARK [1][-]{section.31}{\376\377\000u\000f\000m\000g\000\040\000f\000o\000r\000k\000e\000d\000/\000S\000t\000r\000i\000n\000g\000s}{}% 532
+\BOOKMARK [2][-]{subsection.31.1}{\376\377\000a\000h\000o\000c\000o\000r\000a\000s\000i\000c\000k}{section.31}% 533
+\BOOKMARK [2][-]{subsection.31.2}{\376\377\000d\000y\000n\000a\000m\000i\000c\000S\000u\000f\000f\000i\000x\000A\000r\000r\000a\000y}{section.31}% 534
+\BOOKMARK [2][-]{subsection.31.3}{\376\377\000e\000e\000r\000t\000r\000e\000e}{section.31}% 535
+\BOOKMARK [2][-]{subsection.31.4}{\376\377\000h\000a\000s\000h\000i\000n\000g}{section.31}% 536
+\BOOKMARK [2][-]{subsection.31.5}{\376\377\000h\000a\000s\000h\000i\000n\000g\000L\000a\000r\000g\000e\000M\000o\000d}{section.31}% 537
+\BOOKMARK [2][-]{subsection.31.6}{\376\377\000k\000m\000p}{section.31}% 538
+\BOOKMARK [2][-]{subsection.31.7}{\376\377\000m\000a\000n\000a\000c\000h\000e\000r}{section.31}% 539
+\BOOKMARK [2][-]{subsection.31.8}{\376\377\000m\000i\000n\000M\000a\000x\000S\000u\000f\000f\000i\000x\000C\000y\000c\000l\000i\000c}{section.31}% 540
+\BOOKMARK [2][-]{subsection.31.9}{\376\377\000s\000u\000f\000f\000i\000x\000A\000r\000r\000a\000y}{section.31}% 541
+\BOOKMARK [2][-]{subsection.31.10}{\376\377\000s\000u\000f\000f\000i\000x\000A\000r\000r\000a\000y\0002}{section.31}% 542
+\BOOKMARK [2][-]{subsection.31.11}{\376\377\000s\000u\000f\000f\000i\000x\000A\000u\000t\000o\000m\000a\000t\000o\000n}{section.31}% 543
+\BOOKMARK [2][-]{subsection.31.12}{\376\377\000t\000r\000i\000e}{section.31}% 544
+\BOOKMARK [2][-]{subsection.31.13}{\376\377\000z}{section.31}% 545
+\BOOKMARK [1][-]{section.32}{\376\377\000U\000t\000i\000l\000s}{}% 546
+\BOOKMARK [2][-]{subsection.32.1}{\376\377\000e\000x\000e\000c\000u\000t\000i\000o\000n\000\040\000t\000i\000m\000e}{section.32}% 547
+\BOOKMARK [2][-]{subsection.32.2}{\376\377\000r\000a\000n\000d}{section.32}% 548
+\BOOKMARK [2][-]{subsection.32.3}{\376\377\000r\000u\000n\000n\000e\000r}{section.32}% 549
+\BOOKMARK [2][-]{subsection.32.4}{\376\377\000r\000u\000n\000n\000e\000r\0002}{section.32}% 550
+\BOOKMARK [2][-]{subsection.32.5}{\376\377\000\040\000i\000n\000t\0001\0002\0008}{section.32}% 551

@@ -3,204 +3,586 @@
 # Subsections within a section should follow the format:
 # [filename within code directory][tab character \t][subsection title]
 
-[Geometry]
-polygon_isomorfism.cpp	polygon isomorfism
-LineSweep.cpp	LineSweep
-convex_hull_point_location.cpp	convex hull point location
-polygons_distance.cpp	polygons distance
-smallest_enclosing_circle.cpp	smallest enclosing circle
-kd_tree.cpp	kd tree
-ConvexHull.cpp	ConvexHull
-dynamic_ch.cpp	dynamic ch
-polygon_area.cpp	polygon area
-points_and_vectors.cpp	points and vectors
-minkowski.cpp	minkowski
-halfplane_intersection.cpp	halfplane intersection
-
-[Strings]
-min_suffix.cpp	min suffix
-manacher.cpp	manacher
-de_bruijin.cpp	de bruijin
-stringhashing2.cpp	stringhashing2
-aho_corasick.cpp	aho corasick
-z-function.cpp	z-function
-substring_fft.cpp	substring fft
-suffix_array.cpp	suffix array
-stringhashing.cpp	stringhashing
-suffix_automaton.cpp	suffix automaton
-kmp.cpp	kmp
-rabin-karp.cpp	rabin-karp
-
 [Binary Search and Ternary Search]
-parallel_binary_search.cpp	parallel binary search
 Aplications.cpp	Aplications
-UpperBound.cpp	UpperBound
-STL.cpp	STL
-TS.cpp	TS
 BS.cpp	BS
 LowerBound.cpp	LowerBound
+parallel_binary_search.cpp	parallel binary search
+recursive_parallel_binary_search.cpp	recursive parallel binary search
+STL.cpp	STL
+TS.cpp	TS
+UpperBound.cpp	UpperBound
+
+[Dynamic programming and common problems]
+aliens_trick.cpp	aliens trick
+bitwise_digit_dp.cpp	bitwise digit dp
+broken_profile.cpp	broken profile
+cht.cpp	cht
+Digitdp.cpp	Digitdp
+divideandconquer.cpp	divideandconquer
+dynamic_cht.cpp	dynamic cht
+exchange_arguments.cpp	exchange arguments
+expected_value.cpp	expected value
+inclusion_exclusion.cpp	inclusion exclusion
+Knapsack.cpp	Knapsack
+largest-sum-contiguous-subarray.cpp	largest-sum-contiguous-subarray
+largest_square.cpp	largest square
+lcs.cpp	lcs
+lichao.cpp	lichao
+lis.cpp	lis
+max_matrix_path.cpp	max matrix path
+optimization_with_fft.cpp	optimization with fft
+permutations.cpp	permutations
+sos_dp.cpp	sos dp
+steiner_tree.cpp	steiner tree
+subsequences_string.cpp	subsequences string
+subset_sum.cpp	subset sum
+suffix_sum.cpp	suffix sum
+tip.cpp	tip
+
+[Geometry]
+ConvexHull.cpp	ConvexHull
+convex_hull_point_location.cpp	convex hull point location
+dynamic_ch.cpp	dynamic ch
+halfplane_intersection.cpp	halfplane intersection
+kd_tree.cpp	kd tree
+LineSweep.cpp	LineSweep
+line_trick.cpp	line trick
+minkowski.cpp	minkowski
+points_and_vectors.cpp	points and vectors
+polygons_distance.cpp	polygons distance
+polygon_area.cpp	polygon area
+polygon_isomorfism.cpp	polygon isomorfism
+smallest_enclosing_circle.cpp	smallest enclosing circle
 
 [Graph]
-Floyd_Warshall.cpp	Floyd Warshall
-reroot.cpp	reroot
-Ford_Fulkerson.cpp	Ford Fulkerson
-stable_matching.cpp	stable matching
-bridges.cpp	bridges
-mincostflow.cpp	mincostflow
-link_cut_tree_vertex.cpp	link cut tree vertex
-strong_orientation.cpp	strong orientation
-centroid_decomposition2.cpp	centroid decomposition2
-LCA.cpp	LCA
-dsu_rollback.cpp	dsu rollback
-sack.cpp	sack
-two_sat.cpp	two sat
-Dijkstra.cpp	Dijkstra
-scc.cpp	scc
-dominator_tree.cpp	dominator tree
-flow_with_minimum_capacities.cpp	flow with minimum capacities
-centroid_decomposition.cpp	centroid decomposition
-TreeDiameter.cpp	TreeDiameter
-virtual_tree.cpp	virtual tree
-dinic.cpp	dinic
-hall_theorem.cpp	hall theorem
-Kruskal.cpp	Kruskal
-hungarian.cpp	hungarian
-BFS.cpp	BFS
-hld_edge.cpp	hld edge
-dsu.cpp	dsu
-MatrixDijkstra.cpp	MatrixDijkstra
 articulation_points.cpp	articulation points
-link_cut_tree_edge.cpp	link cut tree edge
-hopcroft_karp.cpp	hopcroft karp
-cycle_detection.cpp	cycle detection
-eulertour.cpp	eulertour
+BFS.cpp	BFS
 bipartite.cpp	bipartite
-mo_dsu.cpp	mo dsu
-Prim.cpp	Prim
-tree_isomorfism.cpp	tree isomorfism
-caminhoeuleriano.cpp	caminhoeuleriano
-hld.cpp	hld
-caminhoeuleriano2.cpp	caminhoeuleriano2
-DFS.cpp	DFS
 block-cut-tree.cpp	block-cut-tree
-mo_trees_edges.cpp	mo trees edges
-mo_trees.cpp	mo trees
+bridges.cpp	bridges
+caminhoeuleriano.cpp	caminhoeuleriano
+caminhoeuleriano2.cpp	caminhoeuleriano2
+centroid_decomposition.cpp	centroid decomposition
+centroid_decomposition2.cpp	centroid decomposition2
+cycle_detection.cpp	cycle detection
+DFS.cpp	DFS
+Dijkstra.cpp	Dijkstra
+dinic.cpp	dinic
+dominator_tree.cpp	dominator tree
+dsu.cpp	dsu
+dsu_rollback.cpp	dsu rollback
 erdos_gallai.cpp	erdos gallai
-rmq_tree.cpp	rmq tree
-Topological_Sort.cpp	Topological Sort
+eulertour.cpp	eulertour
+flow_with_minimum_capacities.cpp	flow with minimum capacities
+Floyd_Warshall.cpp	Floyd Warshall
+Ford_Fulkerson.cpp	Ford Fulkerson
 Grafo_Bipartido.cpp	Grafo Bipartido
+hall_theorem.cpp	hall theorem
+hld.cpp	hld
+hld_edge.cpp	hld edge
+hopcroft_karp.cpp	hopcroft karp
+hungarian.cpp	hungarian
+Kruskal.cpp	Kruskal
+kuhn.cpp	kuhn
+LCA.cpp	LCA
+link_cut_tree_edge.cpp	link cut tree edge
+link_cut_tree_vertex.cpp	link cut tree vertex
+MatrixDijkstra.cpp	MatrixDijkstra
+max_matching_without_one_vertex.cpp	max matching without one vertex
+mincostflow.cpp	mincostflow
+mo_dsu.cpp	mo dsu
+mo_trees.cpp	mo trees
+mo_trees_edges.cpp	mo trees edges
+Prim.cpp	Prim
+push_relabel.cpp	push relabel
+reroot.cpp	reroot
+rmq_tree.cpp	rmq tree
+sack.cpp	sack
+scc.cpp	scc
+segtree_graph.cpp	segtree graph
+stable_matching.cpp	stable matching
+strong_orientation.cpp	strong orientation
+Topological_Sort.cpp	Topological Sort
+TreeDiameter.cpp	TreeDiameter
+tree_isomorfism.cpp	tree isomorfism
+two_sat.cpp	two sat
+virtual_tree.cpp	virtual tree
+
+[kactl forked]
+[kactl forked/combinatorial]
+_kactl forked_IntPerm.h	IntPerm
+_kactl forked_multinomial.h	multinomial
+
+[kactl forked/data-structures]
+_kactl forked_FenwickTree.h	FenwickTree
+_kactl forked_FenwickTree2d.h	FenwickTree2d
+_kactl forked_HashMap.h	HashMap
+_kactl forked_LazySegmentTree.h	LazySegmentTree
+_kactl forked_LineContainer.h	LineContainer
+_kactl forked_Matrix.h	Matrix
+_kactl forked_MoQueries.h	MoQueries
+_kactl forked_OrderStatisticTree.h	OrderStatisticTree
+_kactl forked_RMQ.h	RMQ
+_kactl forked_SegmentTree.h	SegmentTree
+_kactl forked_SubMatrix.h	SubMatrix
+_kactl forked_Treap.h	Treap
+_kactl forked_UnionFind.h	UnionFind
+_kactl forked_UnionFindRollback.h	UnionFindRollback
+
+[kactl forked/geometry]
+_kactl forked_3dHull.h	3dHull
+_kactl forked_Angle.h	Angle
+_kactl forked_CircleIntersection.h	CircleIntersection
+_kactl forked_CircleLine.h	CircleLine
+_kactl forked_CirclePolygonIntersection.h	CirclePolygonIntersection
+_kactl forked_CircleTangents.h	CircleTangents
+_kactl forked_circumcircle.h	circumcircle
+_kactl forked_ClosestPair.h	ClosestPair
+_kactl forked_ConvexHull.h	ConvexHull
+_kactl forked_DelaunayTriangulation.h	DelaunayTriangulation
+_kactl forked_FastDelaunay.h	FastDelaunay
+_kactl forked_HullDiameter.h	HullDiameter
+_kactl forked_InsidePolygon.h	InsidePolygon
+_kactl forked_kdTree.h	kdTree
+_kactl forked_linearTransformation.h	linearTransformation
+_kactl forked_lineDistance.h	lineDistance
+_kactl forked_LineHullIntersection.h	LineHullIntersection
+_kactl forked_lineIntersection.h	lineIntersection
+_kactl forked_LineProjectionReflection.h	LineProjectionReflection
+_kactl forked_ManhattanMST.h	ManhattanMST
+_kactl forked_MinimumEnclosingCircle.h	MinimumEnclosingCircle
+_kactl forked_OnSegment.h	OnSegment
+_kactl forked_Point.h	Point
+_kactl forked_Point3D.h	Point3D
+_kactl forked_PointInsideHull.h	PointInsideHull
+_kactl forked_PolygonArea.h	PolygonArea
+_kactl forked_PolygonCenter.h	PolygonCenter
+_kactl forked_PolygonCut.h	PolygonCut
+_kactl forked_PolygonUnion.h	PolygonUnion
+_kactl forked_PolyhedronVolume.h	PolyhedronVolume
+_kactl forked_SegmentDistance.h	SegmentDistance
+_kactl forked_SegmentIntersection.h	SegmentIntersection
+_kactl forked_sideOf.h	sideOf
+_kactl forked_sphericalDistance.h	sphericalDistance
+
+[kactl forked/graph]
+_kactl forked_2sat.h	2sat
+_kactl forked_BellmanFord.h	BellmanFord
+_kactl forked_BiconnectedComponents.h	BiconnectedComponents
+_kactl forked_BinaryLifting.h	BinaryLifting
+_kactl forked_CompressTree.h	CompressTree
+_kactl forked_DFSMatching.h	DFSMatching
+_kactl forked_Dinic.h	Dinic
+_kactl forked_DirectedMST.h	DirectedMST
+_kactl forked_EdgeColoring.h	EdgeColoring
+_kactl forked_EdmondsKarp.h	EdmondsKarp
+_kactl forked_EulerWalk.h	EulerWalk
+_kactl forked_FloydWarshall.h	FloydWarshall
+_kactl forked_GeneralMatching.h	GeneralMatching
+_kactl forked_GlobalMinCut.h	GlobalMinCut
+_kactl forked_GomoryHu.h	GomoryHu
+_kactl forked_HLD.h	HLD
+_kactl forked_hopcroftKarp.h	hopcroftKarp
+_kactl forked_LCA.h	LCA
+_kactl forked_LinkCutTree.h	LinkCutTree
+_kactl forked_MaximalCliques.h	MaximalCliques
+_kactl forked_MaximumClique.h	MaximumClique
+_kactl forked_MaximumIndependentSet.h	MaximumIndependentSet
+_kactl forked_MinCostMaxFlow.h	MinCostMaxFlow
+_kactl forked_MinCut.h	MinCut
+_kactl forked_MinimumVertexCover.h	MinimumVertexCover
+_kactl forked_PushRelabel.h	PushRelabel
+_kactl forked_SCC.h	SCC
+_kactl forked_TopoSort.h	TopoSort
+_kactl forked_WeightedMatching.h	WeightedMatching
+
+[kactl forked/number-theory]
+_kactl forked_ContinuedFractions.h	ContinuedFractions
+_kactl forked_CRT.h	CRT
+_kactl forked_Eratosthenes.h	Eratosthenes
+_kactl forked_euclid.h	euclid
+_kactl forked_Factor.h	Factor
+_kactl forked_FastEratosthenes.h	FastEratosthenes
+_kactl forked_FracBinarySearch.h	FracBinarySearch
+_kactl forked_MillerRabin.h	MillerRabin
+_kactl forked_ModInverse.h	ModInverse
+_kactl forked_ModLog.h	ModLog
+_kactl forked_ModMulLL.h	ModMulLL
+_kactl forked_ModPow.h	ModPow
+_kactl forked_ModSqrt.h	ModSqrt
+_kactl forked_ModSum.h	ModSum
+_kactl forked_ModularArithmetic.h	ModularArithmetic
+_kactl forked_phiFunction.h	phiFunction
+
+[kactl forked/numerical]
+_kactl forked_BerlekampMassey.h	BerlekampMassey
+_kactl forked_Determinant.h	Determinant
+_kactl forked_FastFourierTransform.h	FastFourierTransform
+_kactl forked_FastFourierTransformMod.h	FastFourierTransformMod
+_kactl forked_FastSubsetTransform.h	FastSubsetTransform
+_kactl forked_GoldenSectionSearch.h	GoldenSectionSearch
+_kactl forked_HillClimbing.h	HillClimbing
+_kactl forked_IntDeterminant.h	IntDeterminant
+_kactl forked_Integrate.h	Integrate
+_kactl forked_IntegrateAdaptive.h	IntegrateAdaptive
+_kactl forked_LinearRecurrence.h	LinearRecurrence
+_kactl forked_MatrixInverse-mod.h	MatrixInverse-mod
+_kactl forked_MatrixInverse.h	MatrixInverse
+_kactl forked_NumberTheoreticTransform.h	NumberTheoreticTransform
+_kactl forked_PolyInterpolate.h	PolyInterpolate
+_kactl forked_Polynomial.h	Polynomial
+_kactl forked_PolyRoots.h	PolyRoots
+_kactl forked_Simplex.h	Simplex
+_kactl forked_SolveLinear.h	SolveLinear
+_kactl forked_SolveLinear2.h	SolveLinear2
+_kactl forked_SolveLinearBinary.h	SolveLinearBinary
+_kactl forked_Tridiagonal.h	Tridiagonal
+
+[kactl forked/strings]
+_kactl forked_AhoCorasick.h	AhoCorasick
+_kactl forked_Hashing-codeforces.h	Hashing-codeforces
+_kactl forked_Hashing.h	Hashing
+_kactl forked_KMP.h	KMP
+_kactl forked_Manacher.h	Manacher
+_kactl forked_MinRotation.h	MinRotation
+_kactl forked_SuffixArray.h	SuffixArray
+_kactl forked_SuffixTree.h	SuffixTree
+_kactl forked_Zfunc.h	Zfunc
+
+[kactl forked/various]
+_kactl forked_BumpAllocator.h	BumpAllocator
+_kactl forked_BumpAllocatorSTL.h	BumpAllocatorSTL
+_kactl forked_ConstantIntervals.h	ConstantIntervals
+_kactl forked_DivideAndConquerDP.h	DivideAndConquerDP
+_kactl forked_FastInput.h	FastInput
+_kactl forked_FastKnapsack.h	FastKnapsack
+_kactl forked_FastMod.h	FastMod
+_kactl forked_IntervalContainer.h	IntervalContainer
+_kactl forked_IntervalCover.h	IntervalCover
+_kactl forked_KnuthDP.h	KnuthDP
+_kactl forked_LIS.h	LIS
+_kactl forked_SIMD.h	SIMD
+_kactl forked_SmallPtr.h	SmallPtr
+_kactl forked_TernarySearch.h	TernarySearch
+_kactl forked_Unrolling.h	Unrolling
+
+
+[Math]
+baby_step_gigant_step.cpp	baby step gigant step
+berlekamp_massey.cpp	berlekamp massey
+binomial_theorem.cpp	binomial theorem
+catalan.cpp	catalan
+crivo.cpp	crivo
+crt.cpp	crt
+crt_trick.cpp	crt trick
+diophantine.cpp	diophantine
+division_trick.cpp	division trick
+divisors.cpp	divisors
+extended_euclidean.cpp	extended euclidean
+fft.cpp	fft
+fraction.cpp	fraction
+fwht.cpp	fwht
+gaussian_elimination.cpp	gaussian elimination
+gaussian_elimination2.cpp	gaussian elimination2
+lagrange.cpp	lagrange
+lucas_theorem.cpp	lucas theorem
+markov.cpp	markov
+matrix_exponentiation.cpp	matrix exponentiation
+matrix_exponentiation2.cpp	matrix exponentiation2
+matrix_inverse_and_determinant.cpp	matrix inverse and determinant
+max_xor_subsequence.cpp	max xor subsequence
+mobius.cpp	mobius
+mobius2.cpp	mobius2
+modular_arithmetic.cpp	modular arithmetic
+ntt.cpp	ntt
+operadores_binarios.cpp	operadores binarios
+pollard_rho.cpp	pollard rho
+primefactors.cpp	primefactors
+primefactors2.cpp	primefactors2
+segmentedsieve.cpp	segmentedsieve
+simplex.cpp	simplex
+stars_and_bars.cpp	stars and bars
+totient.cpp	totient
+xor_trie.cpp	xor trie
 
 [Miscellaneous]
-inversion_count.cpp	inversion count
-two_pointers.cpp	two pointers
 bitmasks.cpp	bitmasks
-sprague_grundy.cpp	sprague grundy
 coordinate_compression.cpp	coordinate compression
+inversion_count.cpp	inversion count
+max_plus_convolution.cpp	max plus convolution
 meetinthemiddle.cpp	meetinthemiddle
+prefix_sum_2d.cpp	prefix sum 2d
+rectangle_union.cpp	rectangle union
 segment_covering.cpp	segment covering
+sprague_grundy.cpp	sprague grundy
+stack_trick.cpp	stack trick
 sum_hash.cpp	sum hash
 tower_of_hanoi.cpp	tower of hanoi
-prefix_sum_2d.cpp	prefix sum 2d
-stack_trick.cpp	stack trick
+two_pointers.cpp	two pointers
+
+[STL]
+ordered_set.cpp	ordered set
+STL.txt	STL
+
+[Strings]
+aho_corasick.cpp	aho corasick
+de_bruijin.cpp	de bruijin
+kmp.cpp	kmp
+manacher.cpp	manacher
+min_suffix.cpp	min suffix
+rabin-karp.cpp	rabin-karp
+stringhashing.cpp	stringhashing
+stringhashing2.cpp	stringhashing2
+substring_fft.cpp	substring fft
+suffix_array.cpp	suffix array
+suffix_automaton.cpp	suffix automaton
+z-function.cpp	z-function
+
+[Structures]
+binary_lifting.cpp	binary lifting
+bit2d.cpp	bit2d
+color_update.cpp	color update
+fenwick.cpp	fenwick
+fenwick2.cpp	fenwick2
+fenwick2D.cpp	fenwick2D
+fenwick3.cpp	fenwick3
+implicit_seg.cpp	implicit seg
+lower_bound_segtree.cpp	lower bound segtree
+mergesorttree.cpp	mergesorttree
+min_queue.cpp	min queue
+mo.cpp	mo
+mo_update.cpp	mo update
+persistent_seg.cpp	persistent seg
+persistent_seg2.cpp	persistent seg2
+rmq.cpp	rmq
+SegTree.cpp	SegTree
+Segtree2.cpp	Segtree2
+segtree2d.cpp	segtree2d
+segtree_lazy.cpp	segtree lazy
+segtree_max_seg_sum.cpp	segtree max seg sum
+SegTree_pa.cpp	SegTree pa
+sparsetable.cpp	sparsetable
+treap.cpp	treap
+treap2.cpp	treap2
 
 [Theorems and Formulas]
 binomial_theorem.md	binomial theorem
 chicken_mcnugget.md	chicken mcnugget
 graph_notes.md	graph notes
+manhattan_and_chebyshev.md	manhattan and chebyshev
 
-[Structures]
-lower_bound_segtree.cpp	lower bound segtree
-Segtree2.cpp	Segtree2
-SegTree_pa.cpp	SegTree pa
-min_queue.cpp	min queue
-mo_update.cpp	mo update
-treap2.cpp	treap2
-segtree_lazy.cpp	segtree lazy
-SegTree.cpp	SegTree
-fenwick2D.cpp	fenwick2D
-mergesorttree.cpp	mergesorttree
-treap.cpp	treap
-bit2d.cpp	bit2d
-fenwick3.cpp	fenwick3
-segtree2d.cpp	segtree2d
-persistent_seg2.cpp	persistent seg2
-rmq.cpp	rmq
-color_update.cpp	color update
-segtree_max_seg_sum.cpp	segtree max seg sum
-fenwick.cpp	fenwick
-implicit_seg.cpp	implicit seg
-fenwick2.cpp	fenwick2
-mo.cpp	mo
-persistent_seg.cpp	persistent seg
-binary_lifting.cpp	binary lifting
-sparsetable.cpp	sparsetable
+[ufmg forked]
+[ufmg forked/DP]
+_ufmg forked_dcDp.cpp	dcDp
+_ufmg forked_lcs.cpp	lcs
+_ufmg forked_mochila.cpp	mochila
+_ufmg forked_sosDP.cpp	sosDP
+_ufmg forked_subsetSum.cpp	subsetSum
+
+[ufmg forked/Estruturas]
+_ufmg forked_bit.cpp	bit
+_ufmg forked_bit2d.cpp	bit2d
+_ufmg forked_bitRange.cpp	bitRange
+_ufmg forked_bitSortTree.cpp	bitSortTree
+_ufmg forked_cht.cpp	cht
+_ufmg forked_chtDinamico.cpp	chtDinamico
+_ufmg forked_dsu.cpp	dsu
+_ufmg forked_lichao.cpp	lichao
+_ufmg forked_lichaoLazy.cpp	lichaoLazy
+_ufmg forked_mergeSortTree.cpp	mergeSortTree
+_ufmg forked_minqueueDeque.cpp	minqueueDeque
+_ufmg forked_minqueueStack.cpp	minqueueStack
+_ufmg forked_orderStatisticSet.cpp	orderStatisticSet
+_ufmg forked_priorityQueueDs.cpp	priorityQueueDs
+_ufmg forked_rangeColor.cpp	rangeColor
+_ufmg forked_rmq.cpp	rmq
+_ufmg forked_slopeTrick.cpp	slopeTrick
+_ufmg forked_sparseTable.cpp	sparseTable
+_ufmg forked_sparseTableDisjunta.cpp	sparseTableDisjunta
+_ufmg forked_splaytree.cpp	splaytree
+_ufmg forked_splaytreeImplicita.cpp	splaytreeImplicita
+_ufmg forked_splitMergeSet.cpp	splitMergeSet
+_ufmg forked_splitMergeSetLazy.cpp	splitMergeSetLazy
+_ufmg forked_sqrtTree.cpp	sqrtTree
+_ufmg forked_treap.cpp	treap
+_ufmg forked_treapImplicita.cpp	treapImplicita
+_ufmg forked_treapPersistent.cpp	treapPersistent
+_ufmg forked_waveletTree.cpp	waveletTree
+[ufmg forked/Estruturas/Segtree]
+_ufmg forked__Estruturas_segTreap.cpp	segTreap
+_ufmg forked__Estruturas_segTree.cpp	segTree
+_ufmg forked__Estruturas_segTree2D.cpp	segTree2D
+_ufmg forked__Estruturas_segTreeBeats.cpp	segTreeBeats
+_ufmg forked__Estruturas_segTreeColor.cpp	segTreeColor
+_ufmg forked__Estruturas_segTreeEsparsa.cpp	segTreeEsparsa
+_ufmg forked__Estruturas_segTreeEsparsa2.cpp	segTreeEsparsa2
+_ufmg forked__Estruturas_segTreeIterativa.cpp	segTreeIterativa
+_ufmg forked__Estruturas_segTreeIterativaComLazy.cpp	segTreeIterativaComLazy
+_ufmg forked__Estruturas_segTreePa.cpp	segTreePa
+_ufmg forked__Estruturas_segTreePersistent.cpp	segTreePersistent
+_ufmg forked__Estruturas_segTreePersistentComLazy.cpp	segTreePersistentComLazy
+
+
+[ufmg forked/Extra]
+_ufmg forked_debug.cpp	debug
+_ufmg forked_fastIO.cpp	fastIO
+_ufmg forked_hash.sh	hash
+_ufmg forked_pragma.cpp	pragma
+_ufmg forked_rand.cpp	rand
+_ufmg forked_stress.sh	stress
+_ufmg forked_template.cpp	template
+_ufmg forked_timer.cpp	timer
+
+[ufmg forked/Grafos]
+_ufmg forked_articulationPoints.cpp	articulationPoints
+_ufmg forked_bellmanFord.cpp	bellmanFord
+_ufmg forked_blockCutTree.cpp	blockCutTree
+_ufmg forked_blossom.cpp	blossom
+_ufmg forked_center.cpp	center
+_ufmg forked_centroid.cpp	centroid
+_ufmg forked_centroidDecomp.cpp	centroidDecomp
+_ufmg forked_centroidTree.cpp	centroidTree
+_ufmg forked_cover.cpp	cover
+_ufmg forked_dijkstra.cpp	dijkstra
+_ufmg forked_dinitz.cpp	dinitz
+_ufmg forked_directedMst.cpp	directedMst
+_ufmg forked_dominatorTree.cpp	dominatorTree
+_ufmg forked_eulerPath.cpp	eulerPath
+_ufmg forked_eulerTourTree.cpp	eulerTourTree
+_ufmg forked_floydWarshall.cpp	floydWarshall
+_ufmg forked_functionalGraph.cpp	functionalGraph
+_ufmg forked_hopcroftKarp.cpp	hopcroftKarp
+_ufmg forked_johnson.cpp	johnson
+_ufmg forked_kosaraju.cpp	kosaraju
+_ufmg forked_kruskal.cpp	kruskal
+_ufmg forked_kuhn.cpp	kuhn
+_ufmg forked_linetree.cpp	linetree
+_ufmg forked_lowerBoundMaxFlow.cpp	lowerBoundMaxFlow
+_ufmg forked_minCostMaxFlow.cpp	minCostMaxFlow
+_ufmg forked_prufer.cpp	prufer
+_ufmg forked_sack.cpp	sack
+_ufmg forked_stableMarriage.cpp	stableMarriage
+_ufmg forked_tarjan.cpp	tarjan
+_ufmg forked_topoSort.cpp	topoSort
+_ufmg forked_treeIsomorf.cpp	treeIsomorf
+_ufmg forked_virtualTree.cpp	virtualTree
+[ufmg forked/Grafos/LCA-HLD]
+_ufmg forked__Grafos_hldAresta.cpp	hldAresta
+_ufmg forked__Grafos_hldSemUpdate.cpp	hldSemUpdate
+_ufmg forked__Grafos_hldVertice.cpp	hldVertice
+_ufmg forked__Grafos_lca.cpp	lca
+_ufmg forked__Grafos_lcaComBinaryLifting.cpp	lcaComBinaryLifting
+_ufmg forked__Grafos_lcaComHld.cpp	lcaComHld
+
+[ufmg forked/Grafos/LCT]
+_ufmg forked__Grafos_lct.cpp	lct
+_ufmg forked__Grafos_lctAresta.cpp	lctAresta
+_ufmg forked__Grafos_lctVertice.cpp	lctVertice
+
+
+[ufmg forked/Matematica]
+_ufmg forked_2sat.cpp	2sat
+_ufmg forked_berlekampMassey.cpp	berlekampMassey
+_ufmg forked_chinese.cpp	chinese
+_ufmg forked_convolution.cpp	convolution
+_ufmg forked_coprimeBasis.cpp	coprimeBasis
+_ufmg forked_crivo.cpp	crivo
+_ufmg forked_cycleDetection.cpp	cycleDetection
+_ufmg forked_diofantina.cpp	diofantina
+_ufmg forked_divisionTrick.cpp	divisionTrick
+_ufmg forked_evalInterpol.cpp	evalInterpol
+_ufmg forked_fastPow.cpp	fastPow
+_ufmg forked_fwht.cpp	fwht
+_ufmg forked_gauss.cpp	gauss
+_ufmg forked_gaussZ2.cpp	gaussZ2
+_ufmg forked_gcdEstendido.cpp	gcdEstendido
+_ufmg forked_gcdLcmConvolution.cpp	gcdLcmConvolution
+_ufmg forked_integral.cpp	integral
+_ufmg forked_karatsuba.cpp	karatsuba
+_ufmg forked_logDiscreto.cpp	logDiscreto
+_ufmg forked_millerRabin.cpp	millerRabin
+_ufmg forked_modInverse.cpp	modInverse
+_ufmg forked_mulmod.cpp	mulmod
+_ufmg forked_multipointEvaluation.cpp	multipointEvaluation
+_ufmg forked_ntt.cpp	ntt
+_ufmg forked_pollardrho.cpp	pollardrho
+_ufmg forked_powerSeries.cpp	powerSeries
+_ufmg forked_probabilityBinomial.cpp	probabilityBinomial
+_ufmg forked_simplex.cpp	simplex
+_ufmg forked_totiente.cpp	totiente
+
+[ufmg forked/Primitivas]
+_ufmg forked_bigint.cpp	bigint
+_ufmg forked_calendario.cpp	calendario
+_ufmg forked_frac.cpp	frac
+_ufmg forked_geometria.cpp	geometria
+_ufmg forked_geometria3d.cpp	geometria3d
+_ufmg forked_geometriaInt.cpp	geometriaInt
+_ufmg forked_matrix.cpp	matrix
+_ufmg forked_matroid.cpp	matroid
+_ufmg forked_modularArithmetic.cpp	modularArithmetic
+
+[ufmg forked/Problemas]
+_ufmg forked_additionChain.cpp	additionChain
+_ufmg forked_angleRange.cpp	angleRange
+_ufmg forked_areaHistograma.cpp	areaHistograma
+_ufmg forked_areaUniaoRetangulo.cpp	areaUniaoRetangulo
+_ufmg forked_binomial.cpp	binomial
+_ufmg forked_closestPairOfPoints.cpp	closestPairOfPoints
+_ufmg forked_conectividadeDinamica.cpp	conectividadeDinamica
+_ufmg forked_conectividadeDinamica2.cpp	conectividadeDinamica2
+_ufmg forked_deBrujin.cpp	deBrujin
+_ufmg forked_delaunay.cpp	delaunay
+_ufmg forked_distinct.cpp	distinct
+_ufmg forked_distinctUpdate.cpp	distinctUpdate
+_ufmg forked_dominacao3d.cpp	dominacao3d
+_ufmg forked_dominatorPoints.cpp	dominatorPoints
+_ufmg forked_dynamicHull.cpp	dynamicHull
+_ufmg forked_graphTriangles.cpp	graphTriangles
+_ufmg forked_grayCode.cpp	grayCode
+_ufmg forked_halfPlaneIntersection.cpp	halfPlaneIntersection
+_ufmg forked_heapSort.cpp	heapSort
+_ufmg forked_hungarian.cpp	hungarian
+_ufmg forked_intervalGraphColoring.cpp	intervalGraphColoring
+_ufmg forked_intervalGraphIndSet.cpp	intervalGraphIndSet
+_ufmg forked_inversionCount.cpp	inversionCount
+_ufmg forked_lis.cpp	lis
+_ufmg forked_lis2.cpp	lis2
+_ufmg forked_maxDist.cpp	maxDist
+_ufmg forked_minCirc.cpp	minCirc
+_ufmg forked_minkowski.cpp	minkowski
+_ufmg forked_mo.cpp	mo
+_ufmg forked_moDsu.cpp	moDsu
+_ufmg forked_moOnTrees.cpp	moOnTrees
+_ufmg forked_palindromicFactorization.cpp	palindromicFactorization
+_ufmg forked_parsing.cpp	parsing
+_ufmg forked_rmqOffline.cpp	rmqOffline
+_ufmg forked_segmentIntersection.cpp	segmentIntersection
+_ufmg forked_simplePolygon.cpp	simplePolygon
+_ufmg forked_steinerTree.cpp	steinerTree
+_ufmg forked_sweepDirection.cpp	sweepDirection
+
+[ufmg forked/Strings]
+_ufmg forked_ahocorasick.cpp	ahocorasick
+_ufmg forked_dynamicSuffixArray.cpp	dynamicSuffixArray
+_ufmg forked_eertree.cpp	eertree
+_ufmg forked_hashing.cpp	hashing
+_ufmg forked_hashingLargeMod.cpp	hashingLargeMod
+_ufmg forked_kmp.cpp	kmp
+_ufmg forked_manacher.cpp	manacher
+_ufmg forked_minMaxSuffixCyclic.cpp	minMaxSuffixCyclic
+_ufmg forked_suffixArray.cpp	suffixArray
+_ufmg forked_suffixArray2.cpp	suffixArray2
+_ufmg forked_suffixAutomaton.cpp	suffixAutomaton
+_ufmg forked_trie.cpp	trie
+_ufmg forked_z.cpp	z
+
 
 [Utils]
 execution_time.cpp	execution time
-runner.py	runner
-__int128.cpp	  int128
-runner2.py	runner2
 rand.cpp	rand
-
-[Dynamic programming and common problems]
-divideandconquer.cpp	divideandconquer
-suffix_sum.cpp	suffix sum
-steiner_tree.cpp	steiner tree
-lcs.cpp	lcs
-bitwise_digit_dp.cpp	bitwise digit dp
-aliens_trick.cpp	aliens trick
-Digitdp.cpp	Digitdp
-broken_profile.cpp	broken profile
-largest_square.cpp	largest square
-max_matrix_path.cpp	max matrix path
-largest-sum-contiguous-subarray.cpp	largest-sum-contiguous-subarray
-exchange_arguments.cpp	exchange arguments
-tip.cpp	tip
-Knapsack.cpp	Knapsack
-subsequences_string.cpp	subsequences string
-dynamic_cht.cpp	dynamic cht
-lis.cpp	lis
-lichao.cpp	lichao
-expected_value.cpp	expected value
-subset_sum.cpp	subset sum
-sos_dp.cpp	sos dp
-cht.cpp	cht
-
-[STL]
-STL.txt	STL
-ordered_set.cpp	ordered set
-
-[Math]
-mobius2.cpp	mobius2
-binomial_theorem.cpp	binomial theorem
-diophantine.cpp	diophantine
-primefactors.cpp	primefactors
-xor_trie.cpp	xor trie
-totient.cpp	totient
-matrix_inverse_and_determinant.cpp	matrix inverse and determinant
-gaussian_elimination.cpp	gaussian elimination
-extended_euclidean.cpp	extended euclidean
-primefactors2.cpp	primefactors2
-catalan.cpp	catalan
-berlekamp_massey.cpp	berlekamp massey
-fraction.cpp	fraction
-pollard_rho.cpp	pollard rho
-baby_step_gigant_step.cpp	baby step gigant step
-matrix_exponentiation2.cpp	matrix exponentiation2
-simplex.cpp	simplex
-lagrange.cpp	lagrange
-crt.cpp	crt
-fft.cpp	fft
-segmentedsieve.cpp	segmentedsieve
-gaussian_elimination2.cpp	gaussian elimination2
-stars_and_bars.cpp	stars and bars
-fwht.cpp	fwht
-operadores_binarios.cpp	operadores binarios
-matrix_exponentiation.cpp	matrix exponentiation
-max_xor_subsequence.cpp	max xor subsequence
-divisors.cpp	divisors
-ntt.cpp	ntt
-modular_arithmetic.cpp	modular arithmetic
-crivo.cpp	crivo
-mobius.cpp	mobius
+runner.py	runner
+runner2.py	runner2
+__int128.cpp	  int128
 
