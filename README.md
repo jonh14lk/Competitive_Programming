@@ -222,10 +222,14 @@ And many others, sky is the limit :)
 
 ## **Competitions solutions :white_check_mark:**
 
+- [The 2025 ICPC Latin America Championship](https://codeforces.com/gym/105789)
+  - [All problems solved, except problems E and J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Latam%202024)
 - [2024-2025 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/105327)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202024)
 - [2024-2025 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/105505)
   - [All problems solved, except problem C](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202024)
+- [The 2024 ICPC Latin America Championship](https://codeforces.com/gym/105053)
+  - [All problems solved, except problems B and I](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Latam%202023)
 - [2023-2024 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/104555)
   - [All problems solved, except problem J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202023)
 - [2023-2024 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/104736)
