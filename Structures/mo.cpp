@@ -31,7 +31,16 @@ namespace mo
   vector<query> queries;
   vector<int> ans;
 
-  bool cmp(query x, query y)
+  // bool cmp(query &x, query &y) essa funcao de ordenacao pode funcionar em caso de TLE
+  // {
+  //   int ablock = x.l / MAGIC, bblock = y.l / MAGIC;
+  //   if (ablock != bblock)
+  //     return ablock < bblock;
+  //   if (ablock & 1)
+  //     return x.r < y.r;
+  //   return x.r > y.r;
+  // }
+  bool cmp(query &x, query &y)
   {
     if (x.l / block != y.l / block)
       return x.l / block < y.l / block;

@@ -22,6 +22,7 @@ int lower(int l, int r, int x) // first element >= x
 {
   while (l < r)
   {
+    //  int mid = l + (r - l) / 2; se tiver numero negativo
     int mid = (l + r) >> 1;
     (x <= k[mid]) ? r = mid : l = mid + 1;
   }
