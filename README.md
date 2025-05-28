@@ -223,6 +223,8 @@ And many others, sky is the limit :)
 
 ## **Competitions solutions :white_check_mark:**
 
+- [SBC Brazilian Phase Zero 2025](https://codeforces.com/gym/105925)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Fase%20zero%20202024)
 - [The 2025 ICPC Latin America Championship](https://codeforces.com/gym/105789)
   - [All problems solved, except problems E and J](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Latam%202024)
 - [2024-2025 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/105327)
