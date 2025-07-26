@@ -220,6 +220,7 @@ And many others, sky is the limit :)
   - [Rectangle Union Area](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/rectangle_union.cpp)
   - [Max Plus Convolution](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/max_plus_convolution.cpp)
   - [Bellman ford to solve linear programming problem](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/bellman_ford_inequalities.cpp)
+  - [Pragma](https://github.com/jonh14lk/Competitive_Programming/blob/master/Miscellaneous/pragma.cpp)
 
 ## **Competitions solutions :white_check_mark:**
 
