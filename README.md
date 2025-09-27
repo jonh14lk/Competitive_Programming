@@ -102,6 +102,7 @@ And many others, sky is the limit :)
   - [Dominator Tree](https://github.com/jonh14lk/Competitive_Programming/blob/master/Graph/dominator_tree.cpp)
   - [Notes](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/graph_notes.md)
   - [Segtree Graph](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/segtree_graph.cpp)
+  - [Chordal Graph](https://github.com/jonh14lk/Competitive_Programming/blob/master/Theorems%20and%20Formulas/chordal_graph.cpp)
 
 - Trees :heart:
 
@@ -224,6 +225,8 @@ And many others, sky is the limit :)
 
 ## **Competitions solutions :white_check_mark:**
 
+- [2025-2026 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/106073)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202025)
 - [SBC Brazilian Phase Zero 2025](https://codeforces.com/gym/105925)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Fase%20zero%20202024)
 - [The 2025 ICPC Latin America Championship](https://codeforces.com/gym/105789)
