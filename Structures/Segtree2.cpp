@@ -42,7 +42,7 @@ struct segtree
   }
   void upd(int i, int value)
   {
-    seg[i += n] += value;
+    seg[i] = merge(seg[i += n], value);
     for (i >>= 1; i; i >>= 1)
       seg[i] = merge(seg[i << 1], seg[(i << 1) | 1]);
   }
