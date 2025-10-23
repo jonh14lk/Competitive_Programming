@@ -143,8 +143,7 @@ Existem duas abordagens principais para encontrar os pares `(CL[i], CR[j])` que 
    \frac{(x + y) \times (((y - x) / D) + 1)}{2} = S
    \]
 
-3. Como `CR` está ordenado (pois é construída com passo fixo `D`), podemos aplicar **busca binária** para encontrar o valor `y` que satisfaz essa igualdade.  
-   Caso não exista exatamente, podemos checar arredores (por exemplo, `mid-1`, `mid`, `mid+1`) para confirmar se há uma correspondência.
+3. Como `CR` está ordenado (pois é construída com passo fixo `D`), podemos aplicar **busca binária** para encontrar o valor `y` que satisfaz essa igualdade. Assim, vai existir no máximo um valor `y` que satisfaz a igualdade, e caso satisfaça, podemos incrementar a resposta em 1.
 
 Essa abordagem é eficiente porque cada busca leva `O(log |CR|)`, e `|CR|` é proporcional a `(R - L) / D`.
 
@@ -160,9 +159,9 @@ Outra forma de resolver é usando **dois ponteiros**, aproveitando que as listas
 2. Calculamos a soma `S(i, j)` da progressão que começa em `CL[i]` e termina em `CR[j]`.
 3. Se `S(i, j) < S`, precisamos aumentar a soma — logo, incrementamos `j` (andando para a direita em `CR`).
 4. Se `S(i, j) > S`, a soma está muito grande — então incrementamos `i` (andando em `CL`).
-5. Se `S(i, j) = S`, encontramos uma progressão válida e podemos contar +1 e seguir com os ponteiros.
+5. Se `S(i, j) = S`, encontramos uma progressão válida, podemos incrementar a resposta em 1 e incrementar `i` e `j`.
 
-Essa abordagem percorre as listas de forma linear (`O(|CL| + |CR|)`), evitando buscas binárias e sendo especialmente eficiente quando as listas são grandes.
+Essa abordagem percorre as listas de forma linear (`O(|CL| + |CR|)`).
 
 
 ### 4. Conclusão
@@ -171,18 +170,7 @@ Assim, o algoritmo geral é:
 
 1. Percorrer todas as razões `D ∈ [1, R - L]`;
 2. Construir `CL` e `CR`;
-3. Usar **busca binária** ou **dois ponteiros** para contar os pares `(CL[i], CR[j])` cuja soma da PA seja igual a `S`.
-
-A complexidade total fica próxima de:
-
-\[
-O((R - L) \times (\text{tamanho médio de CL}) \times \log(\text{tamanho médio de CR}))
-\]
-
-ou linear por `D` se usar two pointers.
-
-Essa estratégia permite resolver o problema dentro dos limites propostos de forma elegante e eficiente.
-
+3. Usar **busca binária** ou **dois ponteiros** para encontrar os pares `(CL[i], CR[j])` cuja soma da PA seja igual a `S`.
 
 ---
 
