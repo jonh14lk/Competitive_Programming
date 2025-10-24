@@ -235,13 +235,100 @@ Assim, podemos analisar a **representação binária** dos números `M` e `A` e 
 
 Essa definição corresponde exatamente à operação de **bitwise OR**, portanto basta imprimir o valor de `(M | A)`.
 
-
-
 ## H - Essa questão é muito boa
 
-*(Descrição ainda não adicionada.)*
+Essa é, de fato, a questão mais difícil da prova, principalmente por ser a única considerada *conteudista*, isto é, uma questão que exige conhecimento prévio de uma técnica ou assunto específico para ser resolvida.
+
+O conteúdo necessário aqui é a **Euler Tour Technique (ETT)** em árvores.  
+Caso seja a primeira vez que você veja esse conceito, vale a pena dar uma olhada nos links abaixo:
+
+- [USACO Guide - Euler Tour](https://usaco.guide/gold/tree-euler?lang=cpp)  
+- [Codeforces Blog - Euler Tour Technique](https://codeforces.com/blog/entry/18369)  
+- [Wikipedia - Euler Tour Technique](https://en.wikipedia.org/wiki/Euler_tour_technique)
+
+### Ideia geral da solução
+
+Uma vez entendido como funciona o ETT, o restante da solução é mais ad hoc.  
+Apesar de lidarmos com queries em árvores, a abordagem não exige nenhuma estrutura de dados complexa/maluca, apenas algumas observações.
+
+### Passo 1: Condição para formar um palíndromo
+
+Primeiro, precisamos entender **quando é possível formar um palíndromo** a partir de uma lista de letras  
+`L = {l₀, l₁, ..., lₙ}`.
+
+A condição é simples:  
+> É possível formar um palíndromo **se e somente se** no máximo uma letra tiver frequência ímpar.
+
+**Por quê?**
+
+- Se **todas as frequências são pares**, podemos formar um palíndromo de tamanho par — cada letra tem sua “par” correspondente.
+- Se **existe exatamente uma letra com frequência ímpar**, podemos formar um palíndromo de tamanho ímpar — essa letra ocupará a posição central, como no padrão `...X...`.
+
+Portanto, para cada *query*, basta saber **a paridade da frequência de cada letra** (par ou ímpar).  
+O desafio está em obter essa informação de forma eficiente.
+
+### Passo 2: Mapeando a subárvore e profundidades
+
+Com o conhecimento de **Euler Tour**, sabemos que a subárvore de um vértice `v` corresponde ao intervalo `[tin[v], tout[v]]` no tempo de entrada e saída do DFS.
+
+A query pede algo como:
+
+> “Considere todos os vértices da subárvore de `v` que estão em uma profundidade `h`.  
+> Qual é a paridade das frequências das letras nesses vértices?”
+
+Durante o DFS, além de armazenar os tempos `tin` e `tout`, também guardamos a **profundidade de cada vértice**.
+
+### Passo 3: Usando máscaras de bits (bitmasks)
+
+A sacada principal está em representar as frequências **com uma máscara de bits**.
+
+Para cada profundidade `d`, mantemos um vetor `mask[d]`, que guarda — usando bits — a paridade das letras encontradas até aquele ponto do DFS.
+
+- O **bit 0** representa a letra `'a'`,  
+- o **bit 1** representa `'b'`,  
+- e assim por diante.
+
+Quando visitamos um vértice com letra `X`, que pode ser identificada pelo bit B[X], na profundidade `P`, fazemos:
+
+```cpp
+mask[P] ^= (1 << B[X]);
+```
+
+Sendo `^` a operação de bitwise XOR, que "flipa" o bit correspondente à letra, ou seja, muda sua paridade (de par para ímpar, ou vice-versa).
+
+### Passo 4: Respondendo queries de forma eficiente
+
+Após o pré-processamento, podemos responder as queries em tempo rápido.
+
+Para cada query `(v, h)`:
+
+1. Obtemos o valor de `mask[h]` **antes** de entrar na subárvore de `v`, ou seja, no tempo tin[v] - 1.
+2. Obtemos o valor de `mask[h]` **ao sair** da subárvore, ou seja, no tempo tout[v].
+3. A máscara da subárvore será o XOR desses dois valores:
+
+Assim, conseguimos a paridade de cada letra considerando os vértices que queremos na query.
+
+Um detalhe importante é que não podemos armazenar uma matriz `m[P][T]` de tamanho `N × N`,  
+onde `m[P][T]` representaria o valor de `mask[P]` no tempo `T`.  
+Isso seria inviável, pois `N` pode ser até `5 × 10⁵`.
+
+Para contornar esse problema, em vez de armazenar todas as versões de `mask[P]`,  
+mantemos um **vetor de eventos** que guarda apenas os momentos em que `mask[P]` muda.  
+
+Esse vetor — chamado `events_by_dep[P]` — guarda pares da forma `(tempo, novo valor de mask[P])`.  
+Assim, cada profundidade só armazena os instantes relevantes em que houve mudança de paridade.
 
 
+Mas um desafio, é que não podemos guardar uma matriz m[P][T] de tamanho NXN, indicando o valor da mask[P] no tempo T, pois seria grande demais já que N <= 5 * 10^5.
+
+Para descobrir o valor de `mask[P]` em um determinado tempo `T`,  
+podemos fazer uma **busca binária** em `events_by_dep[P]` para encontrar o **último evento** cujo tempo seja menor ou igual a `T`.
+
+Assim, cada query é respondida em O(log N) devido à busca binária.
+
+O pré-processamento (DFS e construção das listas de eventos) é feito em O(N).
+
+Portanto, a complexidade total é: O(N + M log N)
 
 ## I - I de interativo
 
