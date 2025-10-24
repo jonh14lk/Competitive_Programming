@@ -2,20 +2,112 @@
 
 Para auxiliar no entendimento das soluções descritas aqui, acima há um código de solução exemplo em C++ para cada questão.
 
----
+
 
 ## A - Estimando os Balões da Maratona
 
 É possível ler os números da entrada como inteiros e, em linguagens como C/C++, o operador de divisão entre inteiros já realiza a divisão arredondando para baixo.  
 Assim, basta escrever a expressão dada no enunciado e resolver o problema diretamente.
 
----
+
 
 ## B - Construindo um estacionamento
 
-*(Descrição ainda não adicionada.)*
+Uma boa estratégia para resolver problemas **construtivos** é começar elaborando uma solução para casos mais simples e, a partir disso, adaptar a construção para cenários mais gerais.  
+Testar essas construções no papel, com casos pequenos, pode ser uma ótima.
 
----
+Neste caso, quando o número de colunas é igual a `5` (`M = 5`), podemos fazer algo como:
+
+**Exemplo para N = 3, M = 5:**
+
+| 1 | 1 | 0 | 2 | 2 |
+|---|---|---|---|---|
+| 3 | 3 | 0 | 4 | 4 |
+| 5 | 5 | 0 | 6 | 6 |
+
+Essa é uma forma válida de construção, onde **80% das posições são vagas**, formando uma configuração aceitável.
+
+De forma análoga, podemos replicar esse padrão quando `M` é múltiplo de 5.
+
+**Exemplo para N = 3, M = 15:**
+
+| 1 | 1 | 0 | 2 | 2 | 7 | 7 | 0 | 8 | 8 | 13 | 13 | 0 | 14 | 14 |
+|---|---|---|---|---|---|---|---|---|---|----|----|---|----|----|
+| 3 | 3 | 0 | 4 | 4 | 9 | 9 | 0 | 10 | 10 | 15 | 15 | 0 | 16 | 16 |
+| 5 | 5 | 0 | 6 | 6 | 11 | 11 | 0 | 12 | 12 | 17 | 17 | 0 | 18 | 18 |
+
+Assim, temos uma construção para os casos em que `M` é múltiplo de 5.  
+Para os demais valores, precisamos tratar os possíveis **restos da divisão de `M` por 5**.
+
+### (M % 5) == 1
+
+Podemos preencher a última coluna da matriz com vagas verticais.  
+
+**Exemplo para N = 4, M = 6:**
+
+| 1 | 1 | 0 | 2 | 2 | 9 |
+|---|---|---|---|---|---|
+| 3 | 3 | 0 | 4 | 4 | 9 |
+| 5 | 5 | 0 | 6 | 6 | 10 |
+| 7 | 7 | 0 | 8 | 8 | 10 |
+
+**Exemplo para N = 5, M = 6**  
+(Aqui sobra um zero no final, mas ainda satisfaz o mínimo de 80%.)
+
+| 1 | 1 | 0 | 2 | 2 | 11 |
+|---|---|---|---|---|----|
+| 3 | 3 | 0 | 4 | 4 | 11 |
+| 5 | 5 | 0 | 6 | 6 | 12 |
+| 7 | 7 | 0 | 8 | 8 | 12 |
+| 9 | 9 | 0 | 10 | 10 | 0 |
+
+**Caso especial:** para `N = 3, M = 6`, foi necessário um tratamento especial no código.
+
+| 7 | 7 | 8 | 8 | 9 | 9 |
+|---|---|---|---|---|---|
+| 1 | 2 | 3 | 4 | 5 | 6 |
+| 1 | 2 | 3 | 4 | 5 | 6 |
+
+### (M % 5) == 2
+
+Podemos construir algo como:
+
+| 1 | 1 | 0 | 2 | 2 | 7 | 7 |
+|---|---|---|---|---|---|---|
+| 3 | 3 | 0 | 4 | 4 | 8 | 8 |
+| 5 | 5 | 0 | 6 | 6 | 9 | 9 |
+
+Ou seja, colocamos vagas **horizontais** nas duas últimas colunas de cada linha.
+
+### (M % 5) == 3
+
+Podemos preencher as duas **primeiras colunas** de cada linha com vagas horizontais e, em seguida, aplicar a ideia do caso de resto 1 (preenchendo a **última coluna** com vagas verticais).
+
+**Exemplo para N = 3, M = 3:**
+
+| 1 | 1 | 4 |
+|---|---|---|
+| 2 | 2 | 4 |
+| 3 | 3 | 0 |
+
+**Exemplo para N = 3, M = 8:**
+
+| 1 | 1 | 4 | 4 | 0 | 5 | 5 | 10 |
+|---|---|---|---|---|---|---|----|
+| 2 | 2 | 6 | 6 | 0 | 7 | 7 | 10 |
+| 3 | 3 | 8 | 8 | 0 | 9 | 9 | 0 |
+
+### (M % 5) == 4
+
+Nesse caso, basta colocar vagas **horizontais** nas duas últimas colunas de cada linha, e também nas **duas primeiras colunas** de cada linha.
+
+**Exemplo para N = 3, M = 9:**
+
+| 1 | 1 | 4 | 4 | 0 | 5 | 5 | 10 | 10 |
+|---|---|---|---|---|---|---|----|----|
+| 2 | 2 | 6 | 6 | 0 | 7 | 7 | 11 | 11 |
+| 3 | 3 | 8 | 8 | 0 | 9 | 9 | 12 | 12 |
+
 
 ## C - Distribuindo doces
 
@@ -25,7 +117,7 @@ Neste caso, a resposta será **"NÃO"** se:
 - `K < (N * L)`, pois alguém ficaria com menos do que `L` doces; ou  
 - `K > (N * R)`, pois alguém ficaria com mais do que `R` doces.
 
----
+
 
 ## D - Ordenando itens
 
@@ -115,7 +207,7 @@ $$
 
 então é **impossível** construir uma resposta válida, pois necessariamente haveria **duas ocorrências consecutivas de `(X / 2)`**.
 
----
+
 
 ## E - Bases palindrômicas
 
@@ -127,14 +219,14 @@ Podemos descrever o passo a passo do algoritmo como:
 3. Armazenar essa representação em uma string ou vetor;  
 4. Verificar se essa string/vetor é um palíndromo.
 
----
+
 
 ## F - Dominós na horizontal
 
 Outro problema de implementação direta.  
 Deve-se percorrer a matriz dada na entrada e, se existirem duas posições adjacentes na **mesma linha** cujo caractere seja `'N'` e **nenhum dominó ainda ocupe** essas posições, é possível colocar um dominó nelas.
 
----
+
 
 ## G - Prova de P1
 
@@ -143,13 +235,13 @@ Assim, podemos analisar a **representação binária** dos números `M` e `A` e 
 
 Essa definição corresponde exatamente à operação de **bitwise OR**, portanto basta imprimir o valor de `(M | A)`.
 
----
+
 
 ## H - Essa questão é muito boa
 
 *(Descrição ainda não adicionada.)*
 
----
+
 
 ## I - I de interativo
 
@@ -168,7 +260,7 @@ Assim, podemos resolver o problema da seguinte forma:
 3. Se descobrimos `resposta[x]`, atualizamos `x = 3` e seguimos o mesmo processo; caso contrário, atualizamos `y = 3`.  
 4. Repetimos o processo até restar apenas um índice sem valor, e esse índice `i` terá `resposta[i] = N`.
 
----
+
 
 ## J - Persistência multiplicativa
 
@@ -177,7 +269,7 @@ O número de iterações feitas é a resposta.
 
 A parte mais desafiadora é justamente calcular o produto dos dígitos de um número, mas é um ótimo exercício para o leitor.
 
----
+
 
 ## K - Quantas progressões aritméticas existem?
 
@@ -224,8 +316,6 @@ Existem duas abordagens principais para encontrar os pares `(CL[i], CR[j])` que 
 
 Essa abordagem é eficiente porque cada busca leva `O(log |CR|)`, e `|CR|` é proporcional a `(R - L) / D`.
 
----
-
 #### **Abordagem com Dois Ponteiros (Two Pointers)**
 
 Outra forma de resolver é usando **dois ponteiros**, consierando as listas `CL` e `CR` ordenadas em ordem crescente.
@@ -249,9 +339,6 @@ Assim, o algoritmo geral é:
 2. Construir `CL` e `CR`;
 3. Usar **busca binária** ou **dois ponteiros** para encontrar os pares `(CL[i], CR[j])` cuja soma da PA seja igual a `S`.
 
----
-
-## L - Aprendendo alemão
 
 ## L - Aprendendo alemão
 
