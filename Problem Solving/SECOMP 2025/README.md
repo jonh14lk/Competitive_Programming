@@ -348,3 +348,5 @@ Como a letra `S` pode aparecer no máximo três vezes na string, podemos resolve
 2. Se houver **2 ocorrências** de `S` e elas forem **adjacentes**, é possível substituí-las por **`ß`**; caso contrário, só há uma forma de escrever a string.  
 3. Se houver **3 ocorrências** de `S` e elas forem **adjacentes**, podemos escrever `"SSS"` como `"Sß"` ou `"ßS"`.  
    Caso não sejam todas adjacentes, basta verificar se existe **algum par de `S` consecutivos** que possa ser substituído por **`ß`**; se não houver, só existe uma maneira de escrever a string.
+
+Uma outra maneira que evita passar por todos esses casos e que pode ser considerada mais fácil de codar, é fazendo um brute force recursivo (aka backtracking) para achar todas as possibilidades de preencher a string.
