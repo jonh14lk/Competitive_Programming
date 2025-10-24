@@ -318,9 +318,6 @@ mantemos um **vetor de eventos** que guarda apenas os momentos em que `mask[P]` 
 Esse vetor — chamado `events_by_dep[P]` — guarda pares da forma `(tempo, novo valor de mask[P])`.  
 Assim, cada profundidade só armazena os instantes relevantes em que houve mudança de paridade.
 
-
-Mas um desafio, é que não podemos guardar uma matriz m[P][T] de tamanho NXN, indicando o valor da mask[P] no tempo T, pois seria grande demais já que N <= 5 * 10^5.
-
 Para descobrir o valor de `mask[P]` em um determinado tempo `T`,  
 podemos fazer uma **busca binária** em `events_by_dep[P]` para encontrar o **último evento** cujo tempo seja menor ou igual a `T`.
 
