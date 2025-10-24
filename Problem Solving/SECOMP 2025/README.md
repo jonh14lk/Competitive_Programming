@@ -29,7 +29,91 @@ Neste caso, a resposta será **"NÃO"** se:
 
 ## D - Ordenando itens
 
-*(Descrição ainda não adicionada.)*
+Como a maioria dos problemas **construtivos**, existem diversas soluções possíveis para este problema, mas aqui vou descrever a ideia que utilizei.
+
+### 1. Separação em vetores auxiliares
+
+Podemos separar os números do vetor de belezas da entrada `V` em **três vetores auxiliares**, de acordo com o valor `X`:
+
+- **Vetor A:** números de `V` que são menores do que `X / 2`;
+- **Vetor B:** números de `V` que são maiores do que `X / 2`;
+- **Vetor C:** números de `V` que são iguais a `X / 2`.
+
+Por exemplo, se `V = [2, 4, 3, 1, 7, 3]` e `X = 6`, então:
+
+- `A = [2, 1]`
+- `B = [4, 7]`
+- `C = [3, 3]`
+
+### 2. Construindo o vetor D
+
+Vamos começar **juntando os números** dos vetores `A` e `B` em um novo vetor `D`.
+
+Um fato importante é que **dois números adjacentes em `A`** e **dois números adjacentes em `B`** **nunca somam `X`**, pois:
+- em `A`, ambos são menores do que `X / 2`;  
+- em `B`, ambos são maiores do que `X / 2`.
+
+Assim, podemos montar o vetor `D` da seguinte forma:
+
+$$
+D = [A_1, A_2, \dots, A_{|A|}, B_1, B_2, \dots, B_{|B|}]
+$$
+
+garantindo que:
+
+$$
+A_{|A|} + B_1 \neq X
+$$
+
+O **único caso** em que não conseguimos montar o vetor dessa forma é quando:
+- todos os números em `A` são iguais entre si;
+- todos os números em `B` são iguais entre si; e  
+- qualquer par `(a, b)` com `a ∈ A` e `b ∈ B` satisfaz `a + b = X`.
+
+Fora esse caso, **sempre é possível** encontrar uma ordenação que atenda à condição acima.
+
+### 3. Caso em que X é ímpar
+
+Se `X` for **ímpar**, o vetor `C` será **vazio**, já que `X / 2` não é um número inteiro.  
+Nesse caso, basta verificar se foi possível construir o vetor `D` conforme o passo anterior.
+
+### 4. Caso em que X é par
+
+Se `X` for **par** e o vetor `C` **não for vazio**, precisamos inserir os elementos de `C` dentro do vetor `D` de maneira adequada.
+
+#### a) Corrigindo o ponto de junção
+
+Se o último elemento de `A` e o primeiro de `B` somam `X`:
+
+$$
+A_{|A|} + B_1 = X
+$$
+
+devemos **inserir uma ocorrência de `(X / 2)`** entre eles, de modo a "quebrar" o par problemático:
+
+$$
+D = [A_1, A_2, \dots, A_{|A|}, \tfrac{X}{2}, B_1, B_2, \dots, B_{|B|}]
+$$
+
+#### b) Distribuindo os demais elementos de C
+
+Os outros elementos iguais a `(X / 2)` devem ser intercalados entre os elementos de `A` e `B`, da seguinte forma:
+
+$$
+D = [\tfrac{X}{2}, A_1, \tfrac{X}{2}, A_2, \dots, \tfrac{X}{2}, A_{|A|}, \tfrac{X}{2}, B_1, \tfrac{X}{2}, B_2, \dots, \tfrac{X}{2}, B_{|B|}, \tfrac{X}{2}]
+$$
+
+É importante garantir que **não sejam inseridas mais ocorrências de `(X / 2)`** do que as existentes no vetor `C`.
+
+#### c) Verificando a impossibilidade
+
+Se houver **mais elementos em `C` do que o número de "espaços" possíveis** para intercalar:
+
+$$
+|C| > |A| + |B| + 1
+$$
+
+então é **impossível** construir uma resposta válida, pois necessariamente haveria **duas ocorrências consecutivas de `(X / 2)`**.
 
 ---
 
@@ -82,7 +166,7 @@ Assim, podemos resolver o problema da seguinte forma:
    - Se a resposta da primeira pergunta for **maior** que a da segunda, então `resposta[x] = valor da pergunta 1`;  
    - Caso contrário, `resposta[y] = valor da pergunta 2`.  
 3. Se descobrimos `resposta[x]`, atualizamos `x = 3` e seguimos o mesmo processo; caso contrário, atualizamos `y = 3`.  
-4. Repetimos o processo até restar apenas um índice sem valor — esse índice `i` terá `resposta[i] = N`.
+4. Repetimos o processo até restar apenas um índice sem valor, e esse índice `i` terá `resposta[i] = N`.
 
 ---
 
@@ -99,8 +183,6 @@ A parte mais desafiadora é justamente calcular o produto dos dígitos de um nú
 
 A grande sacada do problema está em **fixar a razão `D`** da progressão aritmética.  
 Como o enunciado impõe a restrição `R - L ≤ 10⁵`, é viável percorrer todas as razões possíveis no intervalo `D ∈ [1, R - L]`.
-
----
 
 ### 1. Construindo os conjuntos de candidatos
 
@@ -119,9 +201,9 @@ Cada par `(CL[i], CR[j])` define uma possível progressão aritmética que come�
 
 Sabemos que a soma de uma progressão aritmética é dada por:
 
-\[
+$$
 S = \frac{(a_1 + a_n) \times n}{2}
-\]
+$$
 
 onde:
 - `a₁ = CL[i]`
@@ -137,13 +219,8 @@ Existem duas abordagens principais para encontrar os pares `(CL[i], CR[j])` que 
 #### **Abordagem com Busca Binária**
 
 1. Para cada `D` fixo, percorremos todos os elementos de `CL`.  
-2. Para cada elemento `x = CL[i]`, queremos encontrar `y` em `CR` tal que:
-
-   \[
-   \frac{(x + y) \times (((y - x) / D) + 1)}{2} = S
-   \]
-
-3. Como `CR` está ordenado (pois é construída com passo fixo `D`), podemos aplicar **busca binária** para encontrar o valor `y` que satisfaz essa igualdade. Assim, vai existir no máximo um valor `y` que satisfaz a igualdade, e caso satisfaça, podemos incrementar a resposta em 1.
+2. Para cada elemento `x = CL[i]`, queremos encontrar `y` em `CR` tal que, a soma da PA de `x` a `y` com razão `D` é igual a `S`.
+3. Como `CR` está ordenado (pois é construída com passo fixo `D`), podemos aplicar **busca binária** para encontrar o valor `y` que satisfaz essa igualdade. Assim, vai existir **no máximo um** valor `y` que satisfaz a igualdade, e caso satisfaça, podemos incrementar a resposta em 1.
 
 Essa abordagem é eficiente porque cada busca leva `O(log |CR|)`, e `|CR|` é proporcional a `(R - L) / D`.
 
@@ -151,7 +228,7 @@ Essa abordagem é eficiente porque cada busca leva `O(log |CR|)`, e `|CR|` é pr
 
 #### **Abordagem com Dois Ponteiros (Two Pointers)**
 
-Outra forma de resolver é usando **dois ponteiros**, aproveitando que as listas `CL` e `CR` são ordenadas.
+Outra forma de resolver é usando **dois ponteiros**, consierando as listas `CL` e `CR` ordenadas em ordem crescente.
 
 1. Inicializamos dois ponteiros:
    - `i = 0` (para percorrer `CL`)
@@ -176,4 +253,11 @@ Assim, o algoritmo geral é:
 
 ## L - Aprendendo alemão
 
-*(Descrição ainda não adicionada.)*
+## L - Aprendendo alemão
+
+Como a letra `S` pode aparecer no máximo três vezes na string, podemos resolver o problema considerando os seguintes casos:
+
+1. Se houver **0 ou 1 ocorrência** de `S`, só existe uma maneira de escrever a string, pois não há substituições possíveis.  
+2. Se houver **2 ocorrências** de `S` e elas forem **adjacentes**, é possível substituí-las por **`ß`**; caso contrário, só há uma forma de escrever a string.  
+3. Se houver **3 ocorrências** de `S` e elas forem **adjacentes**, podemos escrever `"SSS"` como `"Sß"` ou `"ßS"`.  
+   Caso não sejam todas adjacentes, basta verificar se existe **algum par de `S` consecutivos** que possa ser substituído por **`ß`**; se não houver, só existe uma maneira de escrever a string.
