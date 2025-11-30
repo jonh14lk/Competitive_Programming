@@ -227,6 +227,8 @@ And many others, sky is the limit :)
 
 - [2025-2026 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/106073)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202025)
+- [2025-2026 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/106178)
+  - [All problems solved, except problem D](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Final%202025)
 - [SBC Brazilian Phase Zero 2025](https://codeforces.com/gym/105925)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Fase%20zero%20202024)
 - [The 2025 ICPC Latin America Championship](https://codeforces.com/gym/105789)
