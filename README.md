@@ -225,6 +225,8 @@ And many others, sky is the limit :)
 
 ## **Competitions solutions :white_check_mark:**
 
+- [The 2026 ICPC Latin America Championship](https://codeforces.com/group/8JufKtWW7p/contest/676963)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Latam%202025)
 - [2025-2026 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/106073)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Subregional%202025)
 - [2025-2026 ACM-ICPC Latin American Regional Programming Contest](https://codeforces.com/gym/106178)
