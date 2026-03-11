@@ -153,7 +153,7 @@ signed main()
       {
         if (abs(v[i].fir - v[j].fir) >= c)
           pts.pb(inter[i][j].fir + eps);
-        pts.pb(inter[i][j].sec - eps);
+        pts.pb(inter[i][j].sec);
       }
     }
   }
@@ -174,7 +174,7 @@ signed main()
         {
           l = lower_bound(pts.begin(), pts.end(), inter[i][j].fir + eps) - pts.begin();
         }
-        int r = lower_bound(pts.begin(), pts.end(), inter[i][j].sec - eps) - pts.begin();
+        int r = lower_bound(pts.begin(), pts.end(), inter[i][j].sec) - pts.begin();
         seg::add(1, 0, pts.size(), l, r - 1, {i, j, 0});
       }
     }
