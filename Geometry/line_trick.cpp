@@ -18,7 +18,25 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
-pi get_line(pi x, pi y)
+pii get_line(pi x, pi y) // retorna a reta que passa pelos pontos x e y
+{
+  int dx = x.fir - y.fir;
+  int dy = x.sec - y.sec;
+  int g = __gcd(abs(dx), abs(dy));
+  if (g != 0)
+  {
+    dx /= g;
+    dy /= g;
+  }
+  if (dx < 0 || (dx == 0 && dy < 0))
+  {
+    dx *= -1;
+    dy *= -1;
+  }
+  int c = -dy * x.fir + dx * x.sec;
+  return {c, {dx, dy}};
+}
+pi get_slope(pi x, pi y) // retorna apenas a slope, mas retas paralelas tem a mesma slope
 {
   int xx = x.fir - y.fir;
   int yy = x.sec - y.sec;
@@ -54,7 +72,7 @@ void solve()
     int y = rng() % n;
     if (x == y)
       continue;
-    pi l = get_line(v[x], v[y]);
+    pi l = get_slope(v[x], v[y]);
     mp[l]++;
     repr[l] = x;
   }
