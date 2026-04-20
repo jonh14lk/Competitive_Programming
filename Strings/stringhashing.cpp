@@ -17,9 +17,10 @@ using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statisti
 
 // https://github.com/brunomaletta/Biblioteca/blob/master/Codigo/Strings/hashingLargeMod.cpp
 const int MOD = (1ll << 61) - 1;
-int P;
 int mulmod(int a, int b)
 {
+  // pode usar int128 se for pra digitar menos coisa no presencial
+  // return ((__int128)a * b) % MOD;
   const static int LOWER = (1ll << 30) - 1, GET31 = (1ll << 31) - 1;
   int l1 = a & LOWER, h1 = a >> 30, l2 = b & LOWER, h2 = b >> 30;
   int m = l1 * h2 + l2 * h1, h = h1 * h2;
@@ -33,6 +34,7 @@ int uniform(int l, int r)
   uniform_int_distribution<int> uid(l, r);
   return uid(rng);
 }
+const int P = uniform(256, MOD - 1);
 struct string_hashing
 {
   vector<int> h, p;
@@ -59,7 +61,6 @@ signed main()
   cin.tie(NULL);
   int n;
   cin >> n;
-  P = uniform(256, MOD - 1);
   vector<string_hashing> v(n);
   vector<string_hashing> v_rev(n);
   vector<int> sz(n);
