@@ -1,117 +1,160 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
 using namespace std;
-using namespace __gnu_pbds;
 
-template <class T>
-using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-
-#define int long long int
 #define pb push_back
 #define pi pair<int, int>
 #define pii pair<int, pi>
 #define fir first
 #define sec second
-#define MAXN 301
-#define mod 1000000007
-#define INF 1e9
+#define MAXN 1000005
+#define mod 998244353
 
-namespace mcf
+// https://github.com/brunomaletta/Biblioteca/blob/master/Codigo/Grafos/minCostMaxFlow.cpp
+// O(nm + f * m log n)
+// no qual f eh o fluxo maximo
+// se for um dag, da pra substituir o SPFA por uma DP pra nao pagar O(nm) no comeco
+// ja q so eh preciso achar os valores dos caminhos mais curtos saindo da source
+// cuidado pra nao ter ciclo negativo
+
+const int INF = 1e9;
+
+struct mcmf
 {
   struct edge
   {
-    int to, capacity, cost, res;
+    int to, rev, flow, cap;
+    bool res;
+    int cost;
+    edge() : to(0), rev(0), flow(0), cap(0), cost(0), res(false) {}
+    edge(int to_, int rev_, int flow_, int cap_, int cost_, bool res_)
+        : to(to_), rev(rev_), flow(flow_), cap(cap_), res(res_), cost(cost_) {}
   };
 
-  int source, destiny;
-  vector<edge> adj[MAXN];
+  vector<vector<edge>> g;
+  vector<int> par_idx, par;
+  int inf;
   vector<int> dist;
-  vector<int> parent;
-  vector<int> edge_index;
-  vector<bool> in_queue;
 
-  void add_edge(int a, int b, int c, int d)
-  {
-    adj[a].pb({b, c, d, (int)adj[b].size()});      // aresta normal
-    adj[b].pb({a, 0, -d, (int)adj[a].size() - 1}); // aresta do grafo residual
+  mcmf(int n) : g(n), par_idx(n), par(n), inf(numeric_limits<int>::max() / 3) {}
+
+  void add_edge(int u, int v, int w, int cost)
+  { // de u pra v com cap w e custo cost
+    edge a = edge(v, g[v].size(), 0, w, cost, false);
+    edge b = edge(u, g[u].size(), 0, 0, -cost, true);
+
+    g[u].push_back(a);
+    g[v].push_back(b);
   }
-  bool dijkstra(int s) // rodando o dijkstra, terei o caminho de custo minimo
-  {                    // que eu consigo passando pelas arestas que possuem capacidade > 0
-    dist.assign(MAXN, INF);
-    parent.assign(MAXN, -1);
-    edge_index.assign(MAXN, -1);
-    in_queue.assign(MAXN, false);
+
+  vector<int> spfa(int s)
+  {
+    // nao precisa se nao tiver custo negativo
+    // serve apenas pra calcular os potenciais inicialmente
+    deque<int> q;
+    vector<bool> is_inside(g.size(), 0);
+    dist = vector<int>(g.size(), inf);
+
     dist[s] = 0;
-    queue<int> q;
-    q.push(s);
+    q.push_back(s);
+    is_inside[s] = true;
+
     while (!q.empty())
     {
-      int u = q.front(), idx = 0;
-      q.pop();
-      in_queue[u] = false;
-      for (auto const &v : adj[u])
+      int v = q.front();
+      q.pop_front();
+      is_inside[v] = false;
+
+      for (int i = 0; i < g[v].size(); i++)
       {
-        if (v.capacity && dist[v.to] > dist[u] + v.cost)
+        auto [to, rev, flow, cap, res, cost] = g[v][i];
+        if (flow < cap and dist[v] + cost < dist[to])
         {
-          dist[v.to] = dist[u] + v.cost;
-          parent[v.to] = u;
-          edge_index[v.to] = idx;
-          if (!in_queue[v.to])
-          {
-            in_queue[v.to] = true;
-            q.push(v.to);
-          }
+          dist[to] = dist[v] + cost;
+
+          if (is_inside[to])
+            continue;
+          if (!q.empty() and dist[to] > dist[q.front()])
+            q.push_back(to);
+          else
+            q.push_front(to);
+          is_inside[to] = true;
         }
-        idx++;
       }
     }
-    return dist[destiny] != INF; // se eu cheguei em destiny por esse caminho, ainda posso passar fluxo
+    return dist;
   }
-  int get_cost()
+  bool dijkstra(int s, int t, vector<int> &pot)
   {
-    int flow = 0, cost = 0;
-    while (dijkstra(source)) // rodo um dijkstra para saber qual o caminho que irei agora
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> q;
+    dist = vector<int>(g.size(), inf);
+    dist[s] = 0;
+    q.emplace(0, s);
+    while (q.size())
     {
-      int curr_flow = INF, curr = destiny;
-      while (curr != source) // com isso, vou percorrendo o caminho encontrado para achar a aresta "gargalo"
+      auto [d, v] = q.top();
+      q.pop();
+      if (dist[v] < d)
+        continue;
+      for (int i = 0; i < g[v].size(); i++)
       {
-        int p = parent[curr];
-        curr_flow = min(curr_flow, adj[p][edge_index[curr]].capacity);
-        curr = p;
-      }
-      flow += curr_flow;                 // fluxo que eu posso passar por esse caminho = custo da aresta "gargalo"
-      cost += curr_flow * dist[destiny]; // quanto eu gasto para passar esse fluxo no caminho encontrado
-      curr = destiny;
-      while (curr != source) // apos achar a aresta gargalo, passamos o fluxo pelo caminho encontrado
-      {
-        int p = parent[curr];
-        int res_idx = adj[p][edge_index[curr]].res;
-        adj[p][edge_index[curr]].capacity -= curr_flow;
-        adj[curr][res_idx].capacity += curr_flow;
-        curr = p;
+        auto [to, rev, flow, cap, res, cost] = g[v][i];
+        cost += pot[v] - pot[to];
+        if (flow < cap and dist[v] + cost < dist[to])
+        {
+          dist[to] = dist[v] + cost;
+          q.emplace(dist[to], to);
+          par_idx[to] = i, par[to] = v;
+        }
       }
     }
-    return cost; // ao final temos a resposta :)
+    return dist[t] < inf;
   }
-} // namespace mcf
-signed main()
-{
-  int n;
-  cin >> n;
-  int v[n][n];
-  mcf::source = 0, mcf::destiny = (2 * n) + 1;
-  for (int i = 0; i < n; i++)
+
+  pair<int, int> min_cost_flow(int s, int t, int flow = INF)
   {
-    for (int j = 0; j < n; j++)
+    vector<int> pot(g.size(), 0);
+    pot = spfa(s); // mudar algoritmo de caminho minimo aqui
+
+    int f = 0;
+    int ret = 0;
+    while (f < flow and dijkstra(s, t, pot))
     {
-      cin >> v[i][j];
-      mcf::add_edge(i + 1, j + n + 1, 1, v[i][j]);
+      for (int i = 0; i < g.size(); i++)
+        if (dist[i] < inf)
+          pot[i] += dist[i];
+
+      int mn_flow = flow - f, u = t;
+      while (u != s)
+      {
+        mn_flow = min(mn_flow,
+                      g[par[u]][par_idx[u]].cap - g[par[u]][par_idx[u]].flow);
+        u = par[u];
+      }
+
+      ret += pot[t] * mn_flow;
+
+      u = t;
+      while (u != s)
+      {
+        g[par[u]][par_idx[u]].flow += mn_flow;
+        g[u][g[par[u]][par_idx[u]].rev].flow -= mn_flow;
+        u = par[u];
+      }
+
+      f += mn_flow;
     }
+
+    return make_pair(f, ret);
   }
-  for (int i = 1; i <= n; i++)
-    mcf::add_edge(mcf::source, i, 1, 0);
-  for (int i = n + 1; i <= n + n; i++)
-    mcf::add_edge(i, mcf::destiny, 1, 0);
-  cout << mcf::get_cost << endl;
-}
+
+  // Opcional: retorna as arestas originais por onde passa flow = cap
+  vector<pair<int, int>> recover()
+  {
+    vector<pair<int, int>> used;
+    for (int i = 0; i < g.size(); i++)
+      for (edge e : g[i])
+        if (e.flow == e.cap && !e.res)
+          used.push_back({i, e.to});
+    return used;
+  }
+};
