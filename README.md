@@ -227,6 +227,8 @@ And many others, sky is the limit :)
 
 ## **Competitions solutions :white_check_mark:**
 
+- [I Maratona Nordestina de Programação — 1st Northeastern Brazil Programming Contest](https://codeforces.com/gym/106667)
+  - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Maratona%20Nordestina%202026)
 - [The 2026 ICPC Latin America Championship](https://codeforces.com/gym/106416)
   - [All problems solved](https://github.com/jonh14lk/Competitive_Programming/tree/master/Problem%20Solving/Latam%202025)
 - [2025-2026 ACM-ICPC Brazil Subregional Programming Contest](https://codeforces.com/gym/106073)
