@@ -35,13 +35,13 @@ struct sqrt_rmq
   }
   int query(int l, int r) // O(sqrt(n))
   {
-    int ll = (l / sq) + 1, rr = r / sq, ans = inf;
-    for (int i = l; i < min(r + 1, ll * sq); i++)
-      ans = min(ans, a[i]);
-    for (int i = ll; i < rr; i++)
-      ans = min(ans, block[i]);
-    for (int i = max(l, rr * sq); i <= r; i++)
-      ans = min(ans, a[i]);
+    int ans = inf;
+    for (; l <= r && l % sq; l++)
+      ans = min(ans, a[l]);
+    for (; (l + sq - 1) <= r; l += sq)
+      ans = min(ans, block[l / sq]);
+    for (; l <= r; l++)
+      ans = min(ans, a[l]);
     return ans;
   }
 };
